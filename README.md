@@ -1,12 +1,16 @@
 # 古桥千秋——中国古桥的多维数据可视化图谱
 
-![数据搭桥](docs/images/xiaohei-01-data-bridge.jpg)
+![数据搭桥](docs/images/xiaohei-v2-01-data-bridge.jpg)
 
 《古桥千秋——中国古桥的多维数据可视化图谱》是一个静态网页作品，核心内容包括中国古桥数据展示、地图交互、桥梁详情、技术演进、文化传承和语音导览。
 
 ## 作品亮点
 
-![五维筛桥](docs/images/xiaohei-02-five-dimensions.jpg)
+![按图索桥](docs/images/xiaohei-v2-02-map-explorer.jpg)
+
+- **交互式古桥地图**：百座古桥按地理分布呈现，点击探索，点桥看详情
+
+![五维观桥](docs/images/xiaohei-v2-03-five-perspectives.jpg)
 
 - **空间维度**：中国古桥地理分布地图，按省份交互浏览
 - **时间维度**：从先秦到明清的桥梁发展史时间轴
@@ -14,9 +18,10 @@
 - **文化维度**：诗词传说、历史故事、建造技艺
 - **修缮维度**：保护现状、研究成果与修复技术
 
-![桥型分拣](docs/images/xiaohei-03-bridge-sorting.jpg)
+![桥灵伴游](docs/images/xiaohei-v2-04-bridge-guide.jpg)
 
-![桥灵传声](docs/images/xiaohei-04-bridge-spirit.jpg)
+- **AI桥灵助手**：智能问答，随时解答古桥相关问题
+- **语音导览**：每座桥都有专属语音讲解，让古桥开口说话
 
 ## 目录结构
 
