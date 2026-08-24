@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "title": "中国古代桥梁结构力学与材料科学研究数据",
+    "version": "1.0",
+    "created": "2026-03-23"
+  },
+  "structuralMechanics": [
+    {
+      "theme": "赵州桥敞肩拱力学原理",
+      "bridge": "赵州桥",
+      "parameters": {"span": 37.02, "rise": 7.23, "riseSpanRatio": "1:5.12", "smallArches": 4},
+      "researchMethod": "结构极限分析、有限元分析",
+      "keyFindings": "敞肩拱减轻自重约15.3%，增大泄洪能力",
+      "leadYears": 800,
+      "researcher": "钱令希(1987)、隋允康团队(2023)"
+    },
+    {
+      "theme": "编木拱桥力学原理",
+      "bridge": "虹桥",
+      "parameters": {"span": 18, "componentGroups": 21},
+      "features": ["无钉", "无铆", "无桥墩"],
+      "techniques": ["顶", "别(编)", "撑", "压"],
+      "researcher": "刘妍(2021)"
+    },
+    {
+      "theme": "泸定桥悬索力学分析",
+      "bridge": "泸定桥",
+      "parameters": {"span": 100, "chainCables": 9, "chainDiameter": "9cm"},
+      "material": "锻铁"
+    },
+    {
+      "theme": "薄墩连拱力学分析",
+      "mechanics": "桥墩相对拱圈愈细柔，连拱影响愈显著",
+      "avgServiceYears": 134,
+      "researcher": "姜绍飞(2025)"
+    }
+  ],
+  "materialsScience": [
+    {
+      "material": "糯米灰浆",
+      "composition": {"inorganic": "碳酸钙", "organic": "支链淀粉"},
+      "formula": {"calciumHydroxide": 100, "riceSoup": "40-70", "water": "30-60"},
+      "strength": {"compressive28d": "≥2MPa", "maxStrength": "接近10MPa"},
+      "researcher": "张秉坚(浙江大学, 2024)",
+      "sampleCount": 1149
+    },
+    {
+      "material": "古代木材",
+      "types": {"杉木": "暴露空气中不易腐朽", "柏木": "埋水土中较难腐朽", "柳木": "埋水土中较难腐朽", "红松": "埋水土中较难腐朽"}
+    },
+    {
+      "material": "古代石材",
+      "types": ["青灰色砂岩", "花岗岩", "青石"],
+      "characteristics": "耐久性好，对环境变化不敏感"
+    }
+  ],
+  "academicAchievements": [
+    {"scholar": "茅以升", "title": "中国科学院院士", "contribution": "茅氏定律、《中国古桥技术史》主编", "articles": 200},
+    {"scholar": "唐寰澄", "title": "铁道部大桥局总工程师", "contribution": "《中国古代桥梁》《中国桥梁技术史》", "bridgesDocumented": 824},
+    {"scholar": "钱令希", "title": "中国科学院院士", "contribution": "首次用极限分析研究赵州桥", "year": 1987}
+  ],
+  "technologyComparison": {
+    "openSpandrelArch": {"china": 595, "europe": 1800, "leadYears": 1200},
+    "raftFoundation": {"china": 1053, "europe": 1850, "leadYears": 800},
+    "cantileverBeam": {"china": 263, "europe": 1500, "leadYears": 1200},
+    "thinPierArch": {"china": 816, "europe": 1000, "leadYears": 200}
+  }
+}

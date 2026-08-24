@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "version": "1.0",
+    "created": "2026-03-23",
+    "description": "中国古代桥梁技术深度数据，用于数据可视化展示"
+  },
+  "structuralMechanics": {
+    "description": "结构力学数据",
+    "archBridges": [
+      {
+        "name": "赵州桥（安济桥）",
+        "type": "敞肩圆弧石拱桥",
+        "buildYear": "隋代（595-605年）",
+        "designer": "李春",
+        "mechanicsData": {
+          "mainArchSpan": {"value": 37.02, "unit": "米", "description": "主拱净跨度"},
+          "archRise": {"value": 7.23, "unit": "米", "description": "拱矢高度"},
+          "riseSpanRatio": {"value": "1:5", "description": "矢跨比，属坦拱结构"},
+          "archRingCount": {"value": 28, "unit": "道", "description": "拱券并列数量"},
+          "archRingThickness": {"value": 1.03, "unit": "米", "description": "每道拱券厚度"},
+          "archStonesPerRing": {"value": 43, "unit": "块", "description": "每道拱券拱石数量"},
+          "smallArchCount": {"value": 4, "description": "敞肩小拱数量，两肩各两个"},
+          "drainageAreaIncrease": {"value": 16.5, "unit": "%", "description": "敞肩设计增加排水面积比例"}
+        },
+        "mechanicsPrinciple": {
+          "openSpandrelAdvantage": ["减轻桥身自重约15.3%", "增加泄洪能力16.5%", "使恒载压力线与拱轴线接近", "消除拱券中的拉应力"],
+          "forceDistribution": "拱轴线与恒载压力线极为接近，以轴力为主"
+        }
+      }
+    ],
+    "wovenTimberArchBridges": [
+      {
+        "name": "虹桥（清明上河图）",
+        "type": "编木拱桥",
+        "buildPeriod": "北宋（960-1127年）",
+        "mechanicsData": {
+          "span": {"value": 18, "unit": "米"},
+          "componentGroups": {"value": 21, "unit": "组"}
+        },
+        "mechanicsPrinciple": {
+          "loadBearing": "梁木通过编织关系相互别压、制约",
+          "forceType": "每根纵向梁木都是受弯构件"
+        }
+      }
+    ],
+    "suspensionBridges": [
+      {
+        "name": "泸定桥",
+        "type": "铁索悬索桥",
+        "buildYear": "清康熙四十四年（1705年）",
+        "mechanicsData": {
+          "totalLength": {"value": 103.67, "unit": "米"},
+          "bridgeWidth": {"value": 3, "unit": "米"},
+          "chainCount": {"value": 13, "unit": "根"},
+          "bottomChains": {"value": 9, "unit": "根"},
+          "handrailChains": {"value": 4, "unit": "根"},
+          "chainLength": {"value": 127.45, "unit": "米"},
+          "chainWeight": {"value": 2.5, "unit": "吨/根"},
+          "totalChainWeight": {"value": 40, "unit": "吨"},
+          "linkCountPerChain": {"min": 862, "max": 997, "unit": "个"},
+          "totalLinkCount": {"value": 12162, "unit": "个"},
+          "linkWeight": {"value": 3.35, "unit": "公斤"}
+        }
+      }
+    ]
+  },
+  "materialAnalysis": {
+    "description": "材料分析数据",
+    "mortarMaterials": [
+      {
+        "name": "糯米灰浆",
+        "originPeriod": "南北朝时期（约1500年前）",
+        "composition": [
+          {"material": "熟石灰", "percentageRange": "10%-30%", "function": "主要胶凝材料"},
+          {"material": "糯米汁", "percentageRange": "1%-10%", "function": "有机添加剂"},
+          {"material": "砂子", "percentageRange": "30%-60%", "function": "骨料"},
+          {"material": "水", "percentageRange": "20%-40%", "function": "搅拌介质"}
+        ],
+        "properties": {"strength": "比纯石灰砂浆强度更大", "waterResistance": "更具耐水性", "durability": "防腐、耐久性好"}
+      }
+    ],
+    "stoneMaterials": [
+      {"type": "花岗岩", "hardness": "最硬", "applications": ["桥梁主体", "桥墩"], "exampleBridges": ["洛阳桥", "赵州桥"]},
+      {"type": "石灰岩", "hardness": "中等", "applications": ["桥梁建筑"], "exampleBridges": ["南方古桥"]},
+      {"type": "武康石", "hardness": "中等", "applications": ["湖州地区桥梁"], "exampleBridges": ["湖州古桥群"]},
+      {"type": "砂岩", "hardness": "较软", "applications": ["桥梁辅助材料"]}
+    ],
+    "timberMaterials": [
+      {"type": "杉木", "grade": "一类材", "properties": {"texture": "纹理顺直", "corrosionResistance": "抗腐性能稳定"}, "applications": ["木拱廊桥", "桥梁主体结构"]},
+      {"type": "松木", "grade": "二类材", "properties": {"waterResistance": "耐水性好"}, "applications": ["桥梁结构", "打桩木"]},
+      {"type": "柏木", "grade": "一类材", "properties": {"durability": "耐久性好"}, "applications": ["北京明代建筑"]},
+      {"type": "楠木", "grade": "一类材", "properties": {"durability": "极佳"}, "applications": ["高级建筑"]}
+    ]
+  },
+  "constructionTechniques": {
+    "description": "建造工艺数据",
+    "archMasonryMethods": [
+      {"methodName": "并列砌筑法", "description": "多道各自独立的拱券沿宽度方向并列组合", "representativeBridge": "赵州桥", "technicalDetails": {"archRingCount": 28, "advantage": "便于施工和维修"}},
+      {"methodName": "纵联砌筑法", "description": "拱石纵向联锁砌筑", "representativeBridge": "卢沟桥"},
+      {"methodName": "纵联分节并列砌筑法", "description": "纵联与分节并列相结合", "representativeBridge": "古月桥"}
+    ],
+    "foundationTechniques": [
+      {"techniqueName": "筏形基础", "description": "沿桥中轴线抛置石块形成矮石堤", "representativeBridge": "洛阳桥", "innovationSignificance": "建桥史上的重大创新"},
+      {"techniqueName": "牡蛎固基法", "description": "养殖牡蛎加固桥基", "representativeBridge": "洛阳桥", "innovationSignificance": "世界首创生物固基技术"},
+      {"techniqueName": "木桩密植软土改良", "description": "密集打桩加固软土地基", "applications": "水乡软土地区"}
+    ],
+    "joineryTechniques": [
+      {"techniqueName": "榫卯结构", "description": "无钉连接", "applications": ["木拱廊桥", "编木拱桥"], "advantages": ["柔性连接", "抗震性能好"]},
+      {"techniqueName": "编木技术", "description": "木材横纵交织形成拱形结构", "applications": ["虹桥", "木拱廊桥"]}
+    ]
+  },
+  "technologyComparison": {
+    "description": "中欧技术创新对比",
+    "chinaVsEurope": [
+      {"technology": "敞肩圆弧石拱桥", "chinaYear": 600, "europeYear": 1400, "leadYears": 800, "representative": "赵州桥"},
+      {"technology": "编木拱技术", "chinaYear": 1000, "europeYear": 1500, "leadYears": 500, "representative": "虹桥"},
+      {"technology": "筏形基础", "chinaYear": 1056, "europeYear": 1800, "leadYears": 744, "representative": "洛阳桥"},
+      {"technology": "生物固基技术", "chinaYear": 1056, "europeYear": null, "leadYears": "首创", "representative": "洛阳桥"}
+    ]
+  },
+  "academicReferences": [
+    {"title": "中国古桥技术史", "author": "茅以升", "publisher": "北京出版社", "publishYear": 1986, "pages": null},
+    {"title": "中国科学技术史·桥梁卷", "author": "唐寰澄", "publisher": "科学出版社", "publishYear": 2000, "pages": 759},
+    {"title": "营造法式", "author": "李诫", "compileYear": "北宋元符三年（1100年）", "nature": "北宋官方建筑法典", "volumes": 34}
+  ],
+  "visualizationData": {
+    "mechanicsComparison": {
+      "chartType": "雷达图",
+      "data": [
+        {"name": "赵州桥", "span": 37.02, "archRise": 7.23, "riseSpanRatio": 0.2, "archRingCount": 28, "smallArchCount": 4},
+        {"name": "泸定桥", "span": 100, "archRise": 10, "riseSpanRatio": 0.1, "archRingCount": 0, "smallArchCount": 0}
+      ]
+    },
+    "technologyTimeline": {
+      "chartType": "时间轴/甘特图",
+      "data": [
+        {"technology": "敞肩圆弧石拱桥", "chinaYear": 600, "europeYear": 1400, "leadYears": 800},
+        {"technology": "编木拱技术", "chinaYear": 1000, "europeYear": 1500, "leadYears": 500},
+        {"technology": "筏形基础", "chinaYear": 1056, "europeYear": 1800, "leadYears": 744},
+        {"technology": "生物固基", "chinaYear": 1056, "europeYear": null, "leadYears": "首创"}
+      ]
+    },
+    "materialDistribution": {
+      "chartType": "饼图",
+      "stoneTypes": [
+        {"type": "花岗岩", "hardness": "最硬", "usage": "广泛"},
+        {"type": "石灰岩", "hardness": "中等", "usage": "广泛"},
+        {"type": "砂岩", "hardness": "较软", "usage": "辅助"}
+      ],
+      "timberTypes": [
+        {"type": "杉木", "grade": "一类", "usage": "最常用"},
+        {"type": "松木", "grade": "二类", "usage": "常用"},
+        {"type": "柏木", "grade": "一类", "usage": "高级"}
+      ]
+    }
+  }
+}

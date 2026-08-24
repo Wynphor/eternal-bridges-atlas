@@ -1,0 +1,158 @@
+{
+  "metadata": {
+    "title": "东北地区古桥数据集",
+    "version": "1.0",
+    "created": "2026-03-24",
+    "description": "辽宁、吉林、黑龙江等东北地区古代桥梁数据",
+    "dataSource": "全国重点文物保护单位名录、各省文物保护单位名录、地方志"
+  },
+  "bridges": [
+    {
+      "id": "ne001",
+      "name": "永安石桥",
+      "alias": ["永安桥"],
+      "buildYear": {"start": 1641, "end": 1641, "display": "清崇德六年(1641)"},
+      "era": "清代",
+      "eraOrder": 6,
+      "builder": "皇太极敕建",
+      "location": {
+        "province": "辽宁省",
+        "city": "沈阳市",
+        "district": "于洪区",
+        "river": "蒲河",
+        "coordinates": {"lng": 123.3167, "lat": 41.7833}
+      },
+      "type": "三孔联拱石桥",
+      "category": "拱桥",
+      "dimensions": {"length": 50, "width": 8, "archCount": 3, "unit": "米"},
+      "protection": {"level": "全国重点文物保护单位", "batch": "第八批", "year": 2019},
+      "historicalValue": "清初修筑盛京到北京大御路时建造，是皇太极对明用兵的战备路上重要桥梁",
+      "importance": 4,
+      "dataReliability": "高"
+    },
+    {
+      "id": "ne002",
+      "name": "宁安大石桥",
+      "alias": ["宁古塔大石桥", "大石桥"],
+      "buildYear": {"start": 1634, "end": 1634, "display": "后金天聪八年(1634)"},
+      "era": "清代",
+      "eraOrder": 6,
+      "location": {
+        "province": "黑龙江省",
+        "city": "牡丹江市",
+        "county": "宁安市",
+        "river": "牡丹江支流",
+        "coordinates": {"lng": 129.4833, "lat": 44.3500}
+      },
+      "type": "单曲拱石桥",
+      "category": "拱桥",
+      "dimensions": {"length": 25, "width": 5, "archCount": 1, "unit": "米"},
+      "protection": {"level": "省级文物保护单位"},
+      "historicalValue": "黑龙江现存规模最大、保存最完好的古代桥梁，清代由宁古塔通往吉林、盛京及中原的必经之路",
+      "technology": {"description": "黑龙江仅存的清代石拱桥"},
+      "importance": 4,
+      "dataReliability": "高"
+    },
+    {
+      "id": "ne003",
+      "name": "上官地古桥址",
+      "alias": [],
+      "buildYear": {"start": 698, "end": 926, "display": "渤海国时期(698-926)"},
+      "era": "唐代",
+      "eraOrder": 2,
+      "location": {
+        "province": "黑龙江省",
+        "city": "牡丹江市",
+        "county": "宁安市",
+        "coordinates": {"lng": 129.4667, "lat": 44.3333}
+      },
+      "type": "古桥遗址",
+      "category": "遗址",
+      "protection": {"level": "省级文物保护单位"},
+      "historicalValue": "渤海国时期桥梁遗址，东北地区最早的桥梁遗迹之一",
+      "importance": 3,
+      "dataReliability": "中"
+    },
+    {
+      "id": "ne004",
+      "name": "沈阳永安桥",
+      "alias": [],
+      "buildYear": {"display": "清代"},
+      "era": "清代",
+      "eraOrder": 6,
+      "location": {
+        "province": "辽宁省",
+        "city": "沈阳市",
+        "river": "浑河",
+        "coordinates": {"lng": 123.4000, "lat": 41.7667}
+      },
+      "type": "石拱桥",
+      "category": "拱桥",
+      "protection": {"level": "市级文物保护单位"},
+      "importance": 2,
+      "dataReliability": "中"
+    },
+    {
+      "id": "ne005",
+      "name": "吉林乌拉街古桥",
+      "alias": [],
+      "buildYear": {"display": "清代"},
+      "era": "清代",
+      "eraOrder": 6,
+      "location": {
+        "province": "吉林省",
+        "city": "吉林市",
+        "county": "龙潭区乌拉街满族镇",
+        "coordinates": {"lng": 126.3833, "lat": 44.0833}
+      },
+      "type": "石拱桥",
+      "category": "拱桥",
+      "protection": {"level": "待查"},
+      "historicalValue": "清代满族聚居区古桥",
+      "importance": 2,
+      "dataReliability": "低"
+    },
+    {
+      "id": "ne006",
+      "name": "兴城古城桥",
+      "alias": [],
+      "buildYear": {"display": "明代"},
+      "era": "明代",
+      "eraOrder": 5,
+      "location": {
+        "province": "辽宁省",
+        "city": "葫芦岛市",
+        "county": "兴城市",
+        "coordinates": {"lng": 120.7000, "lat": 40.6167}
+      },
+      "type": "石拱桥",
+      "category": "拱桥",
+      "protection": {"level": "待查"},
+      "historicalValue": "兴城古城内古桥",
+      "importance": 2,
+      "dataReliability": "低"
+    }
+  ],
+  "regionalCharacteristics": {
+    "geographicScope": "辽宁、吉林、黑龙江",
+    "historicalContext": {
+      "qingDynasty": "清朝入关前后的重要通道，盛京-北京大御路",
+      "ningguta": "宁古塔是清代流放地，古桥是通往中原的必经之路",
+      "bohaiKingdom": "渤海国时期已有桥梁遗迹"
+    },
+    "bridgeTypes": {
+      "stoneArchBridge": {
+        "name": "石拱桥",
+        "description": "东北地区主要古桥类型，受中原技术影响",
+        "distribution": ["辽宁", "吉林", "黑龙江"]
+      }
+    }
+  },
+  "statistics": {
+    "totalBridges": 6,
+    "byProvince": {"辽宁省": 3, "吉林省": 1, "黑龙江省": 2},
+    "byCategory": {"拱桥": 5, "遗址": 1},
+    "nationalProtectionCount": 1,
+    "provincialProtectionCount": 2
+  }
+}

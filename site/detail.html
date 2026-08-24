@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>桥梁详情</title>
+  <link rel="stylesheet" href="assets/styles.css?v=css-corner-20260528" />
+</head>
+<body data-page="detail" data-title="中国古桥详情">
+  <div id="app">
+    <main class="page">
+      <section class="hero">
+        <div>
+          <div class="eyebrow">单桥档案 · 深度阅读</div>
+          <h2 id="detail-title">桥梁名称</h2>
+          <p id="detail-subtitle">从单座桥梁进入年代、地域、结构、文化与保护信息。</p>
+          <p id="detail-summary"></p>
+          <div id="detail-tags" class="tag-row"></div>
+          <div class="detail-actions">
+            <button id="detail-speak" class="btn btn-primary">语音朗读</button>
+            <button id="detail-back" class="btn btn-secondary" type="button" data-detail-back="1">返回上一页</button>
+          </div>
+          <div class="detail-search-inline" aria-label="快速搜索其他桥梁">
+            <input id="global-search" class="input" placeholder="搜索其他桥梁" />
+            <button id="global-search-btn" class="btn btn-primary">前往</button>
+          </div>
+        </div>
+        <div class="hero-side">
+          <div class="metric-card detail-visual-card">
+            <div id="detail-visual-label" class="label">综合雷达</div>
+            <figure id="detail-visual" class="detail-visual-stage" hidden></figure>
+            <div id="detail-radar" class="chart short"></div>
+          </div>
+          <div class="metric-card detail-model-card">
+            <div class="label">三维桥梁模型</div>
+            <div class="type-bridge-3d detail-bridge-3d" id="detail-bridge-3d-host" role="img" aria-label="当前桥梁三维灰模"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid two">
+        <article class="panel">
+          <div class="panel-header"><div><h3>基本信息</h3><p>桥梁年代、位置、类型与保护级别。</p></div></div>
+          <div id="detail-basic" class="table-like"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-header"><div><h3>尺寸与材料</h3><p>桥长、桥宽、跨度与材料描述。</p></div></div>
+          <div id="detail-dimensions" class="table-like"></div>
+        </article>
+      </section>
+
+      <section class="grid two">
+        <article class="panel">
+          <div class="panel-header"><div><h3>关键事件</h3><p>与桥梁相关的历史事件与重要节点。</p></div></div>
+          <div id="detail-events" class="timeline"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-header"><div><h3>保护修缮</h3><p>从修缮史理解文保路径。</p></div></div>
+          <div id="detail-preservation" class="timeline"></div>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header"><div><h3>文化深描</h3><p>诗词、传说与历史记忆。</p></div></div>
+        <div id="detail-culture" class="story-list"></div>
+      </section>
+    </main>
+  </div>
+  <script src="assets/vendor/three.min.js"></script>
+  <script src="assets/vendor/OrbitControls.js"></script>
+  <script src="assets/bridge-type-3d.js"></script>
+  <script src="assets/vendor/echarts.min.js"></script>
+  <script src="assets/runtime-config.js"></script>
+  <script src="assets/app.js?v=data-audit-20260528"></script>
+</body>
+</html>
+
+

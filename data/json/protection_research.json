@@ -1,0 +1,264 @@
+{
+  "meta": {
+    "title": "中国古代桥梁保护与研究现状",
+    "version": "1.0",
+    "created": "2026-03-23",
+    "description": "古桥保护现状、研究机构、数字化保护、国际交流"
+  },
+  "protectionStatus": {
+    "challenges": [
+      {
+        "type": "火灾威胁",
+        "cases": [
+          {
+            "bridge": "万安桥",
+            "location": "福建屏南",
+            "date": "2022-08-06",
+            "description": "全国重点文物保护单位、中国现存最长木拱廊桥突发大火，桥体烧毁坍塌。",
+            "significance": "始建于北宋，距今超过900年"
+          }
+        ],
+        "causes": ["木质结构易燃", "消防设施不足", "传统消防技术与文物保护冲突"]
+      },
+      {
+        "type": "自然灾害",
+        "cases": [
+          {
+            "event": "泰顺廊桥水毁",
+            "location": "浙江泰顺",
+            "date": "2016-09",
+            "bridges": ["薛宅桥", "文重桥", "文兴桥"],
+            "cause": "台风莫兰蒂引发洪水",
+            "result": "3座国宝级廊桥被冲毁"
+          }
+        ]
+      },
+      {
+        "type": "保护力量不足",
+        "issues": ["基层文物保护人员短缺", "传统营造技艺传承人匮乏", "保护经费有限"]
+      }
+    ],
+    "restorationPrinciples": [
+      "不改变文物原状",
+      "最小干预原则",
+      "原材料、原工艺、原做法、原形制"
+    ],
+    "restorationCases": [
+      {
+        "bridge": "万安桥",
+        "timeline": {
+          "fireDate": "2022-08-06",
+          "restorationStart": "2023",
+          "completion": "2024-10"
+        },
+        "craftsmen": {
+          "leadCraftsmen": ["黄闽屏", "黄闽辉"],
+          "heritage": "市级非遗传承人",
+          "technique": "木拱廊桥传统营造技艺"
+        },
+        "result": {
+          "length": 98.49,
+          "width": 4.14,
+          "columns": 152,
+          "bays": 37,
+          "structure": "四柱九檩穿斗式"
+        }
+      },
+      {
+        "bridge": "泰顺廊桥群",
+        "timeline": {
+          "damageDate": "2016-09",
+          "completion": "2017-12"
+        },
+        "duration": "6个月",
+        "approach": "全民救桥行动，社会各界共同参与",
+        "honors": [
+          "全国优秀古迹遗址保护项目特别推荐",
+          "联合国教科文组织全球优秀案例"
+        ]
+      }
+    ]
+  },
+  "threeYearPlan": {
+    "name": "廊桥保护三年行动计划",
+    "period": "2023-2025",
+    "issuedBy": ["中共中央宣传部", "文化和旅游部", "国家文物局"],
+    "issuedDate": "2023-05",
+    "achievements": {
+      "totalCoveredBridges": 2193,
+      "growthRate": "61%",
+      "newlyDiscovered": 302,
+      "nationalProtectionBridges": 138,
+      "provinces": 13
+    },
+    "tenTasks": [
+      "开展廊桥文物专项调查",
+      "全面留取廊桥信息",
+      "深入廊桥研究",
+      "建立风险评估机制",
+      "实施廊桥保护工程",
+      "整体保护周边环境",
+      "加强安全防护设施",
+      "促进活化利用",
+      "健全管理机制",
+      "深化宣传教育"
+    ]
+  },
+  "researchStatus": {
+    "maoYisheng": {
+      "name": "茅以升",
+      "titles": ["中国现代桥梁之父", "著名桥梁专家"],
+      "contributions": [
+        {
+          "work": "《中国古桥技术史》",
+          "year": 1978,
+          "significance": "填补中国桥梁史空白"
+        },
+        {
+          "work": "《五桥颂》《中国的古桥和新桥》",
+          "significance": "中国近现代桥梁史开山之作"
+        },
+        {
+          "work": "《中国的石拱桥》",
+          "type": "科普文章"
+        },
+        {
+          "work": "《中国桥梁——古代至今代》",
+          "languages": ["日", "英", "法", "德", "西班牙"]
+        },
+        {
+          "concept": "桥文化",
+          "year": 1965,
+          "eightAspects": ["桥记", "桥志", "桥史", "桥工", "桥典", "桥景", "桥名", "桥文"]
+        }
+      ]
+    },
+    "researchInstitutions": [
+      {
+        "name": "北京茅以升科技教育基金会中国古桥研究与保护委员会",
+        "founded": 2009,
+        "activities": ["中国古桥研究与保护学术研讨会"]
+      },
+      {
+        "name": "中国文物保护技术协会",
+        "focus": "古桥保护技术研究"
+      },
+      {
+        "name": "中国桥梁博物馆",
+        "location": "厦门",
+        "features": ["海沧大桥东岸锚碇", "近千件桥梁藏品", "8个展区"]
+      }
+    ],
+    "academicConferences": [
+      {
+        "name": "中国古桥研究与保护学术研讨会",
+        "firstYear": 2009,
+        "frequency": "每年一届",
+        "tenthConference": {
+          "year": 2024,
+          "month": 5,
+          "location": "绍兴",
+          "theme": "纪念古桥研究与保护委员会成立15周年"
+        }
+      },
+      {
+        "name": "中国廊桥国际学术研讨会",
+        "seventhConference": {
+          "year": 2019,
+          "month": 9,
+          "location": "上海",
+          "participants": "近40名国际专家",
+          "theme": "乡村振兴视角下的廊桥保护与利用"
+        }
+      }
+    ],
+    "academicWorks": [
+      {"title": "《中国古桥技术史》", "author": "茅以升主编", "year": 1986},
+      {"title": "《中国科学技术史·桥梁卷》", "author": "唐寰澄", "year": 2000, "pages": 775},
+      {"title": "《中国桥梁技术史·古代篇》", "author": "唐寰澄、唐浩", "year": 2017, "pages": 923},
+      {"title": "《营造法式》", "author": "李诫", "year": 1100, "significance": "中国第一部建筑工程官方著作"},
+      {"title": "《中国古代桥梁》", "author": "唐寰澄", "year": 1957}
+    ]
+  },
+  "digitalProtection": {
+    "threeDimensionScanning": {
+      "advantages": ["毫米级精度", "非接触式测量", "完整三维数据"],
+      "applications": ["墙体倾斜检测", "柱子歪闪分析", "梁架挠曲测量"],
+      "cases": [
+        {"bridge": "泉州洛阳桥", "project": "数字化建档"},
+        {"institution": "浙江交通职业技术学院", "project": "古桥三维全景精细化数字模型"}
+      ]
+    },
+    "bimTechnology": {
+      "applications": ["数字化存档", "结构监测", "修缮设计", "灾害模拟", "文化传播"],
+      "cases": ["苏州古建筑保护项目"]
+    },
+    "digitalMuseums": [
+      {
+        "name": "中国桥梁博物馆",
+        "location": "厦门海沧大桥东岸锚碇",
+        "exhibits": 1000,
+        "sections": ["中国古代桥梁", "中国近现代桥梁", "世界桥梁博览", "桥梁文化展示", "桥梁互动体验"]
+      },
+      {
+        "name": "茅以升纪念馆",
+        "location": "镇江",
+        "exhibits": 800,
+        "themes": ["桥梁高科技", "桥梁历史", "桥梁文化"]
+      }
+    ]
+  },
+  "internationalExchange": {
+    "worldHeritage": {
+      "woodenArchBridges": {
+        "intangibleHeritage": {
+          "nationalList": 2008,
+          "urgentProtectionList": 2009,
+          "representativeList": "2024-12",
+          "significance": "全球首个从'急需保护'成功转入'代表作名录'的案例"
+        },
+        "worldHeritageCandidate": {
+          "year": 2012,
+          "bridges": 22,
+          "provinces": ["福建", "浙江"],
+          "counties": 7
+        }
+      }
+    },
+    "internationalCases": [
+      {
+        "bridge": "莫斯塔尔古桥",
+        "country": "波黑",
+        "originalYear": 1566,
+        "destroyed": 1993,
+        "rebuilt": 2004,
+        "worldHeritage": 2005,
+        "significance": "波黑首个世界遗产",
+        "lessons": ["国际合作重建", "本地材料", "保持原有风格"]
+      }
+    ],
+    "chineseCases": [
+      {
+        "bridge": "泰顺廊桥",
+        "honor": "联合国教科文组织全球优秀案例",
+        "features": ["专业修复与传统技艺融合", "全社会共同参与"]
+      }
+    ]
+  },
+  "futureOutlook": {
+    "challenges": [
+      "古桥数量众多，保护压力大",
+      "自然灾害与火灾威胁持续",
+      "传统技艺传承面临断层",
+      "基层保护力量薄弱",
+      "数字化保护成本较高"
+    ],
+    "opportunities": [
+      "廊桥保护三年行动计划提供系统框架",
+      "非遗转名录成功带来国际关注",
+      "文物保护投入持续增加",
+      "三维扫描、BIM技术日趋成熟",
+      "乡村振兴带动古桥活化利用"
+    ]
+  }
+}

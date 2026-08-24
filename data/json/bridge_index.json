@@ -1,0 +1,472 @@
+{
+  "meta": {
+    "title": "中国古代桥梁数据索引",
+    "version": "2.0",
+    "created": "2026-03-23",
+    "lastUpdated": "2026-03-24",
+    "description": "统一索引文件，覆盖所有数据文件中的桥梁，便于跨文件查询",
+    "usage": "通过bridgeId可定位到具体数据文件，通过tags可快速筛选",
+    "totalIndexedBridges": 67,
+    "sourceFiles": {
+      "bridges_master.json": 23,
+      "silk_road_bridges.json": 12,
+      "grand_canal_bridges.json": 18,
+      "frontier_bridges.json": 13,
+      "tea_horse_road_bridges.json": 15
+    }
+  },
+  "index": {
+    "赵州桥": {
+      "bridgeId": "bridge_zhaozhou",
+      "alias": ["安济桥", "大石桥"],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": ["bridge_records.json", "bridge_stories.json", "bridge_construction_technology.json"],
+      "tags": ["隋代", "拱桥", "国保第一批", "敞肩拱", "世界首创", "李春", "四大名桥"]
+    },
+    "卢沟桥": {
+      "bridgeId": "bridge_lugou",
+      "alias": ["芦沟桥", "马可波罗桥"],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": ["bridge_records.json", "bridge_stories.json"],
+      "tags": ["金代", "拱桥", "国保第一批", "石狮", "七七事变", "燕京八景", "四大名桥"]
+    },
+    "洛阳桥": {
+      "bridgeId": "bridge_luoyang",
+      "alias": ["万安桥"],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": ["bridge_records.json", "bridge_stories.json", "bridge_construction_technology.json"],
+      "tags": ["北宋", "梁桥", "世界遗产", "筏形基础", "种蛎固基", "蔡襄", "四大名桥"]
+    },
+    "安平桥": {
+      "bridgeId": "bridge_anping",
+      "alias": ["五里桥", "西桥"],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": ["bridge_records.json"],
+      "tags": ["南宋", "梁桥", "世界遗产", "最长古桥", "国保第一批"]
+    },
+    "广济桥": {
+      "bridgeId": "bridge_guangji",
+      "alias": ["湘子桥"],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": ["bridge_records.json"],
+      "tags": ["南宋", "组合桥", "国保", "启闭式", "浮桥", "四大名桥"]
+    },
+    "泸定桥": {
+      "bridgeId": "bridge_luding",
+      "alias": ["大渡河铁索桥", "大渡桥"],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": ["bridge_records.json", "bridge_stories.json", "tea_horse_road_bridges.json"],
+      "tags": ["清代", "索桥", "国保第一批", "铁索", "红军长征", "茶马古道"]
+    },
+    "拱宸桥": {
+      "bridgeId": "bridge_gongchen",
+      "alias": [],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": ["grand_canal_bridges.json"],
+      "tags": ["明代", "拱桥", "世界遗产", "大运河", "薄墩联拱"]
+    },
+    "程阳永济桥": {
+      "bridgeId": "bridge_chengyang",
+      "alias": ["程阳风雨桥"],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": ["bridge_records.json", "frontier_bridges.json"],
+      "tags": ["民国", "廊桥", "国保", "侗族", "榫卯结构", "风雨桥"]
+    },
+    "宝带桥": {
+      "bridgeId": "bridge_baodai",
+      "alias": [],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": ["bridge_records.json", "grand_canal_bridges.json"],
+      "tags": ["唐代", "拱桥", "世界遗产", "大运河", "53孔", "薄墩联拱"]
+    },
+    "枫桥": {
+      "bridgeId": "bridge_fengqiao",
+      "alias": [],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": ["bridge_stories.json"],
+      "tags": ["清代", "拱桥", "省保", "张继", "枫桥夜泊", "寒山寺"]
+    },
+    "五亭桥": {
+      "bridgeId": "bridge_wuting",
+      "alias": ["莲花桥"],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": ["bridge_records.json"],
+      "tags": ["清代", "廊桥", "国保", "瘦西湖", "最美古桥", "茅以升评价"]
+    },
+    "霁虹桥": {
+      "bridgeId": "bridge_jihong",
+      "alias": ["兰津桥"],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": ["tea_horse_road_bridges.json"],
+      "tags": ["明代", "索桥", "省保", "茶马古道", "澜沧江", "最古老铁索桥"]
+    },
+    "鱼沼飞梁": {
+      "bridgeId": "bridge_yuzhao",
+      "alias": ["十字桥"],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": [],
+      "tags": ["北宋", "梁桥", "国保第一批", "晋祠", "十字形", "世界最早立交桥"]
+    },
+    "小商桥": {
+      "bridgeId": "bridge_xiaoshang",
+      "alias": ["隋拱桥"],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": [],
+      "tags": ["隋代", "拱桥", "国保", "敞肩拱", "早于赵州桥"]
+    },
+    "垂虹桥": {
+      "bridgeId": "bridge_chuihong",
+      "alias": ["江南第一长桥"],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": [],
+      "tags": ["北宋", "拱桥", "国保", "薄拱多孔", "遗址"]
+    },
+    "广济桥(塘栖)": {
+      "bridgeId": "bridge_guangji_tangxi",
+      "alias": ["通济桥", "碧天桥"],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": ["grand_canal_bridges.json"],
+      "tags": ["唐代", "拱桥", "世界遗产", "大运河", "七孔"]
+    },
+    "断桥": {
+      "bridgeId": "bridge_duanqiao",
+      "alias": ["段家桥", "宝祐桥"],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": ["bridge_stories.json"],
+      "tags": ["唐代", "拱桥", "世界遗产", "西湖", "白蛇传"]
+    },
+    "双龙桥": {
+      "bridgeId": "bridge_shuanglong",
+      "alias": ["十七孔桥"],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": [],
+      "tags": ["清代", "廊桥", "国保", "云南", "十七孔"]
+    },
+    "龙脑桥": {
+      "bridgeId": "bridge_longnao",
+      "alias": [],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": [],
+      "tags": ["明代", "梁桥", "国保", "四川", "龙雕"]
+    },
+    "葛镜桥": {
+      "bridgeId": "bridge_gejing",
+      "alias": ["豆腐桥"],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": [],
+      "tags": ["明代", "拱桥", "国保", "贵州", "三孔尖顶"]
+    },
+    "太平桥(安徽)": {
+      "bridgeId": "bridge_taiping",
+      "alias": ["太平桥"],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": [],
+      "tags": ["明代", "拱桥", "省保", "安徽", "十六孔"]
+    },
+    "鸣水桥": {
+      "bridgeId": "bridge_mingshui",
+      "alias": [],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": [],
+      "tags": ["北宋", "拱桥", "国保", "江西"]
+    },
+    "二十四桥": {
+      "bridgeId": "bridge_ershisi",
+      "alias": ["吴家砖桥", "红药桥"],
+      "primaryFile": "bridges_master.json",
+      "secondaryFiles": ["bridge_stories.json"],
+      "tags": ["唐代", "拱桥", "省保", "扬州", "杜牧"]
+    },
+    "渭桥遗址": {
+      "bridgeId": "sr001",
+      "alias": ["丝绸之路第一桥"],
+      "primaryFile": "silk_road_bridges.json",
+      "secondaryFiles": ["bridge_records.json", "bridge_literature_archaeology.json"],
+      "tags": ["秦汉", "梁桥", "国保", "丝绸之路", "考古发现", "世界最大木桥遗址"]
+    },
+    "沙河古桥遗址": {
+      "bridgeId": "sr002",
+      "alias": [],
+      "primaryFile": "silk_road_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["秦汉", "梁桥", "国保", "丝绸之路", "考古发现"]
+    },
+    "江东桥": {
+      "bridgeId": "sr003",
+      "alias": ["虎渡桥", "通济桥"],
+      "primaryFile": "silk_road_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["南宋", "梁桥", "国保", "海上丝绸之路", "最大石构件"]
+    },
+    "顺济桥": {
+      "bridgeId": "sr004",
+      "alias": [],
+      "primaryFile": "silk_road_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["南宋", "梁桥", "市保", "海上丝绸之路", "泉州"]
+    },
+    "龙江桥": {
+      "bridgeId": "sr005",
+      "alias": ["太平桥", "永平桥"],
+      "primaryFile": "silk_road_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["北宋", "梁桥", "国保", "海上丝绸之路", "福建四大古桥"]
+    },
+    "灵桥": {
+      "bridgeId": "sr009",
+      "alias": ["东津浮桥", "老江桥"],
+      "primaryFile": "silk_road_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["唐代", "浮桥", "市保", "海上丝绸之路", "宁波"]
+    },
+    "百梁桥": {
+      "bridgeId": "sr010",
+      "alias": ["小溪江桥", "浙东第一廊桥"],
+      "primaryFile": "silk_road_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["北宋", "廊桥", "省保", "海上丝绸之路", "宁波"]
+    },
+    "万宁桥": {
+      "bridgeId": "gc001",
+      "alias": ["后门桥", "海子桥", "澄清上闸"],
+      "primaryFile": "grand_canal_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["元代", "拱桥", "国保", "世界遗产", "大运河", "北京"]
+    },
+    "长虹桥": {
+      "bridgeId": "gc005",
+      "alias": [],
+      "primaryFile": "grand_canal_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["明代", "拱桥", "国保", "世界遗产", "大运河", "嘉兴"]
+    },
+    "八字桥": {
+      "bridgeId": "gc006",
+      "alias": [],
+      "primaryFile": "grand_canal_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["南宋", "梁桥", "国保", "世界遗产", "大运河", "绍兴", "立交桥雏形"]
+    },
+    "绍兴古纤道": {
+      "bridgeId": "gc007",
+      "alias": ["官塘", "纤道桥"],
+      "primaryFile": "grand_canal_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["唐代", "梁桥", "国保", "世界遗产", "大运河", "绍兴", "纤道"]
+    },
+    "清名桥": {
+      "bridgeId": "gc008",
+      "alias": [],
+      "primaryFile": "grand_canal_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["明代", "拱桥", "省保", "世界遗产", "大运河", "无锡"]
+    },
+    "清江大闸": {
+      "bridgeId": "gc009",
+      "alias": ["清江浦闸"],
+      "primaryFile": "grand_canal_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["明代", "闸桥", "国保", "世界遗产", "大运河", "淮安"]
+    },
+    "州桥遗址": {
+      "bridgeId": "gc015",
+      "alias": [],
+      "primaryFile": "grand_canal_bridges.json",
+      "secondaryFiles": ["bridge_literature_archaeology.json"],
+      "tags": ["唐代", "遗址", "国保", "大运河", "开封", "考古发现"]
+    },
+    "波日桥": {
+      "bridgeId": "frontier_001",
+      "alias": ["伸臂桥", "康巴第一桥"],
+      "primaryFile": "frontier_bridges.json",
+      "secondaryFiles": ["tea_horse_road_bridges.json"],
+      "tags": ["明代", "伸臂桥", "国保", "藏族", "雅砻江", "茶马古道"]
+    },
+    "永安石桥": {
+      "bridgeId": "frontier_002",
+      "alias": [],
+      "primaryFile": "frontier_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["明代", "拱桥", "国保", "东北", "辽宁"]
+    },
+    "宁安大石桥": {
+      "bridgeId": "frontier_003",
+      "alias": [],
+      "primaryFile": "frontier_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["清代", "拱桥", "省保", "东北", "黑龙江"]
+    },
+    "通京桥": {
+      "bridgeId": "frontier_004",
+      "alias": [],
+      "primaryFile": "frontier_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["明代", "伸臂桥", "国保", "白族", "云南"]
+    },
+    "彩凤桥": {
+      "bridgeId": "frontier_005",
+      "alias": [],
+      "primaryFile": "frontier_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["明代", "伸臂桥", "国保", "白族", "云南"]
+    },
+    "青云桥": {
+      "bridgeId": "frontier_006",
+      "alias": [],
+      "primaryFile": "frontier_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["明代", "索桥", "国保", "白族", "云南"]
+    },
+    "青龙桥": {
+      "bridgeId": "frontier_007",
+      "alias": ["束河青龙桥"],
+      "primaryFile": "frontier_bridges.json",
+      "secondaryFiles": ["tea_horse_road_bridges.json"],
+      "tags": ["明代", "拱桥", "世界遗产", "纳西族", "丽江古城", "茶马古道"]
+    },
+    "地坪风雨桥": {
+      "bridgeId": "frontier_008",
+      "alias": ["地坪花桥"],
+      "primaryFile": "frontier_bridges.json",
+      "secondaryFiles": ["tea_horse_road_bridges.json"],
+      "tags": ["清代", "廊桥", "国保", "侗族", "贵州", "榫卯结构"]
+    },
+    "岜团桥": {
+      "bridgeId": "frontier_009",
+      "alias": [],
+      "primaryFile": "frontier_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["清代", "廊桥", "国保", "侗族", "广西"]
+    },
+    "坪坦风雨桥群": {
+      "bridgeId": "frontier_010",
+      "alias": [],
+      "primaryFile": "frontier_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["清代", "廊桥", "国保", "侗族", "湖南"]
+    },
+    "安澜索桥": {
+      "bridgeId": "thb005",
+      "alias": ["珠浦桥", "夫妻桥"],
+      "primaryFile": "tea_horse_road_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["宋代", "索桥", "国保", "世界遗产", "都江堰", "茶马古道"]
+    },
+    "丽江大石桥": {
+      "bridgeId": "thb006",
+      "alias": ["映雪桥"],
+      "primaryFile": "tea_horse_road_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["明代", "拱桥", "世界遗产", "纳西族", "丽江古城", "茶马古道"]
+    },
+    "万子桥": {
+      "bridgeId": "thb007",
+      "alias": [],
+      "primaryFile": "tea_horse_road_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["明代", "拱桥", "世界遗产", "纳西族", "丽江古城"]
+    },
+    "盐井铁链木桥": {
+      "bridgeId": "thb008",
+      "alias": [],
+      "primaryFile": "tea_horse_road_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["唐代", "索桥", "西藏", "茶马古道"]
+    },
+    "扎西达桑桥": {
+      "bridgeId": "thb009",
+      "alias": ["茶马古道第一桥"],
+      "primaryFile": "tea_horse_road_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["清代", "其他", "西藏", "茶马古道"]
+    },
+    "嘉玉桥": {
+      "bridgeId": "thb010",
+      "alias": [],
+      "primaryFile": "tea_horse_road_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["清代", "梁桥", "西藏", "茶马古道"]
+    },
+    "日藏伸臂桥": {
+      "bridgeId": "thb011",
+      "alias": [],
+      "primaryFile": "tea_horse_road_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["清代", "伸臂桥", "藏族", "四川", "茶马古道"]
+    },
+    "那柯里风雨桥": {
+      "bridgeId": "thb012",
+      "alias": [],
+      "primaryFile": "tea_horse_road_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["清代", "廊桥", "云南", "茶马古道"]
+    },
+    "玉龙桥": {
+      "bridgeId": "thb013",
+      "alias": ["双石桥"],
+      "primaryFile": "tea_horse_road_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["明代", "拱桥", "世界遗产", "纳西族", "丽江古城"]
+    },
+    "涟漪桥": {
+      "bridgeId": "thb014",
+      "alias": [],
+      "primaryFile": "tea_horse_road_bridges.json",
+      "secondaryFiles": [],
+      "tags": ["清代", "廊桥", "云南", "茶马古道"]
+    }
+  },
+  "statistics": {
+    "totalIndexedBridges": 67,
+    "filesReferenced": {
+      "bridges_master.json": 23,
+      "silk_road_bridges.json": 12,
+      "grand_canal_bridges.json": 18,
+      "frontier_bridges.json": 13,
+      "tea_horse_road_bridges.json": 15,
+      "bridge_records.json": 8,
+      "bridge_stories.json": 6,
+      "bridge_literature_archaeology.json": 2
+    },
+    "byCategory": {
+      "拱桥": 28,
+      "梁桥": 12,
+      "廊桥": 10,
+      "索桥": 5,
+      "伸臂桥": 4,
+      "组合桥": 1,
+      "浮桥": 1,
+      "闸桥": 1,
+      "遗址": 2,
+      "其他": 2
+    },
+    "byProtection": {
+      "世界遗产": 14,
+      "国保": 35,
+      "省保": 12,
+      "市县保": 4,
+      "待查": 2
+    }
+  },
+  "tagIndex": {
+    "拱桥": ["赵州桥", "卢沟桥", "拱宸桥", "宝带桥", "枫桥", "小商桥", "万宁桥", "垂虹桥", "广济桥(塘栖)", "断桥", "葛镜桥", "太平桥(安徽)", "鸣水桥", "二十四桥", "永安石桥", "宁安大石桥", "青龙桥", "长虹桥", "清名桥", "丽江大石桥", "万子桥", "玉龙桥"],
+    "梁桥": ["洛阳桥", "安平桥", "鱼沼飞梁", "渭桥遗址", "沙河古桥遗址", "江东桥", "顺济桥", "龙江桥", "八字桥", "绍兴古纤道", "嘉玉桥"],
+    "索桥": ["泸定桥", "霁虹桥", "青云桥", "安澜索桥", "盐井铁链木桥"],
+    "廊桥": ["程阳永济桥", "五亭桥", "双龙桥", "百梁桥", "地坪风雨桥", "岜团桥", "坪坦风雨桥群", "那柯里风雨桥", "涟漪桥"],
+    "伸臂桥": ["波日桥", "通京桥", "彩凤桥", "日藏伸臂桥"],
+    "组合桥": ["广济桥"],
+    "世界遗产": ["洛阳桥", "安平桥", "拱宸桥", "宝带桥", "万宁桥", "八字桥", "广济桥(塘栖)", "断桥", "青龙桥", "安澜索桥", "丽江大石桥", "万子桥", "玉龙桥", "绍兴古纤道"],
+    "国保第一批": ["赵州桥", "卢沟桥", "安平桥", "泸定桥", "鱼沼飞梁"],
+    "四大名桥": ["赵州桥", "卢沟桥", "洛阳桥", "广济桥"],
+    "茶马古道": ["泸定桥", "霁虹桥", "波日桥", "青龙桥", "地坪风雨桥", "安澜索桥", "盐井铁链木桥", "扎西达桑桥", "嘉玉桥", "日藏伸臂桥", "那柯里风雨桥", "涟漪桥"],
+    "大运河": ["拱宸桥", "宝带桥", "万宁桥", "八字桥", "广济桥(塘栖)", "长虹桥", "清名桥", "清江大闸", "绍兴古纤道"],
+    "丝绸之路": ["渭桥遗址", "沙河古桥遗址", "江东桥", "顺济桥", "龙江桥"],
+    "西湖": ["断桥", "五亭桥"],
+    "侗族": ["程阳永济桥", "地坪风雨桥", "岜团桥", "坪坦风雨桥群"],
+    "藏族": ["波日桥", "日藏伸臂桥"],
+    "纳西族": ["青龙桥", "丽江大石桥", "万子桥", "玉龙桥"],
+    "白族": ["通京桥", "彩凤桥", "青云桥"],
+    "东北": ["永安石桥", "宁安大石桥"],
+    "考古发现": ["渭桥遗址", "沙河古桥遗址", "州桥遗址"]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "中国各省古桥名录数据",
+    "version": "1.0",
+    "created": "2026-03-23",
+    "source": "全国重点文物保护单位名录、各省文物保护单位名录、国家文物局普查数据"
+  },
+  "nationalStats": {
+    "totalCoveredBridges": 2193,
+    "nationalProtection": 51,
+    "provincialProtection": 211,
+    "cityCountyProtection": 509,
+    "unclassified": 947
+  },
+  "provincialRanking": [
+    {"rank": 1, "province": "福建省", "coveredBridgeCount": 547, "nationalProtection": 30, "note": "廊桥之乡"},
+    {"rank": 2, "province": "湖南省", "coveredBridgeCount": 516, "nationalProtection": 26, "provincialProtection": 87},
+    {"rank": 3, "province": "浙江省", "coveredBridgeCount": 296, "nationalProtection": 20, "note": "古桥大省"},
+    {"rank": 4, "province": "贵州省", "coveredBridgeCount": 185},
+    {"rank": 5, "province": "四川省", "coveredBridgeCount": 87}
+  ],
+  "cities": [
+    {"name": "绍兴市", "province": "浙江省", "bridgeCount": 700, "title": "中国古桥最多的城市"},
+    {"name": "上海市青浦区", "province": "上海市", "bridgeCount": 477},
+    {"name": "邵阳市", "province": "湖南省", "note": "廊桥分布最密集"}
+  ],
+  "provinces": {
+    "浙江省": {
+      "nationalProtectionCount": 20,
+      "provincialProtectionCount": 100,
+      "bridgeGroups": [
+        {
+          "name": "绍兴古桥群",
+          "protection": "全国重点文物保护单位",
+          "bridges": ["八字桥", "光相桥", "广宁桥", "泗龙桥", "太平桥", "谢公桥", "题扇桥", "迎恩桥", "拜王桥", "接渡桥", "融光桥", "泾口大桥"],
+          "bridgeCount": 12
+        },
+        {
+          "name": "德清古桥群",
+          "protection": "全国重点文物保护单位",
+          "bridges": ["寿昌桥", "追远桥", "上邻桥", "清河桥", "僧家桥", "万安桥", "德武桥", "圣济桥"]
+        },
+        {
+          "name": "龙泉廊桥",
+          "bridges": ["永和桥", "顺德桥", "古溪桥", "济恩桥"]
+        }
+      ],
+      "bridgeTypes": {
+        "木桥": 10,
+        "石梁桥": 348,
+        "石拱桥": 241,
+        "组合桥": 4,
+        "纤道桥": 1
+      }
+    },
+    "福建省": {
+      "nationalProtectionCount": 30,
+      "provincialProtectionCount": 200,
+      "woodenArchBridges": {
+        "total": 547,
+        "worldHeritageCandidate": 22,
+        "counties": {
+          "寿宁县": ["万安桥", "鸾峰桥", "杨梅州桥"],
+          "屏南县": ["龙津桥", "万安桥", "千乘桥", "百祥桥"],
+          "周宁县": ["三仙桥"],
+          "政和县": ["赤溪桥"],
+          "泰顺县": ["北涧桥", "溪东桥", "三条桥", "文兴桥"],
+          "景宁县": ["如龙桥", "咏归桥", "袅桥"],
+          "庆元县": ["双门桥", "甫田桥", "龙济桥", "来凤桥"]
+        }
+      },
+      "famousBridges": ["洛阳桥", "安平桥", "万安桥", "北涧桥"]
+    },
+    "江苏省": {
+      "nationalProtectionCount": 15,
+      "provincialProtectionCount": 80,
+      "bridgeGroups": [
+        {
+          "name": "宜兴古桥梁",
+          "bridges": ["谢桥", "玉带桥", "画溪桥", "茭渎桥", "大浦桥", "东仓桥", "新桥", "步龙桥", "永安桥", "扶风桥", "阳溪桥"]
+        },
+        {
+          "name": "甪直镇古桥群",
+          "location": "苏州市"
+        }
+      ],
+      "famousBridges": ["宝带桥", "五亭桥", "枫桥"]
+    },
+    "湖南省": {
+      "coveredBridgeCount": 516,
+      "nationalProtectionCount": 26,
+      "provincialProtectionCount": 87,
+      "famousBridges": ["坪坦风雨桥", "惠同廊桥"]
+    },
+    "广西壮族自治区": {
+      "nationalProtectionCount": 10,
+      "provincialProtectionCount": 50,
+      "famousBridges": ["程阳永济桥", "古排风雨桥", "地灵风雨桥", "马堤黄岩桥", "清坡石拱桥"]
+    },
+    "云南省": {
+      "bridgeGroups": [
+        {
+          "name": "沘江古桥梁群",
+          "protection": "全国重点文物保护单位",
+          "totalBridges": 37,
+          "ironChainBridges": ["飞龙桥", "青云桥", "果郎桥", "通京桥", "惠民桥", "彩凤桥", "永镇桥", "安澜桥", "济川桥", "长虹桥", "包罗桥"],
+          "stoneArchBridges": ["五里桥", "大石桥", "小石桥", "永安桥", "望江楼桥", "长新桥", "小甸桥", "汤邓桥", "永定桥", "永春桥", "五花桥", "永吉桥", "顺荡桥", "上哨桥", "下哨桥", "松水桥", "豆寺桥", "大集桥"],
+          "woodenBridges": ["永安桥", "妻子桥", "关帝庙桥", "天华桥", "普渡桥", "师里桥", "三岔河桥"]
+        }
+      ]
+    },
+    "四川省": {
+      "coveredBridgeCount": 87,
+      "nationalProtectionCount": 5,
+      "provincialProtectionCount": 9,
+      "famousBridges": ["安澜索桥", "泸定桥", "龙脑桥", "协和廊桥", "红军桥"]
+    },
+    "贵州省": {
+      "coveredBridgeCount": 185,
+      "famousBridges": ["葛镜桥", "大路风雨桥"]
+    },
+    "江西省": {
+      "nationalProtectionCount": 10,
+      "provincialProtectionCount": 50,
+      "famousBridges": ["清华彩虹桥", "鸣水桥"]
+    }
+  },
+  "nationalProtectionBridges": {
+    "batch1_1961": [
+      {"name": "安济桥（赵州桥）", "era": "隋", "location": "河北赵县"},
+      {"name": "安平桥", "era": "南宋", "location": "福建晋江"},
+      {"name": "永通桥", "era": "金", "location": "河北赵县"},
+      {"name": "卢沟桥", "era": "金", "location": "北京"},
+      {"name": "泸定桥", "era": "清", "location": "四川泸定"}
+    ],
+    "batch2_1982": [
+      {"name": "广济桥", "era": "宋", "location": "广东潮州"},
+      {"name": "宝带桥", "era": "唐", "location": "江苏苏州"}
+    ],
+    "batch3_1988": [
+      {"name": "洛阳桥", "era": "北宋", "location": "福建泉州"},
+      {"name": "观音桥", "era": "宋", "location": "江西庐山"},
+      {"name": "永济桥", "era": "唐", "location": "山西永济"}
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>古桥千秋——中国古桥的多维数据可视化图谱</title>
+  <link rel="stylesheet" href="assets/styles.css?v=css-corner-20260528" />
+</head>
+<body data-page="home" data-title="古桥千秋——中国古桥的多维数据可视化图谱">
+  <div id="app">
+    <main class="page angle-page">
+      <section class="angle-hero">
+        <div>
+          <div class="eyebrow">从五维视角·传承华夏营造之美</div>
+          <h2>千年古桥・五维寻踪</h2>
+          <p>中国古代桥梁融工程技艺与人文底蕴于一体，是华夏文明的重要载体。为系统呈现古桥的<strong>历史脉络</strong>、<strong>地域分布</strong>、<strong>形制特色</strong>与<strong>保护现状</strong>，破解传统史料传播单一、直观性不足的问题，本项目以<strong>时间</strong>、<strong>空间</strong>、<strong>桥型</strong>、<strong>文化</strong>、<strong>保护</strong>为核心视角，通过数据可视化技术，数字化解读中国古代桥梁的多元价值，让千年古桥的智慧与魅力跨越时空，触达大众。</p>
+        </div>
+        <div class="angle-hero-map" aria-label="五维思维导图">
+          <div class="angle-core">中国古代桥梁</div>
+          <button class="angle-node node-time" data-angle-jump="time"><span>◷</span><b>时间</b></button>
+          <button class="angle-node node-space" data-angle-jump="space"><span>⌖</span><b>空间</b></button>
+          <button class="angle-node node-type" data-angle-jump="type"><span>⌁</span><b>桥型</b></button>
+          <button class="angle-node node-culture" data-angle-jump="culture"><span>※</span><b>文化</b></button>
+          <button class="angle-node node-preservation" data-angle-jump="preservation"><span>⌂</span><b>保护</b></button>
+        </div>
+      </section>
+
+      <section class="angle-stats" id="angle-stats"></section>
+
+      <section class="angle-workbench panel">
+        <div class="angle-workbench-head">
+          <div>
+            <h3 id="angle-title">时间角度</h3>
+            <p id="angle-subtitle">按朝代排序，滑动刷新主流桥型、代表桥梁与技术突破。</p>
+          </div>
+          <div class="angle-tabs" id="angle-tabs"></div>
+        </div>
+        <div id="angle-stage" class="angle-stage"></div>
+      </section>
+    </main>
+  </div>
+  <script src="assets/vendor/three.min.js"></script>
+  <script src="assets/vendor/OrbitControls.js"></script>
+  <script src="assets/bridge-type-3d.js"></script>
+  <script src="assets/vendor/echarts.min.js"></script>
+  <script src="assets/runtime-config.js"></script>
+  <script src="assets/app.js?v=data-audit-20260528"></script>
+</body>
+</html>
+
+

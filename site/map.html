@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>中国古桥地图</title>
+  <link rel="stylesheet" href="assets/styles.css?v=css-corner-20260528" />
+</head>
+<body data-page="map" data-title="中国古桥地图">
+  <div id="app">
+    <main class="page">
+      <section class="hero">
+        <div>
+          <div class="eyebrow">空间寻踪・古桥地图</div>
+          <h2>古桥地图・山河桥影</h2>
+          <p>本页面聚焦古桥的空间分布脉络，以省域地图为载体，呈现项目收录的 108 座古桥的地域集聚格局。你可拖拽、缩放地图查看桥梁点位，点击省份即可放大查看区域内的古桥类型与分布详情；右侧排行直观呈现古桥资源的地域差异，解锁水系与交通影响下的古桥分布密码。</p>
+          <div class="hero-actions">
+            <input id="global-search" class="input" style="max-width: 360px" placeholder="搜索桥梁跳转详情" />
+            <button id="global-search-btn" class="btn btn-primary">打开详情</button>
+          </div>
+        </div>
+        <div id="hero-metrics" class="hero-side">
+          <div class="metric-card"><div class="label">地图模式</div><div class="value">Geo + Scatter</div><div class="sub">支持底图失败时回退</div></div>
+          <div class="metric-card"><div class="label">地图数据</div><div class="value">map_data.json</div><div class="sub">坐标与弹窗数据</div></div>
+          <div class="metric-card"><div class="label">覆盖地域</div><div class="value">21 省</div><div class="sub">纵贯南北，横跨东西</div></div>
+          <div class="metric-card"><div class="label">富集 TOP 省</div><div class="value">浙江省</div><div class="sub">水网密布，古桥尤盛</div></div>
+        </div>
+      </section>
+
+      <section class="grid two">
+        <article class="panel">
+          <div class="panel-header"><div><h3>中国古桥分布图</h3><p>支持拖拽、缩放与标注提示。</p></div></div>
+          <div id="china-map-chart" class="chart tall"></div>
+          <div class="map-source-note">地图数据来源：<a href="https://lbs.amap.com/" target="_blank" rel="noopener">高德地图开放平台</a>；审图号：GS(2024)1158</div>
+        </article>
+        <article class="panel">
+          <div class="panel-header"><div><h3>重点省份排行</h3><p>古桥数量较高的地区往往兼具水系与交通优势。</p></div></div>
+          <div id="province-bar-chart" class="chart"></div>
+        </article>
+      </section>
+
+    </main>
+  </div>
+  <script src="assets/vendor/echarts.min.js"></script>
+  <script src="assets/runtime-config.js"></script>
+  <script src="assets/app.js?v=data-audit-20260528"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,224 @@
+{
+  "metadata": {
+    "title": "中国古桥文献记载与考古发现数据",
+    "version": "1.0",
+    "created": "2026-03-23",
+    "totalRecords": {"literature": 9, "archaeology": 8, "images": 5}
+  },
+  "literatureRecords": [
+    {
+      "id": "lit_001",
+      "literatureName": "水经注",
+      "author": "郦道元",
+      "period": "北魏（约6世纪）",
+      "bridgeRecords": [
+        {"bridgeName": "旅人桥", "location": "河南洛阳东北七里涧", "originalText": "涧有石梁，即旅人桥。桥去洛阳宫六七里，悉用大石，下圆以通水，题太康三年十一月初就功。", "buildYear": "西晋太康三年(282年)", "historicalSignificance": "中国有记载最早的石拱桥"}
+      ]
+    },
+    {
+      "id": "lit_002",
+      "literatureName": "史记",
+      "author": "司马迁",
+      "period": "西汉（约前91年）",
+      "bridgeRecords": [
+        {"bridgeName": "渭水桥", "location": "秦都咸阳渭水之上", "originalText": "秦始皇重建渭桥'作离宫于渭水南北，以象天宫'", "bridgeType": "多跨梁桥", "historicalSignificance": "丝绸之路第一桥"},
+        {"bridgeName": "灞桥", "location": "长安城东灞水之上", "originalText": "霸水古曰：滋水秦穆公更名，以显霸功水上有桥，谓之霸桥", "bridgeType": "梁桥"}
+      ]
+    },
+    {
+      "id": "lit_003",
+      "literatureName": "营造法式",
+      "author": "李诫",
+      "period": "北宋（1100年编成，1103年刊行）",
+      "contentType": "桥梁建造规范",
+      "keySpecifications": ["规定了各种木质构件的详细图纸和制作过程", "包含整体构件工程图和分件图", "提出模数制设计方法，以'材'为依据", "'材'分八个等级"],
+      "historicalSignificance": "中国古代最完整的建筑技术法规"
+    },
+    {
+      "id": "lit_004",
+      "literatureName": "东京梦华录",
+      "author": "孟元老",
+      "period": "南宋（1147年）",
+      "bridgeRecords": [
+        {"bridgeName": "汴河虹桥", "location": "北宋东京（开封）汴河之上", "originalText": "自东水门外七里，至西水门外河上有桥十三：从东水门外七里，曰虹桥", "bridgeType": "木拱桥（贯木拱桥）", "historicalSignificance": "北宋虹桥技术代表，《清明上河图》原型"}
+      ]
+    },
+    {
+      "id": "lit_005",
+      "literatureName": "赵州桥铭",
+      "author": "张嘉贞",
+      "period": "唐玄宗开元年间",
+      "bridgeRecords": [
+        {"bridgeName": "赵州桥（安济桥）", "location": "河北赵县洨河之上", "originalText": "赵州洨河石桥，隋匠李春之迹也。制造奇特，人不知其所以为。试观乎用石之妙，楞平砧斫，方版促郁，缄穹隆崇，豁然无楹……"}
+      ],
+      "historicalSignificance": "最早的赵州桥文献记载，唐代中书令撰文"
+    },
+    {
+      "id": "lit_006",
+      "literatureName": "元和郡县志",
+      "author": "李吉甫",
+      "period": "唐代元和年间（806-820年）",
+      "recordNature": "地理总志，记载各地山川关隘、桥梁"
+    },
+    {
+      "id": "lit_007",
+      "literatureName": "太平寰宇记",
+      "author": "乐史",
+      "period": "北宋太平兴国年间（976-984年）",
+      "recordNature": "全国性区域志，记录宋初十三道地理"
+    },
+    {
+      "id": "lit_008",
+      "literatureName": "读史方舆纪要",
+      "author": "顾祖禹",
+      "period": "清初（顺治、康熙年间）",
+      "bridgeRecords": [
+        {"bridgeName": "各地桥梁记载", "recordNature": "每县记辖境内主要之山川关隘、桥梁", "exampleText": "江南桥梁，虎渡第一。昔欲为桥，有虎负子渡江，息于中流"}
+      ]
+    },
+    {
+      "id": "lit_009",
+      "literatureName": "三辅黄图",
+      "author": "佚名",
+      "period": "汉代",
+      "bridgeRecords": [
+        {"bridgeName": "渭桥", "location": "长安城北渭水之上", "bridgeType": "多跨梁柱式桥", "historicalSignificance": "记载秦汉长安城渭桥，丝绸之路重要通道"}
+      ]
+    }
+  ],
+  "archaeologyRecords": [
+    {
+      "id": "arch_001",
+      "discoveryName": "西安渭桥遗址",
+      "discoveryYear": "2012年",
+      "location": "陕西省西安市北郊汉长安城遗址北侧",
+      "bridgeCount": "3组7座渭桥",
+      "bridges": [
+        {"name": "厨城门一号桥", "period": "汉代", "structure": "木构桥梁"},
+        {"name": "厨城门三号桥", "period": "唐代", "structure": "木构桥梁"},
+        {"name": "厨城门四号桥", "period": "战国", "structure": "木构桥梁"},
+        {"name": "洛城门桥", "period": "汉代", "structure": "木构桥梁"}
+      ],
+      "artifacts": "大量半两、五铢、大泉五十铜钱，少量开元通宝、乾元重宝铜钱",
+      "specialDiscovery": "发现我国最早木板船，榫卯结构拼接技术，东亚地区首次发现",
+      "academicValue": "2013年度全国十大考古新发现",
+      "protectionLevel": "全国重点文物保护单位"
+    },
+    {
+      "id": "arch_002",
+      "discoveryName": "开封州桥及汴河遗址",
+      "discoveryYear": "2018-2022年",
+      "location": "河南省开封市",
+      "excavationArea": "4400平方米",
+      "heritageCount": "不同时期各类遗存117处",
+      "bridgeDimensions": "桥面南北跨度26.4米，东西宽约30米",
+      "features": ["首次完整揭露唐宋至清代开封城内汴河形态", "还原大运河及东京城繁荣历史场景", "实证开封'城摞城'奇观"],
+      "academicValue": "2022年度全国十大考古新发现"
+    },
+    {
+      "id": "arch_003",
+      "discoveryName": "西安朱雀大街五桥并列遗址",
+      "discoveryYear": "2023年",
+      "location": "陕西省西安市小雁塔历史文化片区",
+      "bridgeCount": "5座桥梁基址",
+      "artifacts": "出土各类文物350余件",
+      "academicValue": "目前经考古发掘出土的中国古代最早的五桥并列遗址"
+    },
+    {
+      "id": "arch_004",
+      "discoveryName": "成都青羊蔡桥遗址",
+      "discoveryYear": "2025年",
+      "location": "四川省成都市青羊区",
+      "bridgeLength": "现存总长约46米",
+      "period": "始建于战国晚期，沿用至汉晋时期",
+      "academicValue": "2025年度川渝地区重要考古发现，见证古蜀文明的发达"
+    },
+    {
+      "id": "arch_005",
+      "discoveryName": "荆州郢城遗址秦汉木构桥梁",
+      "location": "湖北省荆州市郢城遗址",
+      "bridgeCount": "三处木构桥梁",
+      "period": "秦汉时期",
+      "academicValue": "世界历史上规模较大的木质结构桥梁遗存"
+    },
+    {
+      "id": "arch_006",
+      "discoveryName": "北京正阳桥遗址",
+      "discoveryYear": "2024年",
+      "location": "北京市正阳门前",
+      "bridgeType": "三券石拱桥",
+      "features": "桥面用栏板分为三路，中间是御道",
+      "academicValue": "丰富北京中轴线考古图卷"
+    },
+    {
+      "id": "arch_007",
+      "discoveryName": "秦始皇陵铜车马桥梁模型",
+      "discoveryYear": "1980年",
+      "location": "陕西省临潼秦始皇陵封土西侧20米",
+      "artifactType": "大型彩绘青铜车马模型",
+      "artifactCount": "两乘",
+      "components": "共三千多个零件",
+      "craftsmanship": ["铸造、焊接、镶嵌", "销接、活铰连接", "子母扣连接、转轴连接"],
+      "academicValue": "现存最完整、外形最大的铜车马，被誉为'青铜之冠'"
+    },
+    {
+      "id": "arch_008",
+      "discoveryName": "福建长乐太平桥碑刻",
+      "location": "福建省福州市长乐区",
+      "steleCount": "4块石碑",
+      "content": ["《太平桥记》碑记载明隆庆三年洪水", "记录太平桥历史上两次洪水肆虐之事", "记载桥梁修建和修缮历史"],
+      "bridgeAge": "约1500年历史",
+      "academicValue": "珍贵的桥梁历史文献"
+    }
+  ],
+  "imageRecords": [
+    {
+      "id": "img_001",
+      "imageName": "清明上河图·虹桥",
+      "artist": "张择端",
+      "period": "北宋（12世纪初）",
+      "currentLocation": "北京故宫博物院",
+      "imageType": "绢本设色风俗画",
+      "dimensions": "宽24.8厘米，长528厘米",
+      "bridgeDepiction": {"bridgeName": "汴水虹桥", "bridgeType": "贯木拱桥", "features": ["木拱结构飞桥，状如飞虹", "全画'画眼'，浓缩汴京繁华", "横跨20米汴河", "无钉无卯，靠木梁摩擦力支撑"]},
+      "historicalValue": "国宝级文物，中国十大传世名画之一"
+    },
+    {
+      "id": "img_002",
+      "imageName": "宋画中的桥梁系列",
+      "artist": "宋代画家群体",
+      "period": "宋代（960-1279年）",
+      "bridgeTypes": ["木拱桥（虹桥类）", "石拱桥", "梁桥", "廊桥"],
+      "historicalValue": "研究宋代桥梁形制、建造技术的重要图像资料"
+    },
+    {
+      "id": "img_003",
+      "imageName": "明清绘画中的桥梁",
+      "artist": "明清画家群体",
+      "period": "明代至清代（1368-1911年）",
+      "bridgeTypes": ["石拱桥", "木廊桥", "索桥", "浮桥"],
+      "historicalValue": "研究明清时期各地桥梁多样性的图像资料"
+    },
+    {
+      "id": "img_004",
+      "imageName": "19世纪中国古桥老照片",
+      "photographer": "西方摄影师（如托马斯·查尔德等）",
+      "period": "19世纪中后期",
+      "bridgesPhotographed": ["北京地区古桥", "南方水乡桥梁", "各地名桥"],
+      "historicalValue": "中国最早的桥梁影像资料，记录晚清时期古桥原貌"
+    },
+    {
+      "id": "img_005",
+      "imageName": "20世纪初古桥影像",
+      "photographer": "中外摄影师",
+      "period": "1900-1949年",
+      "features": ["记录民国时期古桥状况", "见证桥梁修缮与变迁", "部分桥梁已毁损或改建"],
+      "historicalValue": "研究近代桥梁保护变迁的重要影像档案"
+    }
+  ],
+  "dataSources": {
+    "literature": ["《水经注》郦道元", "《史记》司马迁", "《营造法式》李诫", "《东京梦华录》孟元老", "《读史方舆纪要》顾祖禹"],
+    "archaeology": ["2013年全国十大考古新发现", "2022年全国十大考古新发现", "陕西省考古研究院", "河南省文物考古研究院"],
+    "images": ["故宫博物院官网", "中国社会科学院考古研究所"]
+  }
+}

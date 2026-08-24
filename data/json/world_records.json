@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "title": "中国古桥世界之最数据",
+    "version": "1.0",
+    "created": "2026-03-23",
+    "description": "中国古代桥梁的世界领先成就",
+    "source": "茅以升《中国古桥技术史》"
+  },
+  "worldRecords": [
+    {
+      "id": "record_001",
+      "title": "世界最早单孔敞肩石拱桥",
+      "bridge": "赵州桥",
+      "year": 591,
+      "description": "敞肩圆弧拱技术领先西方1200年",
+      "comparison": {
+        "china": "隋代(591-599年)",
+        "west": "欧洲19世纪才出现同类桥梁"
+      },
+      "leadYears": 1200,
+      "significance": "展示中国古代桥梁技术的先进性"
+    },
+    {
+      "id": "record_002",
+      "title": "世界最长古代石桥",
+      "bridge": "安平桥",
+      "year": 1152,
+      "description": "原长811丈(约2700米)，现存2070米",
+      "comparison": {
+        "china": "南宋(1138-1152年)",
+        "record": "天下无桥长此桥"
+      },
+      "leadYears": "保持至今",
+      "significance": "体现宋代跨海石桥建造能力"
+    },
+    {
+      "id": "record_003",
+      "title": "世界最早启闭式桥梁",
+      "bridge": "广济桥",
+      "year": 1171,
+      "description": "梁拱浮三桥合一，中间浮桥可开可合",
+      "comparison": {
+        "china": "南宋(1171年开始)",
+        "west": "欧洲类似桥梁出现较晚"
+      },
+      "leadYears": 700,
+      "significance": "独特的设计智慧"
+    },
+    {
+      "id": "record_004",
+      "title": "世界桥梁筏形基础的开端",
+      "bridge": "洛阳桥",
+      "year": 1053,
+      "description": "首创筏形基础，解决软土地基建桥难题",
+      "comparison": {
+        "china": "北宋(1053-1059年)",
+        "west": "欧洲类似技术出现较晚"
+      },
+      "leadYears": 800,
+      "significance": "基础工程的重大创新"
+    },
+    {
+      "id": "record_005",
+      "title": "世界首创生物固基技术",
+      "bridge": "洛阳桥",
+      "year": 1053,
+      "description": "种蛎固基法，利用牡蛎繁殖加固桥基",
+      "comparison": {
+        "china": "北宋(1053-1059年)",
+        "modern": "现代生态工程先驱"
+      },
+      "leadYears": 800,
+      "significance": "生态工程学的早期实践"
+    },
+    {
+      "id": "record_006",
+      "title": "古代铁索桥技术巅峰",
+      "bridge": "泸定桥",
+      "year": 1705,
+      "description": "13根铁索，1万多个铁环，重约40吨",
+      "comparison": {
+        "china": "清代(1705-1706年)",
+        "feature": "铁索桥规模与工艺的巅峰"
+      },
+      "leadYears": 0,
+      "significance": "金属材料应用的高峰"
+    },
+    {
+      "id": "record_007",
+      "title": "石狮数量最多的古桥",
+      "bridge": "卢沟桥",
+      "year": 1192,
+      "description": "501只石狮，跨越六个时代雕刻",
+      "comparison": {
+        "china": "金代(1189-1192年)",
+        "feature": "桥梁雕刻艺术的集大成"
+      },
+      "leadYears": 0,
+      "significance": "桥梁艺术与技术的完美结合"
+    },
+    {
+      "id": "record_008",
+      "title": "单孔跨度最大木拱廊桥",
+      "bridge": "寿宁鸾峰桥",
+      "year": "清代",
+      "description": "单孔跨度37.6米",
+      "comparison": {
+        "china": "清代",
+        "feature": "木拱技术的极致"
+      },
+      "leadYears": 0,
+      "significance": "木结构桥梁的技术极限"
+    }
+  ],
+  "categories": [
+    {
+      "name": "技术创新",
+      "records": ["世界最早单孔敞肩石拱桥", "世界最早启闭式桥梁", "世界桥梁筏形基础的开端", "世界首创生物固基技术"]
+    },
+    {
+      "name": "规模之最",
+      "records": ["世界最长古代石桥", "石狮数量最多的古桥", "单孔跨度最大木拱廊桥"]
+    },
+    {
+      "name": "工艺巅峰",
+      "records": ["古代铁索桥技术巅峰"]
+    }
+  ],
+  "visualizationData": {
+    "barChart": {
+      "title": "中国古桥领先世界的年数",
+      "data": [
+        {"name": "敞肩圆弧拱", "value": 1200, "bridge": "赵州桥"},
+        {"name": "筏形基础", "value": 800, "bridge": "洛阳桥"},
+        {"name": "种蛎固基法", "value": 800, "bridge": "洛阳桥"},
+        {"name": "启闭式桥梁", "value": 700, "bridge": "广济桥"}
+      ]
+    },
+    "infoCardData": [
+      {
+        "title": "领先1200年",
+        "subtitle": "敞肩圆弧拱技术",
+        "bridge": "赵州桥",
+        "description": "隋代(591年)，西方19世纪才出现同类桥梁"
+      },
+      {
+        "title": "领先800年",
+        "subtitle": "筏形基础与种蛎固基",
+        "bridge": "洛阳桥",
+        "description": "北宋(1053年)，世界桥梁基础工程的开端"
+      },
+      {
+        "title": "领先700年",
+        "subtitle": "启闭式桥梁",
+        "bridge": "广济桥",
+        "description": "南宋(1171年)，世界最早的启闭式桥梁"
+      }
+    ]
+  }
+}

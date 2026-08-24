@@ -1,0 +1,379 @@
+{
+  "meta": {
+    "title": "中国著名古桥数据",
+    "version": "1.0",
+    "created": "2026-03-23",
+    "description": "包含四大名桥、十大古桥及其他重要古桥的详细数据"
+  },
+  "fourGreatBridges": [
+    {
+      "id": "zhaozhou",
+      "name": "赵州桥",
+      "alias": ["安济桥"],
+      "location": {
+        "province": "河北省",
+        "city": "石家庄市",
+        "county": "赵县",
+        "river": "洨河"
+      },
+      "buildYear": "595-605",
+      "era": "隋代",
+      "builder": "李春",
+      "type": "单孔敞肩石拱桥",
+      "protection": {
+        "level": "全国重点文物保护单位",
+        "batch": "第一批",
+        "year": 1961
+      },
+      "dimensions": {
+        "totalLength": 64.4,
+        "bridgeLength": 50.82,
+        "width_top": 9.0,
+        "width_bottom": 9.6,
+        "height": 7.23,
+        "span": 37.02,
+        "unit": "米"
+      },
+      "structure": {
+        "archCount": 28,
+        "smallArchCount": 4,
+        "archType": "圆弧拱",
+        "riseSpanRatio": "1:5",
+        "masonryMethod": "纵向并列砌筑"
+      },
+      "innovation": [
+        "世界最早敞肩石拱桥",
+        "敞肩拱比欧洲早600-800年",
+        "圆弧拱节省石料40%以上",
+        "并列砌筑法便于施工和修复"
+      ],
+      "culturalValue": {
+        "poems": [
+          {
+            "title": "题安济桥",
+            "author": "杜德源",
+            "dynasty": "宋",
+            "content": "驾石飞梁尽一虹，苍龙惊蛰背磨空"
+          },
+          {
+            "title": "石桥铭序",
+            "author": "张嘉贞",
+            "dynasty": "唐",
+            "content": "赵郡洨河石桥，隋匠李春之迹也。制造奇特，人不知其所以为"
+          }
+        ],
+        "legends": [
+          {
+            "name": "鲁班造桥",
+            "content": "传说鲁班一夜之间造成此桥"
+          },
+          {
+            "name": "张果老试桥",
+            "content": "张果老骑驴过桥，驴背驮着日月星辰，在桥上留下蹄印"
+          },
+          {
+            "name": "柴王爷推车",
+            "content": "柴王爷推车过桥，车上装着五岳名山，在桥上留下车辙"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lugou",
+      "name": "卢沟桥",
+      "alias": ["芦沟桥"],
+      "location": {
+        "province": "北京市",
+        "district": "丰台区",
+        "river": "永定河"
+      },
+      "buildYear": "1189-1192",
+      "era": "金代",
+      "builder": "金章宗",
+      "type": "十一孔联拱石桥",
+      "protection": {
+        "level": "全国重点文物保护单位",
+        "batch": "第一批",
+        "year": 1961
+      },
+      "dimensions": {
+        "totalLength": 266.5,
+        "bridgeLength": 212.2,
+        "width": 9.3,
+        "archCount": 11,
+        "unit": "米"
+      },
+      "structure": {
+        "pillarCount": 10,
+        "pillarType": "船形桥墩",
+        "lionCount": 501,
+        "pillarColumnCount": 281,
+        "railingCount": 279
+      },
+      "innovation": [
+        "船形桥墩减少水流冲击",
+        "分水尖设计配三角铁柱",
+        "501只石狮姿态各异"
+      ],
+      "culturalValue": {
+        "scenicSpot": "燕京八景之一——卢沟晓月",
+        "historicalEvent": "1937年七七事变爆发地",
+        "marcoPolo": "马可波罗誉为'世界上最好的、独一无二的桥'",
+        "poems": [
+          {
+            "title": "卢沟晓月",
+            "author": "乾隆",
+            "dynasty": "清",
+            "content": "茅店寒鸡咿喔鸣，曙光斜汉欲参横。半钩留照三秋淡，一蝀分波夹镜明。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "luoyang",
+      "name": "洛阳桥",
+      "alias": ["万安桥"],
+      "location": {
+        "province": "福建省",
+        "city": "泉州市",
+        "river": "洛阳江"
+      },
+      "buildYear": "1053-1059",
+      "era": "北宋",
+      "builder": "蔡襄",
+      "type": "跨海梁式石桥",
+      "protection": {
+        "level": "全国重点文物保护单位",
+        "batch": "第三批",
+        "year": 1988,
+        "worldHeritage": {
+          "name": "泉州：宋元中国的世界海洋商贸中心",
+          "year": 2021
+        }
+      },
+      "dimensions": {
+        "originalLength": 1200,
+        "currentLength": 731,
+        "width": 4.5,
+        "pillarCount": 46,
+        "unit": "米"
+      },
+      "innovation": [
+        "筏形基础——世界桥梁筏形基础开端",
+        "种蛎固基法——世界首创生物工程",
+        "浮运架梁——利用潮汐架设石板"
+      ],
+      "culturalValue": {
+        "title": "海内第一桥",
+        "inscriptions": [
+          {
+            "title": "万安桥记",
+            "author": "蔡襄",
+            "content": "泉州万安渡石桥，始造于皇祐五年庚寅..."
+          }
+        ],
+        "poems": [
+          {
+            "title": "万安桥诗",
+            "author": "王十朋",
+            "dynasty": "南宋",
+            "content": "北望中原万里遥，南来喜见洛阳桥。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "guangji",
+      "name": "广济桥",
+      "alias": ["湘子桥"],
+      "location": {
+        "province": "广东省",
+        "city": "潮州市",
+        "river": "韩江"
+      },
+      "buildYear": "1171-",
+      "era": "南宋",
+      "builder": "曾汪（始建）",
+      "type": "梁拱浮组合桥",
+      "protection": {
+        "level": "全国重点文物保护单位",
+        "batch": "第三批",
+        "year": 1988
+      },
+      "dimensions": {
+        "totalLength": 518,
+        "eastSection": 283.35,
+        "westSection": 137.3,
+        "floatingSection": 97.3,
+        "pillarCount": 24,
+        "unit": "米"
+      },
+      "innovation": [
+        "世界最早启闭式桥梁",
+        "梁桥+拱桥+浮桥三合一",
+        "十八梭船可开可合"
+      ],
+      "culturalValue": {
+        "title": "中国四大古桥之一",
+        "saying": "十八梭船廿四洲",
+        "scenicSpot": "潮州八景之一"
+      }
+    }
+  ],
+  "topTenBridges": [
+    {"id": "zhaozhou", "name": "赵州桥", "rank": 1},
+    {"id": "lugou", "name": "卢沟桥", "rank": 2},
+    {"id": "luoyang", "name": "洛阳桥", "rank": 3},
+    {"id": "guangji", "name": "广济桥", "rank": 4},
+    {
+      "id": "anping",
+      "name": "安平桥",
+      "alias": ["五里桥"],
+      "location": {"province": "福建省", "city": "晋江市"},
+      "buildYear": "1138-1152",
+      "era": "南宋",
+      "type": "跨海梁式石桥",
+      "dimensions": {"length": 2255, "width": "2.9-4", "unit": "米"},
+      "protection": {
+        "level": "全国重点文物保护单位",
+        "batch": "第一批",
+        "worldHeritage": "泉州世遗"
+      },
+      "feature": "中国现存最长古石桥",
+      "rank": 5
+    },
+    {
+      "id": "baodai",
+      "name": "宝带桥",
+      "location": {"province": "江苏省", "city": "苏州市"},
+      "buildYear": "816-819",
+      "era": "唐代",
+      "type": "薄墩联拱石桥",
+      "dimensions": {"length": 316.8, "archCount": 53, "unit": "米"},
+      "protection": {
+        "level": "全国重点文物保护单位",
+        "worldHeritage": "大运河世遗"
+      },
+      "feature": "中国现存最长多孔石桥",
+      "rank": 6
+    },
+    {
+      "id": "chengyang",
+      "name": "程阳永济桥",
+      "alias": ["程阳风雨桥"],
+      "location": {"province": "广西", "city": "三江县"},
+      "buildYear": "1912-1924",
+      "era": "民国",
+      "type": "木构风雨廊桥",
+      "dimensions": {"length": 77.76, "width": 3.75, "height": 11.52, "unit": "米"},
+      "protection": {"level": "全国重点文物保护单位"},
+      "feature": "不用一根铁钉的榫卯结构",
+      "rank": 7
+    },
+    {
+      "id": "wuting",
+      "name": "五亭桥",
+      "location": {"province": "江苏省", "city": "扬州市"},
+      "buildYear": 1757,
+      "era": "清代",
+      "type": "石拱桥",
+      "feature": "瘦西湖标志性建筑",
+      "rank": 8
+    },
+    {
+      "id": "luding",
+      "name": "泸定桥",
+      "location": {"province": "四川省", "city": "泸定县"},
+      "buildYear": "1705-1706",
+      "era": "清代",
+      "type": "铁索悬索桥",
+      "dimensions": {"length": 103.67, "span": 100, "unit": "米"},
+      "structure": {"chainCount": 13, "ringCount": 12164, "weight": 40},
+      "protection": {"level": "全国重点文物保护单位", "batch": "第一批"},
+      "feature": "红军飞夺泸定桥纪念地",
+      "rank": 9
+    },
+    {
+      "id": "shizi",
+      "name": "十字桥",
+      "alias": ["鱼沼飞梁"],
+      "location": {"province": "山西省", "city": "太原市"},
+      "era": "宋代",
+      "type": "十字形石桥",
+      "feature": "晋祠古建筑群",
+      "rank": 10
+    }
+  ],
+  "otherFamousBridges": [
+    {
+      "id": "gongchen",
+      "name": "拱宸桥",
+      "location": {"province": "浙江省", "city": "杭州市"},
+      "buildYear": 1631,
+      "era": "明代",
+      "type": "三孔薄墩联拱石桥",
+      "dimensions": {"length": 92, "height": 16, "unit": "米"},
+      "protection": {"worldHeritage": "大运河世遗"},
+      "feature": "京杭大运河南端地标"
+    },
+    {
+      "id": "shiqikong",
+      "name": "十七孔桥",
+      "location": {"province": "北京市", "place": "颐和园"},
+      "buildYear": 1750,
+      "era": "清代",
+      "type": "联拱石桥",
+      "dimensions": {"length": 150, "archCount": 17, "lionCount": 540, "unit": "米"},
+      "feature": "冬至金光穿洞奇观"
+    },
+    {
+      "id": "yudai",
+      "name": "玉带桥",
+      "location": {"province": "北京市", "place": "颐和园西堤"},
+      "buildYear": "1750-1764",
+      "era": "清代",
+      "type": "单孔高拱石桥",
+      "dimensions": {"length": 36, "span": 11.38, "unit": "米"},
+      "feature": "蛋尖形桥拱，汉白玉材质"
+    },
+    {
+      "id": "fengqiao",
+      "name": "枫桥",
+      "location": {"province": "江苏省", "city": "苏州市"},
+      "buildYear": 1867,
+      "era": "清代（重建）",
+      "type": "单孔半圆石拱桥",
+      "protection": {"level": "省级文物保护单位"},
+      "culturalValue": {
+        "poem": {
+          "title": "枫桥夜泊",
+          "author": "张继",
+          "dynasty": "唐",
+          "content": "月落乌啼霜满天，江枫渔火对愁眠。姑苏城外寒山寺，夜半钟声到客船。"
+        }
+      }
+    },
+    {
+      "id": "jihong",
+      "name": "霁虹桥",
+      "location": {"province": "云南省", "river": "澜沧江"},
+      "buildYear": "1465-1487",
+      "era": "明代",
+      "type": "铁索吊桥",
+      "dimensions": {"length": 113.4, "span": 57.3, "unit": "米"},
+      "feature": "世界现存最古老铁索桥",
+      "note": "1986年原桥被毁，现新建"
+    },
+    {
+      "id": "longnao",
+      "name": "龙脑桥",
+      "location": {"province": "四川省", "city": "泸县"},
+      "buildYear": "1368-1398",
+      "era": "明代",
+      "type": "龙雕石梁板桥",
+      "dimensions": {"length": 54, "width": 1.9, "height": 5.3, "unit": "米"},
+      "protection": {"level": "全国重点文物保护单位", "batch": "第四批"},
+      "feature": "中国最大龙雕石板梁桥"
+    }
+  ]
+}

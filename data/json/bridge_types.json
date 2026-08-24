@@ -1,0 +1,179 @@
+{
+  "metadata": {
+    "title": "中国古桥类型分类数据",
+    "version": "1.0",
+    "created": "2026-03-23",
+    "description": "按结构类型、材料、功能分类的古桥数据",
+    "source": "唐寰澄《中国科学技术史·桥梁卷》"
+  },
+  "structureTypes": [
+    {
+      "id": "type_001",
+      "name": "拱桥",
+      "description": "利用拱形结构将荷载传递至桥台的桥梁类型",
+      "history": "中国古石拱桥最早出现于汉代（公元前2世纪），至隋代达到技术巅峰",
+      "technicalFeatures": [
+        "敞肩拱：主拱两侧设小拱，减轻自重、增强泄洪",
+        "联拱：多孔连续拱，适用于宽阔河面",
+        "坦弧拱：拱弧平坦，便于通行",
+        "半圆拱：拱弧呈半圆形，结构稳定"
+      ],
+      "representatives": [
+        {"name": "赵州桥", "feature": "世界最早敞肩石拱桥"},
+        {"name": "卢沟桥", "feature": "十一孔联拱"},
+        {"name": "拱宸桥", "feature": "三孔薄墩联拱"}
+      ],
+      "statistics": {
+        "worldHeritage": 2,
+        "nationalProtection": "数量最多"
+      }
+    },
+    {
+      "id": "type_002",
+      "name": "梁桥",
+      "description": "水平桥面由桥墩支撑，最古老的桥梁形式",
+      "history": "桥梁的最初形态，历史悠久，宋代跨海梁桥技术取得重大突破",
+      "technicalFeatures": [
+        "筏形基础：适用于软土地基",
+        "石梁桥：耐久性强",
+        "跨海梁桥：技术难度高",
+        "种蛎固基：生物固基技术"
+      ],
+      "representatives": [
+        {"name": "洛阳桥", "feature": "首创筏形基础、种蛎固基"},
+        {"name": "安平桥", "feature": "世界最长古石桥"}
+      ],
+      "statistics": {
+        "worldHeritage": 2,
+        "nationalProtection": "数量较多"
+      }
+    },
+    {
+      "id": "type_003",
+      "name": "索桥",
+      "description": "以缆索承重的悬索桥",
+      "history": "古代用于跨越深谷大江，有竹索、藤索、铁索等多种形式",
+      "technicalFeatures": [
+        "铁索桥：承重能力强",
+        "竹索桥：轻便易建",
+        "藤索桥：因地制宜"
+      ],
+      "representatives": [
+        {"name": "泸定桥", "feature": "古代铁索桥技术巅峰"},
+        {"name": "霁虹桥", "feature": "世界最早铁索桥之一"}
+      ],
+      "statistics": {
+        "worldHeritage": 0,
+        "nationalProtection": "数量较少"
+      }
+    },
+    {
+      "id": "type_004",
+      "name": "浮桥",
+      "description": "以船只浮体为桥墩的可移动桥梁",
+      "history": "《诗经》记载'造舟为梁'，是最早的桥梁形式之一",
+      "technicalFeatures": [
+        "可开可合：方便船只通行",
+        "军事用途：临时架设",
+        "适应性：可随水位变化"
+      ],
+      "representatives": [
+        {"name": "广济桥浮桥段", "feature": "启闭式桥梁"}
+      ],
+      "statistics": {
+        "worldHeritage": 0,
+        "nationalProtection": "数量较少"
+      }
+    },
+    {
+      "id": "type_005",
+      "name": "廊桥",
+      "description": "桥上建有廊屋的桥梁，兼具交通与遮风避雨功能",
+      "history": "闽浙地区木拱廊桥技术独特，传承至今",
+      "technicalFeatures": [
+        "编木拱：木材编织成拱",
+        "榫卯结构：不用铁钉",
+        "木构廊屋：遮风避雨"
+      ],
+      "representatives": [
+        {"name": "程阳永济桥", "feature": "侗族建筑艺术代表"},
+        {"name": "屏南万安桥", "feature": "中国最长木拱廊桥"},
+        {"name": "寿宁鸾峰桥", "feature": "单孔跨度最大"}
+      ],
+      "statistics": {
+        "worldHeritage": 0,
+        "nationalProtection": "闽浙地区集中",
+        "intangibleHeritage": true
+      }
+    }
+  ],
+  "materialTypes": [
+    {
+      "name": "石桥",
+      "description": "耐久性强，代表中国古代桥梁最高成就",
+      "advantages": ["耐久", "承重强", "维护成本低"],
+      "representatives": ["赵州桥", "卢沟桥", "洛阳桥", "安平桥"]
+    },
+    {
+      "name": "木桥",
+      "description": "施工便捷，多为廊桥形式",
+      "advantages": ["施工快", "取材易", "可拆卸"],
+      "representatives": ["程阳永济桥", "屏南万安桥"]
+    },
+    {
+      "name": "铁索桥",
+      "description": "适用于深谷大江",
+      "advantages": ["跨度大", "柔性结构"],
+      "representatives": ["泸定桥"]
+    }
+  ],
+  "specialTypes": [
+    {
+      "name": "启闭式桥梁",
+      "description": "可开可合，方便船只通行",
+      "representative": "广济桥"
+    },
+    {
+      "name": "敞肩拱桥",
+      "description": "主拱两侧设小拱，减轻自重、增强泄洪",
+      "representative": "赵州桥"
+    },
+    {
+      "name": "跨海石桥",
+      "description": "跨越入海口或海湾的石桥",
+      "representatives": ["洛阳桥", "安平桥"]
+    }
+  ],
+  "visualizationData": {
+    "pieChart": {
+      "title": "中国古桥类型分布",
+      "data": [
+        {"name": "拱桥", "value": 35},
+        {"name": "梁桥", "value": 30},
+        {"name": "索桥", "value": 10},
+        {"name": "浮桥", "value": 8},
+        {"name": "廊桥", "value": 17}
+      ]
+    },
+    "sunburstData": [
+      {"name": "拱桥", "value": 35, "children": [
+        {"name": "敞肩拱", "value": 15},
+        {"name": "联拱", "value": 12},
+        {"name": "单孔拱", "value": 8}
+      ]},
+      {"name": "梁桥", "value": 30, "children": [
+        {"name": "石梁桥", "value": 20},
+        {"name": "跨海梁桥", "value": 10}
+      ]},
+      {"name": "廊桥", "value": 17, "children": [
+        {"name": "木拱廊桥", "value": 12},
+        {"name": "石廊桥", "value": 5}
+      ]},
+      {"name": "索桥", "value": 10, "children": [
+        {"name": "铁索桥", "value": 6},
+        {"name": "竹索桥", "value": 4}
+      ]},
+      {"name": "浮桥", "value": 8}
+    ]
+  }
+}

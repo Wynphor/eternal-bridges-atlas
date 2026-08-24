@@ -1,0 +1,236 @@
+{
+  "metadata": {
+    "title": "中国古桥技术演进时间线",
+    "version": "1.0",
+    "created": "2026-03-23",
+    "description": "从先秦到明清的桥梁技术发展脉络",
+    "source": "茅以升《中国古桥技术史》、唐寰澄《中国科学技术史·桥梁卷》"
+  },
+  "timeline": [
+    {
+      "period": "先秦时期",
+      "era": "前2070-前221年",
+      "events": [
+        {
+          "year": "夏商周",
+          "title": "木构桥梁萌芽",
+          "description": "《诗经》记载'造舟为梁'，浮桥出现",
+          "significance": "中国桥梁技术起源"
+        },
+        {
+          "year": "春秋战国",
+          "title": "梁桥、浮桥普及",
+          "description": "铁器应用促进桥梁发展，桥梁类型增多",
+          "significance": "桥梁建设技术进步"
+        }
+      ]
+    },
+    {
+      "period": "秦汉时期",
+      "era": "前221-220年",
+      "events": [
+        {
+          "year": "秦代",
+          "title": "驰道系统桥梁",
+          "description": "全国道路网配套桥梁建设",
+          "significance": "交通网络完善"
+        },
+        {
+          "year": "汉代",
+          "title": "石拱桥出现",
+          "description": "中国古石拱桥最早出现于汉代（公元前2世纪）",
+          "significance": "拱桥技术诞生"
+        },
+        {
+          "year": "汉代",
+          "title": "桥梁类型基本形成",
+          "description": "浮桥、梁桥、索桥、拱桥四大类型确立",
+          "significance": "桥梁分类体系确立"
+        }
+      ]
+    },
+    {
+      "period": "魏晋南北朝",
+      "era": "220-589年",
+      "events": [
+        {
+          "year": "东晋",
+          "title": "石拱技术应用",
+          "description": "石拱在桥梁上的运用至迟在晋代",
+          "significance": "拱桥技术推广"
+        },
+        {
+          "year": "南北朝",
+          "title": "桥梁装饰艺术发展",
+          "description": "佛教影响桥梁艺术，雕刻装饰增多",
+          "significance": "桥梁艺术丰富"
+        }
+      ]
+    },
+    {
+      "period": "隋唐时期",
+      "era": "581-907年",
+      "events": [
+        {
+          "year": "591-599",
+          "title": "赵州桥建成",
+          "description": "敞肩圆弧拱技术领先世界1200年",
+          "significance": "中国古代桥梁技术巅峰",
+          "importance": 5,
+          "bridge": "赵州桥"
+        },
+        {
+          "year": "隋代",
+          "title": "纵向并列砌筑法",
+          "description": "赵州桥采用28道独立拱圈并列砌筑",
+          "significance": "砌筑技术创新"
+        },
+        {
+          "year": "唐代",
+          "title": "桥梁建设规模化",
+          "description": "全国桥梁数量大增，技术传播",
+          "significance": "桥梁普及发展"
+        }
+      ]
+    },
+    {
+      "period": "宋元时期",
+      "era": "960-1368年",
+      "events": [
+        {
+          "year": "1053-1059",
+          "title": "洛阳桥建成",
+          "description": "首创筏形基础、种蛎固基法",
+          "significance": "跨海石桥技术突破",
+          "importance": 5,
+          "bridge": "洛阳桥"
+        },
+        {
+          "year": "北宋",
+          "title": "木拱虹桥技术",
+          "description": "《清明上河图》汴水虹桥展示编木拱技术",
+          "significance": "木拱技术成熟"
+        },
+        {
+          "year": "1138-1152",
+          "title": "安平桥建成",
+          "description": "世界最长古代石桥",
+          "significance": "超长跨海石桥成就",
+          "importance": 5,
+          "bridge": "安平桥"
+        },
+        {
+          "year": "1171-",
+          "title": "广济桥始建",
+          "description": "世界最早启闭式桥梁",
+          "significance": "开启式桥梁创新",
+          "importance": 4,
+          "bridge": "广济桥"
+        }
+      ]
+    },
+    {
+      "period": "明清时期",
+      "era": "1368-1911年",
+      "events": [
+        {
+          "year": "1189-1192",
+          "title": "卢沟桥建成",
+          "description": "十一孔联拱石桥，石狮雕刻艺术",
+          "significance": "联拱技术与艺术结合",
+          "importance": 5,
+          "bridge": "卢沟桥"
+        },
+        {
+          "year": "1631",
+          "title": "拱宸桥建成",
+          "description": "三孔薄墩联拱，京杭大运河南端地标",
+          "significance": "大运河文化标志",
+          "importance": 4,
+          "bridge": "拱宸桥"
+        },
+        {
+          "year": "1705-1706",
+          "title": "泸定桥建成",
+          "description": "13根铁索，古代铁索桥技术巅峰",
+          "significance": "悬索桥技术成熟",
+          "importance": 5,
+          "bridge": "泸定桥"
+        },
+        {
+          "year": "明清",
+          "title": "围堰抽水干修法",
+          "description": "桥墩施工技术改进",
+          "significance": "施工技术进步"
+        },
+        {
+          "year": "明清",
+          "title": "木拱廊桥传承",
+          "description": "闽浙地区木拱廊桥技术延续发展",
+          "significance": "廊桥技艺传承"
+        }
+      ]
+    }
+  ],
+  "milestones": [
+    {
+      "year": 591,
+      "title": "敞肩圆弧拱",
+      "bridge": "赵州桥",
+      "innovation": "世界最早单孔敞肩石拱桥",
+      "leadYears": 1200
+    },
+    {
+      "year": 1053,
+      "title": "筏形基础",
+      "bridge": "洛阳桥",
+      "innovation": "世界桥梁筏形基础的开端",
+      "leadYears": 800
+    },
+    {
+      "year": 1053,
+      "title": "种蛎固基法",
+      "bridge": "洛阳桥",
+      "innovation": "利用生物加固桥基，生态工程先驱",
+      "leadYears": 800
+    },
+    {
+      "year": 1171,
+      "title": "启闭式桥梁",
+      "bridge": "广济桥",
+      "innovation": "世界最早的启闭式桥梁",
+      "leadYears": 700
+    },
+    {
+      "year": 1705,
+      "title": "铁索悬索桥",
+      "bridge": "泸定桥",
+      "innovation": "古代铁索桥技术巅峰",
+      "leadYears": 0
+    }
+  ],
+  "visualizationData": {
+    "timelineChart": {
+      "title": "中国古桥技术演进时间线",
+      "categories": ["先秦", "秦汉", "魏晋南北朝", "隋唐", "宋元", "明清"],
+      "events": [
+        {"year": -2000, "event": "浮桥出现", "category": "先秦"},
+        {"year": -200, "event": "石拱桥出现", "category": "秦汉"},
+        {"year": 591, "event": "赵州桥建成", "category": "隋唐"},
+        {"year": 1053, "event": "洛阳桥建成", "category": "宋元"},
+        {"year": 1138, "event": "安平桥建成", "category": "宋元"},
+        {"year": 1171, "event": "广济桥始建", "category": "宋元"},
+        {"year": 1189, "event": "卢沟桥建成", "category": "宋元"},
+        {"year": 1631, "event": "拱宸桥建成", "category": "明清"},
+        {"year": 1705, "event": "泸定桥建成", "category": "明清"}
+      ]
+    },
+    "ganttData": [
+      {"name": "浮桥", "start": -2000, "end": 1911},
+      {"name": "梁桥", "start": -2000, "end": 1911},
+      {"name": "拱桥", "start": -200, "end": 1911},
+      {"name": "索桥", "start": 0, "end": 1911},
+      {"name": "廊桥", "start": 800, "end": 1911}
+    ]
+  }
+}

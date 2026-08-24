@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>数据洞察</title>
+  <link rel="stylesheet" href="assets/styles.css?v=css-corner-20260528" />
+</head>
+<body data-page="insights" data-title="中国古桥数据洞察">
+  <div id="app">
+    <main class="page">
+      <section class="hero">
+        <div>
+          <div class="eyebrow">数据洞察 · 结构关系</div>
+          <h2>数据洞察・数探桥韵</h2>
+          <p>本页以数据为媒，通过<strong>矩阵分析</strong>、<strong>标签云</strong>、<strong>旭日图</strong>与<strong>雷达图</strong>等多种可视化形式，深度解码古桥的<strong>技术密度</strong>、<strong>文化线索</strong>、<strong>地域分布</strong>与<strong>保护层级</strong>之间的关联。从技术演进与文化沉淀的耦合趋势，到省域价值矩阵的差异呈现，快速识别代表性样本、地域特色与潜在研究重点，解锁古桥数据背后的深层逻辑。</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="technology.html">查看技术演进</a>
+            <a class="btn btn-secondary" href="culture.html">查看文化传承</a>
+          </div>
+        </div>
+        <div id="hero-metrics" class="hero-side">
+          <div class="metric-card"><div class="label">分析主题</div><div class="value">4+</div><div class="sub">重要度、规模、标签、综合雷达</div></div>
+          <div class="metric-card"><div class="label">关键数据</div><div class="value">108</div><div class="sub">全量古桥样本</div></div>
+          <div class="metric-card"><div class="label">耦合分析</div><div class="value">技文协同</div><div class="sub">技术与文化的演进趋势关联</div></div>
+          <div class="metric-card"><div class="label">地域价值</div><div class="value">矩阵象限</div><div class="sub">识别推广区与保护重点</div></div>
+        </div>
+      </section>
+
+      <section class="grid two">
+        <article class="panel">
+          <div class="panel-header"><div><h3>技术演进 × 文化沉淀耦合趋势</h3><p>按历史阶段观察技术能力与文化叙事是否同步增长，用于识别“高技术低传播”或“高传播低技术”的结构性断层。</p></div></div>
+          <div id="insights-tech-culture-trend" class="chart"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-header"><div><h3>省域技术-文化价值矩阵</h3><p>横轴技术密度、纵轴文化密度，识别优先推广区与重点补强区，服务教育课程、文旅策展与遗产治理协同。</p></div></div>
+          <div id="insights-tech-culture-matrix" class="chart"></div>
+        </article>
+      </section>
+
+      <section class="grid two">
+        <article class="panel insight-cloud-panel">
+          <div class="panel-header"><div><h3>桥梁名称标签云</h3><p>以桥梁名称构成可点击的样本标签云。</p></div></div>
+          <div id="bridge-name-cloud" class="tag-cloud insights-bridge-cloud"></div>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header"><div><h3>桥梁结构旭日图</h3><p>按朝代、桥型与保护层级展开样本结构。</p></div></div>
+        <div id="insights-sunburst" class="chart tall"></div>
+      </section>
+
+      <section class="grid two">
+        <article class="panel">
+          <div class="panel-header"><div><h3>综合维度雷达</h3><p>使用预处理数据直接比较代表性古桥。</p></div></div>
+          <div id="dimension-radar-overview" class="chart"></div>
+        </article>
+        <article class="panel">
+          <div class="panel-header"><div><h3>热门标签排行</h3><p>从数据标记看桥梁研究的主题重心。</p></div></div>
+          <div id="tag-bar-chart" class="chart"></div>
+        </article>
+      </section>
+
+    </main>
+  </div>
+  <script src="assets/vendor/echarts.min.js"></script>
+  <script src="assets/runtime-config.js"></script>
+  <script src="assets/app.js?v=data-audit-20260528"></script>
+</body>
+</html>
+
+

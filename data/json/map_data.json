@@ -1,0 +1,839 @@
+{
+  "meta": {
+    "title": "中国古桥地图标注数据",
+    "version": "1.1",
+    "created": "2026-03-23",
+    "lastUpdated": "2026-03-24",
+    "description": "用于高德地图/百度地图/ECharts地图标注的古桥坐标数据",
+    "coordinateSystem": "GCJ-02（火星坐标系，适用于国内地图）",
+    "fieldFormats": {
+      "buildYear": "字符串格式（如'591-599年'），专为地图标注显示优化，数值计算请使用bridges_master.json的对象格式"
+    },
+    "dataSource": "bridges_master.json（主数据源）",
+    "dataConsistency": "坐标数据与bridges_master.json保持同步"
+  },
+  "mapMarkers": [
+    {
+      "id": "marker_001",
+      "name": "赵州桥",
+      "alias": "安济桥",
+      "coordinates": {
+        "lng": 114.7731,
+        "lat": 37.7531
+      },
+      "province": "河北省",
+      "city": "石家庄市",
+      "county": "赵县",
+      "river": "洨河",
+      "buildYear": "591-599年",
+      "era": "隋代",
+      "type": "单孔敞肩石拱桥",
+      "protection": "国保第一批",
+      "isWorldHeritage": false,
+      "importance": 5,
+      "popupInfo": {
+        "title": "赵州桥（安济桥）",
+        "subtitle": "隋代·世界最早敞肩石拱桥",
+        "description": "由隋代工匠李春设计建造，首创敞肩圆弧拱技术，领先西方1200年。全长64.4米，跨度37.02米，是古代桥梁建筑的杰出代表。",
+        "image": "zhaozhou_bridge.jpg",
+        "tags": [
+          "四大名桥",
+          "国保第一批",
+          "世界纪录"
+        ]
+      }
+    },
+    {
+      "id": "marker_002",
+      "name": "卢沟桥",
+      "alias": "马可波罗桥",
+      "coordinates": {
+        "lng": 116.2108,
+        "lat": 39.8542
+      },
+      "province": "北京市",
+      "district": "丰台区",
+      "river": "永定河",
+      "buildYear": "1189-1192年",
+      "era": "金代",
+      "type": "十一孔联拱石桥",
+      "protection": "国保第一批",
+      "isWorldHeritage": false,
+      "importance": 5,
+      "popupInfo": {
+        "title": "卢沟桥",
+        "subtitle": "金代·燕京八景之一",
+        "description": "全长268米，桥栏望柱上雕刻石狮501只，跨越六个朝代。1937年七七事变爆发于此，是全面抗战的历史见证。",
+        "tags": [
+          "四大名桥",
+          "国保第一批",
+          "卢沟晓月"
+        ]
+      }
+    },
+    {
+      "id": "marker_003",
+      "name": "洛阳桥",
+      "alias": "万安桥",
+      "coordinates": {
+        "lng": 118.6833,
+        "lat": 24.9333
+      },
+      "province": "福建省",
+      "city": "泉州市",
+      "county": "洛江区",
+      "river": "洛阳江入海口",
+      "buildYear": "1053-1059年",
+      "era": "北宋",
+      "type": "跨海梁式石桥",
+      "protection": "国保第三批",
+      "isWorldHeritage": true,
+      "heritageName": "泉州：宋元中国的世界海洋商贸中心",
+      "importance": 5,
+      "popupInfo": {
+        "title": "洛阳桥（万安桥）",
+        "subtitle": "北宋·海内第一桥",
+        "description": "蔡襄主持建造，原长1200米，现存731米。首创筏形基础和种蛎固基法，是世界桥梁筏形基础的开端。",
+        "tags": [
+          "四大名桥",
+          "世界遗产",
+          "技术首创"
+        ]
+      }
+    },
+    {
+      "id": "marker_004",
+      "name": "安平桥",
+      "alias": "五里桥",
+      "coordinates": {
+        "lng": 118.4667,
+        "lat": 24.7001
+      },
+      "province": "福建省",
+      "city": "泉州市",
+      "county": "晋江市",
+      "river": "安海港",
+      "buildYear": "1138-1152年",
+      "era": "南宋",
+      "type": "跨海梁式石桥",
+      "protection": "国保第一批",
+      "isWorldHeritage": true,
+      "heritageName": "泉州：宋元中国的世界海洋商贸中心",
+      "importance": 5,
+      "popupInfo": {
+        "title": "安平桥（五里桥）",
+        "subtitle": "南宋·天下无桥长此桥",
+        "description": "全长2255米，是世界上最长的古代石桥。素有'天下无桥长此桥'之称，桥墩采用三种不同形式适应水流。",
+        "tags": [
+          "世界遗产",
+          "国保第一批",
+          "世界最长"
+        ]
+      }
+    },
+    {
+      "id": "marker_005",
+      "name": "广济桥",
+      "alias": "湘子桥",
+      "coordinates": {
+        "lng": 116.6333,
+        "lat": 23.6667
+      },
+      "province": "广东省",
+      "city": "潮州市",
+      "river": "韩江",
+      "buildYear": "1171年始建",
+      "era": "南宋",
+      "type": "梁拱浮组合桥",
+      "protection": "国保第三批",
+      "isWorldHeritage": false,
+      "importance": 4,
+      "popupInfo": {
+        "title": "广济桥（湘子桥）",
+        "subtitle": "南宋·世界最早启闭式桥梁",
+        "description": "全长518米，集梁桥、拱桥、浮桥于一体。中间浮桥段由18艘梭船组成，可开可合，便于通航。",
+        "tags": [
+          "四大名桥",
+          "启闭式桥梁",
+          "技术独创"
+        ]
+      }
+    },
+    {
+      "id": "marker_006",
+      "name": "泸定桥",
+      "alias": "大渡河铁索桥",
+      "coordinates": {
+        "lng": 102.2341,
+        "lat": 29.9062
+      },
+      "province": "四川省",
+      "city": "甘孜藏族自治州",
+      "county": "泸定县",
+      "river": "大渡河",
+      "buildYear": "1705-1706年",
+      "era": "清代",
+      "type": "铁索悬索桥",
+      "protection": "国保第一批",
+      "isWorldHeritage": false,
+      "importance": 5,
+      "popupInfo": {
+        "title": "泸定桥",
+        "subtitle": "清代·红军飞夺泸定桥",
+        "description": "全长103.67米，由13根铁索组成，总重约40吨，12164个铁环手工锻造。1935年红军22勇士飞夺泸定桥，成为长征史上的英雄壮举。",
+        "tags": [
+          "国保第一批",
+          "红色记忆",
+          "铁索桥"
+        ]
+      }
+    },
+    {
+      "id": "marker_007",
+      "name": "拱宸桥",
+      "coordinates": {
+        "lng": 120.1458,
+        "lat": 30.3097
+      },
+      "province": "浙江省",
+      "city": "杭州市",
+      "district": "拱墅区",
+      "river": "京杭大运河",
+      "buildYear": "1631年",
+      "era": "明代",
+      "type": "三孔薄墩联拱石桥",
+      "protection": "国保第七批",
+      "isWorldHeritage": true,
+      "heritageName": "中国大运河",
+      "importance": 4,
+      "popupInfo": {
+        "title": "拱宸桥",
+        "subtitle": "明代·京杭大运河南端地标",
+        "description": "杭州古桥中最高最长者，全长92米，高16米。'拱宸'寓意恭敬迎接帝王，是京杭大运河到杭州的终点标志。",
+        "tags": [
+          "世界遗产",
+          "大运河",
+          "杭州地标"
+        ]
+      }
+    },
+    {
+      "id": "marker_008",
+      "name": "程阳永济桥",
+      "alias": "程阳风雨桥",
+      "coordinates": {
+        "lng": 109.6284,
+        "lat": 25.8157
+      },
+      "province": "广西壮族自治区",
+      "city": "柳州市",
+      "county": "三江侗族自治县",
+      "river": "林溪河",
+      "buildYear": "1912年",
+      "era": "民国",
+      "type": "木构风雨廊桥",
+      "protection": "国保第二批",
+      "isWorldHeritage": false,
+      "importance": 4,
+      "popupInfo": {
+        "title": "程阳永济桥",
+        "subtitle": "侗族建筑艺术代表作",
+        "description": "全长77.76米，不用一根铁钉，全靠精巧的榫卯结构连接。是侗族建筑文化的杰出代表，被誉为'世界十大最不可思议桥梁之一'。",
+        "tags": [
+          "侗族建筑",
+          "榫卯结构",
+          "非遗"
+        ]
+      }
+    },
+    {
+      "id": "marker_009",
+      "name": "宝带桥",
+      "coordinates": {
+        "lng": 120.6167,
+        "lat": 31.2667
+      },
+      "province": "江苏省",
+      "city": "苏州市",
+      "river": "京杭大运河",
+      "buildYear": "816-819年",
+      "era": "唐代",
+      "type": "薄墩联拱石桥",
+      "protection": "国保第二批",
+      "isWorldHeritage": true,
+      "heritageName": "中国大运河",
+      "importance": 4,
+      "popupInfo": {
+        "title": "宝带桥",
+        "subtitle": "唐代·中国最长多孔石桥",
+        "description": "全长316.8米，53孔连缀，是中国现存最长、保存最完整的多孔石桥。中秋夜有'宝带串月'奇观。",
+        "tags": [
+          "世界遗产",
+          "大运河",
+          "苏州名桥"
+        ]
+      }
+    },
+    {
+      "id": "marker_010",
+      "name": "枫桥",
+      "coordinates": {
+        "lng": 120.5833,
+        "lat": 31.3167
+      },
+      "province": "江苏省",
+      "city": "苏州市",
+      "river": "上塘河",
+      "buildYear": "1867年重建",
+      "era": "清代",
+      "type": "单孔半圆石拱桥",
+      "protection": "省级文物保护单位",
+      "isWorldHeritage": false,
+      "importance": 3,
+      "popupInfo": {
+        "title": "枫桥",
+        "subtitle": "张继《枫桥夜泊》诗中名桥",
+        "description": "因唐代诗人张继《枫桥夜泊》'姑苏城外寒山寺，夜半钟声到客船'而名扬天下，是苏州最具文化影响力的古桥。",
+        "tags": [
+          "诗词名桥",
+          "寒山寺",
+          "文化地标"
+        ]
+      }
+    },
+    {
+      "id": "marker_011",
+      "name": "霁虹桥",
+      "coordinates": {
+        "lng": 99.2745,
+        "lat": 25.3124
+      },
+      "province": "云南省",
+      "city": "保山市",
+      "river": "澜沧江",
+      "buildYear": "1465-1487年",
+      "era": "明代",
+      "type": "铁索吊桥",
+      "protection": "全国重点文物保护单位",
+      "isWorldHeritage": false,
+      "importance": 4,
+      "popupInfo": {
+        "title": "霁虹桥",
+        "subtitle": "明代·世界现存最古老铁索桥",
+        "description": "李约瑟《中国科技史》记载为世界现存最古老的铁索桥。原桥1986年被洪水冲毁，现新建铁索桥。",
+        "tags": [
+          "最古铁索桥",
+          "博南古道",
+          "茶马古道"
+        ]
+      }
+    },
+    {
+      "id": "marker_012",
+      "name": "龙脑桥",
+      "coordinates": {
+        "lng": 105.3745,
+        "lat": 29.1524
+      },
+      "province": "四川省",
+      "city": "泸州市",
+      "county": "泸县",
+      "river": "九曲河",
+      "buildYear": "1368-1398年",
+      "era": "明代",
+      "type": "龙雕石梁板桥",
+      "protection": "国保第四批",
+      "isWorldHeritage": false,
+      "importance": 4,
+      "popupInfo": {
+        "title": "龙脑桥",
+        "subtitle": "明代·中国最大龙雕石板梁桥",
+        "description": "全长54米，中间8座桥墩顶部雕刻龙、麒麟、青狮、白象等神兽，雕刻精美，是泸县'龙桥之乡'的代表作。",
+        "tags": [
+          "龙桥之乡",
+          "石雕艺术",
+          "国保"
+        ]
+      }
+    },
+    {
+      "id": "marker_015",
+      "name": "五亭桥",
+      "coordinates": {
+        "lng": 119.4189,
+        "lat": 32.3982
+      },
+      "province": "江苏省",
+      "city": "扬州市",
+      "river": "瘦西湖",
+      "buildYear": "1757年",
+      "era": "清代",
+      "type": "石拱廊桥",
+      "protection": "全国重点文物保护单位",
+      "isWorldHeritage": false,
+      "importance": 3,
+      "popupInfo": {
+        "title": "五亭桥",
+        "subtitle": "清代·中国最美的桥",
+        "description": "桥上设五亭，仿北京北海五龙亭。被誉为'中国最美的桥'，扬州瘦西湖标志性建筑。",
+        "tags": [
+          "瘦西湖",
+          "扬州地标",
+          "五亭"
+        ]
+      }
+    },
+    {
+      "id": "marker_016",
+      "name": "垂虹桥",
+      "coordinates": {
+        "lng": 120.6456,
+        "lat": 31.1589
+      },
+      "province": "江苏省",
+      "city": "苏州市",
+      "county": "吴江区",
+      "river": "吴淞江",
+      "buildYear": "1048年",
+      "era": "北宋",
+      "type": "五十三孔薄拱多孔石拱桥",
+      "protection": "全国重点文物保护单位（垂虹断桥）",
+      "isWorldHeritage": false,
+      "importance": 4,
+      "popupInfo": {
+        "title": "垂虹桥",
+        "subtitle": "北宋·江南第一长桥",
+        "description": "原长500米，53孔连缀，是历史上最长的石拱桥之一。现仅存遗址。",
+        "tags": [
+          "江南第一长桥",
+          "遗址",
+          "宋桥"
+        ]
+      }
+    },
+
+    {
+      "id": "marker_018",
+      "name": "双龙桥",
+      "coordinates": {
+        "lng": 102.7845,
+        "lat": 23.6245
+      },
+      "province": "云南省",
+      "city": "红河州",
+      "county": "建水县",
+      "river": "泸江",
+      "buildYear": "清代",
+      "era": "清代",
+      "type": "十七孔廊桥石拱桥",
+      "protection": "全国重点文物保护单位（第六批）",
+      "isWorldHeritage": false,
+      "importance": 3,
+      "popupInfo": {
+        "title": "双龙桥",
+        "subtitle": "清代·云南著名古桥",
+        "description": "全长148米，17孔连缀，三阁矗立，是云南最著名的古桥之一。",
+        "tags": [
+          "云南名桥",
+          "十七孔",
+          "廊桥"
+        ]
+      }
+    },
+    {
+      "id": "marker_019",
+      "name": "鱼沼飞梁",
+      "coordinates": {
+        "lng": 112.4445,
+        "lat": 37.7124
+      },
+      "province": "山西省",
+      "city": "太原市",
+      "county": "晋源区",
+      "river": "晋水(鱼沼)",
+      "buildYear": "1023-1030年",
+      "era": "北宋",
+      "type": "十字形石柱梁桥",
+      "protection": "全国重点文物保护单位（第一批）",
+      "isWorldHeritage": false,
+      "importance": 5,
+      "popupInfo": {
+        "title": "鱼沼飞梁",
+        "subtitle": "北宋·世界最早水陆立交桥",
+        "description": "中国现存古桥梁的孤例，十字形结构，34根小八角石柱支撑。位于晋祠内。",
+        "tags": [
+          "晋祠",
+          "十字桥",
+          "孤例"
+        ]
+      }
+    },
+    {
+      "id": "marker_020",
+      "name": "小商桥",
+      "coordinates": {
+        "lng": 113.9545,
+        "lat": 33.8724
+      },
+      "province": "河南省",
+      "city": "漯河市",
+      "county": "临颍县",
+      "river": "小商河",
+      "buildYear": "584年",
+      "era": "隋代",
+      "type": "单孔敞肩圆弧石拱桥",
+      "protection": "全国重点文物保护单位",
+      "isWorldHeritage": false,
+      "importance": 4,
+      "popupInfo": {
+        "title": "小商桥",
+        "subtitle": "隋代·赵州桥的实验桥",
+        "description": "建于隋开皇四年(584)，早于赵州桥。专家推测为赵州桥的实验桥。",
+        "tags": [
+          "隋代古桥",
+          "敞肩拱",
+          "赵州桥前身"
+        ]
+      }
+    },
+    {
+      "id": "marker_021",
+      "name": "断桥",
+      "coordinates": {
+        "lng": 120.1489,
+        "lat": 30.2545
+      },
+      "province": "浙江省",
+      "city": "杭州市",
+      "river": "西湖",
+      "buildYear": "唐代(原)",
+      "era": "唐代",
+      "type": "单孔石拱桥",
+      "protection": "西湖景区保护",
+      "isWorldHeritage": true,
+      "heritageName": "杭州西湖文化景观",
+      "importance": 4,
+      "popupInfo": {
+        "title": "断桥",
+        "subtitle": "唐代·白蛇传说发生地",
+        "description": "西湖十景之一'断桥残雪'，中国四大民间传说之一白蛇传说的发生地。",
+        "tags": [
+          "西湖十景",
+          "白蛇传说",
+          "世界遗产"
+        ]
+      }
+    },
+    {
+      "id": "marker_022",
+      "name": "广济桥(塘栖)",
+      "coordinates": {
+        "lng": 120.1156,
+        "lat": 30.2689
+      },
+      "province": "浙江省",
+      "city": "杭州市",
+      "county": "临平区塘栖镇",
+      "river": "京杭大运河",
+      "buildYear": "1488-1505年重建",
+      "era": "明代",
+      "type": "七孔薄墩联拱石桥",
+      "protection": "全国重点文物保护单位",
+      "isWorldHeritage": true,
+      "heritageName": "中国大运河",
+      "importance": 4,
+      "popupInfo": {
+        "title": "广济桥(塘栖)",
+        "subtitle": "明代·运河上仅存七孔石拱桥",
+        "description": "京杭大运河上仅存的七孔石拱桥，是运河文化的重要见证。",
+        "tags": [
+          "大运河",
+          "世界遗产",
+          "七孔桥"
+        ]
+      }
+    },
+    {
+      "id": "marker_023",
+      "name": "葛镜桥",
+      "coordinates": {
+        "lng": 107.5245,
+        "lat": 26.7824
+      },
+      "province": "贵州省",
+      "city": "黔南布依族苗族自治州",
+      "county": "福泉市",
+      "river": "麻哈江",
+      "buildYear": "1573-1620年",
+      "era": "明代",
+      "type": "三孔尖顶石拱桥",
+      "protection": "全国重点文物保护单位（第六批）",
+      "isWorldHeritage": false,
+      "importance": 4,
+      "popupInfo": {
+        "title": "葛镜桥",
+        "subtitle": "明代·西南第一桥",
+        "description": "贵州古桥的代表作品，三孔尖顶石拱桥，工艺精湛。",
+        "tags": [
+          "国保",
+          "贵州",
+          "尖顶拱"
+        ]
+      }
+    },
+    {
+      "id": "marker_024",
+      "name": "太平桥(安徽)",
+      "coordinates": {
+        "lng": 118.3345,
+        "lat": 29.8624
+      },
+      "province": "安徽省",
+      "city": "黄山市",
+      "county": "徽州区",
+      "buildYear": "1488-1505年",
+      "era": "明代",
+      "type": "十六孔拱形石桥",
+      "protection": "安徽省省级重点文物保护单位",
+      "isWorldHeritage": false,
+      "importance": 3,
+      "popupInfo": {
+        "title": "太平桥(安徽)",
+        "subtitle": "明代·安徽省最长古石拱桥",
+        "description": "安徽省最长的古石拱桥，十六孔联拱结构。",
+        "tags": [
+          "省保",
+          "安徽",
+          "十六孔"
+        ]
+      }
+    },
+    {
+      "id": "marker_025",
+      "name": "鸣水桥",
+      "coordinates": {
+        "lng": 115.5245,
+        "lat": 27.8824
+      },
+      "province": "江西省",
+      "city": "宜春市",
+      "county": "樟树市閤皂山",
+      "buildYear": "1111-1118年",
+      "era": "北宋",
+      "type": "石拱桥",
+      "protection": "全国重点文物保护单位（第六批）",
+      "isWorldHeritage": false,
+      "importance": 3,
+      "popupInfo": {
+        "title": "鸣水桥",
+        "subtitle": "北宋·閤皂山古桥",
+        "description": "位于閤皂山的北宋石拱桥，历史悠久。",
+        "tags": [
+          "国保",
+          "江西",
+          "北宋"
+        ]
+      }
+    },
+    {
+      "id": "marker_026",
+      "name": "二十四桥",
+      "coordinates": {
+        "lng": 119.4198,
+        "lat": 32.3998
+      },
+      "province": "江苏省",
+      "city": "扬州市",
+      "river": "瘦西湖",
+      "buildYear": "唐代原建",
+      "era": "唐代",
+      "type": "单拱砖桥",
+      "protection": "扬州市文物保护单位",
+      "isWorldHeritage": false,
+      "importance": 4,
+      "popupInfo": {
+        "title": "二十四桥",
+        "subtitle": "唐代·二十四桥明月夜",
+        "description": "杜牧诗中'二十四桥明月夜'的原型桥，瘦西湖著名景点。",
+        "tags": [
+          "扬州",
+          "瘦西湖",
+          "唐诗"
+        ]
+      }
+    }
+  ],
+  "mapConfig": {
+    "defaultCenter": {
+      "lng": 105.0,
+      "lat": 35.0
+    },
+    "defaultZoom": 4,
+    "minZoom": 3,
+    "maxZoom": 18,
+    "mapStyle": "amap://styles/whitesmoke",
+    "theme": "light"
+  },
+  "markerStyles": {
+    "importance_5": {
+      "size": [
+        40,
+        40
+      ],
+      "color": "#ee6666",
+      "icon": "bridge_icon_red.png",
+      "zIndex": 100
+    },
+    "importance_4": {
+      "size": [
+        35,
+        35
+      ],
+      "color": "#fac858",
+      "icon": "bridge_icon_yellow.png",
+      "zIndex": 90
+    },
+    "importance_3": {
+      "size": [
+        30,
+        30
+      ],
+      "color": "#5470c6",
+      "icon": "bridge_icon_blue.png",
+      "zIndex": 80
+    }
+  },
+  "clusterConfig": {
+    "enabled": true,
+    "gridSize": 60,
+    "minClusterSize": 2,
+    "styles": [
+      {
+        "url": "cluster_1.png",
+        "size": [
+          53,
+          52
+        ],
+        "offset": [
+          -26,
+          -26
+        ],
+        "textColor": "#fff",
+        "textSize": 14
+      },
+      {
+        "url": "cluster_2.png",
+        "size": [
+          56,
+          55
+        ],
+        "offset": [
+          -28,
+          -28
+        ],
+        "textColor": "#fff",
+        "textSize": 15
+      },
+      {
+        "url": "cluster_3.png",
+        "size": [
+          66,
+          65
+        ],
+        "offset": [
+          -33,
+          -33
+        ],
+        "textColor": "#fff",
+        "textSize": 16
+      }
+    ]
+  },
+  "provinceHeatmap": {
+    "title": "各省古桥数量热力图数据",
+    "data": [
+      {
+        "name": "福建省",
+        "value": 547
+      },
+      {
+        "name": "湖南省",
+        "value": 516
+      },
+      {
+        "name": "浙江省",
+        "value": 296
+      },
+      {
+        "name": "贵州省",
+        "value": 185
+      },
+      {
+        "name": "四川省",
+        "value": 87
+      },
+      {
+        "name": "江苏省",
+        "value": 80
+      },
+      {
+        "name": "广西壮族自治区",
+        "value": 50
+      },
+      {
+        "name": "云南省",
+        "value": 45
+      },
+      {
+        "name": "江西省",
+        "value": 50
+      },
+      {
+        "name": "安徽省",
+        "value": 30
+      },
+      {
+        "name": "广东省",
+        "value": 25
+      },
+      {
+        "name": "河北省",
+        "value": 20
+      },
+      {
+        "name": "北京市",
+        "value": 15
+      },
+      {
+        "name": "山西省",
+        "value": 30
+      },
+      {
+        "name": "陕西省",
+        "value": 25
+      },
+      {
+        "name": "河南省",
+        "value": 20
+      }
+    ],
+    "visualMap": {
+      "min": 0,
+      "max": 600,
+      "text": [
+        "高",
+        "低"
+      ],
+      "calculable": true,
+      "inRange": {
+        "color": [
+          "#e0f3f8",
+          "#abd9e9",
+          "#74add1",
+          "#4575b4",
+          "#313695"
+        ]
+      }
+    }
+  }
+}

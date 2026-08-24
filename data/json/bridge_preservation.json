@@ -1,0 +1,104 @@
+{
+  "metadata": {
+    "title": "中国古桥保护修缮历史数据",
+    "version": "1.0",
+    "created": "2026-03-23"
+  },
+  "bridges": [
+    {
+      "id": "preserve_001",
+      "name": "赵州桥",
+      "alias": ["安济桥", "大石桥"],
+      "buildYear": "隋开皇后期至大业初年(595-605年)",
+      "protectionLevel": {"national": "第一批(1961年)", "international": "国际土木工程历史古迹(1991年)"},
+      "renovationCount": 8,
+      "renovations": [
+        {"era": "唐代", "period": "贞观年间(627-649年)", "reason": "大水冲毁部分桥体", "content": "修复栏板、部分桥体"},
+        {"era": "北宋", "period": "哲宗时期(约1086-1100年)", "reason": "自然损毁", "content": "全面修缮"},
+        {"era": "明代", "period": "多次修缮", "reason": "自然损毁", "content": "多次修缮"},
+        {"era": "清代", "period": "多次修缮", "reason": "自然损毁", "content": "多次修缮"},
+        {"era": "新中国", "period": "1955-1958年", "reason": "桥体残破，急需修葺", "content": "水泥砂浆灌注加固拱券、混凝土盖板加固", "supervisor": "赵县安济桥修缮委员会", "note": "引发'修旧如旧'原则讨论"},
+        {"era": "新中国", "period": "1980年代", "reason": "日常维护", "content": "护栏修复、栏板更换", "supervisor": "河北省文物局"},
+        {"era": "新中国", "period": "2010年代", "reason": "预防性保护", "content": "结构监测、数字化建档", "supervisor": "河北省文物局"}
+      ]
+    },
+    {
+      "id": "preserve_002",
+      "name": "卢沟桥",
+      "alias": ["马可波罗桥"],
+      "buildYear": "金大定二十九年(1189年)始建，明昌三年(1192年)建成",
+      "protectionLevel": {"national": "第一批(1961年)", "world": "长城(1987年)"},
+      "renovationCount": 5,
+      "renovations": [
+        {"era": "明代", "period": "多次修缮", "reason": "自然损毁", "content": "多次修缮桥体、补配石狮"},
+        {"era": "清代", "period": "多次修缮", "reason": "自然损毁", "content": "多次修缮、石狮补配"},
+        {"era": "新中国", "period": "1961年", "reason": "文物保护", "content": "加固桥墩、修补桥面、恢复碑亭形制", "supervisor": "北京市政府"},
+        {"era": "新中国", "period": "1986年", "reason": "全面修缮", "content": "成立'卢沟桥历史文物修复委员会'，全面修缮", "supervisor": "北京市政府"},
+        {"era": "新中国", "period": "2025年", "reason": "保护性修缮", "content": "勾缝补配、取消护栏恢复原貌、首次结构安全实时监测", "supervisor": "卢沟桥文化发展中心李卫", "note": "新中国成立后第三次大修"}
+      ]
+    },
+    {
+      "id": "preserve_003",
+      "name": "洛阳桥",
+      "alias": ["万安桥"],
+      "buildYear": "北宋皇祐五年(1053年)始建，嘉祐四年(1059年)建成",
+      "protectionLevel": {"national": "第一批(1961年)", "world": "泉州：宋元中国的世界海洋商贸中心(2021年)"},
+      "renovationCount": 17,
+      "renovations": [
+        {"era": "南宋", "period": "建桥后", "reason": "增设设施", "content": "护栏外增设多座佛塔和风水塔"},
+        {"era": "宋至民国", "period": "多次修缮", "reason": "自然损毁", "content": "历代多次修葺"},
+        {"era": "新中国", "period": "1993-1997年", "reason": "保护性修缮", "content": "原形制、原工艺、本地花岗岩修复", "supervisor": "刘大山", "fund": "国家文物局拨款600多万元", "note": "最近一次大修"}
+      ]
+    },
+    {
+      "id": "preserve_004",
+      "name": "安平桥",
+      "alias": ["五里桥"],
+      "buildYear": "南宋绍兴八年(1138年)始建，绍兴二十二年(1152年)建成",
+      "protectionLevel": {"national": "第一批(1961年)", "world": "泉州：宋元中国的世界海洋商贸中心(2021年)"},
+      "renovationCount": "明清多次重修",
+      "renovations": [
+        {"era": "明代", "period": "天顺三年(1459年)", "reason": "自然损毁", "content": "重修（最早有记录修缮）"},
+        {"era": "明清两代", "period": "多次修缮", "reason": "自然损毁", "content": "多次重修，桥上存有13方古代重修碑记"},
+        {"era": "新中国", "period": "1980年代", "reason": "全面整修", "content": "全面整修，1986年成立安平桥文物保护管理所", "supervisor": "泉州市文物部门"},
+        {"era": "新中国", "period": "2007-2008年", "reason": "石板断裂", "content": "维修9条断裂石板，按'修旧如旧'原则", "supervisor": "泉州市文物部门"}
+      ]
+    },
+    {
+      "id": "preserve_005",
+      "name": "泸定桥",
+      "alias": ["大渡桥"],
+      "buildYear": "清康熙四十四年(1705年)始建，康熙四十五年(1706年)建成",
+      "protectionLevel": {"national": "第一批(1961年)", "redTourism": "全国红色旅游经典景区"},
+      "structure": "13根铁链，由12164个铁环组成，重21吨",
+      "renovationCount": "定期修缮制度",
+      "renovations": [
+        {"era": "清代", "period": "康熙年间后", "reason": "定期维护", "content": "三年一小修，五年一大修", "supervisor": "当地官员"},
+        {"era": "民国", "period": "多次修缮", "reason": "铁链锈蚀、自然损毁", "content": "更换铁链、桥板"},
+        {"era": "新中国", "period": "1961年后", "reason": "文物保护", "content": "多次拨款维修，更换铁链、木板，加固桥台", "supervisor": "泸定县政府"}
+      ]
+    },
+    {
+      "id": "preserve_006",
+      "name": "广济桥",
+      "alias": ["湘子桥"],
+      "buildYear": "南宋乾道七年(1171年)始建",
+      "protectionLevel": {"national": "第三批(1988年)"},
+      "feature": "世界上最早的启闭式桥梁，'十八梭船二十四洲'",
+      "renovationCount": "历史上多次修缮",
+      "renovations": [
+        {"era": "明代", "period": "多次重建", "reason": "战乱损毁、自然损毁", "content": "多次重建修缮，形成'十八梭船'格局"},
+        {"era": "新中国", "period": "1958年", "reason": "交通需要", "content": "改建为钢架梁桥", "supervisor": "潮州市政府"},
+        {"era": "新中国", "period": "1977年", "reason": "交通发展", "content": "扩建桥面", "supervisor": "潮州市政府"},
+        {"era": "新中国", "period": "2003-2007年", "reason": "恢复古桥原貌", "content": "按明代风貌全面修复，恢复'十八梭船'", "supervisor": "潮州市政府", "fund": "李嘉诚捐资720万", "note": "拆除1958年改建的钢架梁"}
+      ]
+    }
+  ],
+  "modernProtectionTechnology": [
+    {"technology": "三维激光扫描", "bridges": ["卢沟桥", "赵州桥"], "applications": ["结构变形监测", "沉降分析", "数字化建档"]},
+    {"technology": "BIM建筑信息模型", "bridges": ["多座古桥"], "applications": ["构建三维可视化模型", "整合时空信息", "精准记录现状"]},
+    {"technology": "结构健康监测", "bridges": ["卢沟桥"], "applications": ["实时监测风速、温度、振动、应力应变"]},
+    {"technology": "数字孪生", "bridges": ["多座古桥"], "applications": ["病害精准识别", "结构健康评估", "虚拟修复展示"]}
+  ],
+  "protectionPrinciples": ["修旧如旧", "原形制、原工艺", "最小干预", "预防性保护"]
+}

@@ -1,0 +1,210 @@
+{
+  "metadata": {
+    "title": "西北地区古桥数据集",
+    "version": "1.0",
+    "created": "2026-03-24",
+    "description": "甘肃、青海、新疆、宁夏、陕西等西北地区古代桥梁数据",
+    "dataSource": "全国重点文物保护单位名录、甘肃省文物局、青海省文物局、地方志"
+  },
+  "bridges": [
+    {
+      "id": "nw001",
+      "name": "灞陵桥",
+      "alias": ["渭源握桥", "卧桥"],
+      "buildYear": {"start": 1368, "end": 1644, "display": "明代（具体年代待考）"},
+      "era": "明代",
+      "eraOrder": 5,
+      "location": {
+        "province": "甘肃省",
+        "city": "定西市",
+        "county": "渭源县",
+        "river": "清源河",
+        "coordinates": {"lng": 104.2167, "lat": 35.1333}
+      },
+      "type": "伸臂木梁拱桥",
+      "category": "廊桥",
+      "dimensions": {"length": 40, "width": 4.5, "height": 15, "unit": "米"},
+      "protection": {"level": "全国重点文物保护单位", "batch": "第六批", "year": 2006},
+      "technology": {
+        "innovations": ["无桥墩伸臂木梁拱桥"],
+        "worldFirst": "中国现存唯一的古典式纯木结构卧式悬臂拱桥",
+        "description": "采用挑梁结构层层递伸搭建，形似长虹卧波"
+      },
+      "importance": 5,
+      "dataReliability": "高"
+    },
+    {
+      "id": "nw002",
+      "name": "兰州握桥",
+      "alias": ["卧桥", "雷坛河握桥"],
+      "buildYear": {"start": 1403, "end": 1424, "display": "明永乐年间(1403-1424)", "note": "一说唐代"},
+      "era": "明代",
+      "eraOrder": 5,
+      "location": {
+        "province": "甘肃省",
+        "city": "兰州市",
+        "river": "雷坛河",
+        "coordinates": {"lng": 103.8167, "lat": 36.0667}
+      },
+      "type": "伸臂木梁桥",
+      "category": "廊桥",
+      "dimensions": {"length": 27, "width": 4.6, "unit": "米"},
+      "protection": {"level": "市级文物保护单位", "note": "原桥已毁，现存为水车博览园内仿古复建"},
+      "technology": {
+        "innovations": ["伸臂木梁结构"],
+        "description": "采用挑梁结构层层递伸搭建，是西北地区伸臂桥的代表"
+      },
+      "importance": 4,
+      "dataReliability": "高"
+    },
+    {
+      "id": "nw003",
+      "name": "享堂峡握桥",
+      "alias": [],
+      "buildYear": {"display": "清代"},
+      "era": "清代",
+      "eraOrder": 6,
+      "location": {
+        "province": "甘肃省",
+        "city": "兰州市",
+        "county": "红古区",
+        "river": "大通河",
+        "coordinates": {"lng": 102.8833, "lat": 36.2833}
+      },
+      "type": "伸臂木梁桥",
+      "category": "廊桥",
+      "protection": {"level": "县级文物保护单位"},
+      "technology": {
+        "innovations": ["伸臂木梁结构"],
+        "description": "陇右廊桥代表，无桥墩伸臂木梁桥"
+      },
+      "importance": 3,
+      "dataReliability": "中"
+    },
+    {
+      "id": "nw004",
+      "name": "浩门桥",
+      "alias": [],
+      "buildYear": {"start": 581, "end": 618, "display": "隋代"},
+      "era": "隋代",
+      "eraOrder": 1,
+      "location": {
+        "province": "青海省",
+        "city": "海北藏族自治州",
+        "county": "门源回族自治县",
+        "river": "浩门河（大通河）",
+        "coordinates": {"lng": 101.6167, "lat": 37.3667}
+      },
+      "type": "木桥",
+      "category": "梁桥",
+      "protection": {"level": "待查"},
+      "historicalValue": "隋代在青海建造的重要桥梁，是唐蕃古道上的重要通道",
+      "importance": 3,
+      "dataReliability": "中"
+    },
+    {
+      "id": "nw005",
+      "name": "通济桥",
+      "alias": [],
+      "buildYear": {"display": "隋唐时期"},
+      "era": "唐代",
+      "eraOrder": 2,
+      "location": {
+        "province": "青海省",
+        "city": "海北藏族自治州",
+        "county": "门源回族自治县",
+        "river": "浩门河（大通河）",
+        "coordinates": {"lng": 101.6167, "lat": 37.3667}
+      },
+      "type": "木桥",
+      "category": "梁桥",
+      "protection": {"level": "待查"},
+      "historicalValue": "与浩门桥同为浩门河上的重要桥梁，唐代重建",
+      "importance": 3,
+      "dataReliability": "中"
+    },
+    {
+      "id": "nw006",
+      "name": "阴平桥",
+      "alias": [],
+      "buildYear": {"display": "三国时期始建"},
+      "era": "三国",
+      "eraOrder": 0,
+      "location": {
+        "province": "甘肃省",
+        "city": "陇南市",
+        "county": "文县",
+        "river": "白龙江",
+        "coordinates": {"lng": 104.6833, "lat": 32.9500}
+      },
+      "type": "索桥",
+      "category": "索桥",
+      "protection": {"level": "待查"},
+      "historicalValue": "三国时期邓艾偷渡阴平所经之桥，古代军事要道",
+      "importance": 4,
+      "dataReliability": "中"
+    },
+    {
+      "id": "nw007",
+      "name": "永宁桥",
+      "alias": [],
+      "buildYear": {"display": "唐代"},
+      "era": "唐代",
+      "eraOrder": 2,
+      "location": {
+        "province": "甘肃省",
+        "city": "甘南藏族自治州",
+        "county": "临潭县",
+        "river": "洮河",
+        "coordinates": {"lng": 103.3500, "lat": 34.6833}
+      },
+      "type": "木桥",
+      "category": "梁桥",
+      "protection": {"level": "待查"},
+      "historicalValue": "唐蕃古道上的重要桥梁，汉藏文化交流通道",
+      "importance": 3,
+      "dataReliability": "中"
+    },
+    {
+      "id": "nw008",
+      "name": "西宁湟水桥",
+      "alias": [],
+      "buildYear": {"display": "清代"},
+      "era": "清代",
+      "eraOrder": 6,
+      "location": {
+        "province": "青海省",
+        "city": "西宁市",
+        "river": "湟水",
+        "coordinates": {"lng": 101.7500, "lat": 36.6500}
+      },
+      "type": "石拱桥",
+      "category": "拱桥",
+      "protection": {"level": "待查"},
+      "importance": 2,
+      "dataReliability": "低"
+    }
+  ],
+  "regionalCharacteristics": {
+    "geographicScope": "甘肃、青海、新疆、宁夏、陕西",
+    "bridgeTypes": {
+      "cantileverBridge": {
+        "name": "伸臂桥",
+        "description": "源于鲜卑乞伏氏创制的'飞桥'和鲜卑吐谷浑创制的'河厉'",
+        "distribution": ["甘肃", "青海", "四川西部"],
+        "technicalFeatures": ["无桥墩", "层层递伸", "木梁结构"]
+      }
+    },
+    "historicalRoutes": {
+      "silkRoad": "陆上丝绸之路经过甘肃、青海",
+      "tangTibetRoad": "唐蕃古道经过青海",
+      "teaHorseRoad": "川藏茶马古道支线"
+    }
+  },
+  "statistics": {
+    "totalBridges": 8,
+    "byProvince": {"甘肃省": 5, "青海省": 3},
+    "byCategory": {"廊桥": 3, "梁桥": 3, "索桥": 1, "拱桥": 1},
+    "nationalProtectionCount": 1
+  }
+}

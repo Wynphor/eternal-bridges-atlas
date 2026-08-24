@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>桥梁名称一览</title>
+  <link rel="stylesheet" href="assets/styles.css?v=css-corner-20260528" />
+</head>
+<body data-page="bridge-list" data-title="桥梁名称一览">
+  <div id="app">
+    <main class="page">
+      <section class="hero">
+        <div>
+          <div class="eyebrow">古桥名录・千年桥影</div>
+          <h2>桥梁一览・百桥集萃</h2>
+          <p>本页汇集了项目收录的 108 座代表性中国古代桥梁，以<strong>朝代</strong>、<strong>地域</strong>、<strong>桥型</strong>等标签分类呈现。你可自由筛选、点击卡片，进入单座古桥的五维信息档案，一窥跨越千年的营造匠心与人文故事。</p>
+          <div class="hero-actions">
+            <input id="global-search" class="input" style="max-width: 360px" placeholder="搜索桥梁并跳转详情" />
+            <button id="global-search-btn" class="btn btn-primary">打开详情</button>
+          </div>
+        </div>
+        <div id="hero-metrics" class="hero-side">
+          <div class="metric-card"><div class="label">古桥样本</div><div id="bridge-list-total" class="value">--</div><div class="sub">百桥集萃，尽览匠心</div></div>
+          <div class="metric-card"><div class="label">跨越朝代</div><div class="value">11 朝</div><div class="sub">自先秦至明清，贯通千年脉络</div></div>
+          <div class="metric-card"><div class="label">桥型谱系</div><div class="value">10 大类</div><div class="sub">梁拱索廊，各展营造巧思</div></div>
+          <div class="metric-card"><div class="label">地域分布</div><div class="value">21 省</div><div class="sub">从北国到江南，遍览山河古桥</div></div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header bridge-list-panel-header">
+          <div><h3>全部桥梁名称</h3><p>点击任意名称即可查看对应桥梁详情。</p></div>
+          <div class="bridge-list-tools" aria-label="桥梁排序方式">
+            <label>
+              <span>排序方式</span>
+              <span class="bridge-list-select-wrap">
+                <select id="bridge-sort-by" class="input">
+                  <option value="importance" selected>桥梁权重</option>
+                  <option value="name">首字母</option>
+                </select>
+              </span>
+            </label>
+            <label>
+              <span>排序顺序</span>
+              <span class="bridge-list-select-wrap">
+                <select id="bridge-sort-order" class="input">
+                  <option value="desc" selected>降序</option>
+                  <option value="asc">升序</option>
+                </select>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div id="bridge-list-grid" class="bridge-list-grid"></div>
+      </section>
+    </main>
+  </div>
+  <script src="assets/vendor/echarts.min.js"></script>
+  <script src="assets/runtime-config.js"></script>
+  <script src="assets/app.js?v=data-audit-20260528"></script>
+</body>
+</html>
+
+

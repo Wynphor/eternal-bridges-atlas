@@ -1,0 +1,157 @@
+{
+  "metadata": {
+    "title": "中国古代桥梁建造者传记数据",
+    "version": "1.0",
+    "created": "2026-03-23",
+    "total_builders": 12
+  },
+  "builders": [
+    {
+      "id": "builder_001",
+      "name": "李春",
+      "era": "隋代",
+      "identity": "造桥匠师、石匠",
+      "birthplace": "河北邢台临城",
+      "bridges": [{"name": "赵州桥（安济桥）", "period": "隋开皇十五年至大业初（595-605年）"}],
+      "innovations": ["敞肩拱技术", "纵向并列砌筑法"],
+      "significance": "世界现存最早、跨度最大的单孔敞肩石拱桥建造者",
+      "dataReliability": "中"
+    },
+    {
+      "id": "builder_002",
+      "name": "蔡襄",
+      "courtesyName": "君谟",
+      "artName": "莆阳居士",
+      "birthYear": 1012,
+      "deathYear": 1067,
+      "birthplace": "福建路兴化军仙游县（今福建省莆田市仙游县）",
+      "era": "北宋",
+      "identity": "政治家、书法家、文学家、茶学家",
+      "officialPositions": ["泉州知州", "端明殿大学士", "吏部侍郎"],
+      "bridges": [{"name": "洛阳桥（万安桥）", "period": "北宋皇祐五年至嘉祐四年（1053-1059年）"}],
+      "innovations": ["筏型基础", "种蛎固基", "浮运架梁"],
+      "significance": "中国第一座跨海梁式石桥主持建造者，北宋四大书法家之一",
+      "dataReliability": "高"
+    },
+    {
+      "id": "builder_003",
+      "name": "曾汪",
+      "era": "南宋",
+      "identity": "潮州太守（知州）",
+      "bridges": [{"name": "广济桥（康济桥）", "period": "南宋乾道七年（1171年）始建"}],
+      "innovations": ["造舟为梁"],
+      "significance": "广济桥第一位修桥者，开启潮州官民合修桥梁传统",
+      "dataReliability": "中"
+    },
+    {
+      "id": "builder_004",
+      "name": "王仲舒",
+      "courtesyName": "弘中",
+      "birthYear": 762,
+      "deathYear": 823,
+      "birthplace": "并州祁县（今山西省祁县）",
+      "era": "唐代",
+      "identity": "大臣、文学家",
+      "officialPositions": ["苏州刺史", "吏部侍郎"],
+      "bridges": [{"name": "宝带桥", "period": "唐元和十一年至十四年（816-819年）"}],
+      "significance": "捐宝带资助建桥，宝带桥之名由此而来",
+      "dataReliability": "高"
+    },
+    {
+      "id": "builder_005",
+      "name": "完颜璟",
+      "birthYear": 1168,
+      "deathYear": 1208,
+      "birthplace": "金朝上京会宁府（今黑龙江省哈尔滨市阿城区）",
+      "era": "金代",
+      "identity": "金章宗皇帝",
+      "bridges": [{"name": "卢沟桥（广利桥）", "period": "金大定二十九年至明昌三年（1189-1192年）"}],
+      "significance": "下令建造卢沟桥，命名"卢沟晓月"景观",
+      "dataReliability": "高"
+    },
+    {
+      "id": "builder_006",
+      "name": "康熙帝",
+      "birthYear": 1654,
+      "deathYear": 1722,
+      "birthplace": "北京紫禁城景仁宫",
+      "era": "清代",
+      "identity": "清朝第四位皇帝",
+      "bridges": [{"name": "泸定桥", "period": "清康熙四十四年至四十五年（1705-1706年）"}],
+      "significance": "御批建造泸定桥，取'泸水'、'平定'之意",
+      "dataReliability": "高"
+    },
+    {
+      "id": "builder_007",
+      "name": "黄护",
+      "birthplace": "福建省晋江安海",
+      "era": "南宋",
+      "identity": "安平商人、儒商",
+      "bridges": [{"name": "安平桥（五里桥）", "period": "南宋绍兴八年（1138年）始建"}],
+      "significance": "与僧人智渊各捐万缗倡建安平桥",
+      "dataReliability": "中"
+    },
+    {
+      "id": "builder_008",
+      "name": "智渊",
+      "era": "南宋",
+      "identity": "僧人",
+      "bridges": [{"name": "安平桥（五里桥）", "period": "南宋绍兴八年（1138年）始建"}],
+      "significance": "与黄护各捐万缗倡建安平桥",
+      "dataReliability": "低"
+    },
+    {
+      "id": "builder_009",
+      "name": "祖派",
+      "era": "南宋",
+      "identity": "僧人，时人称'慈惠禅师'",
+      "bridges": [{"name": "安平桥（五里桥）", "period": "南宋绍兴八年（1138年）始建"}],
+      "innovations": ["睡木沉基"],
+      "significance": "主持建造安平桥",
+      "dataReliability": "低"
+    },
+    {
+      "id": "builder_010",
+      "name": "李冰",
+      "birthplace": "或为山西、或为陕西、或为四川",
+      "era": "战国时期秦国",
+      "identity": "蜀郡守",
+      "bridges": [{"name": "安澜索桥（珠浦桥）", "period": "约战国秦昭王时期（约前256年）"}],
+      "significance": "主持修建都江堰水利工程，可能建造安澜索桥",
+      "dataReliability": "中"
+    },
+    {
+      "id": "builder_011",
+      "name": "僧宗已",
+      "era": "北宋",
+      "identity": "泉州开元寺僧人",
+      "bridges": [{"name": "洛阳桥（万安桥）", "period": "北宋皇祐五年（1053年）倡建"}],
+      "significance": "与王实、卢锡倡建洛阳桥石桥",
+      "dataReliability": "低"
+    },
+    {
+      "id": "builder_012",
+      "name": "卢锡",
+      "birthplace": "福建",
+      "era": "北宋",
+      "identity": "郡人、蔡襄舅舅",
+      "bridges": [{"name": "洛阳桥（万安桥）", "period": "北宋皇祐五年（1053年）倡建"}],
+      "significance": "与僧宗已、王实倡建洛阳桥石桥，蔡襄舅舅",
+      "dataReliability": "低"
+    }
+  ],
+  "craftsmenGroups": {
+    "stoneMasons": {"role": "石料加工、拱券砌筑、雕刻装饰", "skills": ["石料开采", "石料加工", "拱券砌筑", "石雕技艺"]},
+    "woodMasons": {"role": "木构架设、模板制作、廊桥建造", "skills": ["木结构设计", "榫卯制作", "模板搭建", "廊桥建造"]},
+    "ironMasons": {"role": "铁索锻造、铁件制作", "skills": ["铁索锻造", "铁环制作", "铁件加工"]},
+    "transmission": ["师徒传承", "口传心授", "工匠世家"]
+  },
+  "technicalInnovationsSummary": [
+    {"innovation": "敞肩拱", "inventor": "李春", "bridge": "赵州桥", "significance": "领先欧洲约800年"},
+    {"innovation": "筏型基础", "inventor": "蔡襄", "bridge": "洛阳桥", "significance": "解决深水软基建桥墩难题"},
+    {"innovation": "种蛎固基", "inventor": "蔡襄", "bridge": "洛阳桥", "significance": "世界首次将生物学应用于桥梁建造"},
+    {"innovation": "浮运架梁", "inventor": "蔡襄", "bridge": "洛阳桥", "significance": "解决江海交汇处架设重型石梁难题"},
+    {"innovation": "睡木沉基", "inventor": "祖派等", "bridge": "安平桥", "significance": "解决软基海床建桥难题"},
+    {"innovation": "榫卯结构", "inventor": "侗族工匠", "bridge": "风雨桥", "significance": "不费一钉一铆"}
+  ]
+}

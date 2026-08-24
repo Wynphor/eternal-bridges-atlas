@@ -1,0 +1,357 @@
+{
+  "metadata": {
+    "title": "中国古代桥梁核心数据",
+    "version": "1.0",
+    "created": "2026-03-23",
+    "description": "世界遗产及国宝级古桥基础数据",
+    "source": "茅以升《中国古桥技术史》、全国重点文物保护单位名录、UNESCO世界遗产名录"
+  },
+  "bridges": [
+    {
+      "id": "bridge_001",
+      "name": "赵州桥",
+      "alias": ["安济桥", "大石桥"],
+      "buildPeriod": "隋开皇十一至十九年(591-599)",
+      "buildYear": {"start": 591, "end": 599},
+      "location": {
+        "province": "河北省",
+        "city": "石家庄市",
+        "county": "赵县",
+        "river": "洨河",
+        "coordinates": {"lng": 114.7731, "lat": 37.7531}
+      },
+      "type": "单孔敞肩石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 64.4,
+        "width": 9.5,
+        "height": 7.23,
+        "span": 37.02,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "全国重点文物保护单位",
+        "year": 1961,
+        "batch": "第一批",
+        "isWorldHeritage": false
+      },
+      "technology": {
+        "innovations": ["敞肩圆弧拱", "纵向并列砌筑", "28道独立拱圈"],
+        "worldFirst": "世界最早单孔敞肩石拱桥",
+        "leadYears": 1200,
+        "description": "首创敞肩圆弧拱技术，主拱两侧各设两个小拱，既减轻自重又增强泄洪能力"
+      },
+      "importance": 5,
+      "dataReliability": "高"
+    },
+    {
+      "id": "bridge_002",
+      "name": "卢沟桥",
+      "alias": ["宛平桥", "马可波罗桥"],
+      "buildPeriod": "金大定二十九年至明昌三年(1189-1192)",
+      "buildYear": {"start": 1189, "end": 1192},
+      "location": {
+        "province": "北京市",
+        "city": "北京市",
+        "district": "丰台区",
+        "river": "永定河",
+        "coordinates": {"lng": 116.2108, "lat": 39.8542}
+      },
+      "type": "十一孔联拱石桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 268,
+        "width": 9.4,
+        "height": 7.5,
+        "span": "不等跨",
+        "pierCount": 10,
+        "archCount": 11,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "全国重点文物保护单位",
+        "year": 1961,
+        "batch": "第一批",
+        "isWorldHeritage": false
+      },
+      "technology": {
+        "innovations": ["联拱技术", "石狮雕刻艺术"],
+        "worldFirst": "石狮数量最多的古桥",
+        "stoneLions": 501,
+        "description": "桥栏望柱上雕刻石狮501只，跨越金、元、明、清、民国、新中国六个时代"
+      },
+      "history": {
+        "events": [
+          {"year": 1189, "event": "始建"},
+          {"year": 1192, "event": "建成"},
+          {"year": 1937, "event": "卢沟桥事变，全面抗战爆发"},
+          {"year": 1985, "event": "停止通车，改为步行桥"}
+        ]
+      },
+      "importance": 5,
+      "dataReliability": "高"
+    },
+    {
+      "id": "bridge_003",
+      "name": "洛阳桥",
+      "alias": ["万安桥"],
+      "buildPeriod": "北宋皇祐五年至嘉祐四年(1053-1059)",
+      "buildYear": {"start": 1053, "end": 1059},
+      "location": {
+        "province": "福建省",
+        "city": "泉州市",
+        "county": "洛江区",
+        "river": "洛阳江入海口",
+        "coordinates": {"lng": 118.6833, "lat": 24.9333}
+      },
+      "type": "跨海梁式石桥",
+      "category": "梁桥",
+      "dimensions": {
+        "originalLength": 1200,
+        "currentLength": 731,
+        "width": 4.5,
+        "pierCount": 46,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "全国重点文物保护单位",
+        "year": 1988,
+        "batch": "第三批",
+        "isWorldHeritage": true,
+        "heritageName": "泉州：宋元中国的世界海洋商贸中心"
+      },
+      "technology": {
+        "innovations": ["筏形基础", "种蛎固基法"],
+        "worldFirst": "世界桥梁筏形基础的开端，首创生物固基技术",
+        "leadYears": 800,
+        "description": "蔡襄主持建造，首创筏形基础和种蛎固基法，利用牡蛎繁殖加固桥基"
+      },
+      "history": {
+        "builder": "蔡襄（泉州知州）",
+        "events": [
+          {"year": 1053, "event": "始建"},
+          {"year": 1059, "event": "建成"}
+        ]
+      },
+      "importance": 5,
+      "dataReliability": "高"
+    },
+    {
+      "id": "bridge_004",
+      "name": "安平桥",
+      "alias": ["五里桥", "西桥"],
+      "buildPeriod": "南宋绍兴八年至二十一年(1138-1152)",
+      "buildYear": {"start": 1138, "end": 1152},
+      "location": {
+        "province": "福建省",
+        "city": "泉州市",
+        "county": "晋江市",
+        "river": "安海港",
+        "coordinates": {"lng": 118.4667, "lat": 24.7000}
+      },
+      "type": "跨海梁式石桥",
+      "category": "梁桥",
+      "dimensions": {
+        "originalLength": 2700,
+        "currentLength": 2070,
+        "width": {"min": 3, "max": 3.8},
+        "pierCount": 360,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "全国重点文物保护单位",
+        "year": 1961,
+        "batch": "第一批",
+        "isWorldHeritage": true,
+        "heritageName": "泉州：宋元中国的世界海洋商贸中心"
+      },
+      "technology": {
+        "innovations": ["超长跨海石桥技术"],
+        "worldFirst": "世界最长古代石桥",
+        "record": "天下无桥长此桥",
+        "description": "中国古代最长的石梁桥，素有'天下无桥长此桥'之称"
+      },
+      "importance": 5,
+      "dataReliability": "高"
+    },
+    {
+      "id": "bridge_005",
+      "name": "广济桥",
+      "alias": ["湘子桥", "广济门桥"],
+      "buildPeriod": "南宋乾道七年至明嘉靖九年(1171-1530)",
+      "buildYear": {"start": 1171, "end": 1530},
+      "location": {
+        "province": "广东省",
+        "city": "潮州市",
+        "river": "韩江",
+        "coordinates": {"lng": 116.6333, "lat": 23.6667}
+      },
+      "type": "梁拱浮组合桥",
+      "category": "组合桥",
+      "dimensions": {
+        "length": 518,
+        "floatingSection": 97.3,
+        "boatCount": 18,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "全国重点文物保护单位",
+        "year": 1988,
+        "batch": "第三批",
+        "isWorldHeritage": false
+      },
+      "technology": {
+        "innovations": ["启闭式桥梁", "梁拱浮三桥合一"],
+        "worldFirst": "世界最早的启闭式桥梁",
+        "description": "集梁桥、拱桥、浮桥于一体，中间浮桥段由18艘梭船组成，可开可合，便于通航"
+      },
+      "importance": 4,
+      "dataReliability": "高"
+    },
+    {
+      "id": "bridge_006",
+      "name": "泸定桥",
+      "alias": ["大渡河铁索桥"],
+      "buildPeriod": "清康熙四十四年至四十五年(1705-1706)",
+      "buildYear": {"start": 1705, "end": 1706},
+      "location": {
+        "province": "四川省",
+        "city": "甘孜藏族自治州",
+        "county": "泸定县",
+        "river": "大渡河",
+        "coordinates": {"lng": 102.2333, "lat": 29.9000}
+      },
+      "type": "铁索悬索桥",
+      "category": "索桥",
+      "dimensions": {
+        "length": 123.42,
+        "span": 100,
+        "width": 3,
+        "height": 10,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "全国重点文物保护单位",
+        "year": 1961,
+        "batch": "第一批",
+        "isWorldHeritage": false
+      },
+      "technology": {
+        "innovations": ["铁索悬索技术"],
+        "worldFirst": "古代铁索桥技术巅峰",
+        "ironCables": {
+          "total": 13,
+          "loadBearing": 9,
+          "handrails": 4,
+          "rings": "1万多个",
+          "totalWeight": 40
+        },
+        "description": "由13根铁索组成，其中9根为底索承重，4根为护栏，共1万多个铁环，重约40吨"
+      },
+      "history": {
+        "events": [
+          {"year": 1705, "event": "始建"},
+          {"year": 1706, "event": "建成"},
+          {"year": 1935, "event": "红军飞夺泸定桥"}
+        ]
+      },
+      "importance": 5,
+      "dataReliability": "高"
+    },
+    {
+      "id": "bridge_007",
+      "name": "拱宸桥",
+      "alias": [],
+      "buildPeriod": "明崇祯四年(1631)",
+      "buildYear": {"start": 1631, "end": 1631},
+      "location": {
+        "province": "浙江省",
+        "city": "杭州市",
+        "district": "拱墅区",
+        "river": "京杭大运河",
+        "coordinates": {"lng": 120.1458, "lat": 30.3097}
+      },
+      "type": "三孔薄墩联拱石桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 92,
+        "width": 9.2,
+        "height": 16,
+        "archCount": 3,
+        "pillarCount": 48,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "全国重点文物保护单位",
+        "year": 2013,
+        "batch": "第七批",
+        "isWorldHeritage": true,
+        "heritageName": "中国大运河"
+      },
+      "technology": {
+        "innovations": ["薄墩联拱技术"],
+        "worldFirst": "京杭大运河南端地标",
+        "description": "杭州古桥中最高最长者，京杭大运河到杭州的终点标志，桥名'拱宸'寓意恭敬迎接帝王"
+      },
+      "importance": 4,
+      "dataReliability": "高"
+    },
+    {
+      "id": "bridge_008",
+      "name": "程阳永济桥",
+      "alias": ["程阳风雨桥", "程阳桥"],
+      "buildPeriod": "民国元年(1912)",
+      "buildYear": {"start": 1912, "end": 1912},
+      "location": {
+        "province": "广西壮族自治区",
+        "city": "柳州市",
+        "county": "三江侗族自治县",
+        "village": "程阳八寨",
+        "river": "林溪河",
+        "coordinates": {"lng": 109.6000, "lat": 25.8000}
+      },
+      "type": "木构风雨廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 77.76,
+        "width": 3.75,
+        "height": 10.70,
+        "pierCount": 3,
+        "archCount": 4,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "全国重点文物保护单位",
+        "year": 1982,
+        "batch": "第二批",
+        "isWorldHeritage": false
+      },
+      "technology": {
+        "innovations": ["榫卯结构", "密式悬臂托架简支梁"],
+        "worldFirst": "不用一根铁钉的大型木构廊桥",
+        "description": "整座桥不用一根铁钉，全靠精巧的榫卯结构连接，是侗族建筑艺术的代表"
+      },
+      "importance": 4,
+      "dataReliability": "高"
+    }
+  ],
+  "statistics": {
+    "totalBridges": 8,
+    "worldHeritageCount": 3,
+    "categoryDistribution": {
+      "拱桥": 3,
+      "梁桥": 2,
+      "索桥": 1,
+      "廊桥": 1,
+      "组合桥": 1
+    },
+    "dynastyDistribution": {
+      "隋": 1,
+      "宋": 3,
+      "金": 1,
+      "明": 1,
+      "清": 1,
+      "民国": 1
+    }
+  }
+}

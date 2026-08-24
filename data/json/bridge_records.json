@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "title": "中国古桥之最数据集",
+    "version": "1.1",
+    "created": "2026-03-23",
+    "lastUpdated": "2026-03-23",
+    "totalRecords": 16,
+    "uniqueBridges": 11,
+    "dataSource": "新华网、人民日报、中国工程院官网、美国土木工程师学会(ASCE)、吉尼斯世界纪录"
+  },
+  "records": [
+    {"category": "最古老的古桥", "recordName": "中国现存最古老的石拱桥", "bridgeName": "赵州桥", "recordValue": "距今约1420年", "buildYear": "595-605年", "leadYears": 800, "certification": ["国保第一批", "ASCE国际土木工程历史古迹"]},
+    {"category": "最古老的古桥", "recordName": "中国现存最早的跨海梁式石桥", "bridgeName": "洛阳桥", "recordValue": "距今约966年", "buildYear": "1059年", "certification": ["国保", "世界文化遗产"]},
+    {"category": "最古老的古桥", "recordName": "世界最大木桥遗址", "bridgeName": "渭桥遗址", "recordValue": "约2200年历史", "certification": ["2013年全国十大考古新发现"]},
+    {"category": "最古老的古桥", "recordName": "中国现存历史最悠久的索桥", "bridgeName": "安澜索桥", "recordValue": "至少1400年历史", "certification": ["国保", "世界文化遗产"]},
+    {"category": "规模最大的古桥", "recordName": "中国现存最长的古代石桥", "bridgeName": "安平桥", "recordValue": "2070米", "buildYear": "1138年", "certification": ["国保第一批", "世界文化遗产"]},
+    {"category": "规模最大的古桥", "recordName": "中国孔数最多的古桥", "bridgeName": "宝带桥", "recordValue": "53孔", "buildYear": "816-819年", "certification": ["国保", "世界文化遗产"]},
+    {"category": "规模最大的古桥", "recordName": "中国古代跨度最大的石拱桥", "bridgeName": "赵州桥", "recordValue": "37.02米"},
+    {"category": "技术最先进的古桥", "recordName": "世界首创敞肩拱技术", "bridgeName": "赵州桥", "recordValue": "领先世界约1200年", "innovation": "敞肩拱"},
+    {"category": "技术最先进的古桥", "recordName": "世界最早的启闭式桥梁", "bridgeName": "广济桥", "recordValue": "启闭式设计", "buildYear": "1171年"},
+    {"category": "最具特色的古桥", "recordName": "中国最美的古桥", "bridgeName": "五亭桥", "recordValue": "茅以升评价'最富艺术美'", "buildYear": "1757年"},
+    {"category": "最具特色的古桥", "recordName": "中国最险峻的古桥", "bridgeName": "泸定桥", "recordValue": "海拔1406米，铁索悬空", "buildYear": "1706年"},
+    {"category": "最具特色的古桥", "recordName": "最具文化价值的古桥", "bridgeName": "赵州桥", "recordValue": "国际土木工程历史古迹"},
+    {"category": "其他之最", "recordName": "石狮子最多的古桥", "bridgeName": "十七孔桥", "recordValue": "544只石狮子", "location": "北京颐和园"},
+    {"category": "其他之最", "recordName": "卢沟桥石狮子数量", "bridgeName": "卢沟桥", "recordValue": "501只"},
+    {"category": "其他之最", "recordName": "世界规模最大的风雨桥", "bridgeName": "三江风雨桥", "recordValue": "长368米，宽16米", "certification": ["吉尼斯世界纪录"]},
+    {"category": "其他之最", "recordName": "保存最好的侗族风雨桥", "bridgeName": "程阳永济桥", "recordValue": "保存最完好", "certification": ["国保"]}
+  ],
+  "bridgesSummary": [
+    {"name": "赵州桥", "records": 5, "recordTypes": ["最古老石拱桥", "跨度最大", "敞肩拱首创", "保存最完整", "最具文化价值"]},
+    {"name": "广济桥", "records": 2, "recordTypes": ["最奇特", "启闭式首创"]},
+    {"name": "安平桥", "records": 1, "recordTypes": ["最长"]},
+    {"name": "宝带桥", "records": 1, "recordTypes": ["孔数最多"]},
+    {"name": "泸定桥", "records": 2, "recordTypes": ["最险峻", "海拔最高"]}
+  ]
+}

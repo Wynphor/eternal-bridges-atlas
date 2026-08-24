@@ -1,0 +1,203 @@
+{
+  "metadata": {
+    "title": "早期历史古桥遗址数据集",
+    "version": "1.0",
+    "created": "2026-03-24",
+    "description": "秦汉、魏晋南北朝时期古桥遗址及考古发现数据",
+    "dataSource": "全国重点文物保护单位名录、考古研究所、历史文献"
+  },
+  "bridges": [
+    {
+      "id": "eh001",
+      "name": "渭桥遗址",
+      "alias": ["东渭桥遗址", "丝绸之路第一桥"],
+      "buildYear": {"start": -221, "end": 220, "display": "秦汉时期（公元前3世纪-公元3世纪）"},
+      "era": "秦汉",
+      "eraOrder": 0,
+      "location": {
+        "province": "陕西省",
+        "city": "西安市",
+        "district": "未央区",
+        "river": "渭河故道",
+        "coordinates": {"lng": 108.9167, "lat": 34.3083}
+      },
+      "type": "木梁柱桥",
+      "category": "梁桥",
+      "dimensions": {"length": 880, "width": 15.4, "pierCount": 750, "unit": "米"},
+      "protection": {"level": "全国重点文物保护单位", "batch": "第七批", "year": 2013},
+      "archaeology": {
+        "discoveryYear": 2012,
+        "discoveryNote": "2013年全国十大考古新发现",
+        "excavationDetails": "发现木桩750余根，是目前世界上最大的古代木桥遗址"
+      },
+      "historicalValue": "张骞出使西域即从此桥出发，世界同期最大木梁柱桥",
+      "importance": 5,
+      "dataReliability": "高"
+    },
+    {
+      "id": "eh002",
+      "name": "灞桥遗址",
+      "alias": [],
+      "buildYear": {"start": -659, "end": 1368, "display": "春秋时期始建，隋-元历代修建"},
+      "era": "春秋",
+      "eraOrder": 0,
+      "location": {
+        "province": "陕西省",
+        "city": "西安市",
+        "district": "灞桥区",
+        "river": "灞河",
+        "coordinates": {"lng": 109.0500, "lat": 34.2667}
+      },
+      "type": "石柱墩桥",
+      "category": "梁桥",
+      "protection": {"level": "全国重点文物保护单位", "batch": "第七批", "year": 2013},
+      "historicalValue": "秦穆公称霸西戎时建桥，是中国最古老的石柱墩桥，汉高祖入关进军咸阳后回师灞上即经此桥",
+      "archaeology": {
+        "literatureSource": ["《汉书·王莽传》", "《三辅黄图》", "《水经注》", "《长安志》"]
+      },
+      "importance": 5,
+      "dataReliability": "高"
+    },
+    {
+      "id": "eh003",
+      "name": "中渭桥遗址",
+      "alias": [],
+      "buildYear": {"start": -221, "end": 220, "display": "秦汉时期"},
+      "era": "秦汉",
+      "eraOrder": 0,
+      "location": {
+        "province": "陕西省",
+        "city": "西安市",
+        "district": "未央区窑店镇",
+        "river": "渭河",
+        "coordinates": {"lng": 108.9333, "lat": 34.3500}
+      },
+      "type": "木梁柱桥",
+      "category": "梁桥",
+      "dimensions": {"length": 380, "width": 14, "pierCount": 68, "columnCount": 750, "unit": "米"},
+      "protection": {"level": "全国重点文物保护单位"},
+      "historicalValue": "桥广6丈，南北380米，68间，750柱，122梁，秦汉时期重要交通枢纽",
+      "importance": 4,
+      "dataReliability": "高"
+    },
+    {
+      "id": "eh004",
+      "name": "沙河古桥遗址",
+      "alias": [],
+      "buildYear": {"start": -206, "end": 220, "display": "秦汉时期"},
+      "era": "秦汉",
+      "eraOrder": 0,
+      "location": {
+        "province": "陕西省",
+        "city": "咸阳市",
+        "river": "沙河故道",
+        "coordinates": {"lng": 108.6833, "lat": 34.3000}
+      },
+      "type": "木桩梁桥",
+      "category": "梁桥",
+      "dimensions": {"exposedPiles": 112, "pileRows": 16},
+      "protection": {"level": "全国重点文物保护单位"},
+      "historicalValue": "丝绸之路起点区域的重要桥梁遗址",
+      "importance": 4,
+      "dataReliability": "高"
+    },
+    {
+      "id": "eh005",
+      "name": "樊河桥",
+      "alias": ["樊哙桥"],
+      "buildYear": {"display": "西汉"},
+      "era": "西汉",
+      "eraOrder": 0,
+      "location": {
+        "province": "陕西省",
+        "city": "汉中市",
+        "county": "留坝县",
+        "river": "褒河",
+        "coordinates": {"lng": 106.9500, "lat": 33.6167}
+      },
+      "type": "栈道桥",
+      "category": "栈道",
+      "protection": {"level": "省级文物保护单位"},
+      "historicalValue": "褒斜道上的重要桥梁，相传为樊哙所建",
+      "importance": 3,
+      "dataReliability": "中"
+    },
+    {
+      "id": "eh006",
+      "name": "栈道遗迹",
+      "alias": ["褒斜道栈道"],
+      "buildYear": {"start": -314, "end": 220, "display": "战国至汉代"},
+      "era": "战国",
+      "eraOrder": 0,
+      "location": {
+        "province": "陕西省",
+        "city": "汉中市",
+        "river": "褒河峡谷",
+        "coordinates": {"lng": 107.0167, "lat": 33.5833}
+      },
+      "type": "栈道桥",
+      "category": "栈道",
+      "protection": {"level": "全国重点文物保护单位"},
+      "historicalValue": "古代穿越秦岭的重要通道，'明修栈道，暗度陈仓'典故出处",
+      "archaeology": {
+        "literatureSource": ["《史记》", "《华阳国志》"]
+      },
+      "importance": 5,
+      "dataReliability": "高"
+    },
+    {
+      "id": "eh007",
+      "name": "西渭桥遗址",
+      "alias": ["便门桥"],
+      "buildYear": {"display": "汉代"},
+      "era": "汉代",
+      "eraOrder": 0,
+      "location": {
+        "province": "陕西省",
+        "city": "咸阳市",
+        "river": "渭河",
+        "coordinates": {"lng": 108.7000, "lat": 34.3333}
+      },
+      "type": "木梁柱桥",
+      "category": "梁桥",
+      "protection": {"level": "全国重点文物保护单位"},
+      "historicalValue": "汉代长安通往西域的重要桥梁，丝绸之路必经之路",
+      "importance": 4,
+      "dataReliability": "高"
+    }
+  ],
+  "historicalContext": {
+    "qinHanPeriod": {
+      "period": "秦汉时期（公元前221年-公元220年）",
+      "bridgeTypes": ["木梁柱桥", "石柱墩桥", "栈道桥", "浮桥"],
+      "technologicalFeatures": [
+        "木桩基础技术成熟",
+        "大型桥梁工程能力",
+        "栈道技术发展"
+      ],
+      "transportationNetwork": {
+        "silkRoad": "丝绸之路起点桥梁群",
+        "qinRoads": "秦直道、驰道桥梁",
+        "hanRoads": "汉代官道桥梁"
+      }
+    },
+    "weiJinNanBeiChao": {
+      "period": "魏晋南北朝（公元220-589年）",
+      "bridgeDevelopment": "承袭汉代技术，佛教传入影响桥梁装饰",
+      "literatureRecords": ["《水经注》记载大量桥梁"]
+    }
+  },
+  "archaeologicalSignificance": {
+    "worldRecords": [
+      {"bridge": "渭桥遗址", "record": "世界最大古代木桥遗址"},
+      {"bridge": "灞桥遗址", "record": "中国最古老的石柱墩桥"}
+    ],
+    "silkRoadConnection": "长安地区的古桥群是丝绸之路起点的重要交通设施"
+  },
+  "statistics": {
+    "totalBridges": 7,
+    "byEra": {"春秋": 1, "战国": 1, "秦汉": 4, "西汉": 1},
+    "byCategory": {"梁桥": 5, "栈道": 2},
+    "nationalProtectionCount": 5
+  }
+}

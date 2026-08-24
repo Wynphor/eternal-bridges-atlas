@@ -1,0 +1,8327 @@
+{
+  "meta": {
+    "title": "中国古代桥梁统一数据",
+    "version": "3.0",
+    "created": "2026-04-13",
+    "description": "统一数据源，整合文化信息，标准化字段结构",
+    "totalBridges": 108
+  },
+  "bridges": [
+    {
+      "id": "bridge_001",
+      "name": "渭桥遗址",
+      "alias": [
+        "丝绸之路第一桥"
+      ],
+      "buildYear": {
+        "start": -200,
+        "end": 100,
+        "display": "秦汉时期（公元前3世纪-公元1世纪）"
+      },
+      "era": "秦汉",
+      "eraOrder": 0,
+      "builder": "",
+      "location": {
+        "province": "陕西省",
+        "city": "西安市",
+        "river": "渭河故道",
+        "coordinates": {
+          "lng": 108.9167,
+          "lat": 34.3083
+        }
+      },
+      "type": "木梁柱桥",
+      "category": "梁桥",
+      "dimensions": {
+        "length": 880,
+        "width": 15.4,
+        "pierCount": 750,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 5,
+      "dataReliability": "高",
+      "dataSource": [
+        "silk_road"
+      ],
+      "tags": [
+        "国保单位",
+        "重要桥梁",
+        "丝绸之路"
+      ],
+      "materials": {
+        "main_wood": "巨型木桩（直径约40-50厘米）",
+        "technique": "木梁柱桥，约750个木桩支撑，宽约15.4米如现今6车道",
+        "note": "世界同期最大木梁柱桥"
+      },
+      "keyEvents": [
+        {
+          "year": -138,
+          "name": "张骞出使西域",
+          "description": "张骞从渭桥出发，开启丝绸之路历史"
+        },
+        {
+          "year": 2012,
+          "name": "考古发掘",
+          "description": "2012年起陆续发掘7座秦汉古木桥"
+        },
+        {
+          "year": 2015,
+          "name": "发现古船",
+          "description": "发现我国最早木板船"
+        }
+      ],
+      "culturalInfo": {
+        "historicalRecords": [
+          {
+            "source": "史记",
+            "content": "张骞出使西域即从渭桥出发，开启了丝绸之路的历史。",
+            "era": "西汉"
+          }
+        ],
+        "culturalSignificance": "渭桥是丝绸之路的起点，张骞出使西域从此桥出发。"
+      },
+      "historicalValue": "张骞出使西域即从此桥出发，世界同期最大木梁柱桥"
+    },
+    {
+      "id": "bridge_002",
+      "name": "赵州桥",
+      "alias": [
+        "安济桥",
+        "大石桥"
+      ],
+      "buildYear": {
+        "start": 591,
+        "end": 599,
+        "display": "隋开皇十一至十九年(591-599)"
+      },
+      "era": "隋代",
+      "eraOrder": 1.5,
+      "builder": "李春（隋代杰出匠师）",
+      "location": {
+        "province": "河北省",
+        "city": "石家庄市",
+        "county": "赵县",
+        "river": "洨河",
+        "coordinates": {
+          "lng": 114.7731,
+          "lat": 37.7531
+        }
+      },
+      "type": "单孔敞肩石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 64.4,
+        "width": 9.5,
+        "height": 7.23,
+        "span": 37.02,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第一批",
+        "year": 1961,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "敞肩圆弧拱",
+            "description": "首创敞肩拱技术，在主拱两侧各设两个小拱，减轻桥身重量、增大泄洪面积"
+          },
+          {
+            "name": "纵向并列砌筑",
+            "description": "28道拱券并列砌筑，每道拱券独立承重，便于修缮"
+          }
+        ],
+        "worldFirst": "世界最早单孔敞肩石拱桥",
+        "leadYears": 1200,
+        "description": "首创敞肩圆弧拱技术，领先西方1200年"
+      },
+      "importance": 5,
+      "dataReliability": "高",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [
+        "国保单位",
+        "技术创新",
+        "重要桥梁"
+      ],
+      "materials": {
+        "main_stone": "青白色石灰岩（青灰色砂石）",
+        "mortar": "糯米灰浆，抗压强度5-8MPa",
+        "ironwork": "腰铁、勾石、铁拉杆连接加固，28道拱券纵向并列砌筑"
+      },
+      "keyEvents": [
+        {
+          "year": 595,
+          "name": "始建",
+          "description": "隋开皇年间开始建造，由匠师李春设计主持"
+        },
+        {
+          "year": 605,
+          "name": "建成",
+          "description": "约于隋大业年间建成，创世界最早单孔敞肩石拱桥"
+        },
+        {
+          "year": 1952,
+          "name": "现代大修",
+          "description": "1952-1958年进行大规模修缮工程"
+        }
+      ],
+      "culturalInfo": {
+        "poems": [
+          {
+            "title": "题安济桥",
+            "author": "杜德源",
+            "dynasty": "宋",
+            "content": "驾石飞梁尽一虹，苍龙惊蛰背磨空。坦平衡路通南北，海变桑田往事空。",
+            "theme": "桥梁形态"
+          },
+          {
+            "title": "石桥铭序",
+            "author": "张嘉贞",
+            "dynasty": "唐",
+            "content": "赵郡洨河石桥，隋匠李春之迹也。制造奇特，人不知其所以为。",
+            "theme": "建造者记载"
+          }
+        ],
+        "folkSongs": [
+          {
+            "title": "小放牛",
+            "type": "民间小调",
+            "content": "赵州桥来鲁班修，玉石栏杆圣人留，张果老骑驴桥上走，柴王爷推车轧了一道沟。"
+          }
+        ],
+        "legends": [
+          {
+            "name": "鲁班一夜造桥",
+            "content": "传说鲁班用一夜时间造成赵州桥，其技艺精湛惊动上天。",
+            "type": "建造传说"
+          },
+          {
+            "name": "张果老试桥",
+            "content": "张果老骑驴过桥，驴背褡裢里装着日月星辰，在桥上留下深深的驴蹄印。",
+            "characters": [
+              "张果老"
+            ],
+            "type": "神仙传说"
+          },
+          {
+            "name": "柴王爷推车",
+            "content": "柴王爷推着独轮车过桥，车上载着五岳名山，在桥面上轧出一道深沟。",
+            "characters": [
+              "柴王爷"
+            ],
+            "type": "神仙传说"
+          },
+          {
+            "name": "鲁班托桥",
+            "content": "张果老和柴王爷过桥时，桥身摇摇欲坠，鲁班跳入水中用手托住桥身，留下手掌印。",
+            "type": "神仙传说"
+          }
+        ],
+        "culturalSignificance": "赵州桥传说反映了古代劳动人民对工匠精神的崇拜，体现了中国民间对桥梁建筑的神奇想象。"
+      },
+      "historicalValue": "赵州桥是世界上现存最早、保存最完整的单孔敞肩石拱桥，被誉为'天下第一桥'。其敞肩圆弧拱技术领先欧洲1200年，是中国古代桥梁建筑的杰出代表，见证了隋代工匠的卓越智慧。"
+    },
+    {
+      "id": "bridge_003",
+      "name": "州桥遗址",
+      "alias": [],
+      "buildYear": {
+        "start": 618,
+        "end": 1279,
+        "display": "唐宋时期"
+      },
+      "era": "唐代",
+      "eraOrder": 2,
+      "builder": "",
+      "location": {
+        "province": "河南省",
+        "city": "开封市",
+        "river": "汴河",
+        "coordinates": {
+          "lng": 114.346889,
+          "lat": 34.79076
+        }
+      },
+      "type": "古桥遗址",
+      "category": "遗址",
+      "dimensions": {},
+      "protection": {
+        "level": "国家级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 5,
+      "dataReliability": "高",
+      "dataSource": [
+        "grand_canal"
+      ],
+      "tags": [
+        "国保单位",
+        "重要桥梁",
+        "大运河"
+      ],
+      "materials": {
+        "main_stone": "青石砌筑",
+        "technique": "石拱桥基础，河道两岸大型浮雕石壁",
+        "note": "北宋时期体量最大的石刻壁画"
+      },
+      "keyEvents": [
+        {
+          "year": 780,
+          "name": "始建",
+          "description": "唐代建中年间始建州桥"
+        },
+        {
+          "year": 2022,
+          "name": "考古发现",
+          "description": "2022年全国十大考古新发现"
+        }
+      ],
+      "culturalInfo": {
+        "historicalRecords": [
+          {
+            "source": "东京梦华录",
+            "content": "州桥正对大内御街...",
+            "author": "孟元老",
+            "era": "北宋"
+          }
+        ],
+        "sayings": [
+          "州桥明月",
+          "一眼千年"
+        ],
+        "culturalSignificance": "州桥是北宋东京城御街与汴河交叉点的标志性建筑，见证了宋代都城的繁华。2022年考古发现入选全国十大考古新发现。"
+      },
+      "historicalValue": "2022年全国十大考古新发现"
+    },
+    {
+      "id": "bridge_004",
+      "name": "绍兴古纤道",
+      "alias": [
+        "官塘",
+        "纤道桥"
+      ],
+      "buildYear": {
+        "start": 815,
+        "end": 815,
+        "display": "唐元和十年(815)始建"
+      },
+      "era": "唐代",
+      "eraOrder": 2,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "绍兴市",
+        "river": "浙东运河",
+        "coordinates": {
+          "lng": 120.538092,
+          "lat": 30.031329
+        }
+      },
+      "type": "纤道桥梁群",
+      "category": "梁桥",
+      "dimensions": {
+        "length": 7500,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 5,
+      "dataReliability": "高",
+      "dataSource": [
+        "grand_canal"
+      ],
+      "tags": [
+        "国保单位",
+        "重要桥梁",
+        "大运河"
+      ],
+      "materials": {
+        "main_stone": "条石",
+        "technique": "石墩石梁结构，纤道桥梁群",
+        "note": "长达7.5公里的纤道"
+      },
+      "keyEvents": [
+        {
+          "year": 815,
+          "name": "始建",
+          "description": "唐元和十年始建"
+        },
+        {
+          "year": 2014,
+          "name": "世界遗产",
+          "description": "作为大运河组成部分列入世界遗产"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "官塘",
+          "白玉长堤"
+        ],
+        "culturalSignificance": "绍兴古纤道是浙东运河的重要组成部分，长达7.5公里，被誉为\"白玉长堤\"。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_005",
+      "name": "鱼沼飞梁",
+      "alias": [
+        "十字桥"
+      ],
+      "buildYear": {
+        "start": 1023,
+        "end": 1030,
+        "display": "北宋天圣年间(1023-1030)"
+      },
+      "era": "北宋",
+      "eraOrder": 3,
+      "builder": "北宋工匠（与晋祠圣母殿同时建造）",
+      "location": {
+        "province": "山西省",
+        "city": "太原市",
+        "county": "晋源区",
+        "river": "晋水(鱼沼)",
+        "coordinates": {
+          "lng": 112.4445,
+          "lat": 37.7124
+        }
+      },
+      "type": "十字形石柱梁桥",
+      "category": "梁桥",
+      "dimensions": {
+        "length": 19.6,
+        "lengthEW": 19.6,
+        "lengthNS": 19.5,
+        "width": 5,
+        "height": 1.3,
+        "unit": "米",
+        "span": 10.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": 1,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "十字形结构",
+            "description": "东西桥面长15.5米宽5米，南北桥面长19.5米宽3.3米，呈十字形"
+          },
+          {
+            "name": "石柱斗栱结构",
+            "description": "34根小八角石柱支撑，斗栱与梁枋承托桥板"
+          }
+        ],
+        "worldFirst": "中国现存古桥梁孤例，世界最早水陆立交桥",
+        "leadYears": null,
+        "description": "中国现存古桥梁中唯一的十字形桥梁"
+      },
+      "importance": 5,
+      "dataReliability": "高",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [
+        "国保单位",
+        "重要桥梁"
+      ],
+      "materials": {
+        "main_stone": "34根小八角形铁青石柱（柱径约40厘米）",
+        "mortar": "无",
+        "ironwork": "木斗栱与梁枋承托石桥板，十字形桥面"
+      },
+      "keyEvents": [
+        {
+          "year": 1023,
+          "name": "始建",
+          "description": "北宋天圣年间与圣母殿同时建造"
+        },
+        {
+          "year": 1118,
+          "name": "铸铁狮子",
+          "description": "宋政和八年铸鱼沼飞梁铁狮子一对"
+        },
+        {
+          "year": 1961,
+          "name": "国保单位",
+          "description": "作为晋祠组成部分列入第一批全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "中国古桥梁孤例",
+          "世界最早水陆立交桥"
+        ],
+        "culturalSignificance": "鱼沼飞梁是中国现存古桥梁中唯一的十字形桥梁，与圣母殿、献殿并称晋祠古建三宝。桥面呈十字形，如鸟展翅欲飞，故名飞梁。"
+      },
+      "historicalValue": "鱼沼飞梁是中国现存古桥梁中唯一的十字形桥梁，也是世界最早的水陆立交桥。桥梁位于晋祠圣母殿前，34根石柱支撑十字形桥面，是古代桥梁建筑中的孤例，具有极高的建筑史研究价值。"
+    },
+    {
+      "id": "bridge_006",
+      "name": "洛阳桥",
+      "alias": [
+        "万安桥"
+      ],
+      "buildYear": {
+        "start": 1053,
+        "end": 1059,
+        "display": "北宋皇祐五年至嘉祐四年(1053-1059)"
+      },
+      "era": "北宋",
+      "eraOrder": 3,
+      "builder": "蔡襄（北宋泉州太守、著名书法家）",
+      "location": {
+        "province": "福建省",
+        "city": "泉州市",
+        "county": "洛江区",
+        "river": "洛阳江入海口",
+        "coordinates": {
+          "lng": 118.6833,
+          "lat": 24.9333
+        }
+      },
+      "type": "跨海梁式石桥",
+      "category": "梁桥",
+      "dimensions": {
+        "length": 731,
+        "lengthOriginal": 1200,
+        "width": 4.5,
+        "pierCount": 46,
+        "unit": "米",
+        "span": 16.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第三批",
+        "year": 1988,
+        "isWorldHeritage": true,
+        "heritageName": "泉州：宋元中国的世界海洋商贸中心"
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "筏形基础",
+            "description": "世界桥梁筏形基础的开端，领先欧洲约800年"
+          },
+          {
+            "name": "种蛎固基法",
+            "description": "利用牡蛎繁殖附着加固桥基，是世界首创的生物固基技术"
+          }
+        ],
+        "worldFirst": "世界桥梁筏形基础开端，首创生物固基技术",
+        "leadYears": 800,
+        "description": "首创筏形基础和种蛎固基法"
+      },
+      "importance": 5,
+      "dataReliability": "高",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [
+        "国保单位",
+        "世界遗产",
+        "重要桥梁",
+        "技术创新"
+      ],
+      "materials": {
+        "main_stone": "坚硬花岗岩，地产材料",
+        "mortar": "糯米灰浆",
+        "ironwork": "筏形基础、种蛎固基技术"
+      },
+      "keyEvents": [
+        {
+          "year": 1053,
+          "name": "始建",
+          "description": "北宋皇祐五年，蔡襄主持开始建造"
+        },
+        {
+          "year": 1059,
+          "name": "建成",
+          "description": "北宋嘉祐四年建成，历时7年，首创筏形基础和种蛎固基法"
+        },
+        {
+          "year": 1059,
+          "name": "万安桥记",
+          "description": "蔡襄撰写《万安桥记》碑文，记录建桥历程"
+        },
+        {
+          "year": 2021,
+          "name": "世界遗产",
+          "description": "作为\"泉州：宋元中国的世界海洋商贸中心\"组成部分列入世界遗产名录"
+        }
+      ],
+      "culturalInfo": {
+        "inscriptions": [
+          {
+            "title": "万安桥记",
+            "author": "蔡襄",
+            "dynasty": "北宋",
+            "content": "泉州万安渡石桥，始造于皇祐五年庚寅，以嘉祐四年十二月辛未迄功。址于渊，酾水为四十七道，梁空以行。其长三千六百尺，广丈有五尺，翼以扶栏，如其长之数而两之。靡金钱一千四百万，求诸石者，又从而阁之。元丰二年王申三月辛未，鲁国蔡襄记。",
+            "length": 153,
+            "theme": "建桥碑记"
+          }
+        ],
+        "poems": [
+          {
+            "title": "万安桥诗",
+            "author": "王十朋",
+            "dynasty": "南宋",
+            "content": "北望中原万里遥，南来喜见洛阳桥。人行跨海金鳌背，亭压横空玉虹腰。功不自成因砥柱，患宜预备有风潮。蔡公祠下扬清烈，好继修撰记美朝。",
+            "theme": "赞颂蔡襄"
+          },
+          {
+            "title": "洛阳桥",
+            "author": "余光中",
+            "dynasty": "现代",
+            "content": "多少人走过了洛阳桥，多少船驶出了泉州湾……"
+          }
+        ],
+        "legends": [
+          {
+            "name": "蔡襄母亲遇险",
+            "content": "相传蔡襄母亲在洛阳江遇险，许愿若能平安渡江，日后定在此造桥，后蔡襄实现母亲愿望。",
+            "type": "建造缘起"
+          },
+          {
+            "name": "种蛎固基",
+            "content": "蔡襄命人在桥基养殖牡蛎，利用牡蛎将石块胶结成整体，增强桥基稳固。",
+            "type": "技术创新"
+          },
+          {
+            "name": "三百两买桥墩",
+            "content": "蔡襄巧妙筹资建桥的民间故事。",
+            "type": "筹资传说"
+          }
+        ],
+        "couplets": [
+          {
+            "location": "忠惠蔡公祠",
+            "content": "架桥天地老，醉笔鬼神惊"
+          }
+        ]
+      },
+      "historicalValue": "洛阳桥是中国第一座跨海梁式石桥，首创筏形基础和种蛎固基法，是世界桥梁史上的重大创新。由北宋名臣、书法大家蔡襄主持建造，其《万安桥记》碑文至今保存完好，是珍贵的历史文物。"
+    },
+    {
+      "id": "bridge_007",
+      "name": "安平桥",
+      "alias": [
+        "五里桥",
+        "西桥"
+      ],
+      "buildYear": {
+        "start": 1138,
+        "end": 1152,
+        "display": "南宋绍兴八年至二十一年(1138-1152)"
+      },
+      "era": "南宋",
+      "eraOrder": 4,
+      "builder": "祖派（僧人，主持建桥）、黄护（富商，捐资万缗）、赵令衿（完成建桥）",
+      "location": {
+        "province": "福建省",
+        "city": "泉州市",
+        "county": "晋江市",
+        "river": "安海港",
+        "coordinates": {
+          "lng": 118.4667,
+          "lat": 24.7001
+        }
+      },
+      "type": "跨海梁式石桥",
+      "category": "梁桥",
+      "dimensions": {
+        "length": 2070,
+        "lengthOriginal": 2255,
+        "width": 3.5,
+        "pierCount": 360,
+        "unit": "米",
+        "span": 6.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第一批",
+        "year": 1961,
+        "isWorldHeritage": true,
+        "heritageName": "泉州：宋元中国的世界海洋商贸中心"
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "超长跨海石桥技术",
+            "description": "原长2255米，桥墩361座，世界最长古石桥"
+          },
+          {
+            "name": "睡木沉基法",
+            "description": "在软泥海底铺设枕木作为基础，解决跨海建桥难题"
+          }
+        ],
+        "worldFirst": "世界最长古代石桥",
+        "leadYears": null,
+        "description": "中国古代最长的石梁桥"
+      },
+      "importance": 5,
+      "dataReliability": "高",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [
+        "国保单位",
+        "世界遗产",
+        "重要桥梁"
+      ],
+      "materials": {
+        "main_stone": "花岗岩，从金门岛开采船运而来",
+        "mortar": "传统灰浆",
+        "ironwork": "枕木卧基法（睡木沉基），每块石板重约3吨，最重达25吨"
+      },
+      "keyEvents": [
+        {
+          "year": 1138,
+          "name": "始建",
+          "description": "南宋绍兴八年，僧祖派始建石桥，黄护与僧智渊各施钱万缗倡建"
+        },
+        {
+          "year": 1144,
+          "name": "建造中断",
+          "description": "工程进行到一半，黄护病逝"
+        },
+        {
+          "year": 1151,
+          "name": "继续建造",
+          "description": "赵令衿接手建桥工程，黄逸捐资响应"
+        },
+        {
+          "year": 1152,
+          "name": "建成",
+          "description": "南宋绍兴二十二年建成，原长2255米，世界最长古石桥"
+        },
+        {
+          "year": 2021,
+          "name": "世界遗产",
+          "description": "作为\"泉州：宋元中国的世界海洋商贸中心\"组成部分列入世界遗产名录"
+        }
+      ],
+      "culturalInfo": {
+        "couplets": [
+          {
+            "location": "水心亭",
+            "content": "世间有佛宗斯佛，天下无桥长此桥",
+            "theme": "赞美桥长"
+          }
+        ]
+      },
+      "historicalValue": "安平桥是中国古代最长的石梁桥，原长2255米，素有'天下无桥长此桥'之美誉。桥由僧人、富商、官员多方合力建成，展现了宋元时期泉州民间力量的强大和海外贸易的繁荣。"
+    },
+    {
+      "id": "bridge_008",
+      "name": "广济桥",
+      "alias": [
+        "湘子桥"
+      ],
+      "buildYear": {
+        "start": 1171,
+        "end": 1530,
+        "display": "南宋乾道七年至明嘉靖九年(1171-1530)"
+      },
+      "era": "南宋",
+      "eraOrder": 4,
+      "builder": "曾汪（潮州太守，始建）",
+      "location": {
+        "province": "广东省",
+        "city": "潮州市",
+        "river": "韩江",
+        "coordinates": {
+          "lng": 116.6333,
+          "lat": 23.6667
+        }
+      },
+      "type": "梁拱浮组合桥",
+      "category": "组合桥",
+      "dimensions": {
+        "length": 518,
+        "floatingLength": 97.3,
+        "boatCount": 18,
+        "pierCount": 24,
+        "unit": "米",
+        "span": 16.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第三批",
+        "year": 1988,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "启闭式桥梁",
+            "description": "中间浮桥段可开可合，便于船只通航"
+          },
+          {
+            "name": "梁拱浮三桥合一",
+            "description": "集梁桥、拱桥、浮桥于一体，世界桥梁孤例"
+          }
+        ],
+        "worldFirst": "世界最早的启闭式桥梁",
+        "leadYears": null,
+        "description": "中间浮桥段可开可合"
+      },
+      "importance": 5,
+      "dataReliability": "高",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [
+        "国保单位",
+        "重要桥梁"
+      ],
+      "materials": {
+        "main_stone": "石墩、石梁",
+        "mortar": "传统灰浆",
+        "ironwork": "梭船（木船）用铁链连接，启闭式浮桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1171,
+          "name": "始建",
+          "description": "南宋乾道七年，潮州太守曾汪命人建石墩，用86只梭船铁链连接成浮桥"
+        },
+        {
+          "year": 1174,
+          "name": "洪水冲垮",
+          "description": "淳熙元年浮桥被洪水冲垮，太守常炜重修"
+        },
+        {
+          "year": 1530,
+          "name": "定型",
+          "description": "明嘉靖九年，形成\"十八梭船廿四洲\"格局"
+        },
+        {
+          "year": 1724,
+          "name": "清代修缮",
+          "description": "清雍正二年修缮，铸铁牛两只"
+        },
+        {
+          "year": 2007,
+          "name": "修复",
+          "description": "2003-2007年全面修复，恢复古桥风貌"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "十八梭船廿四洲",
+          "到广不到潮，白白走一遭；到潮不到桥，枉费走一场"
+        ],
+        "couplets": [
+          {
+            "content": "一里长桥一里市，一里长桥一里歌"
+          }
+        ]
+      },
+      "historicalValue": "广济桥是世界上最早的启闭式桥梁，集梁桥、拱桥、浮桥于一体，形成'十八梭船廿四洲'的独特格局。中间浮桥段可开可合，既便于通行，又利于船只通航，是中国古代桥梁工程的杰出创造。"
+    },
+    {
+      "id": "bridge_009",
+      "name": "江东桥",
+      "alias": [
+        "虎渡桥",
+        "通济桥"
+      ],
+      "buildYear": {
+        "start": 1190,
+        "end": 1214,
+        "display": "南宋绍熙元年至嘉定七年(1190-1214)"
+      },
+      "era": "南宋",
+      "eraOrder": 4,
+      "builder": "",
+      "location": {
+        "province": "福建省",
+        "city": "漳州市",
+        "river": "九龙江北溪",
+        "coordinates": {
+          "lng": 117.7333,
+          "lat": 24.5167
+        }
+      },
+      "type": "石梁桥",
+      "category": "梁桥",
+      "dimensions": {},
+      "protection": {
+        "level": "国家级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "巨型石梁浮运架设",
+            "description": ""
+          },
+          {
+            "name": "单根石梁重达200吨",
+            "description": ""
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 5,
+      "dataReliability": "高",
+      "dataSource": [
+        "silk_road"
+      ],
+      "tags": [
+        "国保单位",
+        "重要桥梁",
+        "丝绸之路"
+      ],
+      "materials": {
+        "main_stone": "花岗岩",
+        "technique": "巨型石梁浮运架设，每根石梁重约200吨",
+        "note": "世界最大石构件桥梁，单根石梁最重达200余吨"
+      },
+      "keyEvents": [
+        {
+          "year": 1214,
+          "name": "建成",
+          "description": "南宋嘉定七年建成"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "江南石桥虎渡第一",
+          "世界最大石构件桥梁"
+        ],
+        "legends": [
+          {
+            "name": "虎负子渡江",
+            "content": "相传有虎负子渡江，故名虎渡桥。后改名江东桥。",
+            "type": "地名传说"
+          }
+        ],
+        "culturalSignificance": "江东桥是世界最大最重构件的石梁桥，单根石梁重达200余吨。《读史方舆纪要》称\"江南石桥，虎渡第一\"。"
+      },
+      "historicalValue": "世界最大石构件桥梁，江南石桥虎渡第一"
+    },
+    {
+      "id": "bridge_010",
+      "name": "八字桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1201,
+        "end": 1204,
+        "display": "南宋嘉泰年间(1201-1204)"
+      },
+      "era": "南宋",
+      "eraOrder": 4,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "绍兴市",
+        "river": "浙东运河",
+        "coordinates": {
+          "lng": 120.5833,
+          "lat": 29.9917
+        }
+      },
+      "type": "梁式石桥",
+      "category": "梁桥",
+      "dimensions": {
+        "span": 5.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": null,
+        "year": 2013,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 5,
+      "dataReliability": "高",
+      "dataSource": [
+        "grand_canal"
+      ],
+      "tags": [
+        "国保单位",
+        "重要桥梁",
+        "大运河"
+      ],
+      "materials": {
+        "main_stone": "石梁石墩",
+        "technique": "梁式石桥，八字形布局",
+        "note": "中国现存最早的城市桥梁之一"
+      },
+      "keyEvents": [
+        {
+          "year": 1201,
+          "name": "始建",
+          "description": "南宋嘉泰年间始建"
+        },
+        {
+          "year": 2013,
+          "name": "国保单位",
+          "description": "列入全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "中国最早的立交桥",
+          "三街三河交叉"
+        ],
+        "culturalSignificance": "八字桥是中国现存最早的城市桥梁之一，因形似\"八\"字而得名，被誉为\"中国最早的立交桥\"。"
+      },
+      "historicalValue": "中国现存最早的城市桥梁之一"
+    },
+    {
+      "id": "bridge_011",
+      "name": "卢沟桥",
+      "alias": [
+        "芦沟桥",
+        "马可波罗桥"
+      ],
+      "buildYear": {
+        "start": 1189,
+        "end": 1192,
+        "display": "金大定二十九年至明昌三年(1189-1192)"
+      },
+      "era": "金代",
+      "eraOrder": 5,
+      "builder": "金章宗下令敕建",
+      "location": {
+        "province": "北京市",
+        "city": "北京市",
+        "district": "丰台区",
+        "river": "永定河",
+        "coordinates": {
+          "lng": 116.2108,
+          "lat": 39.8542
+        }
+      },
+      "type": "十一孔联拱石桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 266.5,
+        "width": 9.3,
+        "height": 7.5,
+        "span": 21.35,
+        "spanNote": "最大孔跨径",
+        "archCount": 11,
+        "pierCount": 10,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第一批",
+        "year": 1961,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "联拱技术",
+            "description": "十一孔联拱结构，每孔可独立承受荷载"
+          },
+          {
+            "name": "石狮雕刻艺术",
+            "description": "501只石狮跨越金、元、明、清、民国、新中国六个朝代"
+          }
+        ],
+        "worldFirst": "石狮数量最多的古桥",
+        "leadYears": null,
+        "description": "501只石狮跨越六个朝代"
+      },
+      "importance": 5,
+      "dataReliability": "高",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [
+        "国保单位",
+        "重要桥梁"
+      ],
+      "materials": {
+        "main_stone": "青石、青白石、汉白玉",
+        "mortar": "传统石灰砂浆",
+        "ironwork": "石造联拱结构，11孔石拱"
+      },
+      "keyEvents": [
+        {
+          "year": 1189,
+          "name": "始建",
+          "description": "金大定二十九年开始建造，由金章宗下令敕建"
+        },
+        {
+          "year": 1192,
+          "name": "建成",
+          "description": "金明昌三年建成，桥长266.5米，宽7.5米，11孔石拱"
+        },
+        {
+          "year": 1698,
+          "name": "清代修缮",
+          "description": "清康熙三十七年修缮，明清两代共维修12次"
+        },
+        {
+          "year": 1937,
+          "name": "七七事变",
+          "description": "1937年7月7日，卢沟桥事变爆发，标志着中国全面抗战开始"
+        },
+        {
+          "year": 1985,
+          "name": "文物保护",
+          "description": "停止车辆通行，作为文物保护"
+        },
+        {
+          "name": "卢沟晓月",
+          "description": "金章宗时期定为燕京八景之一",
+          "era": "金代"
+        },
+        {
+          "name": "七七事变",
+          "description": "1937年7月7日，日本在此发动全面侵华战争，标志着中国全面抗战的开始。",
+          "date": "1937-07-07"
+        }
+      ],
+      "culturalInfo": {
+        "poems": [
+          {
+            "title": "卢沟晓月",
+            "author": "乾隆",
+            "dynasty": "清",
+            "content": "茅店寒鸡咿喔鸣，曙光斜汉欲参横。半钩留照三秋淡，一蝀分波夹镜明。入定衲憎心共印，怀程客子影犹惊。迩来每踏沟西道，触景那忘黯尔情。",
+            "theme": "燕京八景"
+          },
+          {
+            "title": "卢沟晓月",
+            "author": "金幼孜",
+            "dynasty": "明",
+            "content": "卢沟杳杳出桑乾，月照河流下石滩。茅店鸡声斜汉曙，江沙雁叫早霜寒。水光微带山烟白，野色遥连塞草残。千古长桥枕南北，忆曾题柱倚阑干。",
+            "theme": "卢沟晓月"
+          }
+        ],
+        "historicalRecords": [
+          {
+            "source": "马可波罗游记",
+            "content": "河上有一美丽的大桥，各处桥梁之美鲜有及之者……建置甚佳，老实说，它是世界上最好的、独一无二的桥。",
+            "author": "马可波罗",
+            "year": "13世纪"
+          }
+        ],
+        "sayings": [
+          "卢沟桥的狮子——数不清"
+        ]
+      },
+      "historicalValue": "卢沟桥是北京现存最古老的联孔石桥，因501只精美石狮被誉为'石狮艺术博物馆'。1937年7月7日，卢沟桥事变在此爆发，标志着中国全面抗战的开始，成为中华民族抗战精神的象征。"
+    },
+    {
+      "id": "bridge_012",
+      "name": "万宁桥",
+      "alias": [
+        "后门桥",
+        "海子桥",
+        "澄清上闸"
+      ],
+      "buildYear": {
+        "start": 1285,
+        "end": 1285,
+        "display": "元至元二十二年(1285)"
+      },
+      "era": "元代",
+      "eraOrder": 6,
+      "builder": "",
+      "location": {
+        "province": "北京市",
+        "city": "北京市",
+        "district": "西城区",
+        "river": "玉河",
+        "coordinates": {
+          "lng": 116.3917,
+          "lat": 39.9417
+        }
+      },
+      "type": "石拱桥（闸桥）",
+      "category": "拱桥",
+      "dimensions": {
+        "span": 6.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": null,
+        "year": 2013,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 5,
+      "dataReliability": "高",
+      "dataSource": [
+        "grand_canal",
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "重要桥梁",
+        "大运河",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱闸桥，澄清上闸",
+        "note": "元代漕运闸桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1285,
+          "name": "始建",
+          "description": "元至元二十二年始建"
+        },
+        {
+          "year": 2014,
+          "name": "世界遗产",
+          "description": "作为大运河组成部分列入世界遗产"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "中轴线上第一桥",
+          "后门桥",
+          "海子桥"
+        ],
+        "culturalSignificance": "万宁桥是北京中轴线上最古老的桥梁，始建于元代，俗称\"后门桥\"或\"海子桥\"。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_013",
+      "name": "波日桥",
+      "alias": [
+        "康巴第一桥"
+      ],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "元末明初"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "四川省",
+        "city": "甘孜藏族自治州",
+        "county": "新龙县",
+        "river": "雅砻江",
+        "coordinates": {
+          "lng": 100.0,
+          "lat": 30.5
+        }
+      },
+      "type": "藏式伸臂桥",
+      "category": "伸臂桥",
+      "dimensions": {
+        "length": 125,
+        "width": 3,
+        "span": 60,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "省级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 5,
+      "dataReliability": "高",
+      "dataSource": [
+        "tea_horse",
+        "frontier"
+      ],
+      "tags": [
+        "边疆民族",
+        "茶马古道",
+        "民族特色",
+        "重要桥梁"
+      ],
+      "materials": {
+        "main_wood": "木材",
+        "technique": "藏式伸臂桥，榫卯结构",
+        "note": "藏区现存跨度最大的伸臂桥，无一钉一铆"
+      },
+      "keyEvents": [
+        {
+          "year": 1368,
+          "name": "始建",
+          "description": "元末明初始建"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "康巴第一桥",
+          "藏区伸臂桥典范"
+        ],
+        "culturalSignificance": "波日桥是藏区现存跨度最大的伸臂桥，不用一钉一铆，被誉为\"康巴第一桥\"。"
+      },
+      "ethnicFeature": "藏区现存跨度最大的伸臂桥，无一钉一铆",
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_014",
+      "name": "泸定桥",
+      "alias": [
+        "大渡河铁索桥"
+      ],
+      "buildYear": {
+        "start": 1705,
+        "end": 1706,
+        "display": "清康熙四十四年至四十五年(1705-1706)"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "康熙帝敕建，四川巡抚能泰上奏建议",
+      "location": {
+        "province": "四川省",
+        "city": "甘孜藏族自治州",
+        "county": "泸定县",
+        "river": "大渡河",
+        "coordinates": {
+          "lng": 102.2341,
+          "lat": 29.9062
+        }
+      },
+      "type": "铁索悬索桥",
+      "category": "索桥",
+      "dimensions": {
+        "length": 103.67,
+        "span": 100,
+        "width": 3,
+        "height": 10,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第一批",
+        "year": 1961,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "铁索悬索技术",
+            "description": "13根手工锻造铁索，12164个铁环相扣，总重40吨"
+          }
+        ],
+        "worldFirst": "古代铁索桥技术巅峰",
+        "leadYears": null,
+        "description": "13根铁索重40吨，手工锻造1万多个铁环"
+      },
+      "importance": 5,
+      "dataReliability": "高",
+      "dataSource": [
+        "master",
+        "tea_horse"
+      ],
+      "tags": [
+        "国保单位",
+        "茶马古道",
+        "重要桥梁"
+      ],
+      "materials": {
+        "main_stone": "桥墩为石质",
+        "mortar": "无",
+        "ironwork": "13根铁索，每根长127.45米，重约2.5吨，由800-900个扁环扣链而成，总重约40吨，12164个铁环"
+      },
+      "keyEvents": [
+        {
+          "year": 1704,
+          "name": "上奏建议",
+          "description": "康熙四十三年，四川巡抚能泰上奏建议在大渡河建桥"
+        },
+        {
+          "year": 1705,
+          "name": "始建",
+          "description": "清康熙四十四年开始建造铁索桥"
+        },
+        {
+          "year": 1706,
+          "name": "建成",
+          "description": "清康熙四十五年建成，康熙御题\"泸定桥\"赐名"
+        },
+        {
+          "year": 1935,
+          "name": "飞夺泸定桥",
+          "description": "1935年5月29日，红军22勇士飞夺泸定桥，成为长征重要转折点"
+        },
+        {
+          "name": "飞夺泸定桥",
+          "date": "1935-05-29",
+          "description": "红军长征途中，22名勇士冒着枪林弹雨攀爬铁索，飞夺泸定桥，创造了战争史上的奇迹。",
+          "participants": 22,
+          "marchDistance": "24小时急行军240里",
+          "significance": "红军长征重要转折点"
+        }
+      ],
+      "culturalInfo": {
+        "couplets": [
+          {
+            "author": "胡耀邦",
+            "content": "飞身可夺天堑，健步定攀高峰",
+            "theme": "纪念红军"
+          }
+        ]
+      },
+      "historicalValue": "泸定桥是中国古代铁索桥技术的巅峰之作，13根铁索由12164个手工锻造的铁环相扣而成，展现了清代冶铁技术的高超。1935年红军22勇士飞夺泸定桥的壮举，使其成为长征精神和革命历史的象征。"
+    },
+    {
+      "id": "bridge_015",
+      "name": "地坪风雨桥",
+      "alias": [
+        "地坪花桥"
+      ],
+      "buildYear": {
+        "start": 1882,
+        "end": 1882,
+        "display": "清光绪八年(1882)"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "贵州省",
+        "city": "黔东南苗族侗族自治州",
+        "county": "黎平县",
+        "river": "南江河",
+        "coordinates": {
+          "lng": 109.2375,
+          "lat": 25.765
+        }
+      },
+      "type": "侗族风雨桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 57.61,
+        "width": 4.5,
+        "unit": "米",
+        "span": 21.42
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第五批",
+        "year": 2001,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 5,
+      "dataReliability": "高",
+      "dataSource": [
+        "tea_horse",
+        "frontier"
+      ],
+      "tags": [
+        "重要桥梁",
+        "边疆民族",
+        "国保单位",
+        "茶马古道",
+        "民族特色"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "侗族榫卯结构，不用一钉一铆",
+        "note": "侗族建筑文化集大成者"
+      },
+      "keyEvents": [
+        {
+          "year": 1882,
+          "name": "始建",
+          "description": "清光绪八年始建"
+        },
+        {
+          "year": 2001,
+          "name": "国保单位",
+          "description": "列入第五批全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "有寨必有鼓楼，有河必有风雨桥"
+        ],
+        "culturalSignificance": "地坪风雨桥是侗族建筑文化的杰出代表，不用一钉一铆。"
+      },
+      "ethnicFeature": "侗族建筑文化的集大成者，不用一钉一铆",
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_016",
+      "name": "沙河古桥遗址",
+      "alias": [],
+      "buildYear": {
+        "start": -206,
+        "end": 220,
+        "display": "秦汉时期"
+      },
+      "era": "秦汉",
+      "eraOrder": 0,
+      "builder": "",
+      "location": {
+        "province": "陕西省",
+        "city": "咸阳市",
+        "river": "沙河故道",
+        "coordinates": {
+          "lng": 108.6833,
+          "lat": 34.3
+        }
+      },
+      "type": "木桩梁桥",
+      "category": "梁桥",
+      "dimensions": {
+        "exposedPiles": 112,
+        "pileRows": 16
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "silk_road"
+      ],
+      "tags": [
+        "国保单位",
+        "丝绸之路"
+      ],
+      "materials": {
+        "main_wood": "木桩",
+        "technique": "木桩梁桥，16排112根木桩",
+        "note": "秦汉时期大型木桥"
+      },
+      "keyEvents": [
+        {
+          "year": -206,
+          "name": "秦汉始建",
+          "description": "秦汉时期始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_017",
+      "name": "小商桥",
+      "alias": [
+        "隋拱桥"
+      ],
+      "buildYear": {
+        "start": 584,
+        "end": 584,
+        "display": "隋开皇四年(584)"
+      },
+      "era": "隋代",
+      "eraOrder": 1.5,
+      "builder": "待考证（隋代工匠，可能为李春早期作品）",
+      "location": {
+        "province": "河南省",
+        "city": "漯河市",
+        "county": "临颍县",
+        "river": "小商河",
+        "coordinates": {
+          "lng": 113.9545,
+          "lat": 33.8724
+        }
+      },
+      "type": "单孔敞肩圆弧石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 21.3,
+        "width": 6.45,
+        "height": 6.55,
+        "span": 11.6,
+        "spanNote": "主拱净跨",
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "敞肩拱",
+            "description": "敞肩单孔石拱桥，是世界现存最早的敞肩拱桥"
+          },
+          {
+            "name": "并列砌筑法",
+            "description": "20道拱石并列砌筑，每道独立承重"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "建造时间早于赵州桥，是世界现存最早的敞肩拱桥"
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [
+        "国保单位"
+      ],
+      "materials": {
+        "main_stone": "红砂岩（拱石）",
+        "mortar": "传统灰浆",
+        "ironwork": "腰铁加固，20道拱石并列砌筑"
+      },
+      "keyEvents": [
+        {
+          "year": 584,
+          "name": "始建",
+          "description": "隋开皇四年始建，比赵州桥早7年"
+        },
+        {
+          "year": 1140,
+          "name": "杨再兴殉国",
+          "description": "南宋绍兴十年，岳飞部将杨再兴率三百骑兵在此与金兵激战殉国"
+        },
+        {
+          "year": 2001,
+          "name": "国保单位",
+          "description": "列入第五批全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {
+        "legends": [
+          {
+            "name": "杨再兴殉国",
+            "content": "南宋绍兴十年，岳飞部将杨再兴率三百骑兵在此与金兵激战殉国。",
+            "type": "历史事件"
+          }
+        ],
+        "culturalSignificance": "小商桥是世界现存最早的敞肩石拱桥，岳飞部将杨再兴在此殉国。"
+      },
+      "historicalValue": "小商桥是世界现存最早的敞肩石拱桥，比赵州桥早约7年建成，可能是赵州桥的实验桥。南宋绍兴十年，岳飞部将杨再兴在此与金兵激战殉国，具有重要的历史价值。"
+    },
+    {
+      "id": "bridge_018",
+      "name": "弘济桥",
+      "alias": [],
+      "buildYear": {
+        "start": 600,
+        "end": 649,
+        "display": "隋末唐初"
+      },
+      "era": "隋代",
+      "eraOrder": 1.5,
+      "builder": "",
+      "location": {
+        "province": "河北省",
+        "city": "邯郸市",
+        "county": "永年区",
+        "river": "滏阳河",
+        "coordinates": {
+          "lng": 114.617,
+          "lat": 36.783
+        }
+      },
+      "type": "单孔敞肩石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 48.9,
+        "width": 6.82,
+        "span": 35.2,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第六批",
+        "year": 2006,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "敞肩拱",
+            "description": "与赵州桥结构相似"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "与赵州桥齐名的隋代石拱桥"
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "敞肩圆弧拱，与赵州桥结构相似",
+        "note": "隋代石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 600,
+          "name": "始建",
+          "description": "隋末唐初始建"
+        },
+        {
+          "year": 2006,
+          "name": "国保单位",
+          "description": "列入第六批全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "赵州桥姐妹桥"
+        ],
+        "culturalSignificance": "弘济桥与赵州桥结构相似，同为隋代敞肩石拱桥，被誉为\"赵州桥姐妹桥\"。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_019",
+      "name": "断桥",
+      "alias": [
+        "段家桥",
+        "宝祐桥"
+      ],
+      "buildYear": {
+        "start": 618,
+        "end": 907,
+        "display": "唐代(原),1921年重建"
+      },
+      "era": "唐代",
+      "eraOrder": 2,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "杭州市",
+        "river": "西湖",
+        "coordinates": {
+          "lng": 120.1489,
+          "lat": 30.2545
+        }
+      },
+      "type": "单孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 8.8,
+        "width": 8.6,
+        "span": 6.0,
+        "spanNote": "约数",
+        "unit": "米"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": true,
+        "heritageName": "杭州西湖文化景观"
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "西湖十景之一'断桥残雪'"
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [
+        "世界遗产"
+      ],
+      "materials": {
+        "main_stone": "石拱",
+        "technique": "单孔石拱桥",
+        "note": "1921年重建，西湖十景之一"
+      },
+      "keyEvents": [
+        {
+          "year": 618,
+          "name": "始建",
+          "description": "唐代始建"
+        },
+        {
+          "year": 1921,
+          "name": "重建",
+          "description": "现存桥梁为1921年重建"
+        },
+        {
+          "year": 2011,
+          "name": "世界遗产",
+          "description": "作为西湖文化景观列入世界遗产"
+        }
+      ],
+      "culturalInfo": {
+        "poems": [
+          {
+            "title": "断桥闲望",
+            "author": "洪丞",
+            "dynasty": "明",
+            "content": "闲作步上断桥头，到眼无穷胜景收。",
+            "theme": "西湖美景"
+          }
+        ],
+        "legends": [
+          {
+            "name": "白娘子断桥相会",
+            "content": "《白蛇传》传说中，白娘子白素贞与许仙在西湖断桥相遇，结下千年情缘。",
+            "type": "爱情传说",
+            "characters": [
+              "白娘子",
+              "许仙",
+              "小青"
+            ]
+          },
+          {
+            "name": "断桥残雪",
+            "content": "断桥是西湖十景之一，雪后初晴，桥面若隐若现，似断非断。",
+            "type": "景观传说"
+          }
+        ],
+        "culturalSignificance": "断桥因《白蛇传》传说而闻名，是中国民间爱情文化的象征。西湖十景之一\"断桥残雪\"。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_020",
+      "name": "宝带桥",
+      "alias": [],
+      "buildYear": {
+        "start": 816,
+        "end": 819,
+        "display": "唐元和十一年至十四年(816-819)"
+      },
+      "era": "唐代",
+      "eraOrder": 2,
+      "builder": "王仲舒（唐苏州刺史，捐宝带资助建桥）",
+      "location": {
+        "province": "江苏省",
+        "city": "苏州市",
+        "river": "京杭大运河",
+        "coordinates": {
+          "lng": 120.6167,
+          "lat": 31.2667
+        }
+      },
+      "type": "薄墩联拱石桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 316.8,
+        "width": 4.1,
+        "archCount": 53,
+        "unit": "米",
+        "span": 9.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第二批",
+        "year": 1982,
+        "isWorldHeritage": true,
+        "heritageName": "中国大运河"
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "薄墩联拱技术",
+            "description": "53孔连缀，薄墩技术领先欧洲200年"
+          }
+        ],
+        "worldFirst": "中国现存最长多孔石桥",
+        "leadYears": null,
+        "description": "53孔连缀，薄墩技术领先欧洲200年"
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "master",
+        "grand_canal"
+      ],
+      "tags": [
+        "国保单位",
+        "世界遗产",
+        "大运河"
+      ],
+      "materials": {
+        "main_stone": "金山石（优质花岗岩）",
+        "technique": "薄墩联拱，53孔连缀",
+        "note": "中国现存孔数最多的石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 816,
+          "name": "始建",
+          "description": "唐元和十一年始建，王仲舒捐宝带资助"
+        },
+        {
+          "year": 1445,
+          "name": "重建",
+          "description": "明正统十年重建"
+        },
+        {
+          "year": 2014,
+          "name": "世界遗产",
+          "description": "作为大运河组成部分列入世界遗产"
+        }
+      ],
+      "culturalInfo": {
+        "legends": [
+          {
+            "name": "王仲舒捐宝带",
+            "content": "唐元和年间，苏州刺史王仲舒捐出御赐玉宝带筹集资金建桥。",
+            "type": "建造传说",
+            "characters": [
+              "王仲舒"
+            ]
+          }
+        ],
+        "sayings": [
+          "玉带横波",
+          "五十三孔映明月"
+        ],
+        "culturalSignificance": "宝带桥因王仲舒捐宝带资助建桥而得名，是古代漕运的重要通道。"
+      },
+      "historicalValue": "宝带桥是中国现存孔数最多的石拱桥，53孔薄墩联拱技术领先欧洲约200年。因苏州刺史王仲舒捐出玉宝带资助建桥而得名，既是纤道桥又是运河上的重要通道，体现了唐代苏州的经济繁荣。"
+    },
+    {
+      "id": "bridge_021",
+      "name": "灵桥",
+      "alias": [
+        "东津浮桥",
+        "老江桥"
+      ],
+      "buildYear": {
+        "start": 823,
+        "end": 823,
+        "display": "唐长庆三年(823)"
+      },
+      "era": "唐代",
+      "eraOrder": 2,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "宁波市",
+        "river": "奉化江",
+        "coordinates": {
+          "lng": 121.55,
+          "lat": 29.8667
+        }
+      },
+      "type": "浮桥",
+      "category": "浮桥",
+      "dimensions": {
+        "boatCount": 18,
+        "span": 50.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "silk_road"
+      ],
+      "tags": [
+        "丝绸之路"
+      ],
+      "materials": {
+        "main_wood": "木船",
+        "technique": "浮桥，18只木船铁链连接",
+        "note": "宁波最古老的大跨度浮桥"
+      },
+      "keyEvents": [
+        {
+          "year": 823,
+          "name": "始建",
+          "description": "唐长庆三年始建"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "宁波第一桥",
+          "老江桥"
+        ],
+        "culturalSignificance": "灵桥是宁波最古老的大跨度浮桥，见证了宁波港的发展历史。"
+      },
+      "historicalValue": "宁波最古老的大跨度浮桥，几乎与宁波城市同龄"
+    },
+    {
+      "id": "bridge_022",
+      "name": "盐井铁链木桥",
+      "alias": [],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "唐代以来"
+      },
+      "era": "唐代",
+      "eraOrder": 2,
+      "builder": "",
+      "location": {
+        "province": "西藏自治区",
+        "city": "昌都市",
+        "county": "芒康县",
+        "river": "澜沧江",
+        "coordinates": {
+          "lng": 98.6,
+          "lat": 29.05
+        }
+      },
+      "type": "铁链木桥",
+      "category": "索桥",
+      "dimensions": {
+        "span": 50.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "中",
+      "dataSource": [
+        "tea_horse"
+      ],
+      "tags": [
+        "茶马古道"
+      ],
+      "materials": {
+        "ironwork": "铁链",
+        "technique": "铁链悬索桥"
+      },
+      "keyEvents": [
+        {
+          "year": 700,
+          "name": "始建",
+          "description": "唐代以来始建"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "茶马古道要冲"
+        ],
+        "culturalSignificance": "盐井铁链木桥是茶马古道上的重要桥梁，见证了藏汉文化交流。"
+      },
+      "historicalValue": "自茶马古道开通至今，藏汉政治经济文化交流的主要通道"
+    },
+    {
+      "id": "bridge_023",
+      "name": "龙江桥",
+      "alias": [
+        "太平桥",
+        "永平桥"
+      ],
+      "buildYear": {
+        "start": 983,
+        "end": 1066,
+        "display": "北宋太平兴国八年至治平三年(983-1066)"
+      },
+      "era": "北宋",
+      "eraOrder": 3,
+      "builder": "",
+      "location": {
+        "province": "福建省",
+        "city": "福州市",
+        "river": "龙江",
+        "coordinates": {
+          "lng": 119.4,
+          "lat": 25.72
+        }
+      },
+      "type": "石构墩柱漫水桥",
+      "category": "梁桥",
+      "dimensions": {
+        "length": 476,
+        "width": 4.5,
+        "pierCount": 42,
+        "unit": "米",
+        "span": 11.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "silk_road"
+      ],
+      "tags": [
+        "国保单位",
+        "丝绸之路"
+      ],
+      "materials": {
+        "main_stone": "花岗岩",
+        "technique": "石构墩柱漫水桥，42座桥墩",
+        "note": "福建四大古桥之一"
+      },
+      "keyEvents": [
+        {
+          "year": 983,
+          "name": "始建",
+          "description": "北宋太平兴国八年始建"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "福建四大古桥之一"
+        ],
+        "culturalSignificance": "龙江桥是福建省现存规模最大的古桥，与洛阳桥、安平桥、广济桥并称\"福建四大古桥\"。"
+      },
+      "historicalValue": "福建省现存古桥中规模最大，福建四大古桥之一"
+    },
+    {
+      "id": "bridge_024",
+      "name": "垂虹桥",
+      "alias": [
+        "江南第一长桥"
+      ],
+      "buildYear": {
+        "start": 1048,
+        "end": 1048,
+        "display": "北宋庆历八年(1048)"
+      },
+      "era": "北宋",
+      "eraOrder": 3,
+      "builder": "县尉苏舜钦主持修建",
+      "location": {
+        "province": "江苏省",
+        "city": "苏州市",
+        "county": "吴江区",
+        "river": "吴淞江",
+        "coordinates": {
+          "lng": 120.6456,
+          "lat": 31.1589
+        }
+      },
+      "type": "五十三孔薄拱多孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 500,
+        "archCount": 53,
+        "span": 9.3,
+        "spanNote": "平均跨径",
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "薄拱多孔窄墩技术",
+            "description": ""
+          }
+        ],
+        "worldFirst": "江南第一长桥",
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [
+        "国保单位"
+      ],
+      "materials": {
+        "main_stone": "石拱",
+        "technique": "薄拱多孔窄墩，53孔连拱",
+        "note": "江南第一长桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1048,
+          "name": "始建",
+          "description": "北宋庆历八年始建"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "江南第一长桥"
+        ],
+        "culturalSignificance": "垂虹桥号称\"江南第一长桥\"，是吴江地区的标志性建筑。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_025",
+      "name": "百梁桥",
+      "alias": [
+        "小溪江桥",
+        "浙东第一廊桥"
+      ],
+      "buildYear": {
+        "start": 1078,
+        "end": 1078,
+        "display": "北宋元丰元年(1078)"
+      },
+      "era": "北宋",
+      "eraOrder": 3,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "宁波市",
+        "river": "鄞江",
+        "coordinates": {
+          "lng": 121.4,
+          "lat": 29.8
+        }
+      },
+      "type": "石墩木梁廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 77.4,
+        "width": 8,
+        "pierCount": 6,
+        "beamCount": 124,
+        "unit": "米",
+        "span": 12.0
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "silk_road"
+      ],
+      "tags": [
+        "丝绸之路"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "石墩木梁廊桥，124根木梁",
+        "note": "浙江省仅存最长石墩木梁古廊桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1078,
+          "name": "始建",
+          "description": "北宋元丰元年始建"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "浙东第一廊桥"
+        ],
+        "culturalSignificance": "百梁桥是浙江省仅存最长的石墩木梁古廊桥，被誉为\"浙东第一廊桥\"。"
+      },
+      "historicalValue": "浙江省仅存最长石墩木梁古廊桥，浙东第一廊桥"
+    },
+    {
+      "id": "bridge_026",
+      "name": "安澜索桥",
+      "alias": [
+        "珠浦桥",
+        "夫妻桥"
+      ],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "宋代以前"
+      },
+      "era": "宋代",
+      "eraOrder": 3.5,
+      "builder": "",
+      "location": {
+        "province": "四川省",
+        "city": "都江堰市",
+        "river": "岷江",
+        "coordinates": {
+          "lng": 103.6,
+          "lat": 31.0
+        }
+      },
+      "type": "竹索桥",
+      "category": "索桥",
+      "dimensions": {
+        "originalLength": 320,
+        "currentLength": 240,
+        "unit": "米",
+        "span": 240.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第二批",
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "tea_horse"
+      ],
+      "tags": [
+        "国保单位",
+        "茶马古道"
+      ],
+      "materials": {
+        "main_bamboo": "竹索",
+        "technique": "竹索悬索桥",
+        "note": "茅以升誉为中国五大名桥之一"
+      },
+      "keyEvents": [
+        {
+          "year": 960,
+          "name": "始建",
+          "description": "宋代始建"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "夫妻桥",
+          "何公何母桥",
+          "中国五大古桥之一"
+        ],
+        "legends": [
+          {
+            "name": "何先德夫妇修桥",
+            "content": "清嘉庆八年，何先德夫妇重建索桥。后人称\"夫妻桥\"或\"何公何母桥\"。",
+            "type": "建造传说",
+            "characters": [
+              "何先德"
+            ]
+          }
+        ],
+        "culturalSignificance": "安澜索桥是茅以升誉为中国五大名桥之一的古索桥，横跨岷江。"
+      },
+      "historicalValue": "茅以升誉为中国五大名桥之一"
+    },
+    {
+      "id": "bridge_027",
+      "name": "龙脑桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1368,
+        "end": 1398,
+        "display": "明洪武年间(1368-1398)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "明代地方工匠",
+      "location": {
+        "province": "四川省",
+        "city": "泸州市",
+        "county": "泸县",
+        "river": "九曲河",
+        "coordinates": {
+          "lng": 105.3745,
+          "lat": 29.1524
+        }
+      },
+      "type": "龙雕石梁板桥",
+      "category": "梁桥",
+      "dimensions": {
+        "length": 54,
+        "width": 1.9,
+        "height": 5.3,
+        "span": 3.7,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": 4,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "龙形圆雕",
+            "description": "桥墩龙头圆雕精美，展现明代石雕艺术"
+          }
+        ],
+        "worldFirst": "中国最大龙雕石板梁桥",
+        "leadYears": null,
+        "description": "泸县181座龙桥的代表"
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [
+        "国保单位"
+      ],
+      "materials": {
+        "main_stone": "石板",
+        "technique": "龙雕石梁板桥，龙头圆雕精美",
+        "note": "中国最大龙雕石板梁桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1368,
+          "name": "始建",
+          "description": "明洪武年间始建"
+        },
+        {
+          "year": 1996,
+          "name": "国保单位",
+          "description": "列入全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "泸县龙桥第一"
+        ],
+        "culturalSignificance": "龙脑桥是中国最大龙雕石板梁桥，泸县有181座龙桥形成龙桥文化群。"
+      },
+      "historicalValue": "龙脑桥是中国最大龙雕石板梁桥，泸县境内有181座龙桥，形成了独特的龙桥文化。桥墩上的龙头圆雕精美绝伦，展现了明代川南石雕艺术的精湛技艺，是泸州地区重要的文化象征。"
+    },
+    {
+      "id": "bridge_028",
+      "name": "清名桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1368,
+        "end": 1644,
+        "display": "明代"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "江苏省",
+        "city": "无锡市",
+        "river": "古运河",
+        "coordinates": {
+          "lng": 120.3167,
+          "lat": 31.5
+        }
+      },
+      "type": "单孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "span": 8.0
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "grand_canal"
+      ],
+      "tags": [
+        "大运河"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "单孔石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1368,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "无锡古运河标志"
+        ],
+        "culturalSignificance": "清名桥是无锡古运河上的标志性建筑，见证了无锡作为运河重镇的历史。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_029",
+      "name": "清江大闸",
+      "alias": [
+        "清江浦闸"
+      ],
+      "buildYear": {
+        "start": 1415,
+        "end": 1415,
+        "display": "明永乐十三年(1415)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "江苏省",
+        "city": "淮安市",
+        "river": "京杭大运河",
+        "coordinates": {
+          "lng": 119.058799,
+          "lat": 33.555209
+        }
+      },
+      "type": "闸桥",
+      "category": "闸桥",
+      "dimensions": {
+        "span": 10.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "grand_canal"
+      ],
+      "tags": [
+        "国保单位",
+        "大运河"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石闸桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1415,
+          "name": "始建",
+          "description": "明永乐十三年始建"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "淮安运河枢纽"
+        ],
+        "culturalSignificance": "清江大闸是京杭大运河的重要水利设施，见证了淮安作为运河枢纽的历史地位。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_030",
+      "name": "霁虹桥",
+      "alias": [
+        "兰津桥"
+      ],
+      "buildYear": {
+        "start": 1465,
+        "end": 1487,
+        "display": "明成化年间(1465-1487)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "僧人了成募建",
+      "location": {
+        "province": "云南省",
+        "city": "保山市",
+        "river": "澜沧江",
+        "coordinates": {
+          "lng": 99.2745,
+          "lat": 25.3124
+        }
+      },
+      "type": "铁索悬索桥",
+      "category": "索桥",
+      "dimensions": {
+        "length": 113.4,
+        "width": 4.1,
+        "span": 57.3,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "省级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "18根铁索",
+            "description": ""
+          }
+        ],
+        "worldFirst": "世界现存最古老铁索桥（原桥1986年被冲毁）",
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [],
+      "materials": {
+        "ironwork": "18根铁索",
+        "technique": "铁索悬索桥",
+        "note": "世界现存最古老铁索桥（原桥1986年被冲毁）"
+      },
+      "keyEvents": [
+        {
+          "year": 1475,
+          "name": "始建",
+          "description": "明成化年间始建"
+        },
+        {
+          "year": 1986,
+          "name": "原桥冲毁",
+          "description": "原桥被洪水冲毁"
+        }
+      ],
+      "culturalInfo": {
+        "poems": [
+          {
+            "title": "博南歌",
+            "author": "佚名",
+            "dynasty": "汉",
+            "content": "汉德广，开不宾。度博南，越兰津。渡澜沧，为他人。",
+            "theme": "古道歌谣"
+          }
+        ],
+        "historicalRecords": [
+          {
+            "source": "徐霞客游记",
+            "content": "徐霞客称霁虹桥所在的水寨为\"入滇第一胜\"。",
+            "author": "徐霞客",
+            "era": "明代"
+          }
+        ],
+        "culturalSignificance": "霁虹桥位于茶马古道博南段，是兰津古渡口的咽喉要道。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_031",
+      "name": "广济桥(塘栖)",
+      "alias": [
+        "通济桥",
+        "碧天桥"
+      ],
+      "buildYear": {
+        "start": 1488,
+        "end": 1505,
+        "display": "唐代(传),明弘治年间(1488-1505)重建"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "杭州市",
+        "county": "临平区塘栖镇",
+        "river": "京杭大运河",
+        "coordinates": {
+          "lng": 120.1156,
+          "lat": 30.2689
+        }
+      },
+      "type": "七孔薄墩联拱石桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 83,
+        "archCount": 7,
+        "unit": "米",
+        "span": 12.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": true,
+        "heritageName": "中国大运河"
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "薄墩联拱技术",
+            "description": ""
+          }
+        ],
+        "worldFirst": "京杭大运河上仅存的七孔石拱桥",
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "master",
+        "grand_canal"
+      ],
+      "tags": [
+        "国保单位",
+        "世界遗产",
+        "大运河"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "七孔薄墩联拱石桥"
+      },
+      "keyEvents": [
+        {
+          "year": 806,
+          "name": "始建",
+          "description": "唐代传始建"
+        },
+        {
+          "year": 1488,
+          "name": "重建",
+          "description": "明弘治年间重建"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "京杭大运河上仅存的七孔石拱桥"
+        ],
+        "culturalSignificance": "广济桥是京杭大运河上仅存的七孔石拱桥，见证了塘栖古镇的繁华，是运河文化的重要载体。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_032",
+      "name": "溪东桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1570,
+        "end": 1570,
+        "display": "明隆庆四年(1570)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "泰顺木匠，当地村民",
+      "location": {
+        "province": "浙江省",
+        "city": "温州市",
+        "county": "泰顺县",
+        "river": "溪东",
+        "coordinates": {
+          "lng": 119.998,
+          "lat": 27.471
+        }
+      },
+      "type": "编梁木拱廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 42.17,
+        "width": 5.17,
+        "span": 27.0,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第六批",
+        "year": 2006,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "编梁木拱结构",
+            "description": "与北涧桥并称泗溪姐妹桥"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "世界最美廊桥之一"
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "joint": "榫卯结构（无钉）",
+        "roof": "青瓦廊屋",
+        "technique": "编梁式木拱，不用一颗铁钉，几百年不倒"
+      },
+      "keyEvents": [
+        {
+          "year": 1570,
+          "name": "始建",
+          "description": "明隆庆四年始建，距今400多年历史"
+        },
+        {
+          "year": 1745,
+          "name": "重修",
+          "description": "清乾隆十年重修"
+        },
+        {
+          "year": 1827,
+          "name": "重修",
+          "description": "道光七年重修"
+        },
+        {
+          "year": 2006,
+          "name": "国保",
+          "description": "列入第六批全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "泗溪姐妹桥",
+          "世界最美廊桥之一"
+        ],
+        "culturalSignificance": "溪东桥与北涧桥并称\"泗溪姐妹桥\"，是世界最美廊桥之一。"
+      },
+      "historicalValue": "溪东桥与北涧桥并称'泗溪姐妹桥'，是世界最美廊桥之一。整座桥不用一颗铁钉，历经400余年依然屹立，是明代木构建筑的杰出代表。"
+    },
+    {
+      "id": "bridge_033",
+      "name": "长虹桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1573,
+        "end": 1620,
+        "display": "明万历年间"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "嘉兴市",
+        "river": "京杭大运河",
+        "coordinates": {
+          "lng": 120.7667,
+          "lat": 30.75
+        }
+      },
+      "type": "三孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "span": 12.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": null,
+        "year": 2006,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "grand_canal"
+      ],
+      "tags": [
+        "国保单位",
+        "大运河"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "三孔石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1573,
+          "name": "始建",
+          "description": "明万历年间始建"
+        },
+        {
+          "year": 2006,
+          "name": "国保单位",
+          "description": "列入全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "嘉兴运河古桥"
+        ],
+        "culturalSignificance": "长虹桥是大运河嘉兴段的重要古桥，见证了江南运河的繁荣。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_034",
+      "name": "如龙桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1625,
+        "end": 1625,
+        "display": "明天启五年(1625)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "庆元木匠，月山村村民",
+      "location": {
+        "province": "浙江省",
+        "city": "丽水市",
+        "county": "庆元县",
+        "river": "举水",
+        "coordinates": {
+          "lng": 119.167,
+          "lat": 27.583
+        }
+      },
+      "type": "编梁木拱廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 28.26,
+        "width": 5.39,
+        "span": 19.4,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第五批",
+        "year": 2001,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "编梁木拱结构",
+            "description": "列入中国世界文化遗产预备名单"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "处州廊桥代表"
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "joint": "榫卯结构",
+        "roof": "青瓦廊屋9间",
+        "technique": "编梁木拱廊桥，下部为单孔木拱架，外观呈八字型"
+      },
+      "keyEvents": [
+        {
+          "year": 1625,
+          "name": "修建",
+          "description": "明天启五年修建，是全国现存有确切纪年、寿命最长的木拱廊桥"
+        },
+        {
+          "year": 2001,
+          "name": "国保",
+          "description": "列入第五批全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "月山八桥之首"
+        ],
+        "culturalSignificance": "如龙桥是全国现存有确切纪年、寿命最长的木拱廊桥，已列入中国世界文化遗产预备名单。"
+      },
+      "historicalValue": "如龙桥是全国现存有确切纪年、寿命最长的木拱廊桥。因桥势与后山山脊古松依稀相连，桥似龙首下倾，故名如龙桥，已列入中国世界文化遗产预备名单。"
+    },
+    {
+      "id": "bridge_035",
+      "name": "拱宸桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1631,
+        "end": 1631,
+        "display": "明崇祯四年(1631)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "祝华封",
+      "location": {
+        "province": "浙江省",
+        "city": "杭州市",
+        "district": "拱墅区",
+        "river": "京杭大运河",
+        "coordinates": {
+          "lng": 120.1458,
+          "lat": 30.3097
+        }
+      },
+      "type": "三孔薄墩联拱石桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 92,
+        "width": 9.2,
+        "height": 16,
+        "archCount": 3,
+        "span": 15.8,
+        "spanNote": "中孔跨径，边孔各约11米",
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第七批",
+        "year": 2013,
+        "isWorldHeritage": true,
+        "heritageName": "中国大运河"
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "薄墩联拱技术",
+            "description": ""
+          }
+        ],
+        "worldFirst": "京杭大运河南端地标",
+        "leadYears": null,
+        "description": "杭州古桥中最高最长者"
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "master",
+        "grand_canal"
+      ],
+      "tags": [
+        "国保单位",
+        "世界遗产",
+        "大运河"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "三孔薄墩联拱石桥",
+        "note": "杭州古桥中最高最长者"
+      },
+      "keyEvents": [
+        {
+          "year": 1631,
+          "name": "始建",
+          "description": "明崇祯四年始建"
+        },
+        {
+          "year": 1714,
+          "name": "重建",
+          "description": "清康熙五十三年重建"
+        },
+        {
+          "year": 2014,
+          "name": "世界遗产",
+          "description": "作为大运河组成部分列入世界遗产"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "京杭大运河南端地标",
+          "拱手迎宸"
+        ],
+        "culturalSignificance": "拱宸桥是京杭大运河南端终点标志，\"拱\"为拱手相迎，\"宸\"指帝王，寓意恭迎圣驾。桥高16米，是杭州古桥中最高最长者。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_036",
+      "name": "青龙桥",
+      "alias": [
+        "束河青龙桥"
+      ],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "明万历年间"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "云南省",
+        "city": "丽江市",
+        "river": "青龙河",
+        "coordinates": {
+          "lng": 100.2,
+          "lat": 26.92
+        }
+      },
+      "type": "石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "span": 10.0
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": "丽江古城"
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "tea_horse",
+        "frontier"
+      ],
+      "tags": [
+        "边疆民族",
+        "茶马古道",
+        "民族特色"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [],
+      "culturalInfo": {
+        "sayings": [
+          "丽江古城古桥"
+        ],
+        "culturalSignificance": "青龙桥位于丽江古城，是纳西族地区的重要古桥，见证了丽江的历史。"
+      },
+      "ethnicFeature": "木氏土司鼎盛时期的标志性建筑",
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_037",
+      "name": "通京桥",
+      "alias": [],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "明代"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "云南省",
+        "city": "大理白族自治州",
+        "county": "云龙县",
+        "river": "沘江",
+        "coordinates": {
+          "lng": 99.4,
+          "lat": 25.9
+        }
+      },
+      "type": "伸臂木梁桥",
+      "category": "伸臂桥",
+      "dimensions": {
+        "span": 12.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": 7,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "frontier"
+      ],
+      "tags": [
+        "边疆民族",
+        "民族特色",
+        "国保单位"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "藏式伸臂桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1800,
+          "name": "始建",
+          "description": "清代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "ethnicFeature": "白族伸臂木梁桥技术",
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_038",
+      "name": "彩凤桥",
+      "alias": [],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "明代"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "云南省",
+        "city": "大理白族自治州",
+        "county": "云龙县",
+        "river": "沘江",
+        "coordinates": {
+          "lng": 99.4,
+          "lat": 25.9
+        }
+      },
+      "type": "伸臂木梁桥",
+      "category": "伸臂桥",
+      "dimensions": {
+        "span": 10.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": 7,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "frontier"
+      ],
+      "tags": [
+        "边疆民族",
+        "民族特色",
+        "国保单位"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "伸臂木桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1800,
+          "name": "始建",
+          "description": "清代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "ethnicFeature": "白族伸臂木梁桥",
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_039",
+      "name": "青云桥",
+      "alias": [],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "明代"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "云南省",
+        "city": "大理白族自治州",
+        "county": "云龙县",
+        "river": "沘江",
+        "coordinates": {
+          "lng": 99.4,
+          "lat": 25.9
+        }
+      },
+      "type": "铁索桥",
+      "category": "索桥",
+      "dimensions": {
+        "span": 10.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": 7,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "frontier",
+        "ext_v2"
+      ],
+      "tags": [
+        "边疆民族",
+        "国保单位",
+        "民族特色",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_metal": "铁索",
+        "technique": "铁索桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1800,
+          "name": "始建",
+          "description": "清代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "ethnicFeature": "白族铁索桥",
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_040",
+      "name": "北涧桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1675,
+        "end": 1675,
+        "display": "清康熙十三年(1675)"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "泰顺木匠世家，当地村民集资",
+      "location": {
+        "province": "浙江省",
+        "city": "温州市",
+        "county": "泰顺县",
+        "river": "北溪",
+        "coordinates": {
+          "lng": 119.998,
+          "lat": 27.471
+        }
+      },
+      "type": "编梁木拱廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 51.87,
+        "width": 5.37,
+        "span": 29,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第六批",
+        "year": 2006,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "编梁木拱结构",
+            "description": "不用一钉一铆的榫卯结构"
+          },
+          {
+            "name": "三节苗、五节苗",
+            "description": "编木拱核心结构"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "泰顺廊桥代表，世界最美廊桥之一"
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "joint": "榫卯结构（无钉）",
+        "roof": "青瓦廊屋",
+        "technique": "编梁式木拱，不用一颗铁钉"
+      },
+      "keyEvents": [
+        {
+          "year": 1675,
+          "name": "始建",
+          "description": "清康熙十三年始建，为编梁式木拱廊桥"
+        },
+        {
+          "year": 1803,
+          "name": "重修",
+          "description": "嘉庆八年修建"
+        },
+        {
+          "year": 1849,
+          "name": "重修",
+          "description": "道光二十九年重修"
+        },
+        {
+          "year": 2006,
+          "name": "国保",
+          "description": "列入第六批全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "泗溪姐妹桥",
+          "世界最美廊桥之一"
+        ],
+        "culturalSignificance": "北涧桥与溪东桥并称\"泗溪姐妹桥\"，是世界最美廊桥之一。"
+      },
+      "historicalValue": "北涧桥是泰顺廊桥的杰出代表，被誉为'世界最美廊桥之一'。整座桥采用编梁式木拱结构，不用一颗铁钉，展现了古代工匠的高超技艺。"
+    },
+    {
+      "id": "bridge_041",
+      "name": "鸾峰桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1802,
+        "end": 1802,
+        "display": "清嘉庆七年(1802)"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "福建省",
+        "city": "宁德市",
+        "county": "寿宁县",
+        "river": "",
+        "coordinates": {
+          "lng": 119.5,
+          "lat": 27.5
+        }
+      },
+      "type": "编梁木拱廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 47.6,
+        "width": 4.9,
+        "span": 37.2,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第六批",
+        "year": 2006,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "编梁木拱结构",
+            "description": "单孔跨度居全国之首"
+          }
+        ],
+        "worldFirst": "全国单孔跨度最大的木拱廊桥",
+        "leadYears": null,
+        "description": "寿宁木拱廊桥群代表"
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "木拱廊桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1600,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_042",
+      "name": "岜团桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1910,
+        "end": 1910,
+        "display": "清宣统二年(1910)"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "广西壮族自治区",
+        "city": "柳州市",
+        "county": "三江侗族自治县",
+        "coordinates": {
+          "lng": 109.6,
+          "lat": 25.8
+        }
+      },
+      "type": "木构风雨廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "span": 15.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "frontier"
+      ],
+      "tags": [
+        "边疆民族",
+        "民族特色",
+        "国保单位"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "侗族风雨桥，榫卯结构"
+      },
+      "keyEvents": [
+        {
+          "year": 1910,
+          "name": "始建",
+          "description": "清末民初始建"
+        },
+        {
+          "year": 2006,
+          "name": "国保单位",
+          "description": "列入全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "侗族风雨桥典范"
+        ],
+        "culturalSignificance": "岜团桥是侗族风雨桥的杰出代表，不用一钉一铆，体现了侗族工匠的精湛技艺和民族智慧。"
+      },
+      "ethnicFeature": "侗族风雨桥",
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_043",
+      "name": "扎西达桑桥",
+      "alias": [
+        "茶马古道第一桥"
+      ],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "清代"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "西藏自治区",
+        "city": "昌都市",
+        "county": "芒康县",
+        "river": "澜沧江",
+        "coordinates": {
+          "lng": 98.5,
+          "lat": 29.3
+        }
+      },
+      "type": "藏式古桥",
+      "category": "其他",
+      "dimensions": {
+        "span": 20.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "中",
+      "dataSource": [
+        "tea_horse"
+      ],
+      "tags": [
+        "茶马古道"
+      ],
+      "materials": {
+        "ironwork": "铁索",
+        "technique": "藏式悬索桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1800,
+          "name": "始建",
+          "description": "清代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": "连接茶马古道澜沧江两岸的唯一古桥"
+    },
+    {
+      "id": "bridge_044",
+      "name": "坪坦风雨桥群",
+      "alias": [],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "清代"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "湖南省",
+        "city": "怀化市",
+        "county": "通道侗族自治县",
+        "coordinates": {
+          "lng": 109.8,
+          "lat": 26.2
+        }
+      },
+      "type": "木构风雨廊桥群",
+      "category": "廊桥",
+      "dimensions": {},
+      "protection": {
+        "level": "国家级",
+        "batch": 6,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "frontier"
+      ],
+      "tags": [
+        "边疆民族",
+        "民族特色",
+        "国保单位"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "侗族风雨桥群"
+      },
+      "keyEvents": [
+        {
+          "year": 1800,
+          "name": "始建",
+          "description": "清代始建"
+        },
+        {
+          "year": 2006,
+          "name": "国保单位",
+          "description": "列入全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "侗族风雨桥群"
+        ],
+        "culturalSignificance": "坪坦风雨桥群是侗族建筑文化的集中体现，多座风雨桥构成独特的民族景观。"
+      },
+      "ethnicFeature": "侗族风雨桥群，多座廊桥组成",
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_045",
+      "name": "程阳永济桥",
+      "alias": [
+        "程阳风雨桥"
+      ],
+      "buildYear": {
+        "start": 1912,
+        "end": 1924,
+        "display": "民国元年至十三年(1912-1924)"
+      },
+      "era": "民国",
+      "eraOrder": 9,
+      "builder": "侗族工匠，八寨五十位长者组成\"首士团\"主持建造",
+      "location": {
+        "province": "广西壮族自治区",
+        "city": "柳州市",
+        "county": "三江侗族自治县",
+        "village": "程阳八寨",
+        "river": "林溪河",
+        "coordinates": {
+          "lng": 109.6284,
+          "lat": 25.8157
+        }
+      },
+      "type": "木构风雨廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 77.76,
+        "width": 3.75,
+        "height": 10.7,
+        "pierCount": 3,
+        "archCount": 4,
+        "unit": "米",
+        "span": 20.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第二批",
+        "year": 1982,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "榫卯结构",
+            "description": "整座桥不用一根铁钉，全靠榫卯结构连接"
+          },
+          {
+            "name": "密式悬臂托架简支梁",
+            "description": "侗族特有的木构建筑技术"
+          }
+        ],
+        "worldFirst": "不用一根铁钉的大型木构廊桥",
+        "leadYears": null,
+        "description": "整座桥不用一根铁钉，全靠榫卯结构"
+      },
+      "importance": 4,
+      "dataReliability": "高",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [
+        "国保单位"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "编梁木拱廊桥，榫卯结构无钉",
+        "note": "世界四大历史名桥之一"
+      },
+      "keyEvents": [
+        {
+          "year": 1912,
+          "name": "始建",
+          "description": "民国元年始建"
+        },
+        {
+          "year": 1988,
+          "name": "国保单位",
+          "description": "列入第三批全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "有寨必有鼓楼，有河必有风雨桥"
+        ],
+        "legends": [
+          {
+            "name": "侗族建桥不用钉",
+            "content": "程阳风雨桥整座桥梁不用一颗铁钉，全靠榫卯结构连接。",
+            "type": "技艺传说"
+          }
+        ],
+        "culturalSignificance": "程阳永济桥是侗族建筑文化的集大成者，集桥、廊、亭于一体。"
+      },
+      "historicalValue": "程阳永济桥是侗族建筑的杰出代表，整座桥不用一根铁钉，全靠榫卯结构连接，展现了侗族工匠的高超技艺。桥上建有5座桥亭、19间桥廊，集桥、廊、亭于一体，是侗族文化的重要象征。"
+    },
+    {
+      "id": "bridge_046",
+      "name": "二十四桥",
+      "alias": [
+        "吴家砖桥",
+        "红药桥"
+      ],
+      "buildYear": {
+        "start": 618,
+        "end": 907,
+        "display": "唐代(原),清代重建"
+      },
+      "era": "唐代",
+      "eraOrder": 2,
+      "builder": "",
+      "location": {
+        "province": "江苏省",
+        "city": "扬州市",
+        "river": "瘦西湖",
+        "coordinates": {
+          "lng": 119.4198,
+          "lat": 32.3998
+        }
+      },
+      "type": "单拱砖桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 11.4,
+        "unit": "米",
+        "span": 8.0
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "中",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [],
+      "materials": {
+        "main_stone": "石拱",
+        "technique": "单孔石拱桥（现代重建）",
+        "note": "因杜牧诗句闻名"
+      },
+      "keyEvents": [
+        {
+          "year": 860,
+          "name": "唐代",
+          "description": "唐代扬州二十四桥盛景"
+        }
+      ],
+      "culturalInfo": {
+        "poems": [
+          {
+            "title": "寄扬州韩绰判官",
+            "author": "杜牧",
+            "dynasty": "唐",
+            "content": "青山隐隐水迢迢，秋尽江南草未凋。二十四桥明月夜，玉人何处教吹箫？",
+            "theme": "扬州美景"
+          },
+          {
+            "title": "扬州慢",
+            "author": "姜夔",
+            "dynasty": "宋",
+            "content": "二十四桥仍在，波心荡，冷月无声。念桥边红药，年年知为谁生？",
+            "theme": "怀古伤今"
+          }
+        ],
+        "culturalSignificance": "二十四桥因杜牧诗句而名扬天下，成为扬州文化的重要符号。",
+        "location": "扬州"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_047",
+      "name": "通济桥",
+      "alias": [
+        "老江桥"
+      ],
+      "buildYear": {
+        "start": 1042,
+        "end": 1043,
+        "display": "北宋庆历二年至三年(1042-1043)"
+      },
+      "era": "北宋",
+      "eraOrder": 3,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "宁波市",
+        "county": "余姚市",
+        "river": "姚江",
+        "coordinates": {
+          "lng": 121.167,
+          "lat": 30.05
+        }
+      },
+      "type": "三孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 50,
+        "width": 9,
+        "archCount": 3,
+        "unit": "米",
+        "span": 18.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第八批",
+        "year": 2019,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "余姚标志性古桥"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "三孔石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1200,
+          "name": "始建",
+          "description": "南宋始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_048",
+      "name": "观音桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1056,
+        "end": 1063,
+        "display": "北宋嘉祐年间(1056-1063)"
+      },
+      "era": "北宋",
+      "eraOrder": 3,
+      "builder": "",
+      "location": {
+        "province": "江西省",
+        "city": "九江市",
+        "county": "庐山市",
+        "river": "三峡涧",
+        "coordinates": {
+          "lng": 115.9,
+          "lat": 29.5
+        }
+      },
+      "type": "单孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 20,
+        "width": 4,
+        "span": 10,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第二批",
+        "year": 1982,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "宋代拱桥技术",
+            "description": "庐山古建筑群组成部分"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "庐山著名古桥"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "单孔石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1000,
+          "name": "始建",
+          "description": "北宋始建"
+        }
+      ],
+      "culturalInfo": {
+        "legends": [
+          {
+            "name": "观音显灵",
+            "content": "相传观音菩萨曾在此显灵，保佑桥梁平安。",
+            "type": "宗教传说"
+          }
+        ],
+        "culturalSignificance": "观音桥因供奉观音菩萨而得名，体现了中国民间的观音信仰。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_049",
+      "name": "阳岐午桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1089,
+        "end": 1089,
+        "display": "北宋元祐四年(1089)"
+      },
+      "era": "北宋",
+      "eraOrder": 3,
+      "builder": "",
+      "location": {
+        "province": "福建省",
+        "city": "福州市",
+        "coordinates": {
+          "lng": 119.2833,
+          "lat": 26.0
+        }
+      },
+      "type": "石梁桥",
+      "category": "梁桥",
+      "dimensions": {
+        "length": 34,
+        "width": 3.25,
+        "unit": "米",
+        "span": 8.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "silk_road"
+      ],
+      "tags": [
+        "丝绸之路"
+      ],
+      "materials": {
+        "main_stone": "条石",
+        "technique": "石梁桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1200,
+          "name": "始建",
+          "description": "南宋始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": "南驿道在福州仅存的遗迹"
+    },
+    {
+      "id": "bridge_050",
+      "name": "逢渠桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1090,
+        "end": 1090,
+        "display": "北宋元祐五年(1090)"
+      },
+      "era": "北宋",
+      "eraOrder": 3,
+      "builder": "",
+      "location": {
+        "province": "江西省",
+        "city": "宜春市",
+        "county": "宜丰县",
+        "river": "同安水",
+        "coordinates": {
+          "lng": 114.65,
+          "lat": 28.333
+        }
+      },
+      "type": "单孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 22,
+        "width": 4.5,
+        "span": 9.5,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第七批",
+        "year": 2013,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "洞山禅宗祖庭重要建筑"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "单孔石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1078,
+          "name": "始建",
+          "description": "北宋元丰元年始建"
+        }
+      ],
+      "culturalInfo": {
+        "culturalSignificance": "逢渠桥位于江西宜丰，是宋代石拱桥的典型代表。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_051",
+      "name": "望春桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1098,
+        "end": 1100,
+        "display": "北宋元符年间"
+      },
+      "era": "北宋",
+      "eraOrder": 3,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "宁波市",
+        "river": "浙东运河",
+        "coordinates": {
+          "lng": 121.508552,
+          "lat": 29.881481
+        }
+      },
+      "type": "石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "span": 6.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "grand_canal"
+      ],
+      "tags": [
+        "大运河"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "单孔石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1086,
+          "name": "始建",
+          "description": "北宋元祐元年始建"
+        }
+      ],
+      "culturalInfo": {
+        "culturalSignificance": "望春桥位于宁波，是浙东运河上的重要桥梁。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_052",
+      "name": "鸣水桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1111,
+        "end": 1118,
+        "display": "北宋政和年间(1111-1118)"
+      },
+      "era": "北宋",
+      "eraOrder": 3,
+      "builder": "",
+      "location": {
+        "province": "江西省",
+        "city": "宜春市",
+        "county": "樟树市閤皂山",
+        "coordinates": {
+          "lng": 115.5245,
+          "lat": 27.8824
+        }
+      },
+      "type": "石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 8,
+        "width": 4,
+        "unit": "米",
+        "span": 4.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": 6,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "中",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [
+        "国保单位"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "单孔石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1086,
+          "name": "始建",
+          "description": "北宋始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_053",
+      "name": "广宁桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1127,
+        "end": 1279,
+        "display": "南宋"
+      },
+      "era": "南宋",
+      "eraOrder": 4,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "绍兴市",
+        "river": "浙东运河",
+        "coordinates": {
+          "lng": 120.59144,
+          "lat": 30.000935
+        }
+      },
+      "type": "石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "span": 8.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "中",
+      "dataSource": [
+        "grand_canal",
+        "ext_v2"
+      ],
+      "tags": [
+        "大运河",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "单孔石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1200,
+          "name": "始建",
+          "description": "南宋始建"
+        },
+        {
+          "year": 2013,
+          "name": "国保单位",
+          "description": "列入全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {
+        "culturalSignificance": "广宁桥是绍兴古桥群的代表之一，体现了绍兴水乡文化。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_054",
+      "name": "寿昌桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1127,
+        "end": 1130,
+        "display": "南宋建炎年间(1127-1130)"
+      },
+      "era": "南宋",
+      "eraOrder": 4,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "湖州市",
+        "county": "德清县",
+        "river": "",
+        "coordinates": {
+          "lng": 120.117,
+          "lat": 30.317
+        }
+      },
+      "type": "单孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 24,
+        "width": 4.5,
+        "span": 17,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第六批",
+        "year": 2006,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "薄拱结构",
+            "description": "江南宋代石拱桥精品"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "德清古桥群代表"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "单孔石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1200,
+          "name": "始建",
+          "description": "南宋始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_055",
+      "name": "永和桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1127,
+        "end": 1130,
+        "display": "南宋建炎年间(1127-1130)"
+      },
+      "era": "南宋",
+      "eraOrder": 4,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "丽水市",
+        "county": "龙泉市",
+        "river": "",
+        "coordinates": {
+          "lng": 119.133,
+          "lat": 28.45
+        }
+      },
+      "type": "编梁木拱廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 33,
+        "width": 5,
+        "unit": "米",
+        "span": 12.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第七批",
+        "year": 2013,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "编梁木拱结构",
+            "description": "龙泉廊桥代表"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "龙泉廊桥群代表"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "木拱廊桥，榫卯结构"
+      },
+      "keyEvents": [
+        {
+          "year": 1500,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_056",
+      "name": "清华彩虹桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1134,
+        "end": 1134,
+        "display": "南宋绍兴四年(1134)"
+      },
+      "era": "南宋",
+      "eraOrder": 4,
+      "builder": "",
+      "location": {
+        "province": "江西省",
+        "city": "上饶市",
+        "county": "婺源县",
+        "river": "清华河",
+        "coordinates": {
+          "lng": 117.8,
+          "lat": 29.517
+        }
+      },
+      "type": "廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 140,
+        "width": 6.5,
+        "unit": "米",
+        "span": 12.67
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第六批",
+        "year": 2006,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "廊桥结构",
+            "description": "婺源廊桥代表"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "婺源标志性建筑"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "编梁木拱廊桥",
+        "note": "中国最美的廊桥之一"
+      },
+      "keyEvents": [
+        {
+          "year": 1137,
+          "name": "始建",
+          "description": "南宋始建"
+        },
+        {
+          "year": 2006,
+          "name": "国保单位",
+          "description": "列入第六批全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "中国最美的廊桥"
+        ],
+        "culturalSignificance": "清华彩虹桥因电影《廊桥遗梦》取景而声名远扬。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_057",
+      "name": "三条桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1147,
+        "end": 1147,
+        "display": "南宋绍兴十七年(1147)"
+      },
+      "era": "南宋",
+      "eraOrder": 4,
+      "builder": "宋代工匠，当地村民",
+      "location": {
+        "province": "浙江省",
+        "city": "温州市",
+        "county": "泰顺县",
+        "river": "",
+        "coordinates": {
+          "lng": 119.883,
+          "lat": 27.433
+        }
+      },
+      "type": "编梁木拱廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 26.93,
+        "width": 4,
+        "span": 21.26,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第六批",
+        "year": 2006,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "编梁木拱结构",
+            "description": "泰顺最古老木拱廊桥"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "泰顺廊桥群最古老者"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "joint": "榫卯结构（无钉）",
+        "roof": "青瓦廊屋",
+        "technique": "编梁式木拱，是泰顺廊桥中年代最早的"
+      },
+      "keyEvents": [
+        {
+          "year": 1147,
+          "name": "始建",
+          "description": "南宋绍兴十七年始建，是泰顺现存年代最早的廊桥"
+        },
+        {
+          "year": 2006,
+          "name": "国保",
+          "description": "列入第六批全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": "三条桥是泰顺现存年代最早的廊桥，始建于南宋绍兴十七年（1147），距今已有近900年历史，是研究中国廊桥发展史的重要实物证据。"
+    },
+    {
+      "id": "bridge_058",
+      "name": "顺济桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1211,
+        "end": 1211,
+        "display": "南宋嘉定四年(1211)"
+      },
+      "era": "南宋",
+      "eraOrder": 4,
+      "builder": "",
+      "location": {
+        "province": "福建省",
+        "city": "泉州市",
+        "river": "晋江",
+        "coordinates": {
+          "lng": 118.5833,
+          "lat": 24.9
+        }
+      },
+      "type": "石梁桥",
+      "category": "梁桥",
+      "dimensions": {
+        "span": 10.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "silk_road"
+      ],
+      "tags": [
+        "丝绸之路"
+      ],
+      "materials": {
+        "main_stone": "条石",
+        "technique": "石梁桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1200,
+          "name": "始建",
+          "description": "南宋始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": "由泉州知州以来泉外国商人资金建成，见证海丝商贸繁荣"
+    },
+    {
+      "id": "bridge_059",
+      "name": "原平普济桥",
+      "alias": [
+        "南桥"
+      ],
+      "buildYear": {
+        "start": 1181,
+        "end": 1181,
+        "display": "金大定二十一年(1181)"
+      },
+      "era": "金代",
+      "eraOrder": 5,
+      "builder": "",
+      "location": {
+        "province": "山西省",
+        "city": "忻州市",
+        "county": "原平市",
+        "river": "",
+        "coordinates": {
+          "lng": 112.7,
+          "lat": 38.7
+        }
+      },
+      "type": "单孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 21,
+        "width": 5,
+        "span": 8,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第八批",
+        "year": 2019,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "山西金代石拱桥代表"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1200,
+          "name": "始建",
+          "description": "金代始建"
+        },
+        {
+          "year": 2001,
+          "name": "国保单位",
+          "description": "列入全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "金代石桥典范"
+        ],
+        "culturalSignificance": "原平普济桥是金代石拱桥的代表作，具有重要的建筑史研究价值。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_060",
+      "name": "万寿桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1303,
+        "end": 1322,
+        "display": "元大德七年至至治二年(1303-1322)"
+      },
+      "era": "元代",
+      "eraOrder": 6,
+      "builder": "",
+      "location": {
+        "province": "福建省",
+        "city": "福州市",
+        "river": "闽江",
+        "coordinates": {
+          "lng": 120.55,
+          "lat": 30.0
+        }
+      },
+      "type": "石梁桥",
+      "category": "梁桥",
+      "dimensions": {
+        "span": 8.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "grand_canal",
+        "silk_road"
+      ],
+      "tags": [
+        "大运河",
+        "丝绸之路"
+      ],
+      "materials": {
+        "main_stone": "条石",
+        "technique": "石梁桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1200,
+          "name": "始建",
+          "description": "南宋始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_061",
+      "name": "光相桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1341,
+        "end": 1341,
+        "display": "元至正元年(1341)"
+      },
+      "era": "元代",
+      "eraOrder": 6,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "绍兴市",
+        "county": "越城区",
+        "river": "浙东运河",
+        "coordinates": {
+          "lng": 120.267,
+          "lat": 30.017
+        }
+      },
+      "type": "单孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 20,
+        "width": 5,
+        "unit": "米",
+        "span": 6.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第七批",
+        "year": 2013,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "绍兴古桥群组成部分"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "单孔石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 900,
+          "name": "始建",
+          "description": "唐五代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_062",
+      "name": "七级北大桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1368,
+        "end": 1911,
+        "display": "明清"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "山东省",
+        "city": "聊城市",
+        "county": "阳谷县",
+        "river": "京杭大运河",
+        "coordinates": {
+          "lng": 116.03519,
+          "lat": 36.24441
+        }
+      },
+      "type": "石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "span": 10.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "中",
+      "dataSource": [
+        "grand_canal"
+      ],
+      "tags": [
+        "国保单位",
+        "大运河"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1300,
+          "name": "始建",
+          "description": "元明时期始建"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "临清古桥"
+        ],
+        "culturalSignificance": "七级北大桥位于山东聊城，是运河沿线的重要古桥。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_063",
+      "name": "会通桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1368,
+        "end": 1644,
+        "display": "明代"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "山东省",
+        "city": "济宁市",
+        "river": "京杭大运河",
+        "coordinates": {
+          "lng": 115.704982,
+          "lat": 36.83828
+        }
+      },
+      "type": "石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "span": 8.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "中",
+      "dataSource": [
+        "grand_canal"
+      ],
+      "tags": [
+        "大运河"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1415,
+          "name": "始建",
+          "description": "明永乐十三年始建"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "临清会通河"
+        ],
+        "culturalSignificance": "会通桥位于临清，因会通河而得名，是运河文化的重要组成部分。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_064",
+      "name": "月湖桥",
+      "alias": [
+        "湖心西桥"
+      ],
+      "buildYear": {
+        "start": 1368,
+        "end": 1644,
+        "display": "明代"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "宁波市",
+        "coordinates": {
+          "lng": 121.5417,
+          "lat": 29.875
+        }
+      },
+      "type": "石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "span": 6.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "中",
+      "dataSource": [
+        "silk_road"
+      ],
+      "tags": [
+        "丝绸之路"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1500,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": "宁波城区内唯一幸存的石拱桥"
+    },
+    {
+      "id": "bridge_065",
+      "name": "大汶口古石桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1368,
+        "end": 1911,
+        "display": "明清时期"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "山东省",
+        "city": "泰安市",
+        "county": "岱岳区",
+        "river": "大汶河",
+        "coordinates": {
+          "lng": 117.1,
+          "lat": 35.9
+        }
+      },
+      "type": "石板梁桥",
+      "category": "梁桥",
+      "dimensions": {
+        "length": 200,
+        "width": 2.5,
+        "unit": "米",
+        "span": 8.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第七批",
+        "year": 2013,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "漫水桥",
+            "description": "洪水时可漫水而过"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "山东明清石梁桥代表"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_stone": "条石",
+        "technique": "石梁桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1800,
+          "name": "始建",
+          "description": "清代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_066",
+      "name": "青龙风雨桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1368,
+        "end": 1644,
+        "display": "明代"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "广西壮族自治区",
+        "city": "贺州市",
+        "county": "富川瑶族自治县",
+        "river": "",
+        "coordinates": {
+          "lng": 111.283,
+          "lat": 24.4
+        }
+      },
+      "type": "瑶族风雨桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 25,
+        "width": 4,
+        "unit": "米",
+        "span": 10.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第七批",
+        "year": 2013,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "瑶族建筑特色",
+            "description": "瑶族廊桥建筑风格"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "富川瑶族风雨桥群组成之一"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "侗族风雨桥，榫卯结构"
+      },
+      "keyEvents": [
+        {
+          "year": 1800,
+          "name": "始建",
+          "description": "清代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_067",
+      "name": "济川桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1368,
+        "end": 1644,
+        "display": "明代"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "广东省",
+        "city": "梅州市",
+        "county": "大埔县",
+        "river": "梅潭河",
+        "coordinates": {
+          "lng": 116.667,
+          "lat": 24.35
+        }
+      },
+      "type": "石拱廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 52,
+        "width": 4,
+        "unit": "米",
+        "span": 15.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "省级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "粤东廊桥代表"
+      },
+      "importance": 3,
+      "dataReliability": "中",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "扩展数据"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "木拱廊桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1600,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_068",
+      "name": "仙居桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1368,
+        "end": 1644,
+        "display": "明代"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "福建省",
+        "city": "宁德市",
+        "county": "寿宁县",
+        "river": "",
+        "coordinates": {
+          "lng": 119.483,
+          "lat": 27.467
+        }
+      },
+      "type": "编梁木拱廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 25.4,
+        "width": 4.9,
+        "unit": "米",
+        "span": 15.0
+      },
+      "protection": {
+        "level": "省级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "编梁木拱结构",
+            "description": "寿宁廊桥代表"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "寿宁木拱廊桥群代表"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "扩展数据"
+      ],
+      "materials": {},
+      "keyEvents": [],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_069",
+      "name": "灞陵桥",
+      "alias": [
+        "渭河桥"
+      ],
+      "buildYear": {
+        "start": 1368,
+        "end": 1644,
+        "display": "明代"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "甘肃省",
+        "city": "定西市",
+        "county": "渭源县",
+        "river": "清源河",
+        "coordinates": {
+          "lng": 104.233,
+          "lat": 35.167
+        }
+      },
+      "type": "伸臂木梁桥",
+      "category": "伸臂桥",
+      "dimensions": {
+        "length": 41.2,
+        "width": 5.3,
+        "unit": "米",
+        "span": 10.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第六批",
+        "year": 2006,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "伸臂木梁结构",
+            "description": "西北地区伸臂桥代表"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "西北地区伸臂木梁桥代表"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_wood": "木材",
+        "technique": "伸臂木拱桥",
+        "note": "渭河第一桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1368,
+          "name": "始建",
+          "description": "明代始建"
+        },
+        {
+          "year": 2006,
+          "name": "国保单位",
+          "description": "列入第六批全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {
+        "poems": [
+          {
+            "title": "灞陵行送别",
+            "author": "李白",
+            "dynasty": "唐",
+            "content": "送君灞陵亭，灞水流浩浩。",
+            "theme": "送别诗"
+          }
+        ],
+        "sayings": [
+          "折柳送别"
+        ],
+        "culturalSignificance": "灞陵桥自古为送别之地，\"折柳送别\"是中国文化的经典意象。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_070",
+      "name": "七桥瓮",
+      "alias": [],
+      "buildYear": {
+        "start": 1430,
+        "end": 1430,
+        "display": "明宣德五年(1430)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "江苏省",
+        "city": "南京市",
+        "county": "秦淮区",
+        "river": "外秦淮河",
+        "coordinates": {
+          "lng": 118.85,
+          "lat": 31.967
+        }
+      },
+      "type": "七孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 99.4,
+        "width": 13,
+        "archCount": 7,
+        "unit": "米",
+        "span": 14.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第七批",
+        "year": 2013,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "七孔联拱",
+            "description": "南京地区重要古桥"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "南京现存最大古石桥"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "七孔石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1440,
+          "name": "始建",
+          "description": "明正统年间始建"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "南京古桥之最"
+        ],
+        "culturalSignificance": "七桥瓮是南京地区现存规模最大的古桥，七孔连拱，见证了明都南京的历史。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_071",
+      "name": "太平桥(安徽)",
+      "alias": [],
+      "buildYear": {
+        "start": 1488,
+        "end": 1505,
+        "display": "明弘治年间(1488-1505)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "安徽省",
+        "city": "黄山市",
+        "county": "徽州区",
+        "coordinates": {
+          "lng": 118.3345,
+          "lat": 29.8624
+        }
+      },
+      "type": "十六孔拱形石桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 268,
+        "width": 7.1,
+        "archCount": 16,
+        "unit": "米",
+        "span": 16.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "省级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "红色粉砂岩砌筑",
+            "description": ""
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "安徽省最长的古石拱桥"
+      },
+      "importance": 3,
+      "dataReliability": "中",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1500,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_072",
+      "name": "惠济桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1506,
+        "end": 1521,
+        "display": "明正德年间(1506-1521)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "河南省",
+        "city": "郑州市",
+        "county": "惠济区",
+        "river": "贾鲁河",
+        "coordinates": {
+          "lng": 113.617,
+          "lat": 34.867
+        }
+      },
+      "type": "三孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 48,
+        "width": 7,
+        "archCount": 3,
+        "unit": "米",
+        "span": 16.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第六批",
+        "year": 2006,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "郑州地区重要明代石拱桥"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1500,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_073",
+      "name": "云溪桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1508,
+        "end": 1508,
+        "display": "明正德三年(1508)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "河南省",
+        "city": "鹤壁市",
+        "county": "浚县",
+        "river": "卫河",
+        "coordinates": {
+          "lng": 114.542608,
+          "lat": 35.668562
+        }
+      },
+      "type": "石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "span": 8.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "中",
+      "dataSource": [
+        "grand_canal"
+      ],
+      "tags": [
+        "大运河"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1500,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "淇县古桥"
+        ],
+        "culturalSignificance": "云溪桥位于河南淇县，是豫北地区的重要古桥。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_074",
+      "name": "潮音桥",
+      "alias": [
+        "哑子桥"
+      ],
+      "buildYear": {
+        "start": 1533,
+        "end": 1533,
+        "display": "明嘉靖十二年(1533)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "湖州市",
+        "county": "吴兴区",
+        "river": "霅溪",
+        "coordinates": {
+          "lng": 120.083,
+          "lat": 30.867
+        }
+      },
+      "type": "三孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 54,
+        "width": 6,
+        "archCount": 3,
+        "unit": "米",
+        "span": 8.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第八批",
+        "year": 2019,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "湖州三绝之一"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "三孔石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1540,
+          "name": "始建",
+          "description": "明嘉靖年间始建"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "湖州三绝之一"
+        ],
+        "culturalSignificance": "潮音桥是湖州古城的标志性建筑，与飞英塔、府庙并称\"湖州三绝\"。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_075",
+      "name": "屯溪镇海桥",
+      "alias": [
+        "老大桥"
+      ],
+      "buildYear": {
+        "start": 1536,
+        "end": 1536,
+        "display": "明嘉靖十五年(1536)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "安徽省",
+        "city": "黄山市",
+        "county": "屯溪区",
+        "river": "新安江",
+        "coordinates": {
+          "lng": 118.317,
+          "lat": 29.717
+        }
+      },
+      "type": "七孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 133,
+        "width": 6,
+        "archCount": 7,
+        "unit": "米",
+        "span": 12.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第七批",
+        "year": 2013,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "七孔联拱",
+            "description": "新安江上重要桥梁"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "屯溪老街标志性建筑"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1536,
+          "name": "始建",
+          "description": "明嘉靖十五年始建"
+        },
+        {
+          "year": 2019,
+          "name": "火灾",
+          "description": "2019年遭受火灾损毁"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "屯溪第一桥"
+        ],
+        "culturalSignificance": "镇海桥是屯溪老街的标志性建筑，横跨新安江，见证了徽商的繁荣历史。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_076",
+      "name": "云桂桥",
+      "alias": [
+        "小港桥",
+        "尚书桥"
+      ],
+      "buildYear": {
+        "start": 1545,
+        "end": 1545,
+        "display": "明嘉靖二十四年(1545)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "广东省",
+        "city": "广州市",
+        "coordinates": {
+          "lng": 113.27,
+          "lat": 23.0833
+        }
+      },
+      "type": "石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "span": 8.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "silk_road"
+      ],
+      "tags": [
+        "丝绸之路"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1600,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": "广州现存最古老、保护最完好的石桥之一"
+    },
+    {
+      "id": "bridge_077",
+      "name": "葛镜桥",
+      "alias": [
+        "豆腐桥"
+      ],
+      "buildYear": {
+        "start": 1573,
+        "end": 1620,
+        "display": "明万历年间(1573-1620)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "葛镜（历时三十年三建三毁终成）",
+      "location": {
+        "province": "贵州省",
+        "city": "黔南布依族苗族自治州",
+        "county": "福泉市",
+        "river": "麻哈江",
+        "coordinates": {
+          "lng": 107.5245,
+          "lat": 26.7824
+        }
+      },
+      "type": "三孔尖顶石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 52.7,
+        "width": 8.5,
+        "height": 30,
+        "unit": "米",
+        "span": 10.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": 6,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "三孔尖顶拱",
+            "description": ""
+          },
+          {
+            "name": "绝壁起拱",
+            "description": ""
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "与赵州桥齐名"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [
+        "国保单位"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1600,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_078",
+      "name": "万元桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1573,
+        "end": 1620,
+        "display": "明万历年间(1573-1620)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "湖州市",
+        "county": "南浔区",
+        "river": "",
+        "coordinates": {
+          "lng": 120.3,
+          "lat": 30.85
+        }
+      },
+      "type": "三孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 46,
+        "width": 4.3,
+        "archCount": 3,
+        "unit": "米",
+        "span": 8.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第七批",
+        "year": 2013,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "联拱结构",
+            "description": "薄墩薄拱技术代表"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "双林三桥之一"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1500,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_079",
+      "name": "万年桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1573,
+        "end": 1620,
+        "display": "明万历年间(1573-1620)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "江西省",
+        "city": "抚州市",
+        "county": "南城县",
+        "river": "盱江",
+        "coordinates": {
+          "lng": 116.45,
+          "lat": 27.55
+        }
+      },
+      "type": "二十三孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 400,
+        "width": 6,
+        "archCount": 23,
+        "unit": "米",
+        "span": 10.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第七批",
+        "year": 2013,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "二十三孔联拱",
+            "description": "江西最长古石拱桥"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "江西明代石拱桥代表"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1500,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "万年长存"
+        ],
+        "culturalSignificance": "万年桥寓意万年长存，寄托了人们对桥梁永固的美好愿望。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_080",
+      "name": "永通桥",
+      "alias": [
+        "小石桥"
+      ],
+      "buildYear": {
+        "start": 1628,
+        "end": 1644,
+        "display": "明崇祯年间(1628-1644)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "北京市",
+        "city": "通州区",
+        "county": "",
+        "river": "通惠河",
+        "coordinates": {
+          "lng": 116.683,
+          "lat": 39.883
+        }
+      },
+      "type": "单孔敞肩石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 32,
+        "width": 6.34,
+        "span": 26,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第七批",
+        "year": 2013,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "敞肩拱",
+            "description": "仿赵州桥技术"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "北京地区重要的明代石拱桥"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {},
+      "keyEvents": [],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_081",
+      "name": "单桥",
+      "alias": [
+        "善人桥"
+      ],
+      "buildYear": {
+        "start": 1629,
+        "end": 1636,
+        "display": "明崇祯二年至九年(1629-1636)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "河北省",
+        "city": "沧州市",
+        "county": "献县",
+        "river": "滹沱河",
+        "coordinates": {
+          "lng": 116.117,
+          "lat": 38.133
+        }
+      },
+      "type": "五孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 69,
+        "width": 9.3,
+        "archCount": 5,
+        "unit": "米",
+        "span": 8.0
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第六批",
+        "year": 2006,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "石雕艺术",
+            "description": "桥栏板石雕精美"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "明代石拱桥代表"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1629,
+          "name": "始建",
+          "description": "明崇祯二年始建"
+        },
+        {
+          "year": 2006,
+          "name": "国保单位",
+          "description": "列入全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "献县古桥"
+        ],
+        "culturalSignificance": "单桥是河北献县的历史名桥，见证了明清时期北方交通的发展。"
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_082",
+      "name": "永安石桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1639,
+        "end": 1639,
+        "display": "明崇祯十二年(1639)"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "辽宁省",
+        "city": "鞍山市",
+        "county": "海城市",
+        "coordinates": {
+          "lng": 122.7,
+          "lat": 40.9
+        }
+      },
+      "type": "三孔联拱石桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 50,
+        "width": 8,
+        "archCount": 3,
+        "unit": "米",
+        "span": 16.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": 8,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "frontier"
+      ],
+      "tags": [
+        "边疆民族",
+        "民族特色",
+        "国保单位"
+      ],
+      "materials": {},
+      "keyEvents": [],
+      "culturalInfo": {},
+      "ethnicFeature": "东北地区明代石拱桥代表",
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_083",
+      "name": "丽江大石桥",
+      "alias": [
+        "映雪桥"
+      ],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "明代"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "云南省",
+        "city": "丽江市",
+        "river": "中河",
+        "coordinates": {
+          "lng": 100.225,
+          "lat": 26.8758
+        }
+      },
+      "type": "双孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 10.6,
+        "width": 3.84,
+        "rise": 2.2,
+        "unit": "米",
+        "span": 4.5,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "tea_horse"
+      ],
+      "tags": [
+        "茶马古道",
+        "民族特色"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1300,
+          "name": "始建",
+          "description": "元明时期始建"
+        }
+      ],
+      "culturalInfo": {
+        "sayings": [
+          "茶马古道要冲"
+        ],
+        "culturalSignificance": "丽江大石桥位于古城核心区域，是茶马古道的重要通道，见证了纳西族与各民族的经济文化交流。"
+      },
+      "ethnicFeature": "丽江古城众桥之首，从桥下可见玉龙雪山倒影",
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_084",
+      "name": "万子桥",
+      "alias": [],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "明代"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "云南省",
+        "city": "丽江市",
+        "river": "中河",
+        "coordinates": {
+          "lng": 100.226,
+          "lat": 26.874
+        }
+      },
+      "type": "单孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 8,
+        "width": 4,
+        "unit": "米",
+        "span": 4.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "中",
+      "dataSource": [
+        "tea_horse"
+      ],
+      "tags": [
+        "茶马古道"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1300,
+          "name": "始建",
+          "description": "元明时期始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_085",
+      "name": "玉龙桥",
+      "alias": [
+        "双石桥"
+      ],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "明代"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "云南省",
+        "city": "丽江市",
+        "coordinates": {
+          "lng": 100.224,
+          "lat": 26.876
+        }
+      },
+      "type": "双孔石拱平桥",
+      "category": "拱桥",
+      "dimensions": {
+        "span": 6.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "中",
+      "dataSource": [
+        "tea_horse"
+      ],
+      "tags": [
+        "茶马古道"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1300,
+          "name": "始建",
+          "description": "元明时期始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_086",
+      "name": "太平桥(绍兴)",
+      "alias": [],
+      "buildYear": {
+        "start": 1644,
+        "end": 1911,
+        "display": "清代"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "绍兴市",
+        "river": "浙东运河",
+        "coordinates": {
+          "lng": 120.239454,
+          "lat": 29.712936
+        }
+      },
+      "type": "石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "span": 8.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "中",
+      "dataSource": [
+        "grand_canal"
+      ],
+      "tags": [
+        "大运河"
+      ],
+      "materials": {},
+      "keyEvents": [],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_087",
+      "name": "泗龙桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1644,
+        "end": 1911,
+        "display": "清代"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "绍兴市",
+        "river": "浙东运河",
+        "coordinates": {
+          "lng": 120.528761,
+          "lat": 30.028364
+        }
+      },
+      "type": "石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "span": 10.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "中",
+      "dataSource": [
+        "grand_canal",
+        "ext_v2"
+      ],
+      "tags": [
+        "大运河",
+        "扩展数据"
+      ],
+      "materials": {},
+      "keyEvents": [],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_088",
+      "name": "永镇桥",
+      "alias": [
+        "永镇廊桥"
+      ],
+      "buildYear": {
+        "start": 1652,
+        "end": 1652,
+        "display": "清顺治九年(1652)"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "江西省",
+        "city": "赣州市",
+        "county": "安远县",
+        "river": "甲江河",
+        "coordinates": {
+          "lng": 115.383,
+          "lat": 25.117
+        }
+      },
+      "type": "悬臂挑廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 30,
+        "width": 4,
+        "unit": "米",
+        "span": 10.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第七批",
+        "year": 2013,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "悬臂挑廊工艺",
+            "description": "杉木悬臂梁承托桥面"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "江西廊桥代表"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "木拱廊桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1600,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_089",
+      "name": "北岸廊桥",
+      "alias": [
+        "北溪桥"
+      ],
+      "buildYear": {
+        "start": 1667,
+        "end": 1667,
+        "display": "清康熙六年(1667)"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "安徽省",
+        "city": "黄山市",
+        "county": "歙县",
+        "river": "新安江",
+        "coordinates": {
+          "lng": 118.233,
+          "lat": 29.9
+        }
+      },
+      "type": "风雨廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 20,
+        "width": 4,
+        "unit": "米",
+        "span": 8.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第七批",
+        "year": 2013,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "徽派廊桥",
+            "description": "徽州建筑风格"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "安徽廊桥代表"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "木拱廊桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1600,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_090",
+      "name": "双龙桥",
+      "alias": [
+        "十七孔桥"
+      ],
+      "buildYear": {
+        "start": 1736,
+        "end": 1795,
+        "display": "清乾隆年间(1736-1795)"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "建水地方工匠",
+      "location": {
+        "province": "云南省",
+        "city": "红河哈尼族彝族自治州",
+        "county": "建水县",
+        "river": "泸江",
+        "coordinates": {
+          "lng": 102.7845,
+          "lat": 23.6245
+        }
+      },
+      "type": "十七孔廊桥石拱桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 148,
+        "archCount": 17,
+        "span": 6,
+        "spanNote": "平均跨径",
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": 6,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "三阁十七孔",
+            "description": ""
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "云南著名古桥"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [
+        "国保单位"
+      ],
+      "materials": {},
+      "keyEvents": [],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_091",
+      "name": "五亭桥",
+      "alias": [
+        "莲花桥"
+      ],
+      "buildYear": {
+        "start": 1757,
+        "end": 1757,
+        "display": "清乾隆二十二年(1757)"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "盐商黄履暹等筹资兴建",
+      "location": {
+        "province": "江苏省",
+        "city": "扬州市",
+        "river": "瘦西湖",
+        "coordinates": {
+          "lng": 119.4189,
+          "lat": 32.3982
+        }
+      },
+      "type": "石拱廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 65,
+        "width": 7,
+        "archCount": 15,
+        "span": 12,
+        "spanNote": "最大孔跨径",
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "桥上设五亭",
+            "description": ""
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "被誉为中国最美的桥"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [
+        "国保单位"
+      ],
+      "materials": {},
+      "keyEvents": [],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_092",
+      "name": "永安桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1771,
+        "end": 1771,
+        "display": "清乾隆三十六年(1771)"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "辽宁省",
+        "city": "沈阳市",
+        "county": "于洪区",
+        "river": "蒲河",
+        "coordinates": {
+          "lng": 123.3,
+          "lat": 41.783
+        }
+      },
+      "type": "三孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 37,
+        "width": 8.5,
+        "archCount": 3,
+        "unit": "米",
+        "span": 12.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第八批",
+        "year": 2019,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "东北地区重要古石桥"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {},
+      "keyEvents": [],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_093",
+      "name": "廻龙桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1820,
+        "end": 1820,
+        "display": "清嘉庆二十五年(1820)"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "湖南省",
+        "city": "怀化市",
+        "county": "通道侗族自治县",
+        "river": "坪坦河",
+        "coordinates": {
+          "lng": 109.5,
+          "lat": 26.15
+        }
+      },
+      "type": "侗族风雨桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 35,
+        "width": 3.5,
+        "unit": "米",
+        "span": 12.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第六批",
+        "year": 2006,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "侗族建筑特色",
+            "description": "榫卯结构不用一钉"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "坪坦风雨桥群组成之一"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {},
+      "keyEvents": [],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_094",
+      "name": "文兴桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1857,
+        "end": 1857,
+        "display": "清咸丰七年(1857)"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "浙江金华工匠",
+      "location": {
+        "province": "浙江省",
+        "city": "温州市",
+        "county": "泰顺县",
+        "river": "玉溪",
+        "coordinates": {
+          "lng": 119.817,
+          "lat": 27.55
+        }
+      },
+      "type": "编梁木拱廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "length": 43.21,
+        "width": 5.29,
+        "span": 28,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第六批",
+        "year": 2006,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "编梁木拱结构",
+            "description": "2016年曾遭洪水冲毁后修复"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "泰顺廊桥重要代表"
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "joint": "榫卯结构",
+        "roof": "青瓦廊屋",
+        "technique": "编梁木拱廊桥，结构奇特，左右不对称"
+      },
+      "keyEvents": [
+        {
+          "year": 1857,
+          "name": "始建",
+          "description": "清咸丰七年始建，相传建造者因怕桥不牢固而加用了几箩铁钉，致使桥身倾斜"
+        },
+        {
+          "year": 1930,
+          "name": "重修",
+          "description": "民国十九年重修"
+        },
+        {
+          "year": 2016,
+          "name": "水毁",
+          "description": "台风'莫兰蒂'导致文兴桥被洪水冲毁"
+        },
+        {
+          "year": 2017,
+          "name": "重建",
+          "description": "当地民众抢救木构件后重新修建"
+        },
+        {
+          "year": 2006,
+          "name": "国保",
+          "description": "列入第六批全国重点文物保护单位"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": "文兴桥是泰顺廊桥中结构最为奇特的一座，桥身左右不对称，成为廊桥研究的重要案例。2016年台风中被冲毁后，当地民众抢救木构件于次年重建，展现了廊桥文化的传承。"
+    },
+    {
+      "id": "bridge_095",
+      "name": "枫桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1867,
+        "end": 1867,
+        "display": "清同治六年(1867)重建"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "史书记载不详，唐时已存在，现存为清同治六年重建",
+      "location": {
+        "province": "江苏省",
+        "city": "苏州市",
+        "river": "上塘河",
+        "coordinates": {
+          "lng": 120.5833,
+          "lat": 31.3167
+        }
+      },
+      "type": "单孔半圆石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 39.6,
+        "width": 5.1,
+        "height": 7.0,
+        "span": 9.6,
+        "archCount": 1,
+        "unit": "米"
+      },
+      "protection": {
+        "level": "省级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "因张继《枫桥夜泊》而名扬天下"
+      },
+      "importance": 3,
+      "dataReliability": "中",
+      "dataSource": [
+        "master"
+      ],
+      "tags": [],
+      "materials": {},
+      "keyEvents": [],
+      "culturalInfo": {
+        "location": "苏州",
+        "poems": [
+          {
+            "title": "枫桥夜泊",
+            "author": "张继",
+            "dynasty": "唐",
+            "content": "月落乌啼霜满天，江枫渔火对愁眠。姑苏城外寒山寺，夜半钟声到客船。",
+            "theme": "羁旅愁思",
+            "fame": "千古名篇，使枫桥名扬天下"
+          }
+        ],
+        "couplets": [
+          {
+            "location": "寒山寺",
+            "author": "邹福保",
+            "content": "尘劫历一千余年，重复旧观，幸有名贤来作主；诗人题二十八字，长留胜迹，可知佳句不须多"
+          },
+          {
+            "location": "寒山寺",
+            "author": "陆润庠",
+            "content": "近郭古招提，毗连浒墅名区，渔火秋深涵月影；傍山新结构，依旧枫江野渡，客船夜半听钟声"
+          }
+        ],
+        "sayings": [
+          "吴门三百九十桥，枫桥其最著者——《吴地记》"
+        ]
+      },
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_096",
+      "name": "嘉玉桥",
+      "alias": [],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "清代"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "西藏自治区",
+        "city": "昌都市",
+        "county": "洛隆县",
+        "river": "怒江",
+        "coordinates": {
+          "lng": 96.2,
+          "lat": 30.8
+        }
+      },
+      "type": "石木结构桥",
+      "category": "梁桥",
+      "dimensions": {
+        "span": 8.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "中",
+      "dataSource": [
+        "tea_horse"
+      ],
+      "tags": [
+        "茶马古道"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1500,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_097",
+      "name": "日藏伸臂桥",
+      "alias": [],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "清末民初"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "四川省",
+        "city": "凉山彝族自治州",
+        "county": "木里藏族自治县",
+        "river": "水洛河",
+        "coordinates": {
+          "lng": 100.8,
+          "lat": 28.5
+        }
+      },
+      "type": "藏式伸臂桥",
+      "category": "伸臂桥",
+      "dimensions": {
+        "length": 26.8,
+        "widthEnds": 5.4,
+        "unit": "米",
+        "span": 10.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "中",
+      "dataSource": [
+        "tea_horse"
+      ],
+      "tags": [
+        "茶马古道",
+        "民族特色"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "藏式伸臂桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1800,
+          "name": "始建",
+          "description": "清代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "ethnicFeature": "倒三角形底座，梯形立面，40层6檐",
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_098",
+      "name": "那柯里风雨桥",
+      "alias": [],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "清代"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "云南省",
+        "city": "普洱市",
+        "county": "宁洱县",
+        "river": "那柯里河",
+        "coordinates": {
+          "lng": 101.0,
+          "lat": 23.0
+        }
+      },
+      "type": "风雨桥",
+      "category": "廊桥",
+      "dimensions": {
+        "span": 10.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "中",
+      "dataSource": [
+        "tea_horse"
+      ],
+      "tags": [
+        "茶马古道"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "风雨桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1800,
+          "name": "始建",
+          "description": "清代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": "茶马古道上的重要驿站，距今200多年"
+    },
+    {
+      "id": "bridge_099",
+      "name": "涟漪桥",
+      "alias": [],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "清代"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "云南省",
+        "city": "普洱市",
+        "county": "墨江哈尼族自治县",
+        "coordinates": {
+          "lng": 101.7,
+          "lat": 23.4
+        }
+      },
+      "type": "风雨桥",
+      "category": "廊桥",
+      "dimensions": {
+        "span": 10.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "中",
+      "dataSource": [
+        "tea_horse"
+      ],
+      "tags": [
+        "茶马古道"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1500,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": "茶马古道上唯一以水波命名的桥梁"
+    },
+    {
+      "id": "bridge_100",
+      "name": "普修桥",
+      "alias": [],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "清代"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "湖南省",
+        "city": "怀化市",
+        "county": "通道侗族自治县",
+        "coordinates": {
+          "lng": 109.8,
+          "lat": 26.2
+        }
+      },
+      "type": "木构风雨廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "span": 10.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 3,
+      "dataReliability": "高",
+      "dataSource": [
+        "frontier"
+      ],
+      "tags": [
+        "边疆民族",
+        "民族特色",
+        "国保单位"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1500,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "ethnicFeature": "侗族风雨桥",
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_101",
+      "name": "薛家桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1368,
+        "end": 1644,
+        "display": "明代"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "四川省",
+        "city": "泸州市",
+        "county": "泸县",
+        "river": "",
+        "coordinates": {
+          "lng": 105.383,
+          "lat": 29.133
+        }
+      },
+      "type": "龙雕石梁桥",
+      "category": "梁桥",
+      "dimensions": {
+        "length": 20,
+        "width": 2,
+        "unit": "米",
+        "span": 8.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "省级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [
+          {
+            "name": "龙形雕刻",
+            "description": "泸县龙桥群成员"
+          }
+        ],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "泸县181座龙桥之一"
+      },
+      "importance": 2,
+      "dataReliability": "中",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "扩展数据"
+      ],
+      "materials": {},
+      "keyEvents": [],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_102",
+      "name": "迎恩桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1368,
+        "end": 1644,
+        "display": "明代"
+      },
+      "era": "明代",
+      "eraOrder": 7,
+      "builder": "",
+      "location": {
+        "province": "浙江省",
+        "city": "绍兴市",
+        "county": "越城区",
+        "river": "浙东运河",
+        "coordinates": {
+          "lng": 120.25,
+          "lat": 30.0
+        }
+      },
+      "type": "石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 15,
+        "width": 4,
+        "unit": "米",
+        "span": 5.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第七批",
+        "year": 2013,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "绍兴古桥群组成部分"
+      },
+      "importance": 2,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "木拱廊桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1500,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_103",
+      "name": "毓灵桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1736,
+        "end": 1820,
+        "display": "清代中叶"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "广东省",
+        "city": "广州市",
+        "coordinates": {
+          "lng": 113.2333,
+          "lat": 23.05
+        }
+      },
+      "type": "三孔梁式石桥",
+      "category": "梁桥",
+      "dimensions": {
+        "length": 25,
+        "width": 2.04,
+        "unit": "米",
+        "span": 10.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 2,
+      "dataReliability": "中",
+      "dataSource": [
+        "silk_road"
+      ],
+      "tags": [
+        "丝绸之路"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "木拱廊桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1500,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_104",
+      "name": "玉带桥",
+      "alias": [],
+      "buildYear": {
+        "start": 1736,
+        "end": 1795,
+        "display": "清乾隆年间(1736-1795)"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "江西省",
+        "city": "赣州市",
+        "county": "信丰县",
+        "river": "桃江",
+        "coordinates": {
+          "lng": 114.967,
+          "lat": 25.4
+        }
+      },
+      "type": "单孔石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "length": 20,
+        "width": 4,
+        "unit": "米",
+        "span": 8.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "国家级",
+        "batch": "第七批",
+        "year": 2013,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": "江西清代石拱桥"
+      },
+      "importance": 2,
+      "dataReliability": "高",
+      "dataSource": [
+        "ext_v2"
+      ],
+      "tags": [
+        "国保单位",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1500,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_105",
+      "name": "永靖桥",
+      "alias": [],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "清代"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "云南省",
+        "city": "普洱市",
+        "county": "思茅区",
+        "coordinates": {
+          "lng": 100.9,
+          "lat": 22.8
+        }
+      },
+      "type": "待查",
+      "category": "其他",
+      "dimensions": {},
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 2,
+      "dataReliability": "低",
+      "dataSource": [
+        "tea_horse"
+      ],
+      "tags": [
+        "茶马古道"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石拱桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1500,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": "据《思茅厅志》记载，是思茅地区最早的古桥"
+    },
+    {
+      "id": "bridge_106",
+      "name": "宁安大石桥",
+      "alias": [],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "清代"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "黑龙江省",
+        "city": "牡丹江市",
+        "county": "宁安市",
+        "coordinates": {
+          "lng": 129.5,
+          "lat": 44.4
+        }
+      },
+      "type": "石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "span": 10.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "省级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 2,
+      "dataReliability": "中",
+      "dataSource": [
+        "frontier"
+      ],
+      "tags": [
+        "边疆民族",
+        "民族特色"
+      ],
+      "materials": {
+        "main_stone": "青石",
+        "technique": "石桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1800,
+          "name": "始建",
+          "description": "清代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "ethnicFeature": "东北地区清代石桥",
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_107",
+      "name": "金勾风雨桥",
+      "alias": [],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "清代"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "贵州省",
+        "city": "黔东南苗族侗族自治州",
+        "county": "黎平县",
+        "coordinates": {
+          "lng": 109.1,
+          "lat": 25.9
+        }
+      },
+      "type": "木构风雨廊桥",
+      "category": "廊桥",
+      "dimensions": {
+        "span": 10.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "其他",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 2,
+      "dataReliability": "中",
+      "dataSource": [
+        "frontier"
+      ],
+      "tags": [
+        "边疆民族",
+        "民族特色"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "侗族风雨桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1800,
+          "name": "始建",
+          "description": "清代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "ethnicFeature": "侗族风雨桥",
+      "historicalValue": ""
+    },
+    {
+      "id": "bridge_108",
+      "name": "普济桥",
+      "alias": [],
+      "buildYear": {
+        "start": null,
+        "end": null,
+        "display": "清代"
+      },
+      "era": "清代",
+      "eraOrder": 8,
+      "builder": "",
+      "location": {
+        "province": "贵州省",
+        "city": "遵义市",
+        "coordinates": {
+          "lng": 106.9,
+          "lat": 27.7
+        }
+      },
+      "type": "石拱桥",
+      "category": "拱桥",
+      "dimensions": {
+        "span": 8.0,
+        "spanNote": "估算值"
+      },
+      "protection": {
+        "level": "省级",
+        "batch": null,
+        "year": null,
+        "isWorldHeritage": false,
+        "heritageName": null
+      },
+      "technology": {
+        "innovations": [],
+        "worldFirst": null,
+        "leadYears": null,
+        "description": ""
+      },
+      "importance": 2,
+      "dataReliability": "中",
+      "dataSource": [
+        "frontier",
+        "ext_v2"
+      ],
+      "tags": [
+        "边疆民族",
+        "扩展数据"
+      ],
+      "materials": {
+        "main_wood": "杉木",
+        "technique": "木拱廊桥"
+      },
+      "keyEvents": [
+        {
+          "year": 1500,
+          "name": "始建",
+          "description": "明代始建"
+        }
+      ],
+      "culturalInfo": {},
+      "historicalValue": ""
+    }
+  ],
+  "statistics": {
+    "totalBridges": 108,
+    "byCategory": {
+      "梁桥": 17,
+      "拱桥": 50,
+      "遗址": 1,
+      "组合桥": 1,
+      "伸臂桥": 6,
+      "索桥": 4,
+      "廊桥": 25,
+      "浮桥": 1,
+      "闸桥": 1,
+      "其他": 2
+    },
+    "byEra": {
+      "秦汉": 2,
+      "隋代": 3,
+      "唐代": 7,
+      "北宋": 11,
+      "南宋": 10,
+      "金代": 2,
+      "元代": 3,
+      "明代": 40,
+      "清代": 28,
+      "宋代": 1,
+      "民国": 1
+    },
+    "byProvince": {
+      "陕西省": 2,
+      "河北省": 3,
+      "河南省": 4,
+      "浙江省": 25,
+      "山西省": 2,
+      "福建省": 9,
+      "广东省": 4,
+      "北京市": 3,
+      "四川省": 6,
+      "贵州省": 4,
+      "江苏省": 8,
+      "西藏自治区": 3,
+      "云南省": 12,
+      "广西壮族自治区": 3,
+      "湖南省": 3,
+      "江西省": 7,
+      "山东省": 3,
+      "甘肃省": 1,
+      "安徽省": 3,
+      "辽宁省": 2,
+      "黑龙江省": 1
+    },
+    "byProtectionLevel": {
+      "国保单位": 70,
+      "省级文保": 9,
+      "其他": 29
+    },
+    "worldHeritageCount": 6,
+    "nationalProtectionCount": 70
+  }
+}

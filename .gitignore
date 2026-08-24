@@ -1,0 +1,20 @@
+# 敏感配置文件（包含 API 密钥，不可上传）
+site/assets/runtime-config.js
+
+# 依赖目录
+node_modules/
+
+# 系统文件
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 日志
+*.log

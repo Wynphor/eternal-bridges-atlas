@@ -1,0 +1,376 @@
+{
+  "meta": {
+    "title": "ECharts图表交互配置",
+    "version": "1.0",
+    "created": "2026-03-23",
+    "description": "包含图表主题、动画效果、交互功能的完整配置"
+  },
+
+  "themes": {
+    "default": {
+      "name": "默认主题",
+      "backgroundColor": "#ffffff",
+      "color": ["#5470c6", "#91cc75", "#fac858", "#ee6666", "#73c0de", "#3ba272", "#fc8452", "#9a60b4"],
+      "title": {
+        "textStyle": {"color": "#333333", "fontSize": 18, "fontWeight": "bold"},
+        "subtextStyle": {"color": "#999999", "fontSize": 12}
+      },
+      "legend": {
+        "textStyle": {"color": "#333333", "fontSize": 12}
+      },
+      "categoryAxis": {
+        "axisLine": {"lineStyle": {"color": "#cccccc"}},
+        "axisLabel": {"color": "#333333", "fontSize": 11},
+        "splitLine": {"lineStyle": {"color": "#eeeeee"}}
+      },
+      "valueAxis": {
+        "axisLine": {"lineStyle": {"color": "#cccccc"}},
+        "axisLabel": {"color": "#333333", "fontSize": 11},
+        "splitLine": {"lineStyle": {"color": "#eeeeee", "type": "dashed"}}
+      }
+    },
+    "dark": {
+      "name": "深色主题",
+      "backgroundColor": "#1a1a2e",
+      "color": ["#4ecdc4", "#44a08d", "#ff6b6b", "#feca57", "#5f27cd", "#00d2d3", "#ff9ff3", "#54a0ff"],
+      "title": {
+        "textStyle": {"color": "#ffffff", "fontSize": 18, "fontWeight": "bold"},
+        "subtextStyle": {"color": "#aaaaaa", "fontSize": 12}
+      },
+      "legend": {
+        "textStyle": {"color": "#ffffff", "fontSize": 12}
+      },
+      "categoryAxis": {
+        "axisLine": {"lineStyle": {"color": "#444444"}},
+        "axisLabel": {"color": "#cccccc", "fontSize": 11},
+        "splitLine": {"lineStyle": {"color": "#333333"}}
+      },
+      "valueAxis": {
+        "axisLine": {"lineStyle": {"color": "#444444"}},
+        "axisLabel": {"color": "#cccccc", "fontSize": 11},
+        "splitLine": {"lineStyle": {"color": "#333333", "type": "dashed"}}
+      }
+    },
+    "ancient": {
+      "name": "古风主题",
+      "backgroundColor": "#f5f0e6",
+      "color": ["#8b4513", "#d2691e", "#cd853f", "#bc8f8f", "#a0522d", "#6b4423", "#deb887", "#d2b48c"],
+      "title": {
+        "textStyle": {"color": "#4a3728", "fontSize": 20, "fontFamily": "STKaiti, KaiTi, serif"},
+        "subtextStyle": {"color": "#6b5b4f", "fontSize": 12}
+      },
+      "legend": {
+        "textStyle": {"color": "#4a3728", "fontSize": 12, "fontFamily": "STKaiti, KaiTi, serif"}
+      },
+      "categoryAxis": {
+        "axisLine": {"lineStyle": {"color": "#8b7355"}},
+        "axisLabel": {"color": "#4a3728", "fontSize": 11, "fontFamily": "STKaiti, KaiTi, serif"},
+        "splitLine": {"lineStyle": {"color": "#d4c4a8"}}
+      },
+      "valueAxis": {
+        "axisLine": {"lineStyle": {"color": "#8b7355"}},
+        "axisLabel": {"color": "#4a3728", "fontSize": 11},
+        "splitLine": {"lineStyle": {"color": "#d4c4a8", "type": "dashed"}}
+      }
+    }
+  },
+
+  "animations": {
+    "default": {
+      "animation": true,
+      "animationDuration": 1000,
+      "animationEasing": "cubicOut",
+      "animationDelay": 0,
+      "animationDurationUpdate": 300,
+      "animationEasingUpdate": "cubicInOut"
+    },
+    "fast": {
+      "animation": true,
+      "animationDuration": 500,
+      "animationEasing": "linear",
+      "animationDelay": 0
+    },
+    "slow": {
+      "animation": true,
+      "animationDuration": 2000,
+      "animationEasing": "elasticOut",
+      "animationDelay": 100
+    },
+    "none": {
+      "animation": false
+    }
+  },
+
+  "tooltip": {
+    "default": {
+      "trigger": "axis",
+      "backgroundColor": "rgba(50, 50, 50, 0.9)",
+      "borderColor": "#333",
+      "borderWidth": 0,
+      "textStyle": {"color": "#fff", "fontSize": 12},
+      "confine": true,
+      "axisPointer": {
+        "type": "shadow",
+        "shadowStyle": {"color": "rgba(150, 150, 150, 0.3)"}
+      }
+    },
+    "bridge": {
+      "trigger": "item",
+      "formatter": "{b}<br/>{c}座",
+      "backgroundColor": "rgba(139, 69, 19, 0.9)",
+      "textStyle": {"color": "#fff", "fontSize": 12},
+      "extraCssText": "font-family: STKaiti, KaiTi, serif;"
+    }
+  },
+
+  "legend": {
+    "default": {
+      "type": "scroll",
+      "orient": "horizontal",
+      "left": "center",
+      "top": "top",
+      "padding": [5, 10],
+      "itemGap": 20,
+      "itemWidth": 20,
+      "itemHeight": 14,
+      "textStyle": {"fontSize": 12},
+      "pageIconColor": "#666",
+      "pageIconInactiveColor": "#ccc",
+      "pageTextStyle": {"color": "#666"}
+    },
+    "vertical": {
+      "type": "scroll",
+      "orient": "vertical",
+      "left": "left",
+      "top": "middle",
+      "padding": [10, 5],
+      "itemGap": 10
+    }
+  },
+
+  "grid": {
+    "default": {
+      "left": "3%",
+      "right": "4%",
+      "bottom": "3%",
+      "top": "15%",
+      "containLabel": true
+    },
+    "withLegend": {
+      "left": "3%",
+      "right": "4%",
+      "bottom": "3%",
+      "top": "20%",
+      "containLabel": true
+    },
+    "withTitleAndLegend": {
+      "left": "3%",
+      "right": "4%",
+      "bottom": "3%",
+      "top": "25%",
+      "containLabel": true
+    }
+  },
+
+  "dataZoom": {
+    "slider": {
+      "type": "slider",
+      "start": 0,
+      "end": 100,
+      "height": 20,
+      "bottom": 10,
+      "borderColor": "#ccc",
+      "fillerColor": "rgba(84, 112, 198, 0.2)",
+      "handleStyle": {"color": "#5470c6"},
+      "textStyle": {"color": "#333"}
+    },
+    "inside": {
+      "type": "inside",
+      "start": 0,
+      "end": 100,
+      "zoomOnMouseWheel": true,
+      "moveOnMouseMove": true
+    }
+  },
+
+  "chartConfigs": {
+    "radar": {
+      "title": {"left": "center"},
+      "tooltip": {"trigger": "item"},
+      "legend": {"left": "center", "top": "bottom"},
+      "radar": {
+        "shape": "polygon",
+        "splitNumber": 5,
+        "axisName": {"color": "#333", "fontSize": 12},
+        "splitLine": {"lineStyle": {"color": "#ddd"}},
+        "splitArea": {"areaStyle": {"color": ["rgba(114, 172, 209, 0.1)", "rgba(114, 172, 209, 0.05)"]}},
+        "axisLine": {"lineStyle": {"color": "#ccc"}}
+      },
+      "series": [{
+        "type": "radar",
+        "emphasis": {"lineStyle": {"width": 4}},
+        "areaStyle": {"opacity": 0.3}
+      }]
+    },
+    "bar": {
+      "title": {"left": "center"},
+      "tooltip": {"trigger": "axis", "axisPointer": {"type": "shadow"}},
+      "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": true},
+      "xAxis": {"type": "category", "axisLabel": {"interval": 0, "rotate": 30}},
+      "yAxis": {"type": "value"},
+      "series": [{
+        "type": "bar",
+        "barMaxWidth": 40,
+        "itemStyle": {"borderRadius": [4, 4, 0, 0]},
+        "emphasis": {"itemStyle": {"shadowBlur": 10, "shadowColor": "rgba(0, 0, 0, 0.3)"}}
+      }]
+    },
+    "pie": {
+      "title": {"left": "center"},
+      "tooltip": {"trigger": "item", "formatter": "{b}: {c}座 ({d}%)"},
+      "legend": {"orient": "vertical", "left": "left", "top": "middle"},
+      "series": [{
+        "type": "pie",
+        "radius": ["40%", "70%"],
+        "center": ["60%", "50%"],
+        "avoidLabelOverlap": true,
+        "itemStyle": {"borderRadius": 6, "borderColor": "#fff", "borderWidth": 2},
+        "label": {"show": true, "formatter": "{b}\n{d}%"},
+        "emphasis": {
+          "label": {"show": true, "fontSize": 14, "fontWeight": "bold"},
+          "itemStyle": {"shadowBlur": 10, "shadowOffsetX": 0, "shadowColor": "rgba(0, 0, 0, 0.5)"}
+        }
+      }]
+    },
+    "line": {
+      "title": {"left": "center"},
+      "tooltip": {"trigger": "axis"},
+      "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": true},
+      "xAxis": {"type": "category", "boundaryGap": false},
+      "yAxis": {"type": "value"},
+      "series": [{
+        "type": "line",
+        "smooth": true,
+        "symbol": "circle",
+        "symbolSize": 8,
+        "lineStyle": {"width": 3},
+        "areaStyle": {"opacity": 0.2}
+      }]
+    },
+    "scatter": {
+      "title": {"left": "center"},
+      "tooltip": {"trigger": "item", "formatter": "{b}: ({c})"},
+      "grid": {"left": "3%", "right": "4%", "bottom": "3%", "containLabel": true},
+      "xAxis": {"type": "value", "scale": true},
+      "yAxis": {"type": "value", "scale": true},
+      "series": [{
+        "type": "scatter",
+        "symbolSize": 15,
+        "emphasis": {
+          "focus": "series",
+          "itemStyle": {"shadowBlur": 10, "shadowColor": "rgba(0, 0, 0, 0.5)"}
+        }
+      }]
+    },
+    "sunburst": {
+      "series": [{
+        "type": "sunburst",
+        "radius": ["15%", "90%"],
+        "center": ["50%", "50%"],
+        "sort": "desc",
+        "label": {
+          "rotate": "tangential",
+          "fontSize": 12,
+          "color": "#fff"
+        },
+        "itemStyle": {
+          "borderRadius": 4,
+          "borderColor": "#fff",
+          "borderWidth": 2
+        },
+        "emphasis": {
+          "focus": "ancestor",
+          "itemStyle": {"shadowBlur": 10, "shadowColor": "rgba(0, 0, 0, 0.3)"}
+        },
+        "levels": [{}, {
+          "r0": "15%",
+          "r": "40%",
+          "itemStyle": {"borderWidth": 2},
+          "label": {"rotate": "tangential"}
+        }, {
+          "r0": "40%",
+          "r": "65%",
+          "label": {"align": "right"}
+        }, {
+          "r0": "65%",
+          "r": "90%",
+          "label": {"position": "outside", "padding": 3, "silent": false}
+        }]
+      }]
+    }
+  },
+
+  "responsive": {
+    "breakpoints": {
+      "mobile": {"maxWidth": 768, "fontSize": 10},
+      "tablet": {"minWidth": 769, "maxWidth": 1024, "fontSize": 12},
+      "desktop": {"minWidth": 1025, "fontSize": 14}
+    },
+    "mobileOverrides": {
+      "title": {"textStyle": {"fontSize": 14}},
+      "legend": {"orient": "horizontal", "top": "bottom"},
+      "grid": {"top": "20%", "bottom": "15%"},
+      "xAxis": {"axisLabel": {"rotate": 45, "fontSize": 9}},
+      "tooltip": {"confine": true}
+    }
+  },
+
+  "events": {
+    "click": {
+      "enabled": true,
+      "actions": ["showDetail", "filter", "drillDown"]
+    },
+    "hover": {
+      "enabled": true,
+      "actions": ["highlight", "showTooltip"]
+    },
+    "legendSelect": {
+      "enabled": true,
+      "actions": ["toggleSeries", "filterData"]
+    },
+    "dataZoom": {
+      "enabled": true,
+      "actions": ["filterData", "updateView"]
+    }
+  },
+
+  "filters": {
+    "bridgeType": {
+      "label": "桥梁类型",
+      "options": ["全部", "拱桥", "梁桥", "索桥", "廊桥", "组合桥"],
+      "default": "全部"
+    },
+    "dynasty": {
+      "label": "朝代",
+      "options": ["全部", "隋代", "唐代", "宋代", "金代", "元代", "明代", "清代", "民国"],
+      "default": "全部"
+    },
+    "protection": {
+      "label": "保护级别",
+      "options": ["全部", "世界遗产", "国保", "省保", "市县保"],
+      "default": "全部"
+    },
+    "province": {
+      "label": "省份",
+      "options": ["全部", "河北省", "北京市", "福建省", "广东省", "四川省", "浙江省", "江苏省", "广西", "云南省"],
+      "default": "全部"
+    }
+  },
+
+  "sortOptions": {
+    "byLength": {"label": "按长度排序", "order": "desc"},
+    "byAge": {"label": "按年代排序", "order": "asc"},
+    "byImportance": {"label": "按重要性排序", "order": "desc"},
+    "byName": {"label": "按名称排序", "order": "asc"}
+  }
+}

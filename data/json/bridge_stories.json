@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "title": "中国古桥与名人故事数据集",
+    "version": "1.1",
+    "created": "2026-03-23",
+    "lastUpdated": "2026-03-23",
+    "totalStories": 20,
+    "categories": 5,
+    "dataSource": "历史文献、地方志、民间传说集",
+    "reliabilityNote": "authenticity字段区分'史实'（有文献记载）、'传说'（民间流传）、'神话'（上古神话）"
+  },
+  "categories": [
+    {"id": "emperors", "name": "皇帝与古桥", "storyCount": 3},
+    {"id": "scholars", "name": "文人与古桥", "storyCount": 5},
+    {"id": "generals", "name": "名将与古桥", "storyCount": 3},
+    {"id": "craftsmen", "name": "工匠与古桥", "storyCount": 2},
+    {"id": "legends", "name": "传说与古桥", "storyCount": 7}
+  ],
+  "stories": [
+    {"id": "s001", "category": "emperors", "storyName": "康熙御题泸定桥", "person": "康熙皇帝", "bridge": "泸定桥", "period": "1705-1706年", "authenticity": "史实", "content": "康熙帝御批建造泸定桥，取'泸水平定'之意命名"},
+    {"id": "s002", "category": "emperors", "storyName": "乾隆题写卢沟晓月", "person": "乾隆皇帝", "bridge": "卢沟桥", "period": "清乾隆年间", "authenticity": "史实", "content": "乾隆亲题'卢沟晓月'，成为燕京八景之一"},
+    {"id": "s003", "category": "emperors", "storyName": "乾隆游览赵州桥", "person": "乾隆皇帝", "bridge": "赵州桥", "period": "清乾隆年间", "authenticity": "史实"},
+    {"id": "s004", "category": "scholars", "storyName": "张继枫桥夜泊", "person": "张继", "bridge": "枫桥", "period": "唐天宝十五载(756年)", "authenticity": "史实", "content": "《枫桥夜泊》'月落乌啼霜满天，江枫渔火对愁眠'", "works": ["《枫桥夜泊》"]},
+    {"id": "s005", "category": "scholars", "storyName": "杜牧二十四桥明月夜", "person": "杜牧", "bridge": "二十四桥", "period": "唐代", "authenticity": "史实", "works": ["《寄扬州韩绰判官》"]},
+    {"id": "s006", "category": "scholars", "storyName": "苏轼修筑苏堤", "person": "苏轼", "bridge": "苏堤六桥", "period": "北宋元祐四年(1089年)", "authenticity": "史实"},
+    {"id": "s007", "category": "scholars", "storyName": "白居易与白堤", "person": "白居易", "bridge": "白堤、断桥", "period": "唐长庆二年(822年)", "authenticity": "史实"},
+    {"id": "s008", "category": "scholars", "storyName": "灞桥折柳送别", "person": "历代文人", "bridge": "灞桥", "period": "汉代至唐代", "authenticity": "史实", "content": "'灞桥折柳'成为送别文化经典意象"},
+    {"id": "s009", "category": "generals", "storyName": "邓艾阴平古道伸臂桥", "person": "邓艾", "bridge": "邓邓桥", "period": "三国魏景元四年(263年)", "authenticity": "史实", "content": "邓艾伐蜀时改进伸臂桥技术"},
+    {"id": "s010", "category": "generals", "storyName": "红军飞夺泸定桥", "person": "红军22勇士", "bridge": "泸定桥", "period": "1935年5月29日", "authenticity": "史实", "content": "22名勇士攀爬铁索冲向对岸"},
+    {"id": "s011", "category": "generals", "storyName": "七七事变与卢沟桥", "person": "第29军将士", "bridge": "卢沟桥", "period": "1937年7月7日", "authenticity": "史实", "content": "中国抗日战争全面爆发"},
+    {"id": "s012", "category": "craftsmen", "storyName": "李春建造赵州桥", "person": "李春", "bridge": "赵州桥", "period": "隋595-605年", "authenticity": "史实", "content": "首创敞肩拱技术，领先欧洲800年"},
+    {"id": "s013", "category": "craftsmen", "storyName": "蔡襄主持建造洛阳桥", "person": "蔡襄", "bridge": "洛阳桥", "period": "北宋1053-1059年", "authenticity": "史实", "content": "首创筏形基础和种蛎固基技术"},
+    {"id": "s014", "category": "legends", "storyName": "鲁班修赵州桥传说", "person": "鲁班", "bridge": "赵州桥", "period": "民间传说", "authenticity": "传说", "content": "张果老骑驴、柴王爷推车试桥"},
+    {"id": "s015", "category": "legends", "storyName": "白蛇传与断桥", "person": "白娘子、许仙", "bridge": "断桥", "period": "民间传说", "authenticity": "传说", "content": "白娘子与许仙断桥相会"},
+    {"id": "s016", "category": "legends", "storyName": "牛郎织女鹊桥会", "person": "牛郎、织女", "bridge": "鹊桥", "period": "上古神话", "authenticity": "神话", "content": "七月初七喜鹊搭桥让牛郎织女相会"},
+    {"id": "s017", "category": "legends", "storyName": "卢沟桥石狮子数不清", "person": "民间传说", "bridge": "卢沟桥", "period": "明清民间传说", "authenticity": "传说", "content": "'卢沟桥的狮子——数不清'"},
+    {"id": "s018", "category": "legends", "storyName": "蔡襄与洛阳桥传说", "person": "蔡襄", "bridge": "洛阳桥", "period": "北宋民间传说", "authenticity": "传说"},
+    {"id": "s019", "category": "legends", "storyName": "二十四美人吹箫传说", "person": "二十四美人", "bridge": "二十四桥", "period": "唐代传说", "authenticity": "传说"},
+    {"id": "s020", "category": "legends", "storyName": "鲁班造卢沟桥传说", "person": "鲁班", "bridge": "卢沟桥", "period": "民间传说", "authenticity": "传说"}
+  ],
+  "byBridge": {
+    "赵州桥": ["康熙御题泸定桥", "李春建造赵州桥", "鲁班修赵州桥传说"],
+    "泸定桥": ["康熙御题泸定桥", "红军飞夺泸定桥"],
+    "卢沟桥": ["乾隆题写卢沟晓月", "七七事变与卢沟桥", "卢沟桥石狮子数不清"],
+    "断桥": ["白居易与白堤", "白蛇传与断桥"],
+    "枫桥": ["张继枫桥夜泊"],
+    "洛阳桥": ["蔡襄主持建造洛阳桥", "蔡襄与洛阳桥传说"]
+  }
+}

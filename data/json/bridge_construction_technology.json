@@ -1,0 +1,236 @@
+{
+  "metadata": {
+    "title": "中国古代桥梁建造技术深度数据",
+    "version": "1.0",
+    "created": "2026-03-23",
+    "total_categories": 6
+  },
+  "technologies": [
+    {
+      "category": "基础工程技术",
+      "techniques": [
+        {
+          "name": "筏形基础",
+          "inventor": "蔡襄",
+          "bridge": "洛阳桥",
+          "dynasty": "北宋",
+          "year": 1053,
+          "principle": "沿桥梁中轴线的水下底部抛置大量石块，形成矮石作桥基",
+          "leadYears": 800,
+          "description": "解决了在深水软基上建造桥墩的难题",
+          "modernApplication": "现代桥梁桩基础技术借鉴"
+        },
+        {
+          "name": "种蛎固基",
+          "inventor": "蔡襄",
+          "bridge": "洛阳桥",
+          "dynasty": "北宋",
+          "year": 1053,
+          "principle": "利用牡蛎繁殖速度快、吸附力强的特性，在桥墩上养殖牡蛎将石块牢固粘结",
+          "leadYears": 800,
+          "worldFirst": "世界首次将生物学应用于桥梁建造",
+          "description": "生物固基技术的先驱"
+        },
+        {
+          "name": "睡木沉基",
+          "inventor": "祖派等",
+          "bridge": "安平桥",
+          "dynasty": "南宋",
+          "year": 1138,
+          "principle": "在软基海床上铺设木材作为基础",
+          "description": "解决了在软基海床上建桥的难题"
+        },
+        {
+          "name": "桩基础",
+          "ancientName": "排桩基础",
+          "bridge": "渭桥遗址",
+          "dynasty": "秦汉",
+          "principle": "打入木桩形成基础，桩上铺设横梁",
+          "description": "秦汉时期已广泛应用，渭桥遗址发现750根木桩"
+        }
+      ]
+    },
+    {
+      "category": "拱券技术",
+      "techniques": [
+        {
+          "name": "敞肩拱",
+          "inventor": "李春",
+          "bridge": "赵州桥",
+          "dynasty": "隋代",
+          "year": 595,
+          "principle": "在大拱两肩各设两个小拱，既节省材料又利于泄洪",
+          "leadYears": 800,
+          "worldFirst": "世界桥梁史上的创举",
+          "parameters": {"span": 37.02, "riseSpanRatio": "1:5.1", "smallArchCount": 4},
+          "description": "领先欧洲约800年，现代空腹拱桥的先驱"
+        },
+        {
+          "name": "纵向并列砌筑法",
+          "inventor": "李春",
+          "bridge": "赵州桥",
+          "dynasty": "隋代",
+          "year": 595,
+          "principle": "28道拱券独立砌筑，每道可独立站稳",
+          "leadYears": 1000,
+          "description": "增强了桥梁整体稳定性和可维护性"
+        },
+        {
+          "name": "薄墩连拱",
+          "bridge": "宝带桥",
+          "dynasty": "唐代",
+          "year": 816,
+          "principle": "减小桥墩厚度，增加桥孔数量",
+          "leadYears": 200,
+          "parameters": {"archCount": 53, "record": "中国现存最长多孔石桥"},
+          "description": "53孔薄墩连拱，领先欧洲约200年"
+        },
+        {
+          "name": "圆弧拱",
+          "bridge": "赵州桥",
+          "dynasty": "隋代",
+          "principle": "采用平缓的圆弧拱而非半圆拱",
+          "parameters": {"riseSpanRatio": "1:5.1"},
+          "description": "增大跨度，降低拱矢，便于交通"
+        }
+      ]
+    },
+    {
+      "category": "梁桥技术",
+      "techniques": [
+        {
+          "name": "浮运架梁",
+          "inventor": "蔡襄",
+          "bridge": "洛阳桥",
+          "dynasty": "北宋",
+          "year": 1053,
+          "principle": "利用大潮潮水上涨到最高位时，悬机弦牵架设石梁",
+          "leadYears": 800,
+          "description": "解决了在江海交汇处架设重型石梁的难题"
+        },
+        {
+          "name": "伸臂梁",
+          "ancientExample": "邓艾桥",
+          "dynasty": "三国",
+          "year": 263,
+          "principle": "由两岸叠压圆木节节伸向河心",
+          "leadYears": 1200,
+          "description": "利用杠杆原理增大跨度，藏区伸臂桥技术精湛"
+        },
+        {
+          "name": "巨型石梁",
+          "bridge": "江东桥",
+          "dynasty": "南宋",
+          "year": 1190,
+          "parameters": {"maxWeight": 200, "unit": "吨"},
+          "description": "世界最大石构件桥梁，单根石梁重达200吨"
+        }
+      ]
+    },
+    {
+      "category": "索桥技术",
+      "techniques": [
+        {
+          "name": "铁索锻造",
+          "bridge": "泸定桥",
+          "dynasty": "清代",
+          "year": 1705,
+          "principle": "手工锻造铁环，逐环相扣成索",
+          "parameters": {"chainCount": 13, "ringCount": 12164, "totalWeight": 40, "unit": "吨"},
+          "qualityControl": "每个铁环标有铁匠名字，出问题追责",
+          "description": "13根铁索由12164个铁环组成"
+        },
+        {
+          "name": "竹索桥",
+          "bridge": "安澜索桥",
+          "dynasty": "古代",
+          "principle": "以碗口粗竹索编成桥面",
+          "description": "中国西南地区特色桥梁技术"
+        },
+        {
+          "name": "锚固技术",
+          "bridge": "泸定桥",
+          "dynasty": "清代",
+          "principle": "桥台锚固铁索，深埋地下",
+          "description": "确保悬索桥稳定的关键技术"
+        }
+      ]
+    },
+    {
+      "category": "廊桥技术",
+      "techniques": [
+        {
+          "name": "榫卯结构",
+          "bridge": "程阳永济桥、地坪风雨桥",
+          "dynasty": "明清",
+          "principle": "全桥数以千计构件以榫卯相接",
+          "worldFirst": "不用一根铁钉的大型木构廊桥",
+          "description": "侗族风雨桥建筑艺术巅峰"
+        },
+        {
+          "name": "编木拱",
+          "bridge": "虹桥（清明上河图）",
+          "dynasty": "宋代",
+          "principle": "用大木纵横相贯，交错搭置，无柱无墩",
+          "description": "《清明上河图》中的虹桥即为此技术"
+        },
+        {
+          "name": "穿斗式结构",
+          "bridge": "侗族风雨桥",
+          "dynasty": "明清",
+          "principle": "柱直接承檩，檩上布椽",
+          "description": "中国传统木构建筑技术"
+        }
+      ]
+    },
+    {
+      "category": "材料与工具",
+      "materials": [
+        {
+          "name": "糯米灰浆",
+          "dynasty": "明代广泛使用",
+          "formula": "糯米汁、石灰、砂混合",
+          "strength": "现代实验证明抗压强度可达现代水泥砂浆的80%",
+          "description": "中国古代特有的有机-无机复合胶凝材料"
+        },
+        {
+          "name": "石材类型",
+          "types": ["花岗岩", "青石", "石灰岩", "红砂岩"],
+          "application": "花岗岩用于海港桥梁（泉州），青石用于内陆桥梁"
+        },
+        {
+          "name": "木材种类",
+          "types": ["杉木", "松木", "柏木"],
+          "application": "杉木用于廊桥，松木用于伸臂桥"
+        }
+      ],
+      "tools": [
+        {
+          "name": "古代测量工具",
+          "types": ["水准仪", "罗盘", "准尺"],
+          "description": "用于桥梁定位和水平测量"
+        },
+        {
+          "name": "古代起重设备",
+          "types": ["滑轮组", "绞车", "杠杆"],
+          "description": "用于架设重型石梁"
+        }
+      ]
+    }
+  ],
+  "technologyComparison": {
+    "chinaVsEurope": [
+      {"technology": "敞肩拱", "chinaYear": 595, "europeYear": 1345, "leadYears": 750},
+      {"technology": "筏形基础", "chinaYear": 1053, "europeYear": 1850, "leadYears": 800},
+      {"technology": "种蛎固基", "chinaYear": 1053, "europeYear": 1850, "leadYears": 800},
+      {"technology": "伸臂梁", "chinaYear": 263, "europeYear": 1500, "leadYears": 1200},
+      {"technology": "薄墩连拱", "chinaYear": 816, "europeYear": 1000, "leadYears": 200}
+    ]
+  },
+  "statistics": {
+    "totalTechniques": 20,
+    "worldFirstCount": 6,
+    "leadEuropeCount": 5,
+    "maxLeadYears": 1200
+  }
+}

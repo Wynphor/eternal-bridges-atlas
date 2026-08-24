@@ -1,0 +1,182 @@
+{
+  "meta": {
+    "version": "1.0",
+    "created": "2026-03-23",
+    "description": "中国古代桥梁文化深度数据，包含诗词、楹联、历史事件、民间传说、名人故事等"
+  },
+  "poetry": {
+    "description": "桥梁相关诗词数据",
+    "bridges": {
+      "zhaozhou_bridge": {
+        "name": "赵州桥",
+        "poems": [
+          {"title": "安济桥铭", "author": "张嘉贞", "dynasty": "唐", "content": "赵郡洨河石桥，隋匠李春之迹也。制造奇特，人不知其所以为。", "source": "唐代铭文", "note": "确认李春为赵州桥建造者"},
+          {"title": "安济桥", "author": "杜德源", "dynasty": "宋", "content": "驾石飞梁尽一虹，苍龙惊蛰背磨空。坦途箭直千人过，驿使秦驰万国通。", "source": "宋代诗词", "note": "宋代赵州刺史所作"},
+          {"title": "赵州桥", "author": "刘百熙", "dynasty": "元", "content": "水从碧玉环中过，人在苍龙背上行。", "source": "元代诗词", "note": "形容赵州桥拱形如碧玉环"}
+        ]
+      },
+      "lugou_bridge": {
+        "name": "卢沟桥",
+        "poems": [
+          {"title": "卢沟晓月", "author": "李东阳", "dynasty": "明", "content": "霜落桑乾水未枯，晓空月挂硕人苏。灯影川光分远近，楼台景色入虚无。", "source": "《京都十景》", "note": "燕京八景之一"},
+          {"title": "卢沟晓月", "author": "乾隆", "dynasty": "清", "content": "茅店寒鸡咿喔鸣，曙光斜汉欲参横。半钩留照三秋淡，一蝀分波夹镜明。", "source": "清代御题", "note": "乾隆帝题写'卢沟晓月'碑"}
+        ]
+      },
+      "fengqiao": {
+        "name": "枫桥",
+        "poems": [
+          {"title": "枫桥夜泊", "author": "张继", "dynasty": "唐", "content": "月落乌啼霜满天，江枫渔火对愁眠。姑苏城外寒山寺，夜半钟声到客船。", "source": "《全唐诗》", "note": "千古名篇，使枫桥闻名天下"}
+        ]
+      },
+      "ershisi_bridge": {
+        "name": "二十四桥",
+        "poems": [
+          {"title": "寄扬州韩绰判官", "author": "杜牧", "dynasty": "唐", "content": "青山隐隐水迢迢，秋尽江南草未凋。二十四桥明月夜，玉人何处教吹箫。", "source": "《全唐诗》", "note": "扬州二十四桥最著名诗篇"}
+        ]
+      },
+      "ba_bridge": {
+        "name": "灞桥",
+        "poems": [
+          {"title": "灞桥折柳", "author": "佚名", "dynasty": "汉唐", "content": "《三辅黄图》载：灞桥在长安东，跨水作桥，汉人送客至此桥，折柳赠别。", "source": "《三辅黄图》", "note": "关中八景之一'灞柳风雪'"}
+        ]
+      },
+      "queqiao": {
+        "name": "鹊桥",
+        "poems": [
+          {"title": "鹊桥仙·纤云弄巧", "author": "秦观", "dynasty": "宋", "content": "纤云弄巧，飞星传恨，银汉迢迢暗度。金风玉露一相逢，便胜却人间无数。柔情似水，佳期如梦，忍顾鹊桥归路。两情若是久长时，又岂在朝朝暮暮。", "source": "《淮海词》", "note": "牛郎织女鹊桥相会传说"}
+        ]
+      }
+    }
+  },
+  "couplets": {
+    "description": "桥梁楹联数据",
+    "bridges": {
+      "yudai_bridge": {
+        "name": "玉带桥",
+        "location": "颐和园",
+        "couplets": [
+          {"position": "东侧", "content": "螺黛—痕平铺明月镜，虹光百尺横映水晶帘", "author": "乾隆"},
+          {"position": "西侧", "content": "地到瀛洲星河八千里，人近灵霄风露三十年", "author": "乾隆"}
+        ]
+      },
+      "shiqikong_bridge": {
+        "name": "十七孔桥",
+        "location": "颐和园",
+        "couplets": [
+          {"content": "闲云归岫连峰暗，飞瀑垂空漱石凉", "author": "乾隆"}
+        ]
+      },
+      "guangji_bridge": {
+        "name": "广济桥",
+        "location": "广东潮州",
+        "couplets": [
+          {"content": "凤台霭隔三千界，鳄浦波分廿四洲"},
+          {"content": "沧海月明吹笛去，瀛洲景美赋诗来"}
+        ]
+      }
+    }
+  },
+  "historicalEvents": [
+    {
+      "name": "卢沟桥事变（七七事变）",
+      "date": "1937年7月7日",
+      "bridge": "卢沟桥",
+      "location": "北京丰台区",
+      "description": "1937年7月7日晚，日军借口士兵失踪要求进入宛平城搜查，遭拒绝后发动进攻，中国抗日战争全面爆发。",
+      "significance": "中国抗日战争全面爆发的起点",
+      "source": "历史记载"
+    },
+    {
+      "name": "飞夺泸定桥",
+      "date": "1935年5月29日",
+      "bridge": "泸定桥",
+      "location": "四川泸定县",
+      "description": "红军长征途中，22名勇士冒着枪林弹雨，攀踏悬空铁索，夺取泸定桥，打开中央红军北上通道。",
+      "significance": "长征中的重要胜利，毛主席诗云'大渡桥横铁索寒'",
+      "source": "党史记载"
+    },
+    {
+      "name": "乾隆南巡",
+      "date": "1751-1784年",
+      "bridges": ["卢沟桥", "苏州各桥", "杭州苏堤六桥"],
+      "description": "乾隆皇帝六次南巡江南，多次驻足名桥题诗作赋，如卢沟桥题'卢沟晓月'。",
+      "significance": "促进了江南桥梁文化的传播",
+      "source": "清史记载"
+    }
+  ],
+  "folkLegends": [
+    {
+      "name": "赵州桥鲁班传说",
+      "bridge": "赵州桥",
+      "type": "民间传说",
+      "content": "传说鲁班一夜之间建成赵州桥，张果老骑着装有日月星辰的毛驴、柴王爷推着载有五岳大山的小车来试桥。桥身晃动，鲁班跳入水中用手托住桥身，留下手印。桥上至今可见驴蹄印、车道沟等'仙迹'。",
+      "source": "河北民间传说",
+      "note": "实为隋代工匠李春所建，民间附会鲁班"
+    },
+    {
+      "name": "洛阳桥蔡襄传说",
+      "bridge": "洛阳桥",
+      "type": "民间传说",
+      "content": "蔡襄母亲渡洛阳江遇险，发愿建桥。蔡襄任泉州太守后，历经艰辛建成洛阳桥。传说观音化渔女募资、八仙各显神通相助。",
+      "source": "泉州民间传说",
+      "note": "蔡襄主持建造洛阳桥为历史事实"
+    },
+    {
+      "name": "断桥白蛇传说",
+      "bridge": "断桥",
+      "type": "民间传说",
+      "content": "白蛇白素贞与许仙在杭州西湖断桥相遇，结为夫妻。后被法海拆散，白素贞水漫金山，最终被压雷峰塔下。",
+      "source": "中国四大民间传说之一",
+      "note": "西湖十景'断桥残雪'"
+    },
+    {
+      "name": "尾生抱柱",
+      "bridge": "无名桥",
+      "type": "典故传说",
+      "content": "尾生与女子约定桥下相会，女子未至，河水暴涨，尾生坚守不离，抱柱而死。后比喻坚守信约。",
+      "source": "《庄子·盗跖》",
+      "note": "诚信典故"
+    },
+    {
+      "name": "长桥十八相送",
+      "bridge": "长桥",
+      "type": "民间传说",
+      "content": "梁山伯送祝英台返乡，在西湖长桥上来回相送十八次，依依不舍。'桥虽不长情意长'。",
+      "source": "梁祝传说",
+      "note": "西湖三大情人桥之一"
+    }
+  ],
+  "famousFigures": [
+    {
+      "name": "李春",
+      "dynasty": "隋",
+      "hometown": "河北邢台临城",
+      "achievement": "设计建造赵州桥（安济桥）",
+      "description": "隋代著名桥梁工匠，于隋开皇十五年至大业初年（595-605年）建造赵州桥，开创敞肩拱桥先河。",
+      "source": "张嘉贞《安济桥铭》",
+      "note": "世界桥梁史上的杰出贡献"
+    },
+    {
+      "name": "蔡襄",
+      "dynasty": "北宋",
+      "hometown": "福建仙游",
+      "achievement": "主持建造洛阳桥",
+      "description": "北宋书法家、政治家。两次出任泉州太守，主持建造洛阳桥，首创筏型基础和种蛎固基法。",
+      "source": "《宋史》",
+      "note": "中国现存最早跨海梁式石桥"
+    }
+  ],
+  "placeNames": [
+    {"place": "桥里（乌镇）", "bridge": "通济桥、仁济桥", "origin": "两桥呈曲尺形交汇，构成'桥中有桥'的视觉特征"},
+    {"place": "饮马桥", "bridge": "饮马桥", "origin": "相传晋代高僧支遁曾引马来此桥下饮水", "location": "江苏苏州"},
+    {"place": "积玉桥、三眼桥", "bridge": "同名桥梁", "origin": "武汉因湖多桥多，大量地名以桥命名", "location": "湖北武汉"}
+  ],
+  "statistics": {
+    "totalPoems": 10,
+    "totalCouplets": 5,
+    "totalHistoricalEvents": 3,
+    "totalLegends": 5,
+    "totalFamousFigures": 2,
+    "totalPlaceNames": 3
+  }
+}
