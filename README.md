@@ -10,6 +10,9 @@
 ├─ README.md
 ├─ data/
 │  └─ json/
+├─ docs/
+│  ├─ 古桥千秋-中国古桥多维数据可视化图谱.pptx
+│  └─ presentation/  （网页版演示文稿）
 ├─ site/
 │  ├─ index.html
 │  ├─ map.html
@@ -82,3 +85,12 @@ site/assets/runtime-config.js
 > ```text
 > copy site\assets\runtime-config.example.js site\assets\runtime-config.js
 > ```
+
+## 演示文稿
+
+项目附带完整的答辩演示文稿，提供两种格式：
+
+- **PowerPoint 版**：`docs/古桥千秋-中国古桥多维数据可视化图谱.pptx`
+- **网页版**：`docs/presentation/index.html`（浏览器直接打开即可播放）
+
+内容涵盖作品总览、古桥地图、桥梁详情、桥型技术、数据洞察、文化传承、保护修缮及成果展望，配合网页作品使用可全面了解项目设计与实现思路。

@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>古桥千秋——中国古桥的多维数据可视化图谱 · 参赛答辩</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@300;400;500;600&family=Noto+Serif+SC:wght@300;400;500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* ============ 主题色:🍂 牛皮纸 (Kraft Paper) ============
+       深棕 + 暖米,像牛皮信封或老笔记本,温暖、有年代感 */
+    --ink:#2a1e13;
+    --ink-rgb:42,30,19;
+    --paper:#eedfc7;
+    --paper-rgb:238,223,199;
+    --paper-tint:#e0d0b6;
+    --ink-tint:#3a2a1d;
+
+    /* ============ 字体(跨主题固定) ============ */
+    --mono:"IBM Plex Mono",ui-monospace,monospace;
+    --serif-en:"Playfair Display","Source Serif 4",Georgia,serif;
+    --serif-body-en:"Source Serif 4",Georgia,serif;
+    --serif-zh:"Noto Serif SC",source-han-serif-sc,serif;
+    --sans-zh:"Noto Sans SC",source-han-sans-sc,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:100%;height:100%;overflow:hidden;background:var(--ink);color:var(--paper);font-family:var(--sans-zh);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+
+  /* ============ WebGL 双背景 ============ */
+  canvas.bg{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;display:block;transition:opacity 1.2s ease}
+  canvas#bg-light{opacity:0}
+  canvas#bg-dark{opacity:1}
+  body.light-bg canvas#bg-light{opacity:1}
+  body.light-bg canvas#bg-dark{opacity:0}
+  body.low-power canvas.bg{display:none!important}
+
+  /* ============ Deck 容器 + 翻页 ============ */
+  /* width: NSLIDES * 100vw，会在 JS 里动态矫正 */
+  #deck{position:fixed;inset:0;width:10000vw;height:100vh;display:flex;flex-wrap:nowrap;transition:transform .82s cubic-bezier(.22,.61,.36,1);z-index:10;will-change:transform}
+  body.page-turning #deck{transition-duration:.88s}
+  .page-wipe{position:fixed;inset:0;z-index:35;pointer-events:none;opacity:0;transform:translate3d(-110%,0,0);background:linear-gradient(90deg,rgba(var(--ink-rgb),.42),rgba(var(--paper-rgb),.2) 52%,rgba(var(--ink-rgb),0));mix-blend-mode:multiply;will-change:transform,opacity}
+  body.light-bg .page-wipe{background:linear-gradient(90deg,rgba(var(--paper-rgb),.28),rgba(var(--ink-rgb),.16) 58%,rgba(var(--paper-rgb),0))}
+  body.turn-forward .page-wipe{animation:pageWipeForward .72s cubic-bezier(.22,.61,.36,1) both}
+  body.turn-back .page-wipe{animation:pageWipeBack .72s cubic-bezier(.22,.61,.36,1) both}
+  @keyframes pageWipeForward{0%{opacity:0;transform:translate3d(-108%,0,0)}18%{opacity:.58}62%{opacity:.36}100%{opacity:0;transform:translate3d(108%,0,0)}}
+  @keyframes pageWipeBack{0%{opacity:0;transform:translate3d(108%,0,0) scaleX(-1)}18%{opacity:.58}62%{opacity:.36}100%{opacity:0;transform:translate3d(-108%,0,0) scaleX(-1)}}
+  .slide{width:100vw;height:100vh;flex:0 0 100vw;position:relative;padding:6vh 6vw 10vh 6vw;display:flex;flex-direction:column;overflow:hidden}
+  .slide.light{color:var(--ink);background:var(--paper)}
+  .slide.dark{color:var(--paper);background:var(--ink)}
+
+  /* 默认页：遮罩较厚，保证文字可读 */
+  .slide::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;transition:background .7s ease}
+  .slide.light::before{background:rgba(var(--paper-rgb),.78);backdrop-filter:blur(3px)}
+  .slide.dark::before{background:rgba(var(--ink-rgb),.78);backdrop-filter:blur(3px)}
+  /* Hero 页：遮罩大幅降低，让 WebGL 背景明显透出 */
+  .slide.hero.light::before{background:rgba(var(--paper-rgb),.16);backdrop-filter:none}
+  .slide.hero.dark::before{background:rgba(var(--ink-rgb),.12);backdrop-filter:none}
+  /* Hero 页顶底微弱渐隐，保证 chrome/foot 区域可读 */
+  .slide.hero::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none}
+  .slide.hero.light::after{background:linear-gradient(180deg,rgba(var(--paper-rgb),.28) 0%,rgba(var(--paper-rgb),0) 14%,rgba(var(--paper-rgb),0) 86%,rgba(var(--paper-rgb),.28) 100%)}
+  .slide.hero.dark::after{background:linear-gradient(180deg,rgba(var(--ink-rgb),.32) 0%,rgba(var(--ink-rgb),0) 14%,rgba(var(--ink-rgb),0) 86%,rgba(var(--ink-rgb),.32) 100%)}
+
+  /* ============ Magazine chrome：顶部 meta + 底部 foot ============ */
+  .chrome{display:flex;justify-content:space-between;align-items:flex-start;font-family:var(--mono);font-size:12px;letter-spacing:.18em;text-transform:uppercase;opacity:.7}
+  .chrome .left,.chrome .right{display:flex;gap:2.4em;align-items:center}
+  .chrome .sep{width:40px;height:1px;background:currentColor;opacity:.4}
+  .foot{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.55}
+  .foot .title{font-family:var(--serif-zh);font-weight:400;letter-spacing:.05em;text-transform:none;opacity:.75;font-size:13px}
+
+  .tag{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;padding:6px 14px;border:1px solid currentColor;opacity:.85}
+  .rule{width:100%;height:1px;background:currentColor;opacity:.25;margin:3vh 0}
+  .rule.v{width:1px;height:100%;margin:0}
+
+  /* ============ 字体规则 ============
+     · 衬线（Noto Serif SC / Playfair）：大标题、重点金句、数字
+     · 非衬线（Noto Sans SC）：正文描述、body、补充说明
+     · 等宽（IBM Plex Mono）：kicker、meta 小标签、foot 右侧
+  */
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.3em;text-transform:uppercase;opacity:.6;margin-bottom:2.6vh}
+  .display{font-family:var(--serif-en);font-weight:700;font-size:11vw;line-height:.92;letter-spacing:-.025em}
+  .display-zh{font-family:var(--serif-zh);font-weight:700;font-size:7.8vw;line-height:1.04;letter-spacing:-.005em}
+  .h1-zh{font-family:var(--serif-zh);font-weight:700;font-size:4.6vw;line-height:1.12;letter-spacing:-.005em}
+  .h2-zh{font-family:var(--serif-zh);font-weight:600;font-size:3.2vw;line-height:1.2;letter-spacing:0}
+  .h3-zh{font-family:var(--serif-zh);font-weight:500;font-size:1.9vw;line-height:1.35}
+  .body-zh{font-family:var(--sans-zh);font-weight:400;font-size:max(15px,1.22vw);line-height:1.75;opacity:.82;letter-spacing:.01em}
+  .body-serif{font-family:var(--serif-zh);font-weight:400;font-size:max(15px,1.3vw);line-height:1.65;opacity:.88}
+  .lead{font-family:var(--serif-zh);font-weight:400;font-size:1.9vw;line-height:1.4;opacity:.85}
+  .meta{font-family:var(--mono);font-size:max(11px,.88vw);letter-spacing:.16em;text-transform:uppercase;opacity:.6}
+  .big-num{font-family:var(--serif-en);font-weight:800;font-size:10vw;line-height:.85;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .mid-num{font-family:var(--serif-en);font-weight:700;font-size:5.5vw;line-height:.88;letter-spacing:-.02em;font-feature-settings:"tnum"}
+  .ghost{font-family:var(--serif-en);font-weight:900;font-size:34vw;line-height:.8;opacity:.06;letter-spacing:-.04em;position:absolute;font-feature-settings:"tnum"}
+  em{font-style:italic;font-family:var(--serif-en)}
+  .en{font-family:var(--serif-en);font-style:italic;font-weight:500}
+
+  /* ============ 布局工具 ============ */
+  .col{display:flex;flex-direction:column;gap:2.4vh}
+  .row{display:flex;align-items:center;gap:3vw}
+  .grid-6{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);gap:4vw 6vw;flex:1;align-content:center;padding:2vh 0}
+  .grid-9{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);gap:3vh 4vw;flex:1;align-content:center}
+  .grid-4{display:grid;grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(2,1fr);gap:4vh 6vw;flex:1;align-content:center}
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:4vw;flex:1;align-content:center}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:4vw;flex:1;align-items:center}
+  .split-55{display:grid;grid-template-columns:55fr 45fr;gap:5vw;flex:1;align-items:stretch}
+  .fill{flex:1}
+  .center{align-items:center;justify-content:center;text-align:center}
+  .bottom-left{position:absolute;left:6vw;bottom:9vh;max-width:50vw}
+  .bottom-right{position:absolute;right:6vw;bottom:9vh;max-width:50vw;text-align:right}
+  .top-right{position:absolute;right:6vw;top:6vh;text-align:right}
+
+  /* ============ Stat（数字矩阵） ============ */
+  .stat{display:flex;flex-direction:column;gap:1vh;align-items:flex-start}
+  .stat .n{font-family:var(--serif-en);font-weight:800;font-size:8vw;line-height:.88;letter-spacing:-.03em;font-feature-settings:"tnum"}
+  .stat .l{font-family:var(--sans-zh);font-size:max(13px,1.05vw);opacity:.7;margin-top:1vh;font-weight:400;line-height:1.5}
+  .stat .m{font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.5;margin-bottom:.2vh}
+
+  /* ============ Callout（引用框） ============ */
+  .callout{padding:3vh 2.4vw;border-left:3px solid currentColor;position:relative;font-family:var(--serif-zh);font-size:max(15px,1.2vw);line-height:1.55;opacity:.92}
+  .slide.light .callout{background:rgba(var(--ink-rgb),.05)}
+  .slide.dark .callout{background:rgba(var(--paper-rgb),.06)}
+  .callout .cite{display:block;margin-top:1.6vh;font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6}
+  .callout .q-big{font-family:var(--serif-zh);font-weight:600;font-size:max(17px,1.6vw);line-height:1.42}
+
+  /* ============ Big Quote（大引用） ============ */
+  .big-quote{font-family:var(--serif-zh);font-weight:600;font-size:6vw;line-height:1.2;letter-spacing:-.02em;opacity:.95}
+
+  /* ============ Platform（平台卡） ============ */
+  .plat{display:flex;flex-direction:column;justify-content:flex-end;padding:2vh 0;border-top:1px solid currentColor;border-color:rgba(127,127,127,.35)}
+  .plat .name{font-family:var(--serif-zh);font-weight:700;font-size:1.8vw;margin-bottom:.6vh}
+  .plat .nb{font-family:var(--serif-en);font-weight:700;font-size:3.2vw;letter-spacing:-.02em;line-height:1;font-feature-settings:"tnum"}
+  .plat .sub{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;opacity:.55;margin-top:.6vh}
+  .plat .fill{font-family:var(--sans-zh);font-weight:300;font-size:2.4vw;opacity:.28;letter-spacing:-.01em;line-height:1}
+
+  /* ============ Rowline（表格行） ============ */
+  .rowline{display:grid;grid-template-columns:1fr 2fr 1fr;gap:2vw;padding:2.2vh 0;border-top:1px solid currentColor;align-items:center;border-color:rgba(127,127,127,.25)}
+  .rowline:last-child{border-bottom:1px solid currentColor;border-color:rgba(127,127,127,.25)}
+  .rowline .k{font-family:var(--serif-zh);font-weight:700;font-size:1.7vw}
+  .rowline .v{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.2vw);opacity:.85;line-height:1.55}
+  .rowline .m{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;opacity:.6;justify-self:end}
+
+  /* ============ Pillar（支柱卡片） ============ */
+  .pillar{display:flex;flex-direction:column;gap:1.8vh}
+  .pillar .ic{font-family:var(--serif-en);font-style:italic;font-size:2.6vw;opacity:.45;font-weight:400}
+  .pillar .ic svg{width:2.8vw;height:2.8vw;stroke-width:1.2;opacity:.7}
+  .pillar .t{font-family:var(--serif-zh);font-weight:700;font-size:2.4vw;line-height:1.1}
+  .pillar .d{font-family:var(--sans-zh);font-weight:400;font-size:max(14px,1.1vw);opacity:.76;line-height:1.6}
+
+  /* ============ Signature / Highlight ============ */
+  .sign{font-family:var(--serif-en);font-style:italic;font-weight:500;font-size:2vw;opacity:.7}
+  .hi{position:relative;display:inline}
+  .slide.dark .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--paper-rgb),.15);z-index:-1}
+  .slide.light .hi::after{content:"";position:absolute;left:-.1em;right:-.1em;bottom:-.05em;height:.28em;background:rgba(var(--ink-rgb),.08);z-index:-1}
+
+  /* ============ Icons（Lucide via CDN） ============ */
+  .ico{width:1em;height:1em;display:inline-block;vertical-align:-.12em;stroke:currentColor;fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+  .ico-lg,.ico-md,.ico-sm{fill:none;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round}
+  .ico-lg{width:2.6vw;height:2.6vw;stroke-width:1.2;display:inline-block}
+  .ico-md{width:1.8vw;height:1.8vw;stroke-width:1.3;display:inline-block;vertical-align:-.4em}
+  .ico-sm{width:1.1vw;height:1.1vw;stroke-width:1.4;display:inline-block;vertical-align:-.15em;opacity:.7}
+
+  /* ============ 图片占位（虚线框，提示设计师位置） ============ */
+  .img-slot{border:1.5px dashed rgba(127,127,127,.4);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:1vh;padding:2vh 2vw;font-family:var(--mono);font-size:10px;letter-spacing:.28em;text-transform:uppercase;opacity:.55;position:relative;aspect-ratio:16/9;width:100%;max-height:56vh;margin-inline:auto;box-sizing:border-box}
+  .img-slot::before{content:"";position:absolute;inset:8px;border:1px solid currentColor;opacity:.2}
+  .img-slot .plus{font-size:2vw;font-weight:300;opacity:.5;letter-spacing:0}
+  .img-slot .label{position:relative;z-index:2;text-align:center}
+  .img-slot.r-4x3{aspect-ratio:4/3}
+  .img-slot.r-3x2{aspect-ratio:3/2}
+  .img-slot.r-1x1{aspect-ratio:1/1}
+
+  /* ============ 图片实填框（关键：固定高度 + 只裁底部） ============
+     重要约束：高度用内联 height:Nvh 精确控制，不要用 aspect-ratio（会撑破布局）
+     object-position:top center 保证严禁裁剪顶部和左右，只裁剪底部
+  */
+  .frame-img{overflow:hidden;position:relative;background:rgba(0,0,0,.04);box-sizing:border-box;width:100%;border-radius:4px}
+  .slide.dark .frame-img{background:rgba(255,255,255,.04);border-color:rgba(255,255,255,.12)}
+  .frame-img > img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+  .frame-img.fit-contain > img{object-fit:contain;object-position:center center}
+  .frame-img.r-16x9{aspect-ratio:16/9;max-height:64vh}
+  .frame-img.r-16x10{aspect-ratio:16/10;max-height:56vh}
+  .frame-img.r-4x3{aspect-ratio:4/3;max-height:56vh}
+  .frame-img.r-3x2{aspect-ratio:3/2;max-height:46vh}
+  .frame-img.r-3x4{aspect-ratio:3/4;max-height:60vh}
+  .frame-img.r-1x1{aspect-ratio:1/1;max-height:50vh}
+  .frame-img.h-16{height:16vh}
+  .frame-img.h-18{height:18vh}
+  .frame-img.h-22{height:22vh}
+  .frame-img.h-26{height:26vh}
+  .frame-img.h-28{height:28vh}
+  .frame-cap{display:flex;justify-content:space-between;align-items:baseline;gap:1vw;margin-top:.8vh;font-family:var(--mono);font-size:10px;letter-spacing:.22em;text-transform:uppercase;opacity:.72}
+  .frame-cap .pf{font-family:var(--serif-zh);font-weight:600;font-size:max(13px,1vw);letter-spacing:.04em;text-transform:none;opacity:.94}
+  .frame-cap .nb{font-family:var(--serif-en);font-style:italic;font-size:max(15px,1.2vw);letter-spacing:.02em;text-transform:none;opacity:.88}
+  .frame-cap .idx{font-family:var(--mono);opacity:.5}
+  figure.tile{display:flex;flex-direction:column;margin:0;min-width:0}
+  figure.tile > .frame-img{flex:0 0 auto}
+
+  /* ============ 导航 ============ */
+  #nav{position:fixed;left:50%;bottom:2.6vh;transform:translateX(-50%);z-index:30;display:flex;gap:10px;padding:8px 14px;border-radius:999px;background:rgba(0,0,0,.18);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+  #nav .dot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.3);cursor:pointer;transition:all .3s ease;border:0;padding:0}
+  #nav .dot:hover{background:rgba(255,255,255,.5);transform:scale(1.15)}
+  #nav .dot.active{background:rgba(255,255,255,.95);width:22px;border-radius:999px}
+  body.light-bg #nav{background:rgba(255,255,255,.25)}
+  body.light-bg #nav .dot{background:rgba(var(--ink-rgb),.25)}
+  body.light-bg #nav .dot.active{background:rgba(var(--ink-rgb),.9)}
+  #hint{position:fixed;bottom:3vh;right:3vw;z-index:30;font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;opacity:.4;mix-blend-mode:difference;color:#aaa}
+  body.low-power #hint{opacity:.72;color:var(--paper);mix-blend-mode:normal}
+  body.light-bg.low-power #hint{color:var(--ink)}
+
+  /* ============================================================
+     ============ LAYOUTS API · 面向 agent 的类（v2）============
+     所有 layouts.md 中的骨架都基于下面这套命名。
+     如果你在 layouts.md 里看到某个类，它必须在下面有定义。
+     ============================================================ */
+
+  /* ---------- .frame：每页主内容容器 ---------- */
+  .frame{flex:1;display:flex;flex-direction:column;min-height:0;overflow:hidden}
+  /* 当 .frame 同时加了 grid 类时，grid 的 display:grid 覆盖 flex */
+  .frame.grid-2-7-5,
+  .frame.grid-2-6-6,
+  .frame.grid-2-8-4,
+  .frame.grid-3-3,
+  .frame.grid-6{display:grid}
+
+  /* ---------- 标题层级（API 名称，衬线为主） ---------- */
+  .h-hero{
+    font-family:var(--serif-zh);
+    font-weight:900;
+    font-size:10vw;
+    line-height:.96;
+    letter-spacing:-.02em;
+  }
+  .h-xl{
+    font-family:var(--serif-zh);
+    font-weight:700;
+    font-size:6.2vw;
+    line-height:1.08;
+    letter-spacing:-.01em;
+  }
+  .h-sub{
+    font-family:var(--serif-zh);
+    font-weight:500;
+    font-size:3.1vw;
+    line-height:1.25;
+    letter-spacing:0;
+    opacity:.7;
+  }
+  .h-md{
+    font-family:var(--serif-zh);
+    font-weight:600;
+    font-size:2.3vw;
+    line-height:1.3;
+  }
+  /* 英文标题专用（Playfair 衬线） */
+  .h-hero-en,.h-xl-en{font-family:var(--serif-en);letter-spacing:-.025em}
+
+  /* ---------- lead 引语 ---------- */
+  .lead{
+    font-family:var(--serif-zh);
+    font-weight:400;
+    font-size:1.75vw;
+    line-height:1.5;
+    opacity:.86;
+  }
+
+  /* ---------- meta-row 底部元数据 ---------- */
+  .meta-row{
+    display:flex;
+    gap:1.2em;
+    align-items:baseline;
+    flex-wrap:wrap;
+    font-family:var(--mono);
+    font-size:max(12px,.92vw);
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    opacity:.6;
+  }
+
+  /* ---------- stat-card（数据大字报用） ---------- */
+  .stat-card{
+    display:flex;
+    flex-direction:column;
+    gap:.8vh;
+    align-items:flex-start;
+    padding-top:1.6vh;
+    border-top:1px solid currentColor;
+    border-color:rgba(127,127,127,.3);
+  }
+  .stat-card .stat-label{
+    font-family:var(--mono);
+    font-size:max(10px,.78vw);
+    letter-spacing:.24em;
+    text-transform:uppercase;
+    opacity:.55;
+  }
+  .stat-card .stat-nb{
+    font-family:var(--serif-en);
+    font-weight:800;
+    font-size:5.8vw;
+    line-height:.9;
+    letter-spacing:-.03em;
+    font-feature-settings:"tnum";
+    margin-top:.4vh;
+  }
+  .stat-card .stat-nb .stat-unit{
+    font-family:var(--serif-zh);
+    font-weight:500;
+    font-size:.38em;
+    letter-spacing:0;
+    opacity:.72;
+    margin-left:.14em;
+  }
+  .stat-card .stat-note{
+    font-family:var(--sans-zh);
+    font-weight:400;
+    font-size:max(13px,1.05vw);
+    line-height:1.5;
+    opacity:.72;
+    margin-top:.6vh;
+  }
+  /* 当 stat-card 用于 grid-4（2x2），数字适度放大；若页面有标题+引文在上方，可内联 style 覆盖为更小值 */
+  .grid-4 .stat-card .stat-nb{font-size:5vw}
+  /* 当只有 3 个，字也可以稍大 */
+  .grid-3 .stat-card .stat-nb{font-size:6.8vw}
+
+  /* ---------- pipeline（流水线） ---------- */
+  .pipeline-section{
+    margin-top:4.4vh;
+    padding-top:2.8vh;
+    border-top:1px dashed rgba(127,127,127,.32);
+  }
+  .pipeline-section:first-of-type{
+    border-top:0;
+    padding-top:0;
+    margin-top:3vh;
+  }
+  .pipeline-label{
+    font-family:var(--mono);
+    font-size:max(11px,.85vw);
+    letter-spacing:.24em;
+    text-transform:uppercase;
+    opacity:.62;
+    margin-bottom:2.2vh;
+  }
+  .pipeline{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:1.2vw;
+  }
+  .pipeline[data-cols="3"]{grid-template-columns:repeat(3,1fr)}
+  .pipeline[data-cols="4"]{grid-template-columns:repeat(4,1fr)}
+  .pipeline[data-cols="6"]{grid-template-columns:repeat(6,1fr)}
+  .step{
+    display:flex;
+    flex-direction:column;
+    gap:.8vh;
+    padding-top:1.4vh;
+    border-top:1px solid currentColor;
+    border-color:rgba(127,127,127,.35);
+  }
+  .step-nb{
+    font-family:var(--serif-en);
+    font-style:italic;
+    font-weight:500;
+    font-size:1.15vw;
+    opacity:.45;
+  }
+  .step-title{
+    font-family:var(--sans-zh);
+    font-weight:700;
+    font-size:1.55vw;
+    letter-spacing:.01em;
+    line-height:1.2;
+  }
+  .step-desc{
+    font-family:var(--sans-zh);
+    font-weight:400;
+    font-size:max(12px,.95vw);
+    line-height:1.45;
+    opacity:.72;
+  }
+
+  /* ---------- 网格（layouts.md 所用） ---------- */
+  /* 这些类独立挂到任何容器上都能生效，不依赖 .frame 复合选择器 */
+  .grid-2-7-5{display:grid;grid-template-columns:7fr 5fr;gap:3vw 4vh;align-items:start}
+  .grid-2-6-6{display:grid;grid-template-columns:1fr 1fr;gap:3vw 4vh;align-items:start}
+  .grid-2-8-4{display:grid;grid-template-columns:8fr 4fr;gap:3vw 4vh;align-items:start}
+  .grid-3-3{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-auto-rows:minmax(0,1fr);
+    gap:2.4vh 2vw;
+  }
+  /* grid-6 已在旧样式里定义为 3x2，这里仅补 align */
+
+  /* ---------- 图片 frame-img（layouts.md 主命名） ---------- */
+  /* 在旧样式里已定义，这里补 img-cap 命名别名与增强 */
+  figure.frame-img{margin:0;display:flex;flex-direction:column;min-width:0}
+  .img-cap{
+    display:block;
+    margin-top:.8vh;
+    font-family:var(--mono);
+    font-size:max(10px,.8vw);
+    letter-spacing:.22em;
+    text-transform:uppercase;
+    opacity:.6;
+  }
+  /* callout src 命名别名 */
+  .callout-src{
+    display:block;
+    margin-top:1.6vh;
+    font-family:var(--mono);
+    font-size:11px;
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    opacity:.6;
+  }
+
+  /* ---------- chrome & foot 补位（layouts.md 简单写法） ---------- */
+  .chrome{font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.2em;text-transform:uppercase;opacity:.62}
+  .foot{font-family:var(--mono);font-size:max(11px,.78vw);letter-spacing:.18em;text-transform:uppercase;opacity:.5}
+  #deck > .slide:nth-of-type(6) .frame.grid-2-7-5 > .foot{position:absolute;left:6vw;right:6vw;bottom:10vh;width:auto;margin-top:0;display:flex;justify-content:space-between;align-items:flex-end}
+
+  /* ============ 动效系统(Motion One 驱动) ============
+     所有 [data-anim] 元素默认隐藏,进入页面时由 JS 逐个揭示。
+     - cascade(默认):按 DOM 顺序 stagger 120ms 淡入 + y:16→0
+     - hero(hero 页自动):慢一点的 stagger 180ms
+     - quote(含 [data-anim="line"]):逐行 600ms 淡入
+     - directional(含 [data-anim="left|right"]):左→分隔线→右
+     - pipeline(data-animate="pipeline"):Space/→ 手动推进
+     Motion One 没加载成功时(CDN 断 + 本地丢),所有 [data-anim] 会兜底显示。
+  */
+  [data-anim]{opacity:1}
+  body.motion-ready [data-anim]{opacity:0}
+  body.motion-ready [data-anim="left"]{transform:translateX(-24px)}
+  body.motion-ready [data-anim="right"]{transform:translateX(24px)}
+  body.motion-ready [data-anim="line"]{opacity:0;transform:translateY(10px)}
+  body.motion-ready [data-anim="divider"]{opacity:0}
+  body.motion-ready [data-anim="step"],
+  body.motion-ready [data-anim="arrow"]{opacity:.15}
+  body.motion-ready [data-animate="pipeline"] [data-anim]{opacity:.15}
+  body.motion-ready .slide.enter-pending [data-anim]{opacity:0!important;transform:none!important}
+  body.low-power #deck{transition:none!important}
+  body.low-power .page-wipe{display:none!important}
+  body.low-power *,
+  body.low-power *::before,
+  body.low-power *::after{animation:none!important;transition:none!important}
+  body.low-power.motion-ready [data-anim],
+  body.low-power [data-anim]{opacity:1!important;transform:none!important}
+
+
+  /* ---------- project supplement visuals ---------- */
+  .cover-wide-frame{display:grid;grid-template-columns:minmax(250px,.3fr) minmax(0,.7fr);gap:1.1vw;align-items:center;min-height:80vh}
+  .cover-wide-copy .display-zh{font-size:6.1vw;white-space:nowrap}
+  .cover-wide-copy .h2-zh{font-size:2.65vw}
+  .cover-subtitle-nowrap{white-space:nowrap}
+  .cover-wide-copy .lead{max-width:36vw!important}
+  .photo-card.cover-wide-visual{height:min(66vh,56vw);min-height:56vh;border:1px solid rgba(var(--paper-rgb),.26);box-shadow:0 24px 58px rgba(0,0,0,.3)}
+  .photo-card.cover-wide-visual img{object-fit:contain;object-position:center}
+  .photo-stack{display:grid;grid-template-columns:1fr 1fr;gap:1.2vw;align-items:stretch}
+  .photo-card{position:relative;overflow:hidden;border-radius:4px;min-height:24vh;background:rgba(0,0,0,.06);border:1px solid rgba(127,127,127,.18)}
+  .photo-card.tall{grid-row:span 2;min-height:50vh}
+  .photo-card img{width:100%;height:100%;object-fit:cover;object-position:center;display:block;filter:saturate(.9) contrast(1.05)}
+  .photo-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 45%,rgba(0,0,0,.38) 100%)}
+  .photo-label{position:absolute;left:1.2vw;right:1.2vw;bottom:1.5vh;z-index:1;font-family:var(--mono);font-size:max(10px,.78vw);letter-spacing:.18em;text-transform:uppercase;color:#f5ead8;opacity:.9}
+  .bridge-model-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(2,minmax(0,1fr));gap:1.2vw;height:58vh;align-self:center}
+  .bridge-model-grid .photo-card{height:100%}
+  .bridge-model-grid .arch-real{grid-column:1;grid-row:1}
+  .bridge-model-grid .arch-line{grid-column:1;grid-row:2}
+  .bridge-model-grid .arch-3d{grid-column:2;grid-row:1}
+  .bridge-model-grid .arch-craft{grid-column:2;grid-row:2}
+  .bridge-model-grid .arch-line img{object-fit:contain;object-position:center;background:rgba(var(--paper-rgb),.32)}
+  .bridge-model-grid .bridge-3d-card{background:radial-gradient(circle at 50% 34%,rgba(var(--paper-rgb),.2),rgba(var(--ink-rgb),.14) 62%,rgba(var(--ink-rgb),.3))}
+  .bridge-model-grid .bridge-3d-card::after{pointer-events:none}
+  .ppt-3d-host{position:absolute;inset:.35vh .35vw 0;width:auto;height:auto;z-index:0}
+  .ppt-3d-host canvas{width:100%!important;height:100%!important;display:block}
+  .craft-part-tags{position:absolute;right:.7vw;top:.7vh;bottom:4.4vh;z-index:2;display:flex;flex-direction:column;justify-content:space-around;gap:.36vh;pointer-events:none}
+  .craft-part-tags span{display:block;min-width:2.4em;padding:.28em .42em;border:1px solid rgba(245,234,216,.34);border-radius:3px;background:rgba(var(--ink-rgb),.38);color:#f5ead8;font-size:max(8px,.55vw);line-height:1.1;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .carousel-photo-card{height:52vh;min-height:52vh}
+  .carousel-photo-card .carousel-frame{position:absolute;inset:1.2vh 1.2vw 5.2vh;overflow:hidden;contain:paint;transform:translateZ(0)}
+  .carousel-photo-card .carousel-track{display:flex;width:100%;height:100%;will-change:transform;transform:translate3d(0,0,0);transition:transform .62s cubic-bezier(.22,.61,.36,1);backface-visibility:hidden}
+  .carousel-photo-card .carousel-frame img{position:relative;inset:auto;flex:0 0 100%;width:100%;height:100%;object-fit:contain;object-position:center;opacity:1;filter:none;backface-visibility:hidden;pointer-events:none}
+  .carousel-photo-card .photo-label{height:1.25em;overflow:hidden;right:8vw}
+  .carousel-label-item{position:absolute;left:0;right:0;opacity:0;transform:translateY(4px);will-change:opacity,transform}
+  .carousel-label-item:first-child{opacity:.9;transform:translateY(0)}
+  .carousel-photo-card.is-ready .carousel-label-item{opacity:0;transform:translateY(4px)}
+  .carousel-photo-card.is-ready .carousel-label-item.is-active{opacity:.9;transform:translateY(0);transition:opacity .28s ease,transform .28s ease}
+  .carousel-controls{position:absolute;right:1.2vw;bottom:1.35vh;z-index:2;display:flex;gap:8px;align-items:center;padding:4px 6px;border:1px solid rgba(var(--paper-rgb),.18);border-radius:999px;background:rgba(var(--ink-rgb),.32);backdrop-filter:blur(6px)}
+  .carousel-toggle{width:10px;height:10px;border-radius:50%;border:1px solid rgba(var(--paper-rgb),.58);background:transparent;opacity:.58;cursor:pointer;padding:0;transition:opacity .24s ease,background-color .24s ease,transform .24s ease,border-color .24s ease}
+  .carousel-toggle:hover,.carousel-toggle:focus-visible{opacity:.9;transform:scale(1.15);outline:none;border-color:rgba(var(--paper-rgb),.92)}
+  .carousel-toggle.is-active{background:var(--paper);border-color:var(--paper);opacity:.95}
+  body.low-power .carousel-photo-card .carousel-track{transition:none!important}
+  body.low-power .carousel-toggle{transition:none!important}
+  @media (prefers-reduced-motion:reduce){.carousel-photo-card .carousel-track,.carousel-label-item,.carousel-toggle{animation:none!important;transition:none!important}}
+  .browser-shot{border:1px solid rgba(127,127,127,.28);background:rgba(255,255,255,.06);border-radius:6px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.14)}
+  .slide.light .browser-shot{background:rgba(var(--ink-rgb),.04)}
+  .browser-top{height:34px;display:flex;align-items:center;gap:8px;padding:0 14px;border-bottom:1px solid rgba(127,127,127,.22);font-family:var(--mono);font-size:10px;letter-spacing:.16em;opacity:.62}
+  .browser-dot{width:9px;height:9px;border-radius:50%;background:currentColor;opacity:.35}
+  .browser-body{display:grid;grid-template-columns:1.2fr .8fr;min-height:39vh}
+  .map-board{position:relative;background:rgba(var(--ink-rgb),.05);overflow:hidden}
+  .slide.dark .map-board{background:rgba(var(--paper-rgb),.05)}
+  .map-board svg{position:absolute;inset:0;width:100%;height:100%;opacity:.88}
+  .map-pin{position:absolute;width:8px;height:8px;border-radius:50%;background:currentColor;box-shadow:0 0 0 6px rgba(127,127,127,.12)}
+  .side-panel{padding:2vh 1.6vw;display:flex;flex-direction:column;gap:1.2vh;border-left:1px solid rgba(127,127,127,.22)}
+  .panel-title{font-family:var(--serif-zh);font-weight:700;font-size:1.65vw;line-height:1.2}
+  .panel-line{height:1px;background:currentColor;opacity:.16;margin:.5vh 0}
+  .mini-chart{height:7vh;border-left:1px solid currentColor;border-bottom:1px solid currentColor;opacity:.55;position:relative;margin-top:auto}
+  .mini-chart span{position:absolute;bottom:0;width:10%;background:currentColor;opacity:.55}
+  .asset-strip{display:grid;grid-template-columns:repeat(5,1fr);gap:1.1vw;margin-top:3vh}
+  .asset-card{border-top:1px solid rgba(127,127,127,.3);padding-top:1.3vh;min-width:0}
+  .asset-thumb{height:22vh;display:flex;align-items:center;justify-content:center;background:rgba(127,127,127,.08);border-radius:4px;overflow:hidden}
+  .asset-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .asset-thumb.contain img{width:92%;height:92%;object-fit:contain}
+  .asset-name{font-family:var(--serif-zh);font-weight:700;font-size:max(14px,1.05vw);margin-top:1vh}
+  .asset-note{font-family:var(--sans-zh);font-size:max(12px,.9vw);line-height:1.45;opacity:.68;margin-top:.4vh}
+  .method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4vw;margin-top:4vh}
+  .method-card{border-top:1px solid rgba(127,127,127,.32);padding-top:1.5vh;display:flex;flex-direction:column;gap:1vh;min-height:22vh}
+  .method-card .no{font-family:var(--serif-en);font-style:italic;font-size:2vw;opacity:.38}
+  .method-card .title{font-family:var(--serif-zh);font-weight:700;font-size:1.8vw;line-height:1.2}
+  .method-card .desc{font-family:var(--sans-zh);font-size:max(13px,1vw);line-height:1.55;opacity:.72}
+  .tech-flow{display:grid;grid-template-columns:repeat(5,1fr);gap:1vw;margin-top:5vh;align-items:stretch}
+  .tech-node{border:1px solid rgba(127,127,127,.26);border-radius:4px;padding:1.6vh 1vw;min-height:18vh;display:flex;flex-direction:column;gap:1vh;background:rgba(127,127,127,.06)}
+  .tech-node .tagline{font-family:var(--mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;opacity:.55}
+  .tech-node .name{font-family:var(--serif-zh);font-weight:700;font-size:1.55vw;line-height:1.2}
+  .tech-node .detail{font-family:var(--sans-zh);font-size:max(12px,.9vw);line-height:1.45;opacity:.7}
+  .feature-list{display:grid;grid-template-columns:1fr;gap:1.3vh;margin-top:2vh}
+  .feature-item{display:grid;grid-template-columns:3.6vw 1fr;gap:1.2vw;align-items:start;border-top:1px solid rgba(127,127,127,.26);padding-top:1.4vh}
+  .feature-item .num{font-family:var(--serif-en);font-weight:800;font-size:2.8vw;line-height:.9;opacity:.42}
+  .feature-item .txt{font-family:var(--sans-zh);font-size:max(13px,1.03vw);line-height:1.52;opacity:.78}
+  .home-overview-slide{isolation:isolate}
+  .home-overview-slide .chrome,.home-overview-slide .foot{position:relative;z-index:5}
+  .home-overview-bg{position:absolute;inset:-4vh 0;z-index:-2;overflow:hidden}
+  .home-overview-bg img{width:100%;height:100%;object-fit:cover;filter:blur(16px) saturate(.78) brightness(.42);transform:none;opacity:.82}
+  .home-overview-slide::before{background:linear-gradient(90deg,rgba(var(--ink-rgb),.96) 0%,rgba(var(--ink-rgb),.9) 22%,rgba(var(--ink-rgb),.62) 31%,rgba(var(--ink-rgb),.18) 42%,rgba(var(--ink-rgb),.04) 100%);backdrop-filter:none}
+  .home-overview-slide::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(180deg,rgba(var(--ink-rgb),.42) 0%,rgba(var(--ink-rgb),0) 22%,rgba(var(--ink-rgb),0) 72%,rgba(var(--ink-rgb),.56) 100%)}
+  .home-overview-visual{position:absolute;z-index:1;left:20vw;right:3vw;top:11vh;bottom:10vh;margin:0;border:1px solid rgba(var(--paper-rgb),.28);box-shadow:0 28px 70px rgba(0,0,0,.38);overflow:hidden;background:rgba(var(--paper-rgb),.08)}
+  .home-overview-visual img{width:100%;height:100%;object-fit:contain;display:block}
+  .home-overview-visual .photo-label{background:linear-gradient(90deg,rgba(var(--ink-rgb),.58),rgba(var(--ink-rgb),0));padding-top:2vh;bottom:0;left:0;right:0;padding-left:1.2vw;padding-bottom:1.4vh}
+  .home-overview-copy{position:absolute;z-index:3;left:6vw;top:22vh;width:24vw;display:flex;flex-direction:column;gap:2vh}
+  .home-overview-copy .lead{max-width:23vw;margin:0;font-size:1.28vw;line-height:1.54}
+  .home-overview-note{font-family:var(--sans-zh);font-size:max(12px,.84vw);line-height:1.58;opacity:.72;max-width:22vw;border-top:1px solid rgba(var(--paper-rgb),.28);padding-top:1.5vh}
+
+  .home-overview-clean{isolation:isolate}
+  .home-overview-clean::before{background:linear-gradient(90deg,rgba(var(--ink-rgb),.98),rgba(var(--ink-rgb),.92));backdrop-filter:none}
+  .home-overview-clean::after{display:none}
+  .home-overview-layout{display:grid;grid-template-columns:minmax(220px,.27fr) minmax(0,.73fr);gap:2.4vw;align-items:center;padding-top:7vh;padding-bottom:7vh;min-height:80vh}
+  .home-overview-clean .home-overview-copy{position:relative;z-index:2;left:auto;top:auto;width:auto;display:flex;flex-direction:column;gap:2vh;align-self:center}
+  .home-overview-clean .home-overview-copy .lead{max-width:23vw;margin:0;font-size:1.16vw;line-height:1.58}
+  .home-overview-clean .home-overview-note{max-width:23vw;font-family:var(--sans-zh);font-size:max(12px,.82vw);line-height:1.58;opacity:.72;border-top:1px solid rgba(var(--paper-rgb),.28);padding-top:1.5vh}
+  .home-overview-clean .home-overview-visual{position:relative;z-index:1;left:auto;right:auto;top:auto;bottom:auto;margin:0;height:min(68vh,53vw);border:1px solid rgba(var(--paper-rgb),.28);box-shadow:0 22px 52px rgba(0,0,0,.32);overflow:hidden;background:rgba(var(--paper-rgb),.08)}
+  .home-overview-clean .home-overview-visual img{width:100%;height:100%;object-fit:contain;display:block}
+  .home-overview-clean .home-overview-visual .photo-label{background:linear-gradient(90deg,rgba(var(--ink-rgb),.58),rgba(var(--ink-rgb),0));padding-top:2vh;bottom:0;left:0;right:0;padding-left:1.2vw;padding-bottom:1.4vh}
+  #deck > .slide:nth-of-type(13){background:linear-gradient(90deg,rgba(var(--paper-rgb),.94) 0%,rgba(var(--paper-rgb),.84) 42%,rgba(var(--paper-rgb),.48) 70%,rgba(var(--paper-rgb),.18) 100%),url("images/ending-latest-bridge.jpg") center/cover no-repeat}
+  #deck > .slide:nth-of-type(13) .ending-bridge-figure{display:none}
+  #deck > .slide:nth-of-type(13) .seal-float{left:39vw;right:auto;top:23vh;bottom:auto;width:min(8vw,102px);opacity:.16;z-index:1}
+  .ending-bridge-figure{position:absolute;right:6.5vw;top:13vh;width:36vw;height:22vw;z-index:4;opacity:.34;border:1px solid rgba(var(--ink-rgb),.16);border-radius:4px;overflow:hidden;background:rgba(var(--paper-rgb),.45);pointer-events:none;mix-blend-mode:multiply}
+  .ending-bridge-figure img{width:100%;height:100%;object-fit:contain;object-position:center;display:block;filter:saturate(.85) contrast(1.02)}
+  @media (max-width:900px){.cover-wide-frame{grid-template-columns:1fr;gap:2.6vh;align-content:center}.cover-wide-copy .lead{max-width:100%!important}.cover-wide-visual{height:38vh;min-height:0}.bridge-model-grid{height:auto;grid-template-columns:1fr 1fr;gap:1.4vh 2vw}.bridge-model-grid .photo-card{height:18vh}.home-overview-layout{grid-template-columns:1fr;gap:2.4vh;padding-top:7vh;align-content:center}.home-overview-clean .home-overview-copy .lead,.home-overview-clean .home-overview-note{max-width:100%;font-size:max(12px,2.8vw)}.home-overview-clean .home-overview-visual{height:48vh}.home-overview-clean .home-overview-copy h2{font-size:8vw!important}.ending-bridge-figure{width:56vw;height:34vw;right:6vw;top:11vh;opacity:.2}}
+  @media (max-width:900px){#deck > .slide:nth-of-type(2) .bridge-model-grid .photo-card{height:16vh;min-height:0}#deck > .slide:nth-of-type(2) .ppt-3d-host{inset:.28vh .55vw 0}#deck > .slide:nth-of-type(2) .craft-part-tags{right:1.2vw;top:.6vh;bottom:3.9vh;gap:.18vh}#deck > .slide:nth-of-type(2) .craft-part-tags span{font-size:8px;padding:.22em .24em;min-width:2.2em}}
+  .seal-float{position:absolute;right:7vw;bottom:11vh;width:min(16vw,200px);z-index:1;opacity:.18;mix-blend-mode:multiply;pointer-events:none}
+  .slide.dark .seal-float{opacity:.18;mix-blend-mode:screen;filter:invert(1)}
+  .method-card,.stat-card,.asset-card,.tech-node,.rowline,.feature-item,.photo-card{transition:transform .34s cubic-bezier(.22,.61,.36,1),box-shadow .34s ease,border-color .34s ease}
+  body:not(.low-power) .method-card:hover,
+  body:not(.low-power) .stat-card:hover,
+  body:not(.low-power) .asset-card:hover,
+  body:not(.low-power) .tech-node:hover,
+  body:not(.low-power) .feature-item:hover,
+  body:not(.low-power) .photo-card:hover{transform:translate3d(0,-4px,0)}
+  body:not(.low-power) .stat-card:hover,
+  body:not(.low-power) .tech-node:hover,
+  body:not(.low-power) .photo-card:hover{box-shadow:0 18px 42px rgba(0,0,0,.16)}
+  body:not(.low-power) .seal-float{animation:sealFloat 7s ease-in-out infinite}
+  body:not(.low-power) .hero .photo-card.tall img{animation:heroImageDrift 13s ease-in-out infinite alternate}
+  @keyframes sealFloat{0%,100%{transform:translate3d(0,0,0) rotate(-1deg)}50%{transform:translate3d(0,-10px,0) rotate(1deg)}}
+  @keyframes heroImageDrift{0%{transform:scale(1.015)}100%{transform:scale(1.045) translate3d(-.7%,.4%,0)}}
+  @media (prefers-reduced-motion:reduce){#deck{transition:none!important}.page-wipe{display:none!important}.method-card,.stat-card,.asset-card,.tech-node,.rowline,.feature-item,.photo-card,.seal-float,.hero .photo-card.tall img{animation:none!important;transition:none!important}}
+  @media (max-width:900px){.browser-body{grid-template-columns:1fr}.asset-strip,.method-grid,.tech-flow{grid-template-columns:repeat(2,1fr)}.photo-card.tall{grid-row:auto;min-height:28vh}}
+  /* ---------- 响应式降级 ---------- */
+  @media (max-width:900px){
+    .display{font-size:16vw}
+    .display-zh{font-size:12vw}
+    .h1-zh{font-size:7vw}
+    .h-hero{font-size:14vw}
+    .h-xl{font-size:9vw}
+    .pipeline{grid-template-columns:repeat(2,1fr)}
+    .grid-2-7-5,.grid-2-6-6,.grid-2-8-4{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<script>
+  (function(){
+    const KEY = 'guizang-ppt-low-power';
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const stored = localStorage.getItem(KEY);
+    window.__lowPowerMode = stored === '1' || (stored === null && reduced);
+    function updateHint(){
+      const hint = document.getElementById('hint');
+      if(hint) hint.textContent = `← → 翻页 · B ${window.__lowPowerMode ? '动态' : '静态'} · ESC 索引`;
+    }
+    window.__setLowPowerMode = function(on, opts={}){
+      window.__lowPowerMode = !!on;
+      document.body.classList.toggle('low-power', window.__lowPowerMode);
+      if(opts.persist !== false) localStorage.setItem(KEY, window.__lowPowerMode ? '1' : '0');
+      if(window.__lowPowerMode && document.getAnimations){
+        document.getAnimations().forEach(a=>a.cancel());
+      }
+      updateHint();
+      dispatchEvent(new CustomEvent('ppt-low-power-change', {detail:{on:window.__lowPowerMode}}));
+      if(window.__clearEnterPending) window.__clearEnterPending();
+      if(window.__playSlide) window.__playSlide(window.__currentSlideIndex || 0);
+    };
+    document.body.classList.toggle('low-power', window.__lowPowerMode);
+    addEventListener('DOMContentLoaded', updateHint, {once:true});
+  })();
+</script>
+
+<canvas id="bg-dark" class="bg"></canvas>
+<canvas id="bg-light" class="bg"></canvas>
+<div id="hint">← → 翻页 · B 静态 · ESC 索引</div>
+
+<div id="deck">
+
+<!-- ============================================================
+     SLIDES 插入区 · 在此处填充所有 <section class="slide ..."> 页面
+     每页模板参考 references/page-patterns.md
+     页面组件参考 references/components.md
+     ============================================================ -->
+
+<!-- SLIDES_HERE -->
+
+<!-- ============ 第 1 页 · Layout 1 · 封面 · hero dark ============ -->
+<section class="slide hero dark">
+  <div class="chrome"><div>参赛答辩 · 2026.08.07</div><div>01 / 13</div></div>
+  <div class="frame cover-wide-frame">
+    <div class="cover-wide-copy"><div class="kicker" data-anim>DATA VISUALIZATION · CULTURAL HERITAGE</div><h1 class="display-zh" data-anim>古桥千秋</h1><h2 class="h2-zh" data-anim>中国古桥的<br/><span class="cover-subtitle-nowrap">多维数据可视化图谱</span></h2><p class="lead" style="margin-top:3vh" data-anim>作品以中国古桥为研究对象，把分散在文献、地图、图像与传说中的文化遗产资料转化为可浏览、可比较、可讲述的数字化图谱。</p><div class="meta-row" style="margin-top:4vh" data-anim><span>2026年全国大学生计算机设计大赛</span><span>·</span><span>文化遗产数字化传播</span></div></div>
+    <figure class="photo-card cover-wide-visual" data-anim><img src="images/作品总览.png" alt="作品总览"><figcaption class="photo-label">PROJECT OVERVIEW · 作品总览</figcaption></figure>
+  </div><div class="foot"><div>作品说明 · 创意 · 内容 · 技术 · 特色</div><div>— 2026 —</div></div>
+</section>
+
+<section class="slide light">
+  <div class="chrome"><div>主旨内容 · THEME</div><div>02 / 13</div></div>
+  <div class="frame grid-2-7-5" style="padding-top:5vh"><div style="display:flex;flex-direction:column;gap:3vh"><div class="kicker" data-anim>WHAT WE TELL</div><h2 class="h1-zh" data-anim>让古桥从"静态文物"变成"可读地图"</h2><p class="lead" data-anim>主旨不是单纯罗列桥梁资料，而是通过数据可视化建立"时间脉络、空间分布、结构类型、文化记忆、保护修缮"之间的联系，让观众理解古桥为什么重要、如何被建造、又该如何被守护。</p><div class="callout" data-anim><span class="q-big">以桥为线索，连接工程智慧、地域交通、民俗文学与遗产保护。</span><span class="callout-src">CONTENT POSITIONING</span></div></div><div class="bridge-model-grid" data-anim><figure class="photo-card arch-real"><img src="images/background.jpg" alt="拱桥实景背景图"><figcaption class="photo-label">ARCH SCENE · 实景</figcaption></figure><figure class="photo-card arch-line"><img src="images/bridge-type-arch.png" alt="拱桥桥型线稿"><figcaption class="photo-label">ARCH LINEWORK · 桥型角度</figcaption></figure><figure class="photo-card bridge-3d-card arch-3d"><div class="ppt-3d-host" id="slide2-arch-bridge-3d" role="img" aria-label="拱桥三维桥型组件"></div><figcaption class="photo-label">ARCH BRIDGE · 3D</figcaption></figure><figure class="photo-card bridge-3d-card arch-craft"><div class="ppt-3d-host" id="slide2-arch-craft-3d" role="img" aria-label="拱桥栏杆、桥面、拱券、桥台四个三维工艺部件上下分层展示"></div><div class="craft-part-tags" aria-hidden="true"><span>栏杆</span><span>桥面</span><span>拱券</span><span>桥台</span></div><figcaption class="photo-label">ARCH CRAFT · 4 PARTS</figcaption></figure></div></div>
+  <div class="foot"><div>主旨内容 · 以桥见史 · 以数述桥</div><div>主题阐释</div></div>
+</section>
+
+<section class="slide dark"><div class="chrome"><div>作品创意与设计方案 · CONCEPT</div><div>03 / 13</div></div><div class="frame" style="padding-top:5vh"><div class="kicker" data-anim>DESIGN IDEA</div><h2 class="h1-zh" data-anim>"五维寻桥"的信息叙事</h2><p class="lead" style="max-width:78vw;margin-top:2vh" data-anim>设计方案采用"总览—探索—对比—详情—洞察"的浏览路径，以五个维度解构古桥价值。</p><div style="display:grid;grid-template-columns:repeat(5,1fr);gap:1vw;margin-top:2vh"><div data-anim><div class="method-card" style="min-height:auto"><div class="no">01</div><div class="title" style="font-size:1.4vw">时间维度</div><div class="desc" style="font-size:max(11px,.85vw)">梳理先秦至明清的桥梁发展脉络。</div><figure class="photo-card" style="min-height:16vh;margin-top:.8vh"><img src="images/时间维度.png" alt="时间维度"><figcaption class="photo-label">TIME</figcaption></figure></div></div><div data-anim><div class="method-card" style="min-height:auto"><div class="no">02</div><div class="title" style="font-size:1.4vw">空间维度</div><div class="desc" style="font-size:max(11px,.85vw)">以省域地图呈现古桥的地域分布。</div><figure class="photo-card" style="min-height:16vh;margin-top:.8vh"><img src="images/空间维度.png" alt="空间维度"><figcaption class="photo-label">SPACE</figcaption></figure></div></div><div data-anim><div class="method-card" style="min-height:auto"><div class="no">03</div><div class="title" style="font-size:1.4vw">结构维度</div><div class="desc" style="font-size:max(11px,.85vw)">对拱桥、梁桥等类型图像化分类。</div><figure class="photo-card" style="min-height:16vh;margin-top:.8vh"><img src="images/桥型维度.png" alt="桥型维度"><figcaption class="photo-label">TYPE</figcaption></figure></div></div><div data-anim><div class="method-card" style="min-height:auto"><div class="no">04</div><div class="title" style="font-size:1.4vw">文化维度</div><div class="desc" style="font-size:max(11px,.85vw)">诗词传说转译为文化标签。</div><figure class="photo-card" style="min-height:16vh;margin-top:.8vh"><img src="images/文化维度.png" alt="文化维度"><figcaption class="photo-label">CULTURE</figcaption></figure></div></div><div data-anim><div class="method-card" style="min-height:auto"><div class="no">05</div><div class="title" style="font-size:1.4vw">保护维度</div><div class="desc" style="font-size:max(11px,.85vw)">文物等级与修缮记录。</div><figure class="photo-card" style="min-height:16vh;margin-top:.8vh"><img src="images/修缮维度.png" alt="保护维度"><figcaption class="photo-label">PRESERVE</figcaption></figure></div></div></div></div><div class="foot"><div>创意方案 · 五维寻桥 · 数据叙事</div><div>设计方案</div></div></section>
+
+<section class="slide dark"><div class="chrome"><div>设计细节 · DESIGN DETAILS</div><div>04 / 13</div></div><div class="frame" style="padding-top:5vh"><div class="kicker" data-anim>DESIGN DETAILS</div><h2 class="h1-zh" data-anim>视觉 · 交互 · 传播</h2><p class="lead" style="max-width:78vw;margin-top:2vh" data-anim>三个维度支撑设计方案的落地执行。</p><div class="method-grid" style="margin-top:4vh"><div class="method-card" data-anim style="min-height:28vh"><div class="no">06</div><div class="title">视觉方案</div><div class="desc">以朱红、赭色、鎏金、石绿、蓝绿、木褐构成中式古建色板，结合牛皮纸、木刻纹样、印章边框和衬线字体，形成统一的古籍感数字界面。</div></div><div class="method-card" data-anim style="min-height:28vh"><div class="no">07</div><div class="title">交互方案</div><div class="desc">地图筛选、图表联动、详情弹层、语音导览和AI问答，让资料从"看见"变成"探索"。</div></div><div class="method-card" data-anim style="min-height:28vh"><div class="no">08</div><div class="title">传播方案</div><div class="desc">纯静态网页便于课堂展示、竞赛答辩和离线传播，降低使用门槛。</div></div></div></div><div class="foot"><div>创意方案 · 视觉 · 交互 · 传播</div><div>设计细节</div></div></section>
+
+<section class="slide light"><div class="chrome"><div>数据规模 · CORE DATA</div><div>05 / 13</div></div><div class="frame" style="padding-top:4vh"><div class="kicker" data-anim>DATA OVERVIEW</div><h2 class="h1-zh" data-anim>权威数据 · 跨越历史 · 别样呈现</h2><p class="lead" style="margin-bottom:2vh;max-width:78vw" data-anim>资料参考茅以升《中国古桥技术史》、国家文物局文保资料和UNESCO世界遗产信息，并整理为本地JSON / GeoJSON，为地图、图表、详情和AI检索提供可信基础。</p><div class="grid-6" style="margin-top:2vh"><div class="stat-card" data-anim><div class="stat-label">古桥数量</div><div class="stat-nb">108 <span class="stat-unit">座</span></div><div class="stat-note">代表性古桥收录</div></div><div class="stat-card" data-anim><div class="stat-label">覆盖省份</div><div class="stat-nb">21 <span class="stat-unit">省</span></div><div class="stat-note">纵贯南北，横跨东西</div></div><div class="stat-card" data-anim><div class="stat-label">数据属性</div><div class="stat-nb">20+</div><div class="stat-note">年代、地域、桥型、文化、保护等</div></div><div class="stat-card" data-anim><div class="stat-label">语音导览</div><div class="stat-nb">108 <span class="stat-unit">条</span></div><div class="stat-note">单桥讲解内容</div></div><div class="stat-card" data-anim><div class="stat-label">核心页面</div><div class="stat-nb">7</div><div class="stat-note">总览、地图、技术、文化、保护、洞察、详情</div></div><div class="stat-card" data-anim><div class="stat-label">数据来源</div><div class="stat-nb">3</div><div class="stat-note">专著、文物资料、国际遗产信息</div></div></div></div><div class="foot"><div>茅以升《中国古桥技术史》 · 国家文物局 · UNESCO · JSON / GeoJSON</div><div>数据基础</div></div></section>
+
+<section class="slide dark home-overview-slide home-overview-clean"><div class="chrome"><div>网站图 · PAGE DESIGN</div><div>06 / 13</div></div><div class="frame home-overview-layout"><div class="home-overview-copy" data-anim><div class="kicker">WEBSITE VIEW</div><h2 class="h1-zh" style="font-size:3.4vw;line-height:1.18;padding-bottom:.16em">首页总览<br/>五维探索入口</h2><p class="lead">首页以五维导览串联时间、空间、桥型、文化与保护修缮，先建立整体认知，再引导进入地图、详情和数据洞察。</p><div class="home-overview-note">从总览进入探索路径，承接地图定位、单桥详情与数据分析。</div></div><figure class="home-overview-visual" data-anim><img src="images/网站首页图.png" alt="网站首页图"><figcaption class="photo-label">HOME PAGE · 网站首页</figcaption></figure></div><div class="foot"><div>网站图 · 首页总览 · 五维导航</div><div>页面展示</div></div></section>
+
+<section class="slide light"><div class="chrome"><div>实图与元素 · VISUAL ASSETS</div><div>07 / 13</div></div><div class="frame" style="padding-top:5vh"><div class="kicker" data-anim>IMAGE SYSTEM</div><h2 class="h1-zh" data-anim>用"实景 + 桥型 + 纹样"支撑内容表达</h2><p class="lead" style="max-width:78vw;margin-top:2vh" data-anim>页面视觉素材围绕古桥真实场景、桥梁结构类型和传统纹样展开，既能增强现场感，也能帮助观众快速识别不同桥型。</p><div class="asset-strip"><div class="asset-card" data-anim><div class="asset-thumb"><img src="images/background.jpg" alt="古桥实景背景"></div><div class="asset-name">实景底图</div><div class="asset-note">用于封面和主视觉，强化古桥空间氛围。</div></div><div class="asset-card" data-anim><div class="asset-thumb contain"><img src="images/bridge-type-arch.png" alt="拱桥图"></div><div class="asset-name">拱桥</div><div class="asset-note">表现跨度、拱券与受力特征。</div></div><div class="asset-card" data-anim><div class="asset-thumb"><img src="images/bridge-type-beam.jpg" alt="梁桥图"></div><div class="asset-name">梁桥</div><div class="asset-note">呈现平直桥面和朴素结构。</div></div><div class="asset-card" data-anim><div class="asset-thumb contain"><img src="images/bridge-type-suspension.png" alt="索桥图"></div><div class="asset-name">索桥</div><div class="asset-note">体现山地交通与柔性结构。</div></div><div class="asset-card" data-anim><div class="asset-thumb contain"><img src="images/ancient-bridge-seal-layer.png" alt="印章纹样"></div><div class="asset-name">印章纹样</div><div class="asset-note">作为视觉识别元素，增加古籍与档案感。</div></div></div></div><div class="foot"><div>实图 · 网站图 · 视觉元素</div><div>素材系统</div></div></section>
+
+<section class="slide dark"><div class="chrome"><div>数字新生与智能 · DIGITAL INTELLIGENCE</div><div>08 / 13</div></div><div class="frame grid-2-7-5" style="padding-top:5vh"><div style="display:flex;flex-direction:column;justify-content:space-between;gap:3vh"><div><div class="kicker" data-anim>DIGITAL RENAISSANCE</div><h2 class="h1-zh" data-anim>数字新生 × AI交互</h2><p class="lead" style="margin-top:3vh" data-anim>数据不是终点，而是数字化体验的基础。作品通过AI问答、3D建模、语音导览和图表联动，让古桥从档案走向可探索的交互空间。</p></div><div class="callout" data-anim>"数据是骨架，AI 是灵魂——让古桥知识从静态存储走向动态对话。"<div class="callout-src">技术理念</div></div></div><div style="display:flex;flex-direction:column;gap:2vh"><div class="rowline" data-anim><div class="k">检索</div><div class="v">本地数据检索层 · 匹配桥名、地区、桥型、技术与文化线索</div><div class="m">LOCAL DATA</div></div><div class="rowline" data-anim><div class="k">AI</div><div class="v">DeepSeek 国产大模型 API · 注入本地上下文后生成问答</div><div class="m">API CALL</div></div><div class="rowline" data-anim><div class="k">3D</div><div class="v">Three.js 桥梁建模 · 在详情页呈现结构与形态特征</div><div class="m">MODEL</div></div><div class="rowline" data-anim><div class="k">语音</div><div class="v">讯飞 TTS 与本地音频 · 108条桥梁导览增强现场感</div><div class="m">VOICE</div></div><div class="rowline" data-anim><div class="k">联动</div><div class="v">地图、图表、详情页互相承接 · 支持从宏观到单桥探索</div><div class="m">INTERACT</div></div></div></div><div class="foot"><div>本地检索 · DeepSeek API · 3D建模 · 语音导览 · 图表联动</div><div>数字新生</div></div></section>
+
+
+
+<section class="slide light"><div class="chrome"><div>核心页面 · CONTENT MODULES</div><div>09 / 13</div></div><div class="frame" style="padding-top:4vh"><div class="kicker" data-anim>EIGHT MODULES</div><h2 class="h1-zh" data-anim>八大模块构成完整参观路线</h2><p class="lead" style="margin-bottom:2vh;max-width:78vw" data-anim>从总览到详情，从技术到文化，全方位呈现古桥价值，并让观众在不同兴趣路径中自由进入。</p><div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.2vw"><div data-anim><div class="stat-card"><div class="stat-label">01 · 首页</div><div class="stat-nb" style="font-size:1.8vw">五维总览</div><div class="stat-note">思维导图导航</div></div><figure class="photo-card" style="min-height:16vh;margin-top:.6vh"><img src="images/作品总览.png" alt="首页总览"><figcaption class="photo-label">HOME</figcaption></figure></div><div data-anim><div class="stat-card"><div class="stat-label">02 · 地图</div><div class="stat-nb" style="font-size:1.8vw">空间分布</div><div class="stat-note">21省108座古桥</div></div><figure class="photo-card" style="min-height:16vh;margin-top:.6vh"><img src="images/地图页.png" alt="地图页"><figcaption class="photo-label">MAP</figcaption></figure></div><div data-anim><div class="stat-card"><div class="stat-label">03 · 技术</div><div class="stat-nb" style="font-size:1.8vw">技术演进</div><div class="stat-note">时间轴·中西对比</div></div><figure class="photo-card" style="min-height:16vh;margin-top:.6vh"><img src="images/技术演进页.png" alt="技术演进"><figcaption class="photo-label">TECH</figcaption></figure></div><div data-anim><div class="stat-card"><div class="stat-label">04 · 文化</div><div class="stat-nb" style="font-size:1.8vw">文化传承</div><div class="stat-note">诗词传说·历史掌故</div></div><figure class="photo-card" style="min-height:16vh;margin-top:.6vh"><img src="images/文化传承页.png" alt="文化传承"><figcaption class="photo-label">CULTURE</figcaption></figure></div></div></div><div class="foot"><div>首页 · 地图 · 技术 · 文化</div><div>内容模块 (1/2)</div></div></section>
+
+<section class="slide light"><div class="chrome"><div>核心页面 · CONTENT MODULES</div><div>10 / 13</div></div><div class="frame" style="padding-top:4vh"><div class="kicker" data-anim>EIGHT MODULES</div><h2 class="h1-zh" style="font-size:4.5vw" data-anim>洞察 · 详情 · 展望 · AI助手</h2><p class="lead" style="margin-bottom:2vh;max-width:78vw" data-anim>从数据洞察到智能交互，让古桥价值可感知、可追溯、可延续。</p><div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.2vw"><div data-anim><div class="stat-card"><div class="stat-label">05 · 洞察</div><div class="stat-nb" style="font-size:1.8vw">数据洞察</div><div class="stat-note">耦合分析、旭日图</div></div><figure class="photo-card" style="min-height:16vh;margin-top:.6vh"><img src="images/数据洞察页.png" alt="数据洞察"><figcaption class="photo-label">INSIGHT</figcaption></figure></div><div data-anim><div class="stat-card"><div class="stat-label">06 · 详情</div><div class="stat-nb" style="font-size:1.8vw">桥梁详情</div><div class="stat-note">单桥档案、3D模型</div></div><figure class="photo-card" style="min-height:16vh;margin-top:.6vh"><img src="images/桥梁详情页.png" alt="桥梁详情"><figcaption class="photo-label">DETAIL</figcaption></figure></div><div data-anim><div class="stat-card"><div class="stat-label">07 · 展望</div><div class="stat-nb" style="font-size:1.8vw">成果与展望</div><div class="stat-note">项目成果、未来方向</div></div><figure class="photo-card" style="min-height:16vh;margin-top:.6vh"><img src="images/成果与展望页.png" alt="成果与展望"><figcaption class="photo-label">OUTLOOK</figcaption></figure></div><div data-anim><div class="stat-card"><div class="stat-label">08 · AI助手</div><div class="stat-nb" style="font-size:1.8vw">桥灵助手</div><div class="stat-note">本地检索、DeepSeek问答</div></div><figure class="photo-card" style="min-height:16vh;margin-top:.6vh"><img src="images/桥灵助手.png" alt="桥灵AI助手"><figcaption class="photo-label">AI · 桥灵</figcaption></figure></div></div></div><div class="foot"><div>洞察 · 详情 · 展望 · AI助手</div><div>内容模块 (2/2)</div></div></section>
+
+<section class="slide dark"><div class="chrome"><div>作品特色 · FEATURES</div><div>11 / 13</div></div><div class="frame grid-2-7-5" style="padding-top:5vh"><div style="display:flex;flex-direction:column;justify-content:space-between;gap:3vh"><div><div class="kicker" data-anim>HIGHLIGHTS</div><h2 class="h1-zh" style="font-size:5.8vw" data-anim>六大核心特色</h2><p class="lead" style="margin-top:3vh" data-anim>作品将文化遗产知识、数据可视化和交互式网页体验结合起来，让古桥内容既有学术依据，也有大众传播力。</p></div><div class="callout" data-anim>"让千年古桥的智慧与魅力跨越时空，触达大众。"<div class="callout-src">项目愿景</div></div></div><div style="display:flex;flex-direction:column;gap:2vh"><div class="rowline" data-anim><div class="k">01</div><div class="v">五维视角，系统全面</div><div class="m">时间·空间·桥型·文化·修缮</div></div><div class="rowline" data-anim><div class="k">02</div><div class="v">数据驱动，权威可信</div><div class="m">专著·文物局·UNESCO</div></div><div class="rowline" data-anim><div class="k">03</div><div class="v">古建配色，风格统一</div><div class="m">朱红·鎏金·石绿·木纹</div></div><div class="rowline" data-anim><div class="k">04</div><div class="v">交互丰富，体验友好</div><div class="m">地图·图表·3D·语音</div></div><div class="rowline" data-anim><div class="k">05</div><div class="v">离线可用，部署便捷</div><div class="m">纯静态·双击运行</div></div><div class="rowline" data-anim><div class="k">06</div><div class="v">桥灵AI，智能交互</div><div class="m">本地检索·DeepSeek API·3D展示</div></div></div></div><div class="foot"><div>文化遗产数字化传播新思路</div><div>作品特色</div></div></section>
+
+<section class="slide dark"><div class="chrome"><div>作品实现技术 · TECH STACK</div><div>12 / 13</div></div><div class="frame" style="padding-top:5vh"><div class="kicker" data-anim>IMPLEMENTATION</div><h2 class="h1-zh" data-anim>纯前端、多图表、可离线运行</h2><p class="lead" style="max-width:80vw;margin-top:2vh" data-anim>作品采用静态网页方式实现，核心数据以 JSON/GeoJSON 组织，图表、地图和3D模型由前端渲染；AI助手在联网时调用DeepSeek API，并先注入本地检索上下文，便于离线访问、现场演示和本地部署。</p><div class="tech-flow"><div class="tech-node" data-anim><div class="tagline">Layer 01</div><div class="name">数据整理</div><div class="detail">文献、文物资料和桥梁条目清洗为统一字段。</div></div><div class="tech-node" data-anim><div class="tagline">Layer 02</div><div class="name">数据服务</div><div class="detail">JSON、GeoJSON、图片、音频与检索上下文作为本地资源加载。</div></div><div class="tech-node" data-anim><div class="tagline">Layer 03</div><div class="name">可视化渲染</div><div class="detail">ECharts 绘制图表，地图点位与筛选联动。</div></div><div class="tech-node" data-anim><div class="tagline">Layer 04</div><div class="name">三维与动效</div><div class="detail">Three.js 桥梁建模与 CSS 动效增强桥型展示和页面层次。</div></div><div class="tech-node" data-anim><div class="tagline">Layer 05</div><div class="name">AI与语音</div><div class="detail">DeepSeek API、讯飞 TTS、本地 MP3 与浏览器朗读协同兜底。</div></div></div><div class="callout" style="margin-top:4vh" data-anim>技术选择服务于传播目标：核心内容无需后端即可运行；同时通过地图、图表、3D、音频和联网AI提升文化遗产内容的可感知性。<span class="callout-src">TECHNICAL PRINCIPLE</span></div></div><div class="foot"><div>HTML5 · CSS3 · JavaScript · ECharts · Three.js · GeoJSON · DeepSeek API</div><div>实现技术</div></div></section>
+
+<section class="slide hero light"><div class="chrome"><div>感谢聆听 · THANK YOU</div><div>13 / 13</div></div><img class="seal-float" src="images/ancient-bridge-seal-layer.png" alt="古桥印章元素"><figure class="ending-bridge-figure" data-anim><img src="images/ending-latest-bridge.jpg" alt="古桥数字新生示意图"></figure><div class="frame" style="display:grid;gap:4vh;align-content:center;min-height:80vh"><div class="kicker" data-anim>CONCLUSION</div><h1 class="display-zh" data-anim>千年古桥<br/>数字新生</h1><p class="lead" style="max-width:62vw" data-anim>作品以数据为骨架、以设计为语言、以交互为路径，将中国古桥的工程价值、文化价值与保护价值重新组织为可观看、可探索、可传播的网页体验。</p><div class="meta-row" data-anim><span>欢迎提问交流</span><span>·</span><span>2026.08.07</span></div></div><div class="foot"><div>古桥千秋 · 数字新生</div><div>— 完 —</div></div></section>
+</div>
+
+<div id="nav"></div>
+<div class="page-wipe" aria-hidden="true"></div>
+
+<script>
+/* =============== WebGL 双背景 ===============
+   深色页：Holographic Dispersion（全息色散 · 钛金暗流）—— 彩虹微扰、鼠标径向涟漪
+   浅色页：Spiral Vortex（旋转涡流 · 银色珍珠）—— domain-warp 流动、无中心
+   修改风格请参考 references/webgl-backgrounds.md
+*/
+const VS = `attribute vec2 position;void main(){gl_Position=vec4(position,0.0,1.0);}`;
+
+const FS_DARK = `precision highp float;
+uniform vec2 u_resolution;uniform float u_time;uniform vec2 u_mouse;
+vec3 palette(float t,vec3 a,vec3 b,vec3 c,vec3 d){return a+b*cos(6.28318*(c*t+d));}
+void main(){
+  vec2 uv=gl_FragCoord.xy/u_resolution.xy;
+  vec2 p=uv*2.0-1.0;p.x*=u_resolution.x/u_resolution.y;
+  vec2 m=u_mouse*2.0-1.0;m.x*=u_resolution.x/u_resolution.y;
+  float md=length(p-m);
+  float mr=sin(md*15.0-u_time*4.0)*exp(-md*3.0);p+=mr*0.08;
+  vec2 p0=p;
+  for(float i=1.0;i<4.0;i++){
+    p.x+=0.1/i*sin(i*3.0*p.y+u_time*0.4)+0.05;
+    p.y+=0.1/i*cos(i*2.0*p.x+u_time*0.3)-0.05;
+  }
+  float r=length(p);float ang=atan(p.y,p.x);
+  vec3 a=vec3(0.12,0.12,0.13);
+  vec3 b=vec3(0.03,0.04,0.05);
+  vec3 c=vec3(1.0,1.0,1.0);
+  vec3 d=vec3(0.1,0.2,0.4);
+  vec3 col=palette(r*1.5+p0.x*0.5+u_time*0.1,a,b,c,d);
+  float disp=sin(r*25.0-u_time*1.5+ang*2.0)*0.5+0.5;
+  col+=vec3(disp*0.015,disp*0.01,disp*0.02);
+  float hi=pow(sin(p.x*4.0+p.y*3.0+u_time)*0.5+0.5,8.0);
+  col+=hi*0.08;
+  vec3 base=vec3(0.05,0.05,0.06);
+  col=mix(base,col,0.85);
+  gl_FragColor=vec4(col,1.0);
+}`;
+
+const FS_LIGHT = `precision highp float;
+uniform vec2 u_resolution;uniform float u_time;uniform vec2 u_mouse;
+float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
+float noise(vec2 p){
+  vec2 i=floor(p),f=fract(p);
+  float a=hash(i),b=hash(i+vec2(1,0));
+  float c=hash(i+vec2(0,1)),d=hash(i+vec2(1,1));
+  vec2 u=f*f*(3.0-2.0*f);
+  return mix(a,b,u.x)+(c-a)*u.y*(1.0-u.x)+(d-b)*u.x*u.y;
+}
+float fbm(vec2 p){
+  float v=0.0,a=0.5;
+  mat2 m=mat2(0.80,0.60,-0.60,0.80);
+  for(int i=0;i<5;i++){v+=a*noise(p);p=m*p*2.02;a*=0.5;}
+  return v;
+}
+void main(){
+  vec2 uv=gl_FragCoord.xy/u_resolution.xy;
+  vec2 p=uv;p.x*=u_resolution.x/u_resolution.y;
+  vec2 m=u_mouse;m.x*=u_resolution.x/u_resolution.y;
+  vec2 md=p-m;float dl=length(md);
+  p+=normalize(md+vec2(0.0001))*exp(-dl*5.0)*0.03;
+  vec2 q=vec2(fbm(p*1.8+u_time*0.07),fbm(p*1.8+vec2(5.2,1.3)+u_time*0.06));
+  vec2 r=vec2(fbm(p*2.0+q*1.3+vec2(1.7,9.2)+u_time*0.05),
+              fbm(p*2.0+q*1.3+vec2(8.3,2.8)+u_time*0.04));
+  float f=fbm(p*2.2+r*1.5);
+  vec3 silverDark=vec3(0.86,0.85,0.84);
+  vec3 paper=vec3(0.955,0.945,0.925);
+  vec3 col=mix(silverDark,paper,f);
+  float ph=r.x*2.2+u_time*0.35;
+  col+=vec3(0.78,0.62,0.92)*sin(ph)*0.055;
+  col+=vec3(0.55,0.72,0.95)*sin(ph*0.8+2.0)*0.05;
+  float hl=smoothstep(0.48,0.92,f);
+  col+=hl*0.06;
+  gl_FragColor=vec4(col,1.0);
+}`;
+
+const mouse={x:0.5,y:0.5};
+addEventListener('mousemove',e=>{mouse.x=e.clientX/innerWidth;mouse.y=e.clientY/innerHeight});
+
+function bootGL(canvasId, fsSrc){
+  const canvas=document.getElementById(canvasId);
+  const gl=canvas.getContext('webgl',{alpha:false,antialias:true});
+  if(!gl) return ()=>false;
+  const mk=(t,s)=>{const sh=gl.createShader(t);gl.shaderSource(sh,s);gl.compileShader(sh);return sh};
+  const prog=gl.createProgram();
+  gl.attachShader(prog,mk(gl.VERTEX_SHADER,VS));
+  gl.attachShader(prog,mk(gl.FRAGMENT_SHADER,fsSrc));
+  gl.linkProgram(prog);gl.useProgram(prog);
+  const buf=gl.createBuffer();
+  gl.bindBuffer(gl.ARRAY_BUFFER,buf);
+  gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,-1,1,1,-1,1,1]),gl.STATIC_DRAW);
+  const pos=gl.getAttribLocation(prog,'position');
+  gl.enableVertexAttribArray(pos);gl.vertexAttribPointer(pos,2,gl.FLOAT,false,0,0);
+  const lRes=gl.getUniformLocation(prog,'u_resolution');
+  const lT=gl.getUniformLocation(prog,'u_time');
+  const lM=gl.getUniformLocation(prog,'u_mouse');
+  const resize=()=>{
+    const d=Math.min(window.devicePixelRatio||1,2);
+    canvas.width=innerWidth*d;canvas.height=innerHeight*d;
+    gl.viewport(0,0,canvas.width,canvas.height);
+  };
+  addEventListener('resize',resize);resize();
+  return (tSec)=>{
+    gl.uniform2f(lRes,canvas.width,canvas.height);
+    gl.uniform1f(lT,tSec);
+    gl.uniform2f(lM,mouse.x,1-mouse.y);
+    gl.drawArrays(gl.TRIANGLES,0,6);
+    return true;
+  };
+}
+let drawDark=null, drawLight=null, glRAF=0, glT0=Date.now();
+function startGL(){
+  if(window.__lowPowerMode || glRAF) return;
+  if(!drawDark) drawDark=bootGL('bg-dark',FS_DARK);
+  if(!drawLight) drawLight=bootGL('bg-light',FS_LIGHT);
+  glT0=Date.now();
+  function loop(){
+    if(window.__lowPowerMode){glRAF=0;return;}
+    const t=(Date.now()-glT0)/1000;
+    drawDark(t);drawLight(t);
+    glRAF=requestAnimationFrame(loop);
+  }
+  glRAF=requestAnimationFrame(loop);
+}
+function stopGL(){
+  if(glRAF) cancelAnimationFrame(glRAF);
+  glRAF=0;
+}
+startGL();
+addEventListener('ppt-low-power-change', e=>{e.detail.on ? stopGL() : startGL();});
+
+// =============== 导航（翻页 / 圆点 / 键盘 / 滚轮 / 触屏） ===============
+const deck=document.getElementById('deck');
+const slides=deck.querySelectorAll('.slide');
+const nav=document.getElementById('nav');
+let idx=0,total=slides.length,lock=false;
+
+// 关键：矫正 deck 宽度为 total * 100vw，否则翻页会错位
+deck.style.width=(total*100)+'vw';
+
+slides.forEach((s,i)=>{
+  const b=document.createElement('button');
+  b.className='dot';b.dataset.i=i;b.setAttribute('aria-label','Page '+(i+1));
+  b.onclick=()=>go(i);
+  nav.appendChild(b);
+});
+
+let turnTO=null, enterTO=null;
+const reduceMotionForNav = window.matchMedia?.('(prefers-reduced-motion: reduce)');
+
+function clearEnterPending(){
+  if(enterTO) clearTimeout(enterTO);
+  enterTO = null;
+  slides.forEach(slide=>slide.classList.remove('enter-pending'));
+}
+window.__clearEnterPending = clearEnterPending;
+
+function shouldDelaySlideEnter(){
+  return !!window.__playSlide && !window.__lowPowerMode && !reduceMotionForNav?.matches;
+}
+
+function revealSlideAfterEnter(targetIndex, delay){
+  enterTO = setTimeout(()=>{
+    enterTO = null;
+    slides[targetIndex]?.classList.remove('enter-pending');
+    if(idx === targetIndex && window.__playSlide) window.__playSlide(targetIndex);
+  }, delay);
+}
+
+function runPageTurn(direction){
+  if(window.__lowPowerMode) return;
+  clearTimeout(turnTO);
+  document.body.classList.remove('turn-forward','turn-back','page-turning');
+  void document.body.offsetWidth;
+  document.body.classList.add('page-turning', direction === 'back' ? 'turn-back' : 'turn-forward');
+  turnTO=setTimeout(()=>document.body.classList.remove('turn-forward','turn-back','page-turning'), 760);
+}
+
+function go(n){
+  if(lock)return;
+  const prev=idx;
+  const next=Math.max(0,Math.min(total-1,n));
+  const changed=next!==prev;
+  clearEnterPending();
+  idx=next;
+  const delayEnter=changed && shouldDelaySlideEnter();
+  if(delayEnter) slides[idx]?.classList.add('enter-pending');
+  if(changed) runPageTurn(idx>prev?'forward':'back');
+  window.__currentSlideIndex = idx;
+  deck.style.transform=`translateX(${-idx*100}vw)`;
+  nav.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('active',i===idx));
+  /* 主题切换：优先读 data-theme，其次从 class（light/dark）推断 */
+  const el=slides[idx];
+  const th=el.dataset.theme || (el.classList.contains('light')?'light':(el.classList.contains('dark')?'dark':'dark'));
+  document.body.classList.toggle('light-bg',th==='light');
+  /* 动效：翻页过渡中段触发当前页的入场动画（由 motion-boot 注册） */
+  if(window.__playSlide){
+    if(delayEnter) revealSlideAfterEnter(idx, 520);
+    else window.__playSlide(idx);
+  }
+  lock=true;setTimeout(()=>lock=false,700);
+}
+
+/* =============== ESC 索引视图 =============== */
+let overviewOn=false;
+const ov=document.createElement('div');
+ov.id='overview';
+ov.style.cssText='position:fixed;inset:0;z-index:100;background:rgba(var(--ink-rgb),.92);backdrop-filter:blur(12px);display:none;overflow-y:auto;padding:4vh 4vw';
+document.body.appendChild(ov);
+
+function buildOverview(){
+  ov.innerHTML='';
+  const grid=document.createElement('div');
+  grid.style.cssText='display:grid;grid-template-columns:repeat(4,1fr);gap:2vh 1.6vw;max-width:90vw;margin:0 auto';
+  slides.forEach((s,i)=>{
+    const card=document.createElement('div');
+    card.style.cssText='cursor:pointer;border-radius:6px;overflow:hidden;border:2px solid '+(i===idx?'rgba(var(--paper-rgb),.8)':'rgba(var(--paper-rgb),.15)')+';transition:border-color .2s';
+    card.onmouseenter=()=>card.style.borderColor='rgba(var(--paper-rgb),.6)';
+    card.onmouseleave=()=>card.style.borderColor=i===idx?'rgba(var(--paper-rgb),.8)':'rgba(var(--paper-rgb),.15)';
+    const wrap=document.createElement('div');
+    wrap.style.cssText='width:100%;aspect-ratio:16/9;overflow:hidden;position:relative;pointer-events:none;background:'+(s.classList.contains('light')?'var(--paper)':'var(--ink)');
+    const clone=s.cloneNode(true);
+    clone.style.cssText='width:100vw;height:100vh;transform:scale('+(1/4.5)+');transform-origin:top left;position:absolute;top:0;left:0;pointer-events:none';
+    wrap.appendChild(clone);
+    const label=document.createElement('div');
+    label.style.cssText='padding:6px 10px;font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--paper);opacity:.7';
+    label.textContent=(i+1)+' / '+total;
+    card.appendChild(wrap);
+    card.appendChild(label);
+    card.onclick=()=>{toggleOverview();go(i)};
+    grid.appendChild(card);
+  });
+  ov.appendChild(grid);
+}
+
+function toggleOverview(){
+  overviewOn=!overviewOn;
+  if(overviewOn){buildOverview();ov.style.display='block';}
+  else{ov.style.display='none';}
+}
+
+addEventListener('keydown',e=>{
+  if(e.key==='Escape'){e.preventDefault();toggleOverview();return;}
+  if(e.key && e.key.toLowerCase()==='b' && !e.metaKey && !e.ctrlKey && !e.altKey){
+    e.preventDefault();
+    window.__setLowPowerMode(!window.__lowPowerMode);
+    return;
+  }
+  if(overviewOn)return;
+  if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '||e.key==='ArrowDown'){
+    if(window.__pipeAdvance && window.__pipeAdvance()) return;
+    go(idx+1);
+    return;
+  }
+  if(e.key==='ArrowLeft'||e.key==='PageUp'||e.key==='ArrowUp')go(idx-1);
+  if(e.key==='Home')go(0);
+  if(e.key==='End')go(total-1);
+});
+
+let wheelTO=null,wheelAcc=0;
+addEventListener('wheel',e=>{
+  wheelAcc+=e.deltaY+e.deltaX;
+  if(Math.abs(wheelAcc)>50){
+    if(wheelAcc>0 && window.__pipeAdvance && window.__pipeAdvance()){
+      wheelAcc=0;
+    }else{
+      go(idx+(wheelAcc>0?1:-1));wheelAcc=0;
+    }
+  }
+  clearTimeout(wheelTO);wheelTO=setTimeout(()=>wheelAcc=0,150);
+},{passive:true});
+
+let tx=0,ty=0;
+addEventListener('touchstart',e=>{tx=e.touches[0].clientX;ty=e.touches[0].clientY},{passive:true});
+addEventListener('touchend',e=>{
+  const dx=(e.changedTouches[0].clientX-tx);
+  const dy=(e.changedTouches[0].clientY-ty);
+  if(Math.abs(dx)>50&&Math.abs(dx)>Math.abs(dy)){
+    if(dx<0 && window.__pipeAdvance && window.__pipeAdvance()) return;
+    go(idx+(dx<0?1:-1));
+  }
+},{passive:true});
+
+go(0);
+</script>
+<script src="./images/three.min.js"></script>
+<script src="./images/OrbitControls.js"></script>
+<script src="./images/bridge-type-3d.js"></script>
+<script>
+(function(){
+  const disposers = [];
+
+  function initBridgeModel(){
+    const host = document.getElementById('slide2-arch-bridge-3d');
+    if(!host || !window.THREE || !window.THREE.OrbitControls || typeof window.initBridgeType3D !== 'function') return false;
+    host.replaceChildren();
+    disposers.push(window.initBridgeType3D(host, '拱桥'));
+    return true;
+  }
+
+  function initCraftModel(){
+    const host = document.getElementById('slide2-arch-craft-3d');
+    if(!host || !window.THREE || !window.THREE.OrbitControls) return false;
+    host.replaceChildren();
+
+    const THREE = window.THREE;
+    const width = Math.max(host.clientWidth, 260);
+    const height = Math.max(host.clientHeight, 180);
+    const aspect = width / height;
+    const scene = new THREE.Scene();
+    const craftFrustum = 2.85;
+    const camera = new THREE.OrthographicCamera(-craftFrustum * aspect, craftFrustum * aspect, craftFrustum, -craftFrustum, .1, 200);
+    camera.position.set(4.4, 3.35, 5.7);
+    camera.lookAt(0, .35, 0);
+
+    const renderer = new THREE.WebGLRenderer({antialias:true, alpha:true});
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    renderer.setSize(width, height, false);
+    renderer.setClearColor(0xeeeeec, 0);
+    if('outputEncoding' in renderer && THREE.sRGBEncoding) renderer.outputEncoding = THREE.sRGBEncoding;
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    host.appendChild(renderer.domElement);
+
+    const stone = new THREE.MeshStandardMaterial({color:0xa87442, roughness:.88, metalness:0, flatShading:true});
+    const light = new THREE.MeshStandardMaterial({color:0xd6b071, roughness:.92, metalness:0, flatShading:true});
+    const dark = new THREE.MeshStandardMaterial({color:0x5b351d, roughness:.9, metalness:0, flatShading:true});
+    const gold = new THREE.MeshStandardMaterial({color:0xc19a53, roughness:.86, metalness:.03, flatShading:true});
+
+    function setShadow(mesh){ mesh.castShadow = true; mesh.receiveShadow = true; return mesh; }
+    function box(w,h,d,mat,x,y,z,rot){
+      const mesh = new THREE.Mesh(new THREE.BoxGeometry(w,h,d), mat);
+      mesh.position.set(x || 0, y || 0, z || 0);
+      if(rot) mesh.rotation.set(rot[0], rot[1], rot[2]);
+      return setShadow(mesh);
+    }
+    function cyl(r1,r2,h,mat,x,y,z,rot){
+      const mesh = new THREE.Mesh(new THREE.CylinderGeometry(r1,r2,h,18), mat);
+      mesh.position.set(x || 0, y || 0, z || 0);
+      if(rot) mesh.rotation.set(rot[0], rot[1], rot[2]);
+      return setShadow(mesh);
+    }
+    function archRing(){
+      const shape = new THREE.Shape();
+      shape.moveTo(-.95,0);
+      shape.lineTo(.95,0);
+      shape.lineTo(1.2,.72);
+      shape.quadraticCurveTo(0,1.22,-1.2,.72);
+      shape.lineTo(-.95,0);
+      const opening = new THREE.Path();
+      opening.moveTo(-.55,.04);
+      for(let i=0;i<=28;i+=1){
+        const theta = Math.PI - Math.PI * i / 28;
+        opening.lineTo(Math.cos(theta) * .55, Math.sin(theta) * .58 + .04);
+      }
+      opening.lineTo(.55,.04);
+      opening.lineTo(-.55,.04);
+      shape.holes.push(opening);
+      const mesh = new THREE.Mesh(new THREE.ExtrudeGeometry(shape,{depth:.42,bevelEnabled:false}), stone);
+      mesh.position.set(0,.06,-.21);
+      return setShadow(mesh);
+    }
+    function deckSlab(){
+      const g = new THREE.Group();
+      g.add(box(1.95,.22,.82,light,0,.72,0));
+      for(let i=0;i<7;i+=1) g.add(box(.18,.055,.76,i%2?stone:gold,-.78+i*.26,.88,0));
+      return g;
+    }
+    function railSet(){
+      const g = new THREE.Group();
+      g.add(box(1.68,.08,.08,dark,0,1.12,.38));
+      g.add(box(1.68,.08,.08,dark,0,.83,.38));
+      for(let i=0;i<5;i+=1) g.add(cyl(.045,.052,.58,light,-.72+i*.36,.87,.38));
+      g.add(box(1.68,.08,.08,dark,0,1.12,-.38));
+      g.add(box(1.68,.08,.08,dark,0,.83,-.38));
+      for(let i=0;i<5;i+=1) g.add(cyl(.045,.052,.58,light,-.72+i*.36,.87,-.38));
+      return g;
+    }
+    function abutments(){
+      const g = new THREE.Group();
+      g.add(box(.82,.72,.92,stone,-.48,.42,0));
+      g.add(box(.82,.72,.92,stone,.48,.42,0));
+      g.add(box(1.16,.13,1.04,dark,-.48,.84,0));
+      g.add(box(1.16,.13,1.04,dark,.48,.84,0));
+      return g;
+    }
+
+    const group = new THREE.Group();
+    const railLayer = railSet();
+    railLayer.position.set(0, 1.6, 0);
+    railLayer.scale.set(1.38, .72, .82);
+    const deckLayer = deckSlab();
+    deckLayer.position.set(0, .72, 0);
+    deckLayer.scale.set(1.5, .82, .86);
+    const archLayer = archRing();
+    archLayer.position.y = -.12;
+    archLayer.scale.set(1.32, .82, .9);
+    const abutmentLayer = abutments();
+    abutmentLayer.position.set(0, -1.06, 0);
+    abutmentLayer.scale.set(1.28, .78, .86);
+    group.add(railLayer, deckLayer, archLayer, abutmentLayer);
+    group.rotation.y = -.08;
+    scene.add(group);
+
+    const ground = new THREE.Mesh(new THREE.PlaneGeometry(5.4, 3.2), new THREE.ShadowMaterial({color:0x565a58, opacity:.14}));
+    ground.rotation.x = -Math.PI / 2;
+    ground.position.y = -1.34;
+    ground.receiveShadow = true;
+    scene.add(ground);
+
+    scene.add(new THREE.HemisphereLight(0xf8f8f4, 0x777c78, 1.35));
+    const key = new THREE.DirectionalLight(0xffffff, 1.05);
+    key.position.set(5, 8, 5);
+    key.castShadow = true;
+    key.shadow.mapSize.width = 1024;
+    key.shadow.mapSize.height = 1024;
+    scene.add(key);
+    const rim = new THREE.DirectionalLight(0xdfe4e1, .4);
+    rim.position.set(-6, 4, -5);
+    scene.add(rim);
+
+    const controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = false;
+    controls.minZoom = .7;
+    controls.maxZoom = 1.8;
+    controls.maxPolarAngle = Math.PI / 2 - .08;
+    controls.target.set(0,.35,0);
+    controls.update();
+
+    let raf = 0;
+    let lastTime = performance.now();
+    const render = () => renderer.render(scene, camera);
+    function tick(time){
+      const dt = Math.min(.05, Math.max(0, (time - lastTime) / 1000 || 0));
+      lastTime = time;
+      if(!document.hidden && !window.__lowPowerMode) group.rotation.y += .18 * dt;
+      controls.update();
+      render();
+      raf = requestAnimationFrame(tick);
+    }
+    render();
+    raf = requestAnimationFrame(tick);
+
+    const ro = new ResizeObserver(() => {
+      const w = Math.max(host.clientWidth, 220);
+      const h = Math.max(host.clientHeight, 160);
+      const nextAspect = w / h;
+      camera.left = -craftFrustum * nextAspect;
+      camera.right = craftFrustum * nextAspect;
+      camera.top = craftFrustum;
+      camera.bottom = -craftFrustum;
+      camera.updateProjectionMatrix();
+      renderer.setSize(w, h, false);
+      render();
+    });
+    ro.observe(host);
+
+    disposers.push(() => {
+      if(raf) cancelAnimationFrame(raf);
+      ro.disconnect();
+      controls.dispose();
+      scene.traverse((obj) => {
+        if(obj.geometry) obj.geometry.dispose();
+        if(obj.material){
+          const mats = Array.isArray(obj.material) ? obj.material : [obj.material];
+          mats.forEach((mat) => mat.dispose && mat.dispose());
+        }
+      });
+      renderer.dispose();
+      renderer.domElement.remove();
+    });
+    return true;
+  }
+
+  function initSlide2Arch3D(){
+    if(window.__slide2Arch3DInitialized) return;
+    const okBridge = initBridgeModel();
+    const okCraft = initCraftModel();
+    window.__slide2Arch3DInitialized = okBridge && okCraft;
+    window.__slide2Arch3DDisposers = disposers;
+  }
+
+  if(document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initSlide2Arch3D, {once:true});
+  } else {
+    initSlide2Arch3D();
+  }
+})();
+</script>
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>lucide.createIcons();</script>
+
+<!-- ============ Motion One 动效引擎（本地优先,CDN 兜底） ============
+     加载策略:先 ./images/motion.min.js(本地,离线可用),失败 fallback 到 jsDelivr CDN
+     加载完成后挂 window.__playSlide / window.__pipeAdvance,
+     导航脚本会在翻页中段调用 __playSlide(idx),键盘/滚轮/触屏会在翻页前调用 __pipeAdvance()
+     双双失败时会兜底把所有 [data-anim] 设为可见,不让动效破坏阅读
+-->
+<script type="module">
+let motion;
+try {
+  motion = await import('./images/motion.min.js');
+} catch(e1) {
+  try {
+    motion = await import('https://cdn.jsdelivr.net/npm/motion@11.11.17/+esm');
+  } catch(e2) {
+    console.warn('[motion] local + CDN both failed, disabling animations', e1, e2);
+    document.querySelectorAll('[data-anim]').forEach(el=>{el.style.opacity='1';el.style.transform='none'});
+    document.querySelectorAll('[data-animate="pipeline"] [data-anim]').forEach(el=>el.style.opacity='1');
+  }
+}
+
+if(motion){
+  const { animate, stagger } = motion;
+  document.body.classList.add('motion-ready');
+  const EASE = [.22, 1, .36, 1];
+  const slides = [...document.querySelectorAll('.slide')];
+  let pipeStep = -1;
+  let lastIdx = -1;
+  const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)');
+  const recipeByIndex = new Map([
+    [2, 'cards'],
+    [3, 'cards'],
+    [4, 'stats'],
+    [5, 'showcase'],
+    [6, 'cards'],
+    [7, 'rows'],
+    [8, 'cards'],
+    [9, 'cards'],
+    [10, 'rows'],
+    [11, 'tech']
+  ]);
+
+  function resetAnims(slide){
+    slide.querySelectorAll('[data-anim]').forEach(el=>{
+      el.style.opacity='';
+      el.style.transform='';
+    });
+  }
+
+  function revealStatic(slide){
+    resetAnims(slide);
+    document.getAnimations?.().forEach(a=>a.cancel());
+    slide.querySelectorAll('[data-anim]').forEach(el=>{
+      el.style.opacity='1';
+      el.style.transform='none';
+    });
+  }
+
+  function firstTextNode(el){
+    return [...el.childNodes].find(node=>node.nodeType === Node.TEXT_NODE);
+  }
+
+  function countStats(slide){
+    const nums = [...slide.querySelectorAll('.stat-card .stat-nb')];
+    nums.forEach((el, index)=>{
+      const node = firstTextNode(el);
+      if(!node) return;
+      if(!el.dataset.countFinal) el.dataset.countFinal = node.textContent;
+      const finalText = el.dataset.countFinal;
+      const match = finalText.trim().match(/^(\d+)(\+?)(\s*)/);
+      if(!match) return;
+      const target = Number(match[1]);
+      const plus = match[2] || '';
+      const trail = /\s$/.test(finalText) ? ' ' : '';
+      const start = performance.now();
+      const duration = 760 + index * 55;
+      function tick(now){
+        const p = Math.min(1, (now - start) / duration);
+        const eased = 1 - Math.pow(1 - p, 3);
+        node.textContent = Math.round(target * eased) + plus + trail;
+        if(p < 1) requestAnimationFrame(tick);
+        else node.textContent = finalText;
+      }
+      node.textContent = '0' + plus + trail;
+      requestAnimationFrame(tick);
+    });
+  }
+
+  function playSlide(i){
+    const slide = slides[i];
+    if(!slide) return;
+    lastIdx = i;
+    const recipe = slide.dataset.animate || recipeByIndex.get(i) || (slide.classList.contains('hero') ? 'hero' : 'cascade');
+
+    if(window.__lowPowerMode || reduceMotion?.matches){
+      revealStatic(slide);
+      return;
+    }
+
+    if(recipe === 'pipeline'){
+      pipeStep = -1;
+      slide.querySelectorAll('[data-anim]').forEach(el=>{
+        el.style.opacity='0.15';
+        el.style.transform='none';
+      });
+      return;
+    }
+
+    resetAnims(slide);
+    const all = [...slide.querySelectorAll('[data-anim]')];
+    if(!all.length) return;
+
+    if(recipe === 'directional'){
+      const lefts  = all.filter(el=>el.dataset.anim==='left');
+      const divs   = all.filter(el=>el.dataset.anim==='divider');
+      const rights = all.filter(el=>el.dataset.anim==='right');
+      const others = all.filter(el=>!['left','right','divider'].includes(el.dataset.anim));
+      if(others.length) animate(others, {opacity:[0,1], y:[12,0]}, {duration:.6, delay:stagger(.1, {start:.15}), easing:EASE});
+      if(lefts.length)  animate(lefts,  {opacity:[0,1], x:[-24,0]}, {duration:.8, delay:.35, easing:EASE});
+      if(divs.length)   animate(divs,   {opacity:[0,.25]},          {duration:.5, delay:.9});
+      if(rights.length) animate(rights, {opacity:[0,1], x:[24,0]},  {duration:.8, delay:1.0, easing:EASE});
+      return;
+    }
+
+    if(recipe === 'quote'){
+      const lines = all.filter(el=>el.dataset.anim==='line');
+      const others = all.filter(el=>el.dataset.anim!=='line');
+      if(others.length) animate(others, {opacity:[0,1], y:[8,0]},    {duration:.6, delay:stagger(.12, {start:.2}), easing:EASE});
+      if(lines.length)  animate(lines,  {opacity:[.35,1], y:[10,0]}, {duration:.8, delay:stagger(.55, {start:.5}), easing:EASE});
+      return;
+    }
+
+    if(recipe === 'hero'){
+      const media = all.filter(el=>el.matches('.photo-card,.seal-float'));
+      const copy = all.filter(el=>!media.includes(el));
+      if(copy.length) animate(copy, {opacity:[0,1], y:[14,0]}, {duration:.9, delay:stagger(.16, {start:.18}), easing:EASE});
+      if(media.length) animate(media, {opacity:[0,1], y:[18,0], scale:[.985,1]}, {duration:1.05, delay:.38, easing:EASE});
+      return;
+    }
+
+    if(recipe === 'stats'){
+      const stats = all.filter(el=>el.matches('.stat-card'));
+      const intro = all.filter(el=>!stats.includes(el));
+      if(intro.length) animate(intro, {opacity:[0,1], y:[14,0]}, {duration:.62, delay:stagger(.09, {start:.12}), easing:EASE});
+      if(stats.length) animate(stats, {opacity:[0,1], y:[24,0], scale:[.975,1]}, {duration:.72, delay:stagger(.075, {start:.42}), easing:EASE});
+      setTimeout(()=>countStats(slide), 610);
+      return;
+    }
+
+    if(recipe === 'showcase'){
+      const media = all.filter(el=>el.matches('.photo-card,.carousel-photo-card'));
+      const features = all.filter(el=>el.matches('.feature-list,.feature-item'));
+      const intro = all.filter(el=>!media.includes(el) && !features.includes(el));
+      if(intro.length) animate(intro, {opacity:[0,1], x:[-18,0]}, {duration:.72, delay:stagger(.1, {start:.12}), easing:EASE});
+      if(features.length) animate(features, {opacity:[0,1], x:[-12,0]}, {duration:.62, delay:stagger(.08, {start:.46}), easing:EASE});
+      if(media.length) animate(media, {opacity:[0,1], x:[24,0], scale:[.985,1]}, {duration:.9, delay:.32, easing:EASE});
+      return;
+    }
+
+    if(recipe === 'rows'){
+      const rows = all.filter(el=>el.matches('.rowline'));
+      const intro = all.filter(el=>!rows.includes(el));
+      if(intro.length) animate(intro, {opacity:[0,1], y:[14,0]}, {duration:.64, delay:stagger(.1, {start:.12}), easing:EASE});
+      if(rows.length) animate(rows, {opacity:[0,1], x:[-22,0]}, {duration:.68, delay:stagger(.095, {start:.38}), easing:EASE});
+      return;
+    }
+
+    if(recipe === 'tech'){
+      const nodes = all.filter(el=>el.matches('.tech-node'));
+      const callouts = all.filter(el=>el.matches('.callout'));
+      const intro = all.filter(el=>!nodes.includes(el) && !callouts.includes(el));
+      if(intro.length) animate(intro, {opacity:[0,1], y:[12,0]}, {duration:.64, delay:stagger(.1, {start:.1}), easing:EASE});
+      if(nodes.length) animate(nodes, {opacity:[0,1], y:[24,0], scale:[.965,1]}, {duration:.75, delay:stagger(.12, {start:.42}), easing:EASE});
+      if(callouts.length) animate(callouts, {opacity:[0,1], y:[14,0]}, {duration:.7, delay:1.12, easing:EASE});
+      return;
+    }
+
+    if(recipe === 'cards'){
+      const cards = all.filter(el=>el.matches('.method-card,.asset-card,.stat-card,.photo-stack,[style*="grid-template-columns"] > [data-anim]'));
+      const intro = all.filter(el=>!cards.includes(el));
+      if(intro.length) animate(intro, {opacity:[0,1], y:[12,0]}, {duration:.62, delay:stagger(.09, {start:.1}), easing:EASE});
+      if(cards.length) animate(cards, {opacity:[0,1], y:[22,0], scale:[.982,1]}, {duration:.74, delay:stagger(.08, {start:.35}), easing:EASE});
+      return;
+    }
+
+    // default: cascade
+    animate(all, {opacity:[0,1], y:[16,0]}, {duration:.75, delay:stagger(.1, {start:.15}), easing:EASE});
+  }
+
+  function pipeAdvance(){
+    if(window.__lowPowerMode) return false;
+    const slide = slides[lastIdx];
+    if(!slide || slide.dataset.animate !== 'pipeline') return false;
+    const steps  = [...slide.querySelectorAll('[data-anim="step"]')];
+    const arrows = [...slide.querySelectorAll('[data-anim="arrow"]')];
+    if(pipeStep >= steps.length - 1) return false;
+    pipeStep++;
+    animate(steps[pipeStep], {opacity:[0.15,1], y:[8,0]}, {duration:.5, easing:EASE});
+    if(pipeStep > 0 && arrows[pipeStep-1]){
+      animate(arrows[pipeStep-1], {opacity:[0.15,.7]}, {duration:.3, delay:.15});
+    }
+    return true;
+  }
+
+  document.querySelectorAll('.carousel-photo-card').forEach(card=>{
+    if(card.dataset.clickCarouselInit === 'true') return;
+    card.dataset.clickCarouselInit = 'true';
+    const track = card.querySelector('.carousel-track');
+    if(!track) return;
+    const imgs = [...track.querySelectorAll('img')];
+    if(imgs.length < 2) return;
+    const realImgs = imgs.filter(img=>img.getAttribute('aria-hidden') !== 'true').slice(0, 3);
+    const labels = [...card.querySelectorAll('.carousel-label-item')];
+    const controls = document.createElement('div');
+    controls.className = 'carousel-controls';
+    controls.setAttribute('role', 'group');
+    controls.setAttribute('aria-label', '切换第六页展示图片');
+    const buttons = realImgs.map((img, i)=>{
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'carousel-toggle';
+      btn.setAttribute('aria-label', img.dataset.label || img.alt || `Slide ${i + 1}`);
+      btn.title = img.dataset.label || img.alt || `Slide ${i + 1}`;
+      btn.addEventListener('click', e=>{
+        e.stopPropagation();
+        setCurrent(i);
+      });
+      btn.addEventListener('keydown', e=>{
+        if(e.key === ' ' || e.key === 'Enter'){
+          e.preventDefault();
+          e.stopPropagation();
+          setCurrent(i);
+        }
+      });
+      controls.appendChild(btn);
+      return btn;
+    });
+    card.appendChild(controls);
+    function setCurrent(index){
+      const safeIndex = Math.max(0, Math.min(realImgs.length - 1, index));
+      card.dataset.current = String(safeIndex);
+      track.style.transform = `translate3d(${-safeIndex * 100}%,0,0)`;
+      realImgs.forEach((img, i)=>img.classList.toggle('is-active', i === safeIndex));
+      labels.forEach((label, i)=>{
+        const active = i === safeIndex;
+        label.classList.toggle('is-active', active);
+        label.setAttribute('aria-hidden', active ? 'false' : 'true');
+      });
+      buttons.forEach((btn, i)=>{
+        const active = i === safeIndex;
+        btn.classList.toggle('is-active', active);
+        btn.setAttribute('aria-current', active ? 'true' : 'false');
+      });
+    }
+    const ready = imgs.map(img=>{
+      img.loading = 'eager';
+      img.decoding = 'async';
+      return img.decode ? img.decode().catch(()=>{}) : Promise.resolve();
+    });
+    setCurrent(0);
+    Promise.allSettled(ready).then(()=>card.classList.add('is-ready'));
+  });
+
+  window.__playSlide = playSlide;
+  window.__pipeAdvance = pipeAdvance;
+  playSlide(0);
+
+  // 首屏:go(0) 已跑过(同步),没来得及触发动效 → 这里补一下
+  playSlide(0);
+}
+</script>
+<script>
+(function(){
+  function initClickableCarousels(){
+    document.querySelectorAll('.carousel-photo-card').forEach(card=>{
+      if(card.dataset.clickCarouselInit === 'true') return;
+      card.dataset.clickCarouselInit = 'true';
+      const track = card.querySelector('.carousel-track');
+      if(!track) return;
+      const imgs = [...track.querySelectorAll('img')];
+      if(imgs.length < 2) return;
+      const realImgs = imgs.filter(img=>img.getAttribute('aria-hidden') !== 'true').slice(0, 3);
+      const labels = [...card.querySelectorAll('.carousel-label-item')];
+      const controls = document.createElement('div');
+      controls.className = 'carousel-controls';
+      controls.setAttribute('role', 'group');
+      controls.setAttribute('aria-label', 'Switch page 6 image');
+      const buttons = realImgs.map((img, i)=>{
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'carousel-toggle';
+        btn.setAttribute('aria-label', img.dataset.label || img.alt || `Slide ${i + 1}`);
+        btn.title = img.dataset.label || img.alt || `Slide ${i + 1}`;
+        btn.addEventListener('click', e=>{
+          e.stopPropagation();
+          setCurrent(i);
+        });
+        btn.addEventListener('keydown', e=>{
+          if(e.key === ' ' || e.key === 'Enter'){
+            e.preventDefault();
+            e.stopPropagation();
+            setCurrent(i);
+          }
+        });
+        controls.appendChild(btn);
+        return btn;
+      });
+      card.appendChild(controls);
+      function setCurrent(index){
+        const safeIndex = Math.max(0, Math.min(realImgs.length - 1, index));
+        card.dataset.current = String(safeIndex);
+        track.style.transform = `translate3d(${-safeIndex * 100}%,0,0)`;
+        realImgs.forEach((img, i)=>img.classList.toggle('is-active', i === safeIndex));
+        labels.forEach((label, i)=>{
+          const active = i === safeIndex;
+          label.classList.toggle('is-active', active);
+          label.setAttribute('aria-hidden', active ? 'false' : 'true');
+        });
+        buttons.forEach((btn, i)=>{
+          const active = i === safeIndex;
+          btn.classList.toggle('is-active', active);
+          btn.setAttribute('aria-current', active ? 'true' : 'false');
+        });
+      }
+      const ready = imgs.map(img=>{
+        img.loading = 'eager';
+        img.decoding = 'async';
+        return img.decode ? img.decode().catch(()=>{}) : Promise.resolve();
+      });
+      setCurrent(0);
+      Promise.allSettled(ready).then(()=>card.classList.add('is-ready'));
+    });
+  }
+  if(document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initClickableCarousels, {once:true});
+  else initClickableCarousels();
+})();
+</script>
+</body>
+</html>
